@@ -1,0 +1,37 @@
+/*
+
+
+	Prototype
+
+	for any prototyping needed in development
+
+*/
+
+/* Styleguide specific */
+@media screen {
+	body {
+		background: url(../images/baseline-16-24.png) repeat;
+		background-size: 18px;
+		font-size: 75%;
+		margin: auto;
+		max-width: 30em;
+	}
+}
+@media only screen and (min-width: 30em) {
+	body {
+		background-size: 24px;
+		font-size: 100%;
+	}
+}
+@media only screen and (min-width: 768px) {
+	body {
+		background-size: 27px;
+		font-size: 112.5%;
+	}
+}
+@media only screen and (min-width: 1382px) {
+	body {
+		background-size: 30px;
+		font-size: 125%;
+	}
+}

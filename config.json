@@ -1,0 +1,19 @@
+{
+	"template_dir": "templates",
+	"content_dir": "contents",
+	"output_dir": "site",
+	"server": {
+		"port": 9009,
+		"generate_interval": 10000,
+		"serving_only": false
+	},
+	"bundles": {
+		"/css/all.css": [
+			"/css/base.css",
+			"/css/layout.css",
+			"/css/module.css",
+			"/css/theme.css",
+			"/css/state.css"
+		]	
+	}
+}

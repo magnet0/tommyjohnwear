@@ -1,0 +1,21 @@
+{{> head }}
+		
+{{> header }}
+		
+<div role="main">
+	<div class="l-wrapper">
+		
+        <h1>{{page-header}}</h1>
+        <ul>
+        {{#pages}}
+        <li id="{{id}}"><a href="{{url}}">{{title}}</a></li>
+        {{/pages}}
+		</ul>
+	</div>
+</div>
+		
+{{> sidebar}}
+		
+{{> footer}}
+
+{{> foot }}

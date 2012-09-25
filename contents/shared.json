@@ -1,0 +1,14 @@
+{
+	"pages": [
+		{
+			"title": "Home",
+			"url": "./",
+			"id": "home"
+		},
+		{
+			"title": "StyleGuide",
+			"url": "styleguide",
+			"id": "styleguide"
+		}
+	]
+}

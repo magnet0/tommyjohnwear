@@ -1,0 +1,14 @@
+/*
+
+
+	State
+	
+	State changes are represented in one of three ways:
+
+	1. pseudo-class: :something
+	2. class name: .is-something, .has-something
+	3. media query: @media something {}
+	
+
+
+*/
