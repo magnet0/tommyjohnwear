@@ -1,7 +1,22 @@
 <header role="banner">
 	<div class="l-wrapper">
 		
-		<!-- Header -->
+		<a href="{{base}}">
+            <object data="images/tommyjohn.svg" type="image/svg+xml" class="logo">
+                <img src="images/tommyjohn.png" class="logo" alt="Tommy John">
+            </object>
+		</a>
+		
+		<nav>
+            <h2>Site Navigation</h2>
+            <ul class="hlist nav-bar">
+                {{#pages}}
+                <li class="hlist-item nav-item">
+                    <a href="{{id}}">{{title}}</a>
+                </li>
+                {{/pages}}
+            </ul>
+		</nav>
 		
 	</div>
 </header>
