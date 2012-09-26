@@ -6,5 +6,63 @@
 	"stage":{
 		"heading":"Bring back the undergarment",
 		"lead":"These are the best because cosby sweater tofu, hella godard salvia vinyl kogi 3 wolf moon tattooed blog put a bird on it letterpress next level 8-bit chillwave."
-	}
+	},
+	"primary-feature":[
+		{
+			"img":"//placehold.it/350x200",
+			"alt":"image alt text",
+			"prepend-text": false,
+			"append-text":"What makes our underwear better than any other? <a href=\"technology\">learn about our technology and fit</a>",
+			"append-link":"",
+			"append-link-text":""
+		},
+		{
+			"img":"//placehold.it/350x200",
+			"alt":"This picture",
+			"prepend-text": false,
+			"append-text":"What makes our underwear better than any other? <a href=\"technology\">learn about our technology and fit</a>",
+			"append-link":"",
+			"append-link-text":""
+		},
+		{
+			"img":"//placehold.it/350x200",
+			"alt":"Another picture",
+			"prepend-text": false,
+			"append-text":"What makes our underwear better than any other? <a href=\"technology\">learn about our technology and fit</a>",
+			"append-link":"",
+			"append-link-text":""
+		}
+	],
+	"secondary-feature":[
+		{
+			"wrapper-class":"m-padding",
+			"img":"//placehold.it/350x200",
+			"append-link":"category",
+			"append-link-text":"Second Skin"
+		},
+		{
+			"wrapper-class":"m-padding",
+			"img":"//placehold.it/350x200",
+			"append-link":"category",
+			"append-link-text":"Sport"
+		},
+		{
+			"wrapper-class":"m-padding",
+			"img":"//placehold.it/350x200",
+			"append-link":"category",
+			"append-link-text":"Active"
+		}
+	],
+	"tertiary-feature":[
+		{
+			"append-link":"challenge",
+			"append-link-text":"The Tommy John Challenge promo"
+		},
+		{
+			"title":"The Starter Kit",
+			"prepend-text":"Purchase and Lorem ipsum <strong>free</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+			"append-link":"starter-kit",
+			"append-link-text":"Details"
+		}
+	]
 }

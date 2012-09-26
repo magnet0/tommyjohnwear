@@ -43,23 +43,19 @@
 			"children": [
 				{
 					"title":"About",
-					"href":"about",
-					"class": false
+					"href":"about"
 				},
 				{
 					"title":"Press",
-					"href":"press",
-					"class":false
+					"href":"press"
 				},
 				{
 					"title":"Jobs",
-					"href":"contact",
-					"class":false
+					"href":"contact"
 				},
 				{
 					"title":"Privacy Policy",
-					"href":"privacy-policy",
-					"class":false
+					"href":"privacy-policy"
 				}
 			]
 		},
@@ -79,18 +75,15 @@
 				},
 				{
 					"title":"FAQ's",
-					"href":"faqs",
-					"class":false
+					"href":"faqs"
 				},
 				{
 					"title":"Store Locator",
-					"href":"store-locator",
-					"class":false
+					"href":"store-locator"
 				},
 				{
 					"title":"Shipping &amp; Returns",
-					"href":"shipping-and-returns",
-					"class":false
+					"href":"shipping-and-returns"
 				}
 			]
 		},
@@ -100,18 +93,15 @@
 			"children": [
 				{
 					"title":"Size Guide",
-					"href":"size-guide",
-					"class":false
+					"href":"size-guide"
 				},
 				{
 					"title":"Fabric",
-					"href":"fabric",
-					"class":false
+					"href":"fabric"
 				},
 				{
 					"title":"Care Instructions",
-					"href":"care",
-					"class":false
+					"href":"care"
 				}
 			]
 		},

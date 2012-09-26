@@ -1,0 +1,11 @@
+{{#wrapper-class}}<div class="{{ wrapper-class }}">{{/wrapper-class}}
+  {{#title}}<h2>{{{ title }}}</h2>{{/title}}
+  {{#prepend-text}}<p>{{{ prepend-text }}}</p>{{/prepend-text}}
+  {{#img}}<img src="{{{ img }}}" alt="{{alt}}">{{/img}}
+  {{#append-text}}<p>{{{ append-text }}}</p>{{/append-text}}
+  {{#append-link}}
+  <p>
+  	<a href="{{ append-link }}">{{ append-link-text }}</a>
+  </p>
+  {{/append-link}}
+{{#wrapper-class}}</div>{{/wrapper-class}}

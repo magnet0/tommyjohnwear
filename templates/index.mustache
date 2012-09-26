@@ -13,56 +13,35 @@
 	</header>
 	<div class="content">
 	    
-	    <div class="l-wrapper">
+	    <div class="m-primary-feature m-feature l-wrapper">
   	    <div class="l-grid-six">
-          <div class="l-block-third">
-            <img src="http://placehold.it/350x200" alt="">
-            <p>What makes our underwear better than any other? <a href="technology">learn about our technology and fit</a></p>
-          </div>
-          <div class="l-block-third">
-            <img src="http://placehold.it/350x200" alt="">
-            <p>What makes our underwear better than any other? <a href="technology">learn about our technology and fit</a></p>
-          </div>
-          <div class="l-block-third">
-            <img src="http://placehold.it/350x200" alt="">
-            <p>What makes our underwear better than any other? <a href="technology">learn about our technology and fit</a></p>
-          </div>
+  	    	{{#primary-feature}}
+  	    		<div class="l-block-third">
+  	    			{{> m-feature}}
+  	    		</div>
+  	    	{{/primary-feature}}
         </div>
       </div>
 
       <hr>
 
-      <div class="l-wrapper">
+      <div class="m-secondary-feature m-feature l-wrapper">
       	<div class="l-grid-six">
-      		<div class="l-block-third l-alignCenter">
-      			<div class="l-padded"><img src="http://placehold.it/350x200" alt="">
-      				<p><a href="category">Second Skin</a></p>
-      			</div>
-      		</div>
-      		<div class="l-block-third l-alignCenter">
-      			<div class="l-padded"><img src="http://placehold.it/350x200" alt="">
-      				<p><a href="category">Sport</a></p>
-      			</div>
-      		</div>
-      		<div class="l-block-third l-alignCenter">
-      			<div class="l-padded"><img src="http://placehold.it/350x200" alt="">
-      				<p><a href="category">Active</a></p>
-      			</div>
-      		</div>
-      	</div>
+  	    	{{#secondary-feature}}
+  	    		<div class="l-block-third">
+  	    			{{> m-feature}}
+  	    		</div>
+  	    	{{/secondary-feature}}
+        </div>
       </div>
 
       <div class="l-wrapper">
       	<div class="l-grid-six">
-      		<div class="l-block-half l-alignCenter l-alignMiddle">
-      			<p class="large">The Tommy John Challenge promo</p>
-      		</div>
-      		<a href="starter-kit" class="l-block-half l-alignCenter l-alignMiddle">
-      			<h2>The Starter Kit</h2>
-      			<p class="large">Purchase and Lorem ipsum <strong>free</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-      			<p>details</p>
-      		</a>
+  	    	{{#tertiary-feature}}
+  	    		<div class="l-block-half">
+  	    			{{> m-feature}}
+  	    		</div>
+  	    	{{/tertiary-feature}}
       	</div>
       </div>
         
