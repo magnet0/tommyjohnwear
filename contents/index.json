@@ -9,60 +9,64 @@
 	},
 	"primary-feature":[
 		{
+			"href":"technology",
 			"img":"//placehold.it/350x200",
 			"alt":"image alt text",
 			"prepend-text": false,
-			"append-text":"What makes our underwear better than any other? <a href=\"technology\">learn about our technology and fit</a>",
+			"append-text":"What makes our underwear better than any other? <em>learn about our technology and fit</em>",
 			"append-link":"",
 			"append-link-text":""
 		},
 		{
+			"href":"technology",
 			"img":"//placehold.it/350x200",
 			"alt":"This picture",
 			"prepend-text": false,
-			"append-text":"What makes our underwear better than any other? <a href=\"technology\">learn about our technology and fit</a>",
+			"append-text":"What makes our underwear better than any other? <em>learn about our technology and fit</em>",
 			"append-link":"",
 			"append-link-text":""
 		},
 		{
+			"href":"technology",
 			"img":"//placehold.it/350x200",
 			"alt":"Another picture",
 			"prepend-text": false,
-			"append-text":"What makes our underwear better than any other? <a href=\"technology\">learn about our technology and fit</a>",
+			"append-text":"What makes our underwear better than any other? <em>learn about our technology and fit</em>",
 			"append-link":"",
 			"append-link-text":""
 		}
 	],
 	"secondary-feature":[
 		{
+			"href":"category",
 			"wrapper-class":"m-padding",
 			"img":"//placehold.it/350x200",
-			"append-link":"category",
-			"append-link-text":"Second Skin"
+			"append-text":"Second Skin"
 		},
 		{
+			"href":"category",
 			"wrapper-class":"m-padding",
 			"img":"//placehold.it/350x200",
-			"append-link":"category",
-			"append-link-text":"Sport"
+			"append-text":"Sport"
 		},
 		{
+			"href":"category",
 			"wrapper-class":"m-padding",
 			"img":"//placehold.it/350x200",
-			"append-link":"category",
-			"append-link-text":"Active"
+			"append-link":"",
+			"append-text":"Active"
 		}
 	],
 	"tertiary-feature":[
 		{
-			"append-link":"challenge",
-			"append-link-text":"The Tommy John Challenge promo"
+			"href":"challenge",
+			"append-text":"The Tommy John Challenge promo"
 		},
 		{
+			"href":"starter-kit",
 			"title":"The Starter Kit",
 			"prepend-text":"Purchase and Lorem ipsum <strong>free</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-			"append-link":"starter-kit",
-			"append-link-text":"Details"
+			"append-text":"Details"
 		}
 	]
 }
