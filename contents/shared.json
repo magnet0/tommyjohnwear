@@ -2,13 +2,37 @@
 	"pages": [
 		{
 			"title": "Home",
-			"url": "./",
-			"id": "home"
+			"id": "./"
 		},
 		{
-			"title": "StyleGuide",
-			"url": "styleguide",
-			"id": "styleguide"
+			"title": "Undershirts",
+			"id": "category"
+		},
+		{
+			"title": "Underwear",
+			"id": "category"
+		},
+		{
+			"title": "Technology",
+			"id": "tech"
+		}
+	],
+	"undershirts": [
+		{
+			"title": "Crew Neck",
+			"id": "crew-neck"
+		},
+		{
+			"title": "V Neck",
+			"id": "v-neck"
+		},
+		{
+			"title": "Tank",
+			"id": "tank"
+		},
+		{
+			"title": "Long Sleeve",
+			"id": "long-sleeve"
 		}
 	]
 }

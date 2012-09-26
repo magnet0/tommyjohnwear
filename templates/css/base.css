@@ -23,6 +23,7 @@
 		color: #333;
 		font-family: 'Helmet', 'Freesans', sans-serif;
 		line-height: 1.5;
+		font-size: 100%;
 		margin: auto;
 		min-height: 100%;
 		-webkit-tap-highlight-color: rgb(255, 255, 158);

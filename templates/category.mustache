@@ -1,0 +1,33 @@
+{{> head }}
+		
+{{> header }}
+		
+<article role="main">
+    <header class="stage">
+        
+        <div class="l-wrapper">
+            <h1 class="heading">{{stage.heading}}</h1>
+            <p class="lead">{{stage.lead}}</p>
+        </div>
+        
+	</header>
+	<div class="content">
+	    
+	    <div class="l-wrapper">
+    	    <div class="l-grid-six">    
+            {{#undershirts}}
+                <div class="l-block-quarter">
+                    {{> m-item }}
+                </div>
+            {{/undershirts}}
+            </div>
+        </div>
+        
+	</div>
+</article>
+		
+{{> sidebar}}
+		
+{{> footer}}
+
+{{> foot }}

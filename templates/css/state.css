@@ -12,3 +12,17 @@
 
 
 */
+body:after { content: 'default'; display: none; } /* JS Hook for responsive variables */
+
+/* Media Queries */
+@media screen and (min-width: 37.5em) {
+	body:after { content: 'medium'; } /* JS Hook for responsive variables */
+	body { font-size: 100%; }
+}
+@media screen and (min-width: 60em) {
+	body:after { content: 'large'; } /* JS Hook for responsive variables */
+}
+@media screen and (min-width: 90em) {	
+	body:after { content: 'wide'; } /* JS Hook for responsive variables */
+	body { font-size: 125%; }
+}

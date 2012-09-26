@@ -1,7 +1,6 @@
 {
 	"meta": {
-		"title": "Page Title",
-		"description": "Page description"
-	},
-	"page-header": "Hi there Drew!"
+		"title": "Meta Title",
+		"description": "Meta description"
+	}
 }
