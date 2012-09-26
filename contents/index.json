@@ -9,7 +9,7 @@
 	},
 	"primary-feature":[
 		{
-			"href":"technology",
+			"href":"tech",
 			"img":"//placehold.it/350x200",
 			"alt":"image alt text",
 			"prepend-text": false,
@@ -18,7 +18,7 @@
 			"append-link-text":""
 		},
 		{
-			"href":"technology",
+			"href":"tech",
 			"img":"//placehold.it/350x200",
 			"alt":"This picture",
 			"prepend-text": false,
@@ -27,7 +27,7 @@
 			"append-link-text":""
 		},
 		{
-			"href":"technology",
+			"href":"tech",
 			"img":"//placehold.it/350x200",
 			"alt":"Another picture",
 			"prepend-text": false,
