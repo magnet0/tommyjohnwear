@@ -34,5 +34,106 @@
 			"title": "Long Sleeve",
 			"id": "long-sleeve"
 		}
+	],
+	"footer": [
+		{
+			"title":"Company",
+			"id":"company",
+			"children": [
+				{
+					"title":"About",
+					"href":"about",
+					"class": false
+				},
+				{
+					"title":"Press",
+					"href":"press",
+					"class":false
+				},
+				{
+					"title":"Jobs",
+					"href":"Contact",
+					"class":false
+				},
+				{
+					"title":"Privacy Policy",
+					"href":"privacy-policy",
+					"class":false
+				}
+			]
+		},
+		{
+			"title":"Customer Service",
+			"id":"customer-service",
+			"children": [
+				{
+					"title":"1-800-123-4567",
+					"href":false,
+					"class":"addr-phone"
+				},
+				{
+					"title":"cs@tommyjohnwear.com",
+					"href":"mailto:cs@tommyjohnwear.com",
+					"class":"addr-email"
+				},
+				{
+					"title":"FAQ's",
+					"href":"faqs",
+					"class":false
+				},
+				{
+					"title":"Store Locater",
+					"href":"store-locater",
+					"class":false
+				},
+				{
+					"title":"Shipping &amp; Returns",
+					"href":"shipping-and-returns",
+					"class":false
+				}
+			]
+		},
+		{
+			"title":"Product Detail",
+			"id":"product-detail",
+			"children": [
+				{
+					"title":"Size Guide",
+					"href":"size-guide",
+					"class":false
+				},
+				{
+					"title":"Fabric",
+					"href":"fabric",
+					"class":false
+				},
+				{
+					"title":"Care Instructions",
+					"href":"care",
+					"class":false
+				}
+			]
+		},
+		{
+			"title":"Follow Us",
+			"id":"follow-us",
+			"children": [
+				{
+					"title":"Twitter",
+					"href":"//twitter.com",
+					"class":"social-btn social-twitter"
+				},
+				{
+					"title":"Facebook",
+					"href":"//facebook.com",
+					"class":"social-btn social-facebook"
+				},
+				{
+					"title":"Pintrist",
+					"href":"//pintrist.com",
+					"class":"social-btn social-pintrist"
+				}
+			]
+		}
 	]
 }
