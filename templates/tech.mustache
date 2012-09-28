@@ -13,18 +13,9 @@
 
         <div class="l-wrapper">
             <div class="l-grid-six">
-                <div class="m-feature-row">
-                    <div class="m-feature-image l-block-third"></div>
-                    <div class="l-block-twothird">
-                        <p></p>
-                    </div>
-                </div>
-                <div class="m-feature-row">
-                    <div class="m-feature-image l-block-third"></div>
-                    <div class="l-block-twothird">
-                        <p></p>
-                    </div>
-                </div>
+                {{#feature-rows}}
+                    {{>m-feature-row }}
+                {{/feature-rows}}
             </div>
         </div>
         

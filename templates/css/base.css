@@ -1,3 +1,5 @@
+@import url("m-rating.css");
+
 @media screen {
 	/* HTML5 Bootstrap */
 	article, aside, canvas, details, embed, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
