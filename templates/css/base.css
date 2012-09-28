@@ -1,9 +1,25 @@
 @import url("m-rating.css");
+@import url("m-image-viewer.css");
+@import url("m-product-cart.css");
 
 @media screen {
 	/* HTML5 Bootstrap */
 	article, aside, canvas, details, embed, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 	command, datalist, keygen, mark, meter, progress, rp, rt, ruby, time, wbr { display: inline; }
+
+	.cf:before,
+	.cf:after {
+	    content: " ";
+	    display: table;
+	}
+
+	.cf:after {
+	    clear: both;
+	}
+
+	.ie6 .cf, .ie7 .cf {
+	    *zoom: 1;
+	}
 	
 	/* Box model */
 	* {
@@ -113,10 +129,10 @@
 		position: relative;
 	}
 
-		fieldset + fieldset {
+		/*fieldset + fieldset {
 			border-top: 1px solid rgba(0, 0, 0, 0.0625);
 			margin-top: -1px;
-		}
+		}*/
 
 		legend {
 /*			font-size: 1em;

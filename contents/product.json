@@ -1,0 +1,51 @@
+{
+	"meta": {
+		"title": "Meta Title",
+		"description": "Meta description"
+	},
+	"product":{
+		"name": "Crew Neck",
+		"subtitle": "Stay Tucked",
+		"description": "This undershirt is the ultimate replacement to your current “box cut” short sleeve undershirts that give you EFG (excess fabric gut) appearance.",
+		"price": "25",
+		"colors":[
+			{
+				"hex":"FF0000",
+				"name":"Red",
+				"id":"red"
+			},
+			{
+				"hex":"00FF00",
+				"name":"Green",
+				"id":"green"
+			},
+			{
+				"hex":"0000FF",
+				"name":"Blue",
+				"id":"blue"
+			}
+		],
+		"images":[
+			{
+				"large":"//placehold.it/600x600",
+				"medium":"//placehold.it/480x420",
+				"thumb":"//placehold.it/120x120"
+			},
+			{
+				"large":"//placehold.it/600x600",
+				"medium":"//placehold.it/480x420",
+				"thumb":"//placehold.it/120x120"
+			},
+			{
+				"large":"//placehold.it/600x600",
+				"medium":"//placehold.it/480x420",
+				"thumb":"//placehold.it/120x120"
+			},
+			{
+				"large":"//placehold.it/600x600",
+				"medium":"//placehold.it/480x420",
+				"thumb":"//placehold.it/120x120"
+			}
+		]
+	}
+}

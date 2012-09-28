@@ -1,0 +1,33 @@
+
+            <!-- m-product-cart -->
+            <form action="" class="product">
+                <input type="hidden" name="title" value="{{ product.name }}">
+                <input type="hidden" name="price" value="{{ product.price }}">
+                <h1 class="product-title">{{ product.name }}</h1>
+                <h3 class="product-subtitle">{{ product.subtitle }}</h3>
+                <div class="product-meta cf">
+                    <span class="product-price"><span class="currency-type">$</span>{{ product.price }}</span>
+                    {{> m-rating }}
+                </div>
+                    {{> m-product-size }}
+                    {{> m-product-color }}
+                <fieldset class="product-options">
+                    <div>
+                        <label for="quantity">Qty.</label><input type="number" id="quantity" name="quanitity">
+                    </div>
+                    <div>
+                        <input type="radio" id="purchase-one-time">
+                        <label for="purchase-one-time">One time purchase</label>
+                    <div>
+                    </div>
+                        <input type="radio" id="purchase-repeat">
+                        <label for="purchase-repeat">Delivery every <input type="number"> months</label>
+                    </div>
+                </fieldset>
+                <input type="submit" value="ADD to CART">
+                <a href="fit-guide">Fit Guide</a>
+                <div class="product-description">
+                    {{ product.description }}
+                </div>
+            </form>
+            <!-- /m-product-cart -->
