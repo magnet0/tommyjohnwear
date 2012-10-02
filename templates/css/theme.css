@@ -6,6 +6,49 @@
 
 */
 
+/* Fonts */
+@font-face {
+    font-family: 'dosis-bold';
+    src: url('../fonts/dosis-bold-webfont.eot');
+    src: url('../fonts/dosis-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dosis-bold-webfont.woff') format('woff'),
+         url('../fonts/dosis-bold-webfont.ttf') format('truetype'),
+         url('../fonts/dosis-bold-webfont.svg#dosisbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'dosis-medium';
+    src: url('../fonts/dosis-medium-webfont.eot');
+    src: url('../fonts/dosis-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dosis-medium-webfont.woff') format('woff'),
+         url('../fonts/dosis-medium-webfont.ttf') format('truetype'),
+         url('../fonts/dosis-medium-webfont.svg#dosismedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'dosis-regular';
+    src: url('../fonts/dosis-regular-webfont.eot');
+    src: url('../fonts/dosis-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dosis-regular-webfont.woff') format('woff'),
+         url('../fonts/dosis-regular-webfont.ttf') format('truetype'),
+         url('../fonts/dosis-regular-webfont.svg#dosisregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'dosis-semibold';
+    src: url('../fonts/dosis-semibold-webfont.eot');
+    src: url('../fonts/dosis-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dosis-semibold-webfont.woff') format('woff'),
+         url('../fonts/dosis-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/dosis-semibold-webfont.svg#dosissemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body { font-size: 75%; }
 
 
