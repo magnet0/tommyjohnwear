@@ -1,0 +1,61 @@
+/*
+
+	Product shopping cart tabel
+	Usage: <tabel.m-product-table>
+
+*/
+
+.m-product-table {}
+
+	.m-product-table thead {}
+		.m-product-table thead tr {}
+		.m-product-table thead th {}
+	
+	.m-product-table tbody {}
+		.m-product-table tbody tr {}
+		.m-product-table tbody th {}
+
+	.product-table-delete { text-align: center; }
+		.product-table-delete i {
+			background-color: #CCCCCC;
+	    border-radius: 10px 10px 10px 10px;
+	    color: #444444;
+	    cursor: pointer;
+	    display: inline-block;
+	    font-size: 25px;
+	    font-style: normal;
+	    font-weight: bold;
+	    height: 20px;
+	    line-height: 15.5px;
+	    text-align: center;
+	    width: 20px;
+		}
+		.product-table-delete i:hover,
+		.product-table-delete i:focus {
+			background-color: #444;
+			color:#CCC;
+		}
+		.product-table-delete i:active {
+			-webkit-transform: translateY(1px);
+			-moz-transform: translateY(1px);
+			-o-transform: translateY(1px);
+			-ms-transform: translateY(1px);
+			transform: translateY(1px);
+		}
+
+  .product-table-info {}
+	  .product-table-img { vertical-align: middle; height: 25px; }
+	  .product-table-name {}
+	  .product-table-category {}
+	  .product-table-size {}
+	  .product-table-aside {
+	  	color:#666;
+	  	margin-left:2em;
+	  	font-size:.85em;
+	  }
+
+  .product-table-price {}
+
+  .product-table-quantity {}
+
+  .product-table-subtotal {}

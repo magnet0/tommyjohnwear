@@ -3,6 +3,8 @@
 		"title": "Meta Title",
 		"description": "Meta description"
 	},
+	"total reviews":"20",
+	"4star":true,
 	"product":{
 		"name": "Crew Neck",
 		"subtitle": "Stay Tucked",
@@ -47,5 +49,40 @@
 				"thumb":"//placehold.it/120x120"
 			}
 		]
-	}
+	},
+	"primary-feature":[
+		{
+			"href":"technology",
+			"title":"Stay Tucked",
+			"append-text":"What makes our underwear better than any other? <em>learn about our technology and fit</em>"
+		},
+		{
+			"href":"technology",
+			"title":"Feature",
+			"append-text":"What makes our underwear better than any other? <em>learn about our technology and fit</em>"
+		},
+		{
+			"href":"technology",
+			"title":"Feature",
+			"append-text":"What makes our underwear better than any other? <em>learn about our technology and fit</em>"
+		},
+		{
+			"href":"technology",
+			"title":"Feature",
+			"append-text":"What makes our underwear better than any other? <em>learn about our technology and fit</em>"
+		}
+	],
+	"reviews":[
+		{
+			"4star": true,
+			"title": "Best shirt I've ever worn",
+			"date": "Aug. 10, 2012",
+			"author": "Andrew Tupper",
+			"copy": "Wes anderson small batch cray lo-fi ethnic sartorial. Flexitarian ennui sartorial vegan authentic. Organic butcher keffiyeh mlkshk, gastropub VHS skateboard brooklyn. Pork belly farm-to-table thundercats vice mixtape sartorial. Truffaut skateboard squid umami selvage sartorial. Swag scenester cosby sweater tofu, hella godard salvia vinyl kogi 3 wolf moon tattooed blog put a bird on it letterpress. Tumblr irony next level keffiyeh keytar 8-bit chillwave, godard master cleanse pinterest.",
+			"height":"5'9\"",
+			"weight":"150 lbs.",
+			"chest":"37\"",
+			"waist":"32\""
+		}
+	]
 }

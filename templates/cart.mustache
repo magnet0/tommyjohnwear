@@ -1,0 +1,80 @@
+{{> head }}
+		
+<article role="main">
+    <div class="content l-wrapper">
+        <h1>{{ meta.title }}</h1>
+        {{# cart }}
+            {{> m-product-table }}
+        {{/ cart }}
+        {{^ cart }}
+        <p>There is nothing in your cart, <a href="category">continue shopping</a>.</p>
+        {{/ cart }}
+        <div>
+            <a href="">Update Cart</a>
+            <a href="category">Continue Shopping</a>
+        </div>
+        <div class="l-grid-six">
+            <div class="l-block-third">
+                <!-- promo code -->
+                <h2>Promotional Code</h2>
+                <input type="text">
+                <label for=""><a href="">apply code</a></label>
+                <h2>Gift Certificate</h2>
+                <input type="text">
+                <label for=""><a href="">apply code</a></label>
+                <!-- /promo code -->
+            </div>
+            <div class="l-block-third">
+                <!-- shipping calculator -->
+                <h2>Estimate Tax &amp; Shipping</h2>
+                <div>
+                    <label for="country">Country</label>
+                    <select name="country" id="country">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div>
+                    <label for="state">State/Province</label>
+                    <select name="state" id="state">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div>
+                    <label for="postal">Postal Code</label>
+                    <input type="number">
+                </div>
+                <a href="">Calculate Shipping</a>
+                <!-- /shipping calculator -->
+            </div>
+            <div class="l-block-third">
+                <!-- cart total -->
+                <table>
+                    <tr>
+                        <td><h2>Subtotal:</h2></td>
+                        <td> $125</td>
+                    </tr>
+                    <tr>
+                        <td>Tax &amp; Shipping:</td>
+                        <td>$7</td>
+                    </tr>
+                </table>
+                <h1><small>Total:</small> $125</h1>
+                <a href="checkout">
+                    <h1>Proceed to Checkout</h1>
+                </a>
+                <!-- /cart total -->
+            </div>
+        </div>
+	</div>
+
+</article>
+		
+{{> sidebar }}
+
+{{> foot }}

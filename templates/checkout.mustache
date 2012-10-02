@@ -1,0 +1,295 @@
+{{> head }}
+		
+<article role="main">
+    <div class="content l-wrapper">
+        <h1>{{ meta.title }}</h1>
+        <h2>Checkout Method</h2>
+        <div class="checkout-nav">
+            <p>Checkout Method</p>
+            <ol>
+                <li>Billing Address</li>
+                <li>Shipping Address</li>
+                <li>Shipping Method</li>
+                <li>Payment Method</li>
+            </ol>
+        </div>
+        <div class="checkout-account">
+            <!-- create account/login -->
+            <div class="account-create">
+                <h2>New Customer</h2>
+                <button type="button"><h2>Create and account with Facebook</h2></button>
+                <p>or</p>
+                <form action="">
+                    <div class="input-row">
+                        <label for="new-email">Email</label>
+                        <input id="new-email" type="text">
+                    </div>
+                    <div class="input-row">
+                        <label for="new-password">Password</label>
+                        <input id="new-password" type="password">
+                    </div>
+                    <button type="submit"><h2>Create Account</h2></button>
+                </form>
+            </div>
+            <div class="account-login">
+                <h2>Returning Customer</h2>
+                <button type="button"><h2>Login with Facebook</h2></button>
+                <p>or</p>
+                <form action="">
+                    <div class="input-row">
+                        <label for="email">Email</label>
+                        <input id="email" type="text">
+                    </div>
+                    <div class="input-row">
+                        <label for="password">Password</label>
+                        <input id="password" type="password">
+                    </div>
+                    <button type="submit"><h2>Log in</h2></button>
+                </form>
+            </div>
+            <!-- /create account/login -->
+        </div>
+        <div class="account-billing">
+            <h2>2. Billion Address</h2>
+            <form action="">
+                {{> m-form-billing }}
+                <div class="input-row">
+                    <input id="shiptosame" type="radio" name="shipto"><label for="shiptosame">Ship to this address</label>
+                </div>
+                <div class="input-row">
+                    <input id="shiptodiff" type="radio" name="shipto"><label for="shiptodiff">Ship to different address</label>
+                </div>
+                <button type="button"><h2>Continue</h2></button>
+            </form>
+        </div>
+        <div class="account-shipping">
+            
+            <h2>3. Shipping Address</h2>
+            <h3>Use a saved address</h3>
+            <form action="">
+                <div class="input-row">
+                    <select name="" id="">
+                        <option value="">Home</option>
+                        <option value="">Work</option>
+                    </select>
+                </div>
+                <button type="button"><h2>Continue</h2></button> 
+            </form>
+            <hr>
+            <h3>Add a new address</h3>
+            <form action="">
+                {{> m-form-shipping }}
+                <div class="input-row">
+                    <input id="giftwrap" type="checkbox" name="giftwrap"><label for="giftwrap">Gift wrap item - add $5.00</label>
+                </div>
+                <button type="button"><h2>Continue</h2></button>
+            </form>
+        </div>
+        <div class="account-method">
+            <h2>3. Shipping Method</h2>
+            <form action="">
+                <div class="input-row"><input type="radio" name="shipping" id="shipping1"><label for="shipping1">USPS - $x.xx</label></div>
+                <div class="input-row"><input type="radio" name="shipping" id="shipping2"><label for="shipping2">UPS Ground - $x.xx</label></div>
+                <div class="input-row"><input type="radio" name="shipping" id="shipping3"><label for="shipping3">UPS 2 day - $x.xx</label></div>
+                <div class="input-row"><input type="radio" name="shipping" id="shipping4"><label for="shipping4">UPS Overnight - $x.xx</label></div>
+                <button type="button"><h2>Continue</h2></button>
+            </form>
+        </div>
+        <div class="account-payment">
+            <h2>4. Payment Method</h2>
+            <form action="">
+                <div class="input-row">
+                    <input id="cc" type="radio" name="payment-method"><label for="cc">Credit Card</label>
+                </div>
+                <div class="account-payment-cc">
+                    <div class="input-row">
+                        <label for="">Card Type</label>
+                        <select name="" id="">
+                            <option value="">Entry 1</option>
+                            <option value="">Entry 2</option>
+                            <option value="">Entry 3</option>
+                            <option value="">Entry 4</option>
+                        </select>
+                    </div>
+                    <div class="input-row">
+                        <label for="">Card Number</label>
+                        <input type="text">
+                    </div>
+                    <div class="input-row">
+                        <label for="">Expiration</label>
+                        <select name="" id="">
+                            <option value="">Entry 1</option>
+                            <option value="">Entry 2</option>
+                            <option value="">Entry 3</option>
+                            <option value="">Entry 4</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="">Entry 1</option>
+                            <option value="">Entry 2</option>
+                            <option value="">Entry 3</option>
+                            <option value="">Entry 4</option>
+                        </select>
+                    </div>
+                    <div class="input-row">
+                        <label for="">CVN</label>
+                        <input type="text"><small><a href="#">What is this?</a></small>
+                    </div>
+                </div>
+                <div class="input-row">
+                    <input id="paypal" type="radio" name="payment-method"><label for="paypal">PayPal</label>
+                </div>
+                <button type="button"><h2>Continue</h2></button>
+            </form>
+        </div>
+        <div class="account-review">
+        <h2>Review</h2>
+        <div class="l-grid-six">
+            <!-- cart review -->
+            <div class="l-block-twothirds">
+                {{# cart }}
+                    {{> m-product-table }}
+                {{/ cart }}
+                <!-- cart total -->
+                <table>
+                    <tr>
+                        <td><h2>Subtotal:</h2></td>
+                        <td> $125</td>
+                    </tr>
+                    <tr>
+                        <td>Tax &amp; Shipping:</td>
+                        <td>$7</td>
+                    </tr>
+                </table>
+                <h1><small>Total:</small> $125</h1>
+            </div>
+            <!-- /cart review -->
+            <!-- payment info review -->
+            <div class="l-block-third">
+                <h3>Payment info</h3>
+                <div class="l-row">
+                    <div class="l-block-half">
+                        <strong>Card Type</strong>
+                    </div>
+                    <div class="l-block-half">
+                        Visa
+                    </div>
+                </div>
+                <div class="l-row">
+                    <div class="l-block-half">
+                        <strong>Card Number</strong>
+                    </div>
+                    <div class="l-block-half">
+                        ***********5555
+                    </div>
+                </div>
+                <div class="l-row">
+                    <div class="l-block-half">
+                        <strong>Expires</strong>
+                    </div>
+                    <div class="l-block-half">
+                        01/18
+                    </div>
+                </div>
+                <div class="l-row">
+                    <div class="l-block-half">
+                        <strong>CVN</strong>
+                    </div>
+                    <div class="l-block-half">
+                        1234
+                    </div>
+                </div>
+            </div>
+            <!-- /payment info review -->
+
+            <!-- billing info review -->
+            <div class="l-block-half">
+                <h3>Billing info</h3>
+                <div class="l-row">
+                    <div class="l-block-half">
+                        <strong>First Name</strong>
+                    </div>
+                    <div class="l-block-half">
+                        Bill
+                    </div>
+                </div>
+                <div class="l-row">
+                    <div class="l-block-half">
+                        <strong>Last Name</strong>
+                    </div>
+                    <div class="l-block-half">
+                        Hamfist
+                    </div>
+                </div>
+                <div class="l-row">
+                    <div class="l-block-half">
+                        <strong>Address</strong>
+                    </div>
+                    <div class="l-block-half">
+                        123 Fake St.
+                    </div>
+                </div>
+                <div class="l-row">
+                    <div class="l-block-half">
+                        <strong>City</strong>
+                    </div>
+                    <div class="l-block-half">
+                        Crooklyn
+                    </div>
+                </div>
+            </div>
+            <!-- /billing info review -->
+            <!-- shipping info review -->
+            <div class="l-block-half">
+                <h3>Shipping info</h3>
+                <div class="l-row">
+                    <div class="l-block-half">
+                        <strong>First Name</strong>
+                    </div>
+                    <div class="l-block-half">
+                        Bill
+                    </div>
+                </div>
+                <div class="l-row">
+                    <div class="l-block-half">
+                        <strong>Last Name</strong>
+                    </div>
+                    <div class="l-block-half">
+                        Hamfist
+                    </div>
+                </div>
+                <div class="l-row">
+                    <div class="l-block-half">
+                        <strong>Address</strong>
+                    </div>
+                    <div class="l-block-half">
+                        123 Fake St.
+                    </div>
+                </div>
+                <div class="l-row">
+                    <div class="l-block-half">
+                        <strong>City</strong>
+                    </div>
+                    <div class="l-block-half">
+                        Crooklyn
+                    </div>
+                </div>
+            </div>
+            <!-- /shipping info review -->
+            <form action="">
+                <div class="input-row">
+                    <input type="hidden"> <!-- use hidden fields + javascript to gather all the data from above forms? -->
+                    <input id="newsletter" type="checkbox" name="newsletter"><label for="newsletter">Sign up for the occasional newsletter</label>
+                    <p>Your privacy is important to us. We'll never share or sell your information to 3rd parties. You can easily unsubscribe at any time.</p>
+                </div>
+                <a href="thank-you"><h2>Complete your order</h2></a>
+            </form>
+        </div>
+        <!-- /cart total -->
+        </div>
+	</div>
+
+</article>
+		
+{{> sidebar }}
+
+{{> foot }}

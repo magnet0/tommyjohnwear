@@ -1,0 +1,17 @@
+{{> head }}
+		
+<article role="main">
+    <div class="content l-wrapper">
+        <h1>{{ meta.title }}</h1>
+        <div class="m-wishlist">
+            {{# wishlist }}
+            {{> m-wishlist-item }}
+            {{/ wishlist }}
+        </div>
+        <a href="">Email this list to someone</a>
+	</div>
+</article>
+		
+{{> sidebar }}
+
+{{> foot }}

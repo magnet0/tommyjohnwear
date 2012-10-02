@@ -1,0 +1,39 @@
+{
+	"meta": {
+		"title": "Shopping Cart",
+		"description": "Meta description"
+	},
+	"cart": {
+		"products": [
+			{
+				"name": "Crew Neck",
+				"category": "Second Skin",
+				"description": "This undershirt is the ultimate replacement to your current “box cut” short sleeve undershirts that give you EFG (excess fabric gut) appearance.",
+				"price": "25",
+				"size": "medium",
+				"quantity": "2",
+				"image":
+					{
+						"large":"//placehold.it/600x600",
+						"medium":"//placehold.it/480x420",
+						"thumb":"//placehold.it/120x120"
+					}
+			},
+			{
+				"name": "Tank",
+				"category": "Second Skin",
+				"description": "This undershirt is the ultimate replacement to your current “box cut” short sleeve undershirts that give you EFG (excess fabric gut) appearance.",
+				"price": "25",
+				"size": "medium",
+				"quantity": "1",
+				"autoship": "4 months",
+				"image":
+					{
+						"large":"//placehold.it/600x600",
+						"medium":"//placehold.it/480x420",
+						"thumb":"//placehold.it/120x120"
+					}
+			}
+		]
+	}
+}

@@ -1,0 +1,32 @@
+/*
+ * shared module elements
+*/
+
+/* round button */
+
+.btn-round {
+	background-color: #CCCCCC;
+  border-radius: 10px 10px 10px 10px;
+  color: #444444;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: bold;
+  height: 20px;
+  line-height: 15.5px;
+  text-align: center;
+  width: 20px;
+}
+	.btn-round:hover,
+	.btn-round:focus {
+		background-color: #444;
+		color:#CCC;
+	}
+	.btn-round:active {
+		-webkit-transform: translateY(1px);
+		-moz-transform: translateY(1px);
+		-o-transform: translateY(1px);
+		-ms-transform: translateY(1px);
+		transform: translateY(1px);
+	}

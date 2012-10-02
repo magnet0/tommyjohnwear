@@ -1,0 +1,105 @@
+{{> head }}
+		
+<article role="main">
+    <div class="content l-wrapper">
+        <h1>{{ meta.title }}</h1>
+        <p>Hi {{ name }}! Welcome to your account overview</p>
+        <div class="l-block-third">
+            <div class="account-nav">
+                <ol>
+                    <li><a href="">Account Dashboard</a></li>
+                    <li><a href="">Account Information</a></li>
+                    <li><a href="">Address Book</a></li>
+                    <li><a href="">Order History</a></li>
+                    <li><a href="">Store Credit</a></li>
+                    <li><a href="">Gift Certificate</a></li>
+                </ol>
+            </div>
+        </div>
+        <div class="l-block-twothird">
+            <h2>Account Information <small><a href="">edit</a></small></h2>
+            <p>
+                {{ full name }}<br>
+                {{ email }}
+            </p>
+            <h2>Default Billing Address <small><a href="">edit</a>|<a href="">add</a></small></h2>
+            <p>
+                {{ billing.name }}<br>
+                {{ billing.address }}<br>
+                {{ billing.city }}, {{ billing.state }} {{ billing.zip }}
+            </p>
+            <h2>Default Shipping Address <small><a href="">edit</a>|<a href="">add</a></small></h2>
+            <h3>Home</h3>
+            <p>
+                {{ billing.name }}<br>
+                {{ billing.address }}<br>
+                {{ billing.city }}, {{ billing.state }} {{ billing.zip }}
+            </p>
+            <h2>Order History</h2>
+            <p>Want to auto-refresh your dresser? Perhaps you'd be interested in a <a href="">subscription</a></p>
+            <!-- order history -->
+            <div class="m-order-history">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Order #</th>
+                            <th>Date</th>
+                            <th>Shipped to</th>
+                            <th>Total</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- /order history -->
+        </div>
+	</div>
+
+</article>
+		
+{{> sidebar }}
+
+{{> foot }}

@@ -1,6 +1,8 @@
+@import url("m-shared.css");
 @import url("m-rating.css");
 @import url("m-image-viewer.css");
 @import url("m-product-cart.css");
+@import url("m-product-table.css");
 
 @media screen {
 	/* HTML5 Bootstrap */
@@ -46,6 +48,8 @@
 		min-height: 100%;
 		-webkit-tap-highlight-color: rgb(255, 255, 158);
 	}
+
+	hr { clear: both; }
 
 	/* Headings */
 	h1, h2, h3, h4, h5, h6 {
