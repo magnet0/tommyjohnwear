@@ -1,0 +1,19 @@
+
+    <!-- product table -->
+    <table class="m-product-table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Qty.</th>
+                <th>Subtotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{# products }}
+                {{> m-product-table-row }}
+            {{/ products }}
+        </tbody>
+    </table>
+    <!-- /product table -->

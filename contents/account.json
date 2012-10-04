@@ -1,0 +1,16 @@
+{
+	"meta": {
+		"title": "Account",
+		"description": "Meta description"
+	},
+	"name":"Thomas",
+	"full name":"Thomas Patterson",
+	"email":"thomas@tommyjohnwear.com",
+	"billing": {
+		"name":"Thomas Patterson",
+		"address":"123 Sesame St.",
+		"city":"New York",
+		"state":"NY",
+		"zip":"12345"
+	}
+}

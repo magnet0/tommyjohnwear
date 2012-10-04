@@ -12,28 +12,21 @@
 			"href":"tech",
 			"img":"//placehold.it/350x200",
 			"alt":"image alt text",
-			"prepend-text": false,
-			"append-text":"What makes our underwear better than any other? <em>learn about our technology and fit</em>",
-			"append-link":"",
-			"append-link-text":""
+			"append-text":"What makes our underwear better than any other? <em>learn about our technology and fit</em>"
 		},
 		{
 			"href":"tech",
 			"img":"//placehold.it/350x200",
 			"alt":"This picture",
 			"prepend-text": false,
-			"append-text":"What makes our underwear better than any other? <em>learn about our technology and fit</em>",
-			"append-link":"",
-			"append-link-text":""
+			"append-text":"What makes our underwear better than any other? <em>learn about our technology and fit</em>"
 		},
 		{
 			"href":"tech",
 			"img":"//placehold.it/350x200",
 			"alt":"Another picture",
 			"prepend-text": false,
-			"append-text":"What makes our underwear better than any other? <em>learn about our technology and fit</em>",
-			"append-link":"",
-			"append-link-text":""
+			"append-text":"What makes our underwear better than any other? <em>learn about our technology and fit</em>"
 		}
 	],
 	"secondary-feature":[

@@ -1,0 +1,37 @@
+{{> head }}
+		
+<article role="main">
+    <header class="stage">
+        
+        <div class="l-wrapper">
+            <h1 class="heading">{{stage.heading}}</h1>
+            <p class="lead">{{stage.lead}}</p>
+        </div>
+        
+    </header>
+    <div class="content">
+
+        <div class="l-wrapper">
+            <div class="l-grid-six">
+                {{#feature-rows}}
+                    {{>m-feature-row }}
+                {{/feature-rows}}
+            </div>
+        </div>
+        
+        <div class="m-primary-feature m-feature l-wrapper">
+            <div class="l-grid-six">
+                {{#primary-feature}}
+                    <div class="l-block-third">
+                        {{> m-feature}}
+                    </div>
+                {{/primary-feature}}
+            </div>
+        </div>
+        
+	</div>
+</article>
+		
+{{> sidebar }}
+
+{{> foot }}

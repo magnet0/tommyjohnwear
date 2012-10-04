@@ -1,0 +1,49 @@
+{{> head }}
+		
+<article role="main">
+    <div class="content l-wrapper cf">
+        <div class="l-block-half">
+            {{> m-image-viewer }}
+        </div>
+        <div class="l-block-half">
+            {{> m-product-cart }}
+        </div>
+        <hr>
+        <div class="m-primary-feature m-feature l-wrapper">
+            <div class="l-grid-six">
+                {{#primary-feature}}
+                    <div class="l-block-third">
+                        {{> m-feature}}
+                    </div>
+                {{/primary-feature}}
+            </div>
+        </div>
+        <a href="technology">Learn more about our technology</a>
+        <hr>
+        <h2>You might also be interested in</h2>
+        <div class="l-grid-six">    
+        {{#undershirts}}
+            <div class="l-block-quarter">
+                {{> m-item }}
+            </div>
+        {{/undershirts}}
+        </div>
+        <hr>
+        <div class="reviews">{{ total reviews }} reviews {{> m-rated }} <a href="">Write a review</a></div>
+        <!-- reviews -->
+        {{# reviews }}
+            {{> m-review }}
+        {{/ reviews }}
+        <!-- /reviews -->
+        <button type="button">
+            <h2>Read more reviews</h2>
+        </button>
+        <button type="button">
+            <h2>Write a review</h2>
+        </button>
+	</div>
+</article>
+		
+{{> sidebar }}
+
+{{> foot }}

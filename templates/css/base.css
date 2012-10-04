@@ -1,7 +1,27 @@
+@import url("m-shared.css");
+@import url("m-rating.css");
+@import url("m-image-viewer.css");
+@import url("m-product-cart.css");
+@import url("m-product-table.css");
+
 @media screen {
 	/* HTML5 Bootstrap */
 	article, aside, canvas, details, embed, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 	command, datalist, keygen, mark, meter, progress, rp, rt, ruby, time, wbr { display: inline; }
+
+	.cf:before,
+	.cf:after {
+	    content: " ";
+	    display: table;
+	}
+
+	.cf:after {
+	    clear: both;
+	}
+
+	.ie6 .cf, .ie7 .cf {
+	    *zoom: 1;
+	}
 	
 	/* Box model */
 	* {
@@ -28,6 +48,8 @@
 		min-height: 100%;
 		-webkit-tap-highlight-color: rgb(255, 255, 158);
 	}
+
+	hr { clear: both; }
 
 	/* Headings */
 	h1, h2, h3, h4, h5, h6 {
@@ -111,10 +133,10 @@
 		position: relative;
 	}
 
-		fieldset + fieldset {
+		/*fieldset + fieldset {
 			border-top: 1px solid rgba(0, 0, 0, 0.0625);
 			margin-top: -1px;
-		}
+		}*/
 
 		legend {
 /*			font-size: 1em;

@@ -1,0 +1,54 @@
+{
+	"meta": {
+		"title": "Meta Title",
+		"description": "Meta description"
+	},
+	"stage": {
+		"heading": "We're redifining undergarments",
+		"lead": "These are the best because cosby sweater tofu, hella godard salvia vinyl kogi 3 wolf moon tattooed blog put a bird on it letterpress next level 8-bit chillwave."
+	},
+	"feature-rows":[
+		{
+			"img":"//placehold.it/250x250",
+			"title":"Fit",
+			"text":"Longer, tapered design hugs thelower torso to prevent bunching and EFG (excess fabric gut)."
+		},
+		{
+			"img":"//placehold.it/250x250",
+			"title":"Control",
+			"text":"Moves with you, while being invisible under your outter shirts."
+		},
+		{
+			"img":"//placehold.it/250x250",
+			"title":"Stay Dry",
+			"text":"Controls your body temperature to keep you cool and confident all day."
+		},
+		{
+			"img":"//placehold.it/250x250",
+			"title":"Quick Draw Fly",
+			"text":"Horizontal fly for quick access when nature calls."
+		}
+	],
+	"primary-feature":[
+		{
+			"href":"tech",
+			"img":"//placehold.it/350x200",
+			"alt":"image alt text",
+			"append-text":"What makes our underwear better than any other? <em>learn about our technology and fit</em>"
+		},
+		{
+			"href":"tech",
+			"img":"//placehold.it/350x200",
+			"alt":"This picture",
+			"prepend-text": false,
+			"append-text":"What makes our underwear better than any other? <em>learn about our technology and fit</em>"
+		},
+		{
+			"href":"tech",
+			"img":"//placehold.it/350x200",
+			"alt":"Another picture",
+			"prepend-text": false,
+			"append-text":"What makes our underwear better than any other? <em>learn about our technology and fit</em>"
+		}
+	]
+}
