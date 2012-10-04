@@ -8,6 +8,9 @@
 		"serving_only": false
 	},
 	"bundles": {
+		"/css/module.css": [
+			"/css/modules/*.css"
+		],
 		"/css/all.css": [
 			"/css/base.css",
 			"/css/layout.css",

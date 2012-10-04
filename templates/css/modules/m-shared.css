@@ -1,10 +1,12 @@
 /*
- * shared module elements
+	
+	shared module elements
+
 */
 
 /* round button */
 
-.btn-round {
+/*.btn-round {
 	background-color: #CCCCCC;
   border-radius: 10px 10px 10px 10px;
   color: #444444;
@@ -29,4 +31,4 @@
 		-o-transform: translateY(1px);
 		-ms-transform: translateY(1px);
 		transform: translateY(1px);
-	}
+	}*/
