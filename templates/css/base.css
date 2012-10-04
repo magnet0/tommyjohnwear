@@ -1,27 +1,18 @@
-@import url("m-shared.css");
-@import url("m-rating.css");
-@import url("m-image-viewer.css");
-@import url("m-product-cart.css");
-@import url("m-product-table.css");
+/*
 
+	Base
+
+	This file is a less aggressive "reset" and provides some baseline
+	settings as well as some HTML5 bootstrapping.
+	
+	*Should never need modification, use theme.css
+
+
+*/
 @media screen {
 	/* HTML5 Bootstrap */
 	article, aside, canvas, details, embed, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 	command, datalist, keygen, mark, meter, progress, rp, rt, ruby, time, wbr { display: inline; }
-
-	.cf:before,
-	.cf:after {
-	    content: " ";
-	    display: table;
-	}
-
-	.cf:after {
-	    clear: both;
-	}
-
-	.ie6 .cf, .ie7 .cf {
-	    *zoom: 1;
-	}
 	
 	/* Box model */
 	* {
