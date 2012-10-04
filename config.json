@@ -8,13 +8,21 @@
 		"serving_only": false
 	},
 	"bundles": {
+		"/css/module.css": [
+			"/css/modules/*.css"
+		],
+		"/css/framework.css": [
+			"/css/framework/normalize.css",
+			"/css/framework/foundation.css"
+		],
 		"/css/all.css": [
+			"/css/framework.css",
 			"/css/base.css",
 			"/css/layout.css",
 			"/css/module.css",
 			"/css/theme.css",
 			"/css/state.css"
-		]	
+		]
 	},
 	"generator":{
 		"blank":true

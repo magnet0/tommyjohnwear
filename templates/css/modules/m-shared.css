@@ -1,10 +1,12 @@
 /*
- * shared module elements
+	
+	shared module elements
+
 */
 
 /* round button */
 
-.btn-round {
+/*.btn-round {
 	background-color: #CCCCCC;
   border-radius: 10px 10px 10px 10px;
   color: #444444;
@@ -158,3 +160,5 @@ ul.btn-group.even.five-up li { width: 20%; }
 div.btn-bar { overflow: hidden; }
 div.btn-bar ul.btn-group { float: left; margin-right: 8px; }
 div.btn-bar ul.btn-group:last-child { margin-left: 0; }
+=======
+	}*/
