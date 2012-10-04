@@ -1,7 +1,7 @@
 {{> head }}
 		
 <article role="main">
-    <div class="content l-wrapper">
+    <div class="content row">
         <h1>{{ meta.title }}</h1>
         {{# cart }}
             {{> m-product-table }}
@@ -13,8 +13,8 @@
             <a href="">Update Cart</a>
             <a href="category">Continue Shopping</a>
         </div>
-        <div class="l-grid-six">
-            <div class="l-block-third">
+        <div class="row">
+            <div class="two column">
                 <!-- promo code -->
                 <h2>Promotional Code</h2>
                 <input type="text">
@@ -24,7 +24,7 @@
                 <label for=""><a href="">apply code</a></label>
                 <!-- /promo code -->
             </div>
-            <div class="l-block-third">
+            <div class="two column">
                 <!-- shipping calculator -->
                 <h2>Estimate Tax &amp; Shipping</h2>
                 <div>
@@ -52,7 +52,7 @@
                 <a href="">Calculate Shipping</a>
                 <!-- /shipping calculator -->
             </div>
-            <div class="l-block-third">
+            <div class="two column">
                 <!-- cart total -->
                 <table>
                     <tr>

@@ -1,32 +1,33 @@
 {{> head }}
 		
 <article role="main">
-    <header class="stage">
+    <header class="stage row">
         
-        <div class="l-wrapper">
+        <div class="four column centered">
             <h1 class="heading">{{stage.heading}}</h1>
             <p class="lead">{{stage.lead}}</p>
+            <p class="text-center"><a href=""><img src="//placehold.it/240x180"></a></p>
+            <p class="text-center"><a href="">Watch this explanation</a> video about what makes a Tommy John undergarment</p>
         </div>
         
     </header>
+
+    <hr>
+
     <div class="content">
 
-        <div class="l-wrapper">
-            <div class="l-grid-six">
-                {{#feature-rows}}
-                    {{>m-feature-row }}
-                {{/feature-rows}}
-            </div>
+        <div class="row">
+            {{#feature-rows}}
+                {{>m-feature-row }}
+            {{/feature-rows}}
         </div>
         
-        <div class="m-primary-feature m-feature l-wrapper">
-            <div class="l-grid-six">
-                {{#primary-feature}}
-                    <div class="l-block-third">
-                        {{> m-feature}}
-                    </div>
-                {{/primary-feature}}
-            </div>
+        <div class="m-primary-feature m-feature row">
+            {{#primary-feature}}
+                <div class="two column">
+                    {{> m-feature}}
+                </div>
+            {{/primary-feature}}
         </div>
         
 	</div>

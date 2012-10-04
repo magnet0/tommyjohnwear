@@ -3,7 +3,7 @@
 <article role="main">
     <header class="stage">
         
-        <div class="l-wrapper">
+        <div class="row">
             <h1 class="heading">{{stage.heading}}</h1>
             <p class="lead">{{stage.lead}}</p>
         </div>
@@ -11,14 +11,12 @@
 	</header>
 	<div class="content">
 	    
-	    <div class="l-wrapper">
-    	    <div class="l-grid-six">    
+	    <div class="row">
             {{#undershirts}}
-                <div class="l-block-quarter">
+                <div class="quarter column">
                     {{> m-item }}
                 </div>
             {{/undershirts}}
-            </div>
         </div>
         
 	</div>

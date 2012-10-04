@@ -5,29 +5,46 @@
                 <input type="hidden" name="price" value="{{ product.price }}">
                 <h1 class="product-title">{{ product.name }}</h1>
                 <h3 class="product-subtitle">{{ product.subtitle }}</h3>
-                <div class="product-meta cf">
-                    <span class="product-price"><span class="currency-type">$</span>{{ product.price }}</span>
-                    {{> m-rating }}
+                <div class="product-meta row">
+                    <h4 class="product-price three column"><span class="currency-type">$</span>{{ product.price }}</h4>
+                    <div class="three column">{{> m-rated }} {{ total reviews }} reviews</div>
                 </div>
                     {{> m-product-size }}
                     {{> m-product-color }}
                 <fieldset class="product-options">
-                    <div>
-                        <label for="quantity">Qty.</label><input type="number" id="quantity" name="quanitity">
+                    <div class="row">
+                        <div class="column">
+                            <label class="right inline" for="quantity">Qty.</label>
+                        </div>
+                        <div class="column end">
+                            <input class="two" type="number" id="quantity" name="quanitity">
+                        </div>
                     </div>
-                    <div>
-                        <input type="radio" id="purchase-one-time">
-                        <label for="purchase-one-time">One time purchase</label>
-                    <div>
+                    <div class="row">
+                        <div class="column">
+                            <label class="inline" for="purchase-one-time"><input type="radio" id="purchase-one-time"> One time purchase</label>
+                        </div>
                     </div>
-                        <input type="radio" id="purchase-repeat">
-                        <label for="purchase-repeat">Delivery every <input type="number"> months</label>
+                    <div class="row">
+                        <div class="column">
+                            <label class="inline" for="purchase-repeat"><input type="radio" id="purchase-repeat"> Delivery every</label>
+                        </div>
+                        <div class="one column">
+                            <input type="number" id="purchase-repeat-months">
+                        </div>
+                        <div class="column end">
+                            <label class="inline" for="purchase-repeat-months">months</label>
+                        </div>
                     </div>
-                </fieldset>
-                <input type="submit" value="ADD to CART">
-                <a href="fit-guide">Fit Guide</a>
-                <div class="product-description">
-                    {{ product.description }}
+                <div class="row">
+                    <input class="btn three" type="submit" value="ADD to CART">
                 </div>
+                </fieldset>
+                <p>
+                    <a href="fit-guide">Fit Guide</a>
+                </p>
+                <p class="product-description">
+                    {{ product.description }}
+                </p>
             </form>
             <!-- /m-product-cart -->

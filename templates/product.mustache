@@ -1,46 +1,55 @@
 {{> head }}
 		
 <article role="main">
-    <div class="content l-wrapper cf">
-        <div class="l-block-half">
+    <div class="content row">
+        <div class="three column">
             {{> m-image-viewer }}
         </div>
-        <div class="l-block-half">
+        <div class="three column">
             {{> m-product-cart }}
         </div>
         <hr>
-        <div class="m-primary-feature m-feature l-wrapper">
-            <div class="l-grid-six">
-                {{#primary-feature}}
-                    <div class="l-block-third">
-                        {{> m-feature}}
-                    </div>
-                {{/primary-feature}}
-            </div>
+        <div class="m-primary-feature m-feature row">
+            {{#primary-feature}}
+                <div class="three column text-center">
+                    {{> m-feature}}
+                </div>
+            {{/primary-feature}}
         </div>
-        <a href="technology">Learn more about our technology</a>
+        <div class="row text-center">
+            <a href="technology">Learn more about our technology</a>
+        </div>
         <hr>
-        <h2>You might also be interested in</h2>
-        <div class="l-grid-six">    
+        <h2 class="text-center">You might also be interested in</h2>
+        <div class="row">    
         {{#undershirts}}
-            <div class="l-block-quarter">
+            <div class="quarter column">
                 {{> m-item }}
             </div>
         {{/undershirts}}
         </div>
         <hr>
-        <div class="reviews">{{ total reviews }} reviews {{> m-rated }} <a href="">Write a review</a></div>
-        <!-- reviews -->
-        {{# reviews }}
-            {{> m-review }}
-        {{/ reviews }}
-        <!-- /reviews -->
-        <button type="button">
-            <h2>Read more reviews</h2>
-        </button>
-        <button type="button">
-            <h2>Write a review</h2>
-        </button>
+        <div class="reviews row">
+            <div class="column">{{ total reviews }} reviews {{> m-rated }}</div> 
+            <div class="column">
+                <a href="">Write a review</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="three column centered">
+                <!-- reviews -->
+                {{# reviews }}
+                    {{> m-review }}
+                {{/ reviews }}
+                <!-- /reviews -->
+                <hr>
+                <div class="text-center">
+                    <button class="btn large three" type="button">Read more reviews</button>
+                    <br>
+                    <button class="btn large three" type="button">Write a review</button>
+                </div>
+            </div>
+        </div>
 	</div>
 </article>
 		
