@@ -1,18 +1,22 @@
 <footer role="contentinfo">
-	<div class="l-wrapper">
-	    {{> m-newsletter }}	
-		<div class="row">
-			{{#sitemap}}
-				<div class="l-block-quarter">
-					<h2>{{ title }}</h4>
-					<ul>
-						{{#children}}
-                        <li{{#class}} class="{{class}}"{{/class}}>{{#href}}<a href="{{ href }}">{{/href}}{{ title }}{{#href}}</a>{{/href}}</li>
-						{{/children}}
-					</ul>
-				</div>
-			{{/sitemap}}
-		</div>
+	<div class="row">
+	    <div class="three centered column">
+	    	{{> m-newsletter }}
+	    </div>	
+	</div>	
+	<div class="row">
+		{{#sitemap}}
+			<div class="quarter column">
+				<h2>{{ title }}</h2>
+				<ul>
+					{{#children}}
+                    <li{{#class}} class="{{class}}"{{/class}}>{{#href}}<a href="{{ href }}">{{/href}}{{ title }}{{#href}}</a>{{/href}}</li>
+					{{/children}}
+				</ul>
+			</div>
+		{{/sitemap}}
+	</div>
+	<div class="row">
         <p class="copyright"><small>{{ copyright }}</small></p>
 	</div>
 </footer>

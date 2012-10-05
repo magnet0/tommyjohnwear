@@ -1,49 +1,45 @@
 {{> head }}
 
 <div role="main">
-    <header class="stage">
+    <div class="stage row">
         
-        <div class="l-wrapper">
-            <h1 class="heading">{{stage.heading}}</h1>
-            <p class="lead">{{stage.lead}}</p>
-            <p><a href="shop" class="btn">Shop Now</a></p>
-            <p>or <a href="technology">Learn More</a></p>
+        <div class="four column centered text-center">
+            <div class="stage-content">
+                <h1 class="heading">{{stage.heading}}</h1>
+                <p class="lead">{{stage.lead}}</p>
+                <p><a href="shop" class="btn">Shop Now</a></p>
+                <p>or <a href="technology">Learn More</a></p>
+            </div>
         </div>
         
-	</header>
+	</div>
 	<div class="content">
 	    
-	    <div class="m-primary-feature m-feature l-wrapper">
-  	    <div class="l-grid-six">
-  	    	{{#primary-feature}}
-  	    		<div class="l-block-third">
-  	    			{{> m-feature}}
-  	    		</div>
-  	    	{{/primary-feature}}
+	    <div class="m-primary-feature m-feature row">
+	    	{{#primary-feature}}
+    		<div class="two columns text-center">
+    			{{> m-feature}}
+    		</div>
+	    	{{/primary-feature}}
         </div>
-      </div>
 
-      <hr>
+        <hr>
 
-      <div class="m-secondary-feature m-feature l-wrapper">
-      	<div class="l-grid-six">
-  	    	{{#secondary-feature}}
-  	    		<div class="l-block-third">
-  	    			{{> m-feature}}
-  	    		</div>
-  	    	{{/secondary-feature}}
+        <div class="m-secondary-feature m-feature row">
+            {{#secondary-feature}}
+            <div class="two columns text-center">
+                {{> m-feature}}
+            </div>
+            {{/secondary-feature}}
         </div>
-      </div>
 
-      <div class="l-wrapper">
-      	<div class="l-grid-six">
-  	    	{{#tertiary-feature}}
-  	    		<div class="l-block-half">
-  	    			{{> m-feature}}
-  	    		</div>
-  	    	{{/tertiary-feature}}
-      	</div>
-      </div>
+        <div class="row">
+            {{#tertiary-feature}}
+            <div class="three columns text-center">
+                {{> m-feature}}
+            </div>
+            {{/tertiary-feature}}
+        </div>
         
 	</div>
 </div>

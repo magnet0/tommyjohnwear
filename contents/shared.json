@@ -25,7 +25,8 @@
 	"undershirts": [
 		{
 			"title": "Crew Neck",
-			"id": "crew-neck"
+			"id": "crew-neck",
+			"4star": true
 		},
 		{
 			"title": "V Neck",

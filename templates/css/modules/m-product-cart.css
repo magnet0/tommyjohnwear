@@ -21,7 +21,7 @@
 
 	.product-size {}
 	
-		.product-size > legend { float:left; }
+		.product-size > legend { float: left; }
 
 		.product-size > label {
 	        -webkit-transition: all .25s;
@@ -31,20 +31,21 @@
 	    }
 
 		.product-size:not(:checked) > input {
-	        position: absolute;
-	        top: -9999px;
-	        clip: rect(0,0,0,0);
-	    }
+      position: absolute;
+      top: -9999px;
+      clip: rect(0,0,0,0);
+    }
 
 		.product-size:not(:checked) > label {
 			border:1px solid #ccc;
 			cursor: pointer;
+			float: left;
 			padding: .25em .5em;
-	    }
+    }
 
 		.product-size > label .hide-on-small-screen {
 			display: none;
-	    }
+    }
 
 	    .product-size:not(:checked) > label:hover {
 	    	border-color:red;
@@ -59,7 +60,7 @@
 	
 	.product-color {}
 	
-		.product-color > legend { float:left; }
+		.product-color > legend { float: left; }
 
 		.product-color > label {
 	        -webkit-transition: all .25s;
@@ -78,6 +79,7 @@
 			border:#FFF .25em solid;
 			cursor: pointer;
 			display: inline-block;
+			float: left;
 			padding: .25em .5em;
 			text-indent: -5000px;
 			width:1.5em;

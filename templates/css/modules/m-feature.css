@@ -1,0 +1,16 @@
+/*
+
+
+	Feature Module
+
+
+*/
+
+.m-feature-row {}
+
+	.feature-row-image {}
+		.feature-row-image img {}
+
+	.feature-row-content {}
+		.feature-row-content .feature-row-title {}
+		.feature-row-content p {}
