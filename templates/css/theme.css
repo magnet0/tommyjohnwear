@@ -6,7 +6,7 @@
 
 */
 
-/* Fonts */
+/* Local Fonts */
 @font-face {
     font-family: 'dosis-bold';
     src: url('../fonts/dosis-bold-webfont.eot');
@@ -48,12 +48,90 @@
     font-style: normal;
 }
 
+/* Global */
+html {
+	background-color: #eef0f7;
+}
 
-body { font-size: 75%; }
+body {
+	background-color: #eef0f7;
+	color: #454545;
+	font-family: "Open Sans", sans-serif;
+	font-size: 75%;
+}
 
+/* Headings */
+h1, h2 {
+	font-family: "dosis-medium";
+	text-transform: uppercase;
+}
 
 /* Lead */
 .lead { line-height: 1.5; }
+
+/* Links */
+a {
+	color: #40190b;
+}
+
+/* Buttons */
+.btn {
+	background-color: #40190b;
+	border: none;
+	-webkit-border-radius: 0.125em;
+	   -moz-border-radius: 0.125em;
+	        border-radius: 0.125em;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+	   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+	     -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+	        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+	color: white;
+	display: inline-block;
+	font-family: "dosis-medium";
+	font-weight: normal;
+	font-size: .888888889em;
+	line-height: 1;
+	padding: 1.125em 1.6875em;
+	text-transform: uppercase;
+	*zoom: 1;
+}
+
+/* Header */
+header[role="banner"] {
+	background-color: #f1f1f1;
+	-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+	   -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+	     -o-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+	        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+	padding: 1.5em 0;
+}
+
+	header[role="banner"] a {
+		border: none;
+	}
+	
+	nav[role="navigation"] > h2 {
+		height: 0;
+		overflow: hidden;
+		position: absolute;
+		width: 0;
+	}
+	
+	header[role="banner"] .logo {
+		height: 1.5em;
+	}
+
+	/* Navigation */
+	
+	.nav-bar {
+		font-family: "dosis-medium";
+		text-transform: uppercase;
+	}
+		
+		.nav-item {
+			font-size: 1em;
+		}
+
 
 /* Stage */
 .stage {}
