@@ -2,13 +2,15 @@
 		
 <article role="main">
     <div class="content row">
-        <h1>{{ meta.title }}</h1>
-        <div class="three column centered">
-            {{# wishlist }}
-            {{> m-wishlist-item }}
-            {{/ wishlist }}
-        </div>
+        <div class="three centered column">
+            <h1>{{ meta.title }}</h1>
+            <ul class="wishlist no-bullet">
+                {{# wishlist }}
+                {{> m-wishlist-item }}
+                {{/ wishlist }}
+            </ul>
         <a href="">Email this list to someone</a>
+        </div>
 	</div>
 </article>
 		

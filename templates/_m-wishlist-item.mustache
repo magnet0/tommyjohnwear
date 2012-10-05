@@ -1,15 +1,15 @@
-<div class="m-wishlist-item">
-	<div class="wishlist-remove">
+<li class="m-wishlist-item row">
+	<div class="wishlist-remove column">
 		<i class="btn-round">&times;</i>
 	</div>
-	<div class="wishlist-img">
+	<div class="wishlist-img one column">
 		<img src="{{ image.thumb }}" alt="">
 	</div>
-	<div class="wishlist-product-info">
+	<div class="wishlist-product-info column padded">
 		<h2 class="wishlist-name">{{ name }} <small class="wishlist-category">{{ category }}</small></h2>
 		<p>{{ quantity }} &times; Size: {{ size }}</p>
 	</div>
-	<div class="wishlist-button">
-		<button type="button">Add to Cart</button>
+	<div class="wishlist-button two column padded text-right">
+		<a class="btn btn-large" href="">Add to Cart</a>
 	</div>
-</div>
+</li>

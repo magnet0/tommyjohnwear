@@ -5,3 +5,13 @@
 
 
 */
+
+.invisible { visibility: hidden; }
+
+/* grid */
+
+.padded { padding:1.5em }
+
+/* forms */
+
+select.inline { width:auto; }

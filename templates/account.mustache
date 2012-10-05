@@ -2,11 +2,14 @@
 		
 <article role="main">
     <div class="content row">
-        <h1>{{ meta.title }}</h1>
-        <p>Hi {{ name }}! Welcome to your account overview</p>
-        <div class="two column">
-            <div class="account-nav">
+        <div class="three centered column">
+            <h1>{{ meta.title }}</h1>
+            <p>Hi {{ name }}! Welcome to your account overview</p>
+        </div>
+        <div class="row">
+            <div class="account-nav left">
                 <ol>
+                    <li><a href="wishlist">Wishlist</a></li>
                     <li><a href="">Account Dashboard</a></li>
                     <li><a href="">Account Information</a></li>
                     <li><a href="">Address Book</a></li>
@@ -15,86 +18,90 @@
                     <li><a href="">Gift Certificate</a></li>
                 </ol>
             </div>
-        </div>
-        <div class="four column">
-            <h2>Account Information <small><a href="">edit</a></small></h2>
-            <p>
-                {{ full name }}<br>
-                {{ email }}
-            </p>
-            <h2>Default Billing Address <small><a href="">edit</a>|<a href="">add</a></small></h2>
-            <p>
-                {{ billing.name }}<br>
-                {{ billing.address }}<br>
-                {{ billing.city }}, {{ billing.state }} {{ billing.zip }}
-            </p>
-            <h2>Default Shipping Address <small><a href="">edit</a>|<a href="">add</a></small></h2>
-            <h3>Home</h3>
-            <p>
-                {{ billing.name }}<br>
-                {{ billing.address }}<br>
-                {{ billing.city }}, {{ billing.state }} {{ billing.zip }}
-            </p>
-            <h2>Order History</h2>
-            <p>Want to auto-refresh your dresser? Perhaps you'd be interested in a <a href="">subscription</a></p>
-            <!-- order history -->
-            <div class="m-order-history">
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th>Order #</th>
-                            <th>Date</th>
-                            <th>Shipped to</th>
-                            <th>Total</th>
-                            <th>Status</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <!-- /order history -->
+            <div class="three centered column"><h2>Account Information <small><a class="btn btn-small" href="">edit</a></small></h2>
+                <p>
+                    {{ full name }}<br>
+                    {{ email }}
+                </p>
+                <h2>Default Billing Address <small><a class="btn btn-small" href="">edit</a> <a class="btn btn-small" href="">add</a></small></h2>
+                <p>
+                    {{# billing }}
+                        {{> m-account-address }}
+                    {{/ billing }}
+                </p>
+                <h2>Default Shipping Address <small><a class="btn btn-small" href="">edit</a> <a class="btn btn-small" href="">add</a></small></h2>
+                <h3>Home</h3>
+                <p>
+                    {{# shipping }}
+                        {{> m-account-address }}
+                    {{/ shipping }}
+                </p>
+                <h3>Work</h3>
+                <p>
+                    {{# shipping2 }}
+                        {{> m-account-address }}
+                    {{/ shipping2 }}
+                </p>
+                <h2>Order History</h2>
+                <p>Want to auto-refresh your dresser? Perhaps you'd be interested in a <a href="">subscription</a></p>
+                <!-- order history -->
+                <div class="m-order-history">
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Order #</th>
+                                <th>Date</th>
+                                <th>Shipped to</th>
+                                <th>Total</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /order history --></div>
         </div>
 	</div>
 

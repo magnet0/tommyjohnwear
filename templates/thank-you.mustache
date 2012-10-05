@@ -2,14 +2,16 @@
 		
 <article role="main">
     <div class="content row">
-        <h1>{{ meta.title }}</h1>
-        <p>Your order has been placed. The reference number is <a href="account">{{ reference }}</a>. You can check the status of your order from your <a href="account">order history</a>.</p>
-        <hr>
-        <p>Please take a moment to tell us how you found out about Tommy John <select name="" id="">
-        	<option value="">Online</option>
-        	<option value="">Word of mouth</option>
-        	<option value="">Alien mind meld</option>
-        </select></p>
+        <div class="four centered column">
+            <h1>{{ meta.title }}</h1>
+            <p>Your order has been placed. The reference number is <a href="account">{{ reference }}</a>. You can check the status of your order from your <a href="account">order history</a>.</p>
+            <hr>
+            <p>Please take a moment to tell us how you found out about Tommy John <select name="" id="" class="inline">
+                <option value="">Online</option>
+                <option value="">Word of mouth</option>
+                <option value="">Alien mind meld</option>
+            </select></p>
+        </div>
 	</div>
 
 </article>

@@ -1,10 +1,14 @@
 {{> head }}
 		
 <article role="main">
-    <div class="content row">
-        <h1>{{ meta.title }}</h1>
-        <h2>Checkout Method</h2>
-        <div class="checkout-nav">
+    <div class="row">
+        <div class="three centered column">
+            <h1>{{ meta.title }}</h1>
+            <h2>Checkout Method</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="checkout-nav right padded">
             <p>Checkout Method</p>
             <ol>
                 <li>Billing Address</li>
@@ -13,12 +17,12 @@
                 <li>Payment Method</li>
             </ol>
         </div>
-        <div class="checkout-account">
+        <div class="checkout-account three centered column">
             <!-- create account/login -->
-            <div class="account-create">
+            <div class="account-create four">
                 <h2>New Customer</h2>
-                <button type="button"><h2>Create and account with Facebook</h2></button>
-                <p>or</p>
+                <a class="btn btn-large six" href="">Create and account with Facebook</a>
+                <p class="text-center">or</p>
                 <form action="">
                     <div class="input-row">
                         <label for="new-email">Email</label>
@@ -28,13 +32,13 @@
                         <label for="new-password">Password</label>
                         <input id="new-password" type="password">
                     </div>
-                    <button type="submit"><h2>Create Account</h2></button>
+                    <input type="submit" class="btn btn-large" value="Create Account">
                 </form>
             </div>
-            <div class="account-login">
+            <div class="account-login four">
                 <h2>Returning Customer</h2>
-                <button type="button"><h2>Login with Facebook</h2></button>
-                <p>or</p>
+                <a class="btn btn-large six" href="">Login with Facebook</a>
+                <p class="text-center">or</p>
                 <form action="">
                     <div class="input-row">
                         <label for="email">Email</label>
@@ -44,252 +48,224 @@
                         <label for="password">Password</label>
                         <input id="password" type="password">
                     </div>
-                    <button type="submit"><h2>Log in</h2></button>
+                    <input type="submit" class="btn btn-large" value="Log in">
                 </form>
             </div>
             <!-- /create account/login -->
         </div>
-        <div class="account-billing">
+    </div>
+    <div class="row">
+        <div class="account-billing three centered column">
             <h2>2. Billion Address</h2>
             <form action="">
                 {{> m-form-billing }}
-                <div class="input-row">
-                    <input id="shiptosame" type="radio" name="shipto"><label for="shiptosame">Ship to this address</label>
+                <div class="input-row row">
+                        <label for="shiptosame" class="inline offset-by-one"><input id="shiptosame" type="radio" name="shipto"> Ship to this address</label>
                 </div>
-                <div class="input-row">
-                    <input id="shiptodiff" type="radio" name="shipto"><label for="shiptodiff">Ship to different address</label>
+                <div class="input-row row">
+                        <label for="shiptodiff" class="inline offset-by-one"><input id="shiptodiff" type="radio" name="shipto"> Ship to different address</label>
                 </div>
-                <button type="button"><h2>Continue</h2></button>
+                <a class="btn btn-large three offset-by-one" href="">Continue</a>
             </form>
         </div>
-        <div class="account-shipping">
+    </div>
+    <div class="row">
+        <div class="account-shipping three centered column">
             
             <h2>3. Shipping Address</h2>
             <h3>Use a saved address</h3>
             <form action="">
-                <div class="input-row">
-                    <select name="" id="">
+                <div class="input-row row">
+                    <label for="" class="one column inline">Location</label>
+                    <select name="" id="" class="three column end">
                         <option value="">Home</option>
                         <option value="">Work</option>
                     </select>
                 </div>
-                <button type="button"><h2>Continue</h2></button> 
+                <a class="btn btn-large three offset-by-one" href="">Continue</a> 
             </form>
-            <hr>
+            <hr class="four">
             <h3>Add a new address</h3>
             <form action="">
                 {{> m-form-shipping }}
-                <div class="input-row">
-                    <input id="giftwrap" type="checkbox" name="giftwrap"><label for="giftwrap">Gift wrap item - add $5.00</label>
+                <div class="input-row row">
+                    <label for="giftwrap" class="inline offset-by-one"><input id="giftwrap" type="checkbox" name="giftwrap"> Gift wrap item - add $5.00</label>
                 </div>
-                <button type="button"><h2>Continue</h2></button>
+                <a class="btn btn-large three offset-by-one" href="">Continue</a>
             </form>
         </div>
-        <div class="account-method">
+    </div>
+    <div class="row">
+        <div class="account-method three centered column">
             <h2>3. Shipping Method</h2>
             <form action="">
-                <div class="input-row"><input type="radio" name="shipping" id="shipping1"><label for="shipping1">USPS - $x.xx</label></div>
-                <div class="input-row"><input type="radio" name="shipping" id="shipping2"><label for="shipping2">UPS Ground - $x.xx</label></div>
-                <div class="input-row"><input type="radio" name="shipping" id="shipping3"><label for="shipping3">UPS 2 day - $x.xx</label></div>
-                <div class="input-row"><input type="radio" name="shipping" id="shipping4"><label for="shipping4">UPS Overnight - $x.xx</label></div>
-                <button type="button"><h2>Continue</h2></button>
+                <div class="input-row row"><label for="shipping1" class="column"><input type="radio" name="shipping" id="shipping1"> USPS - $x.xx</label></div>
+                <div class="input-row row"><label for="shipping2" class="column"><input type="radio" name="shipping" id="shipping2"> UPS Ground - $x.xx</label></div>
+                <div class="input-row row"><label for="shipping3" class="column"><input type="radio" name="shipping" id="shipping3"> UPS 2 day - $x.xx</label></div>
+                <div class="input-row row"><label for="shipping4" class="column"><input type="radio" name="shipping" id="shipping4"> UPS Overnight - $x.xx</label></div>
+                <a class="btn btn-large three" href="">Continue</a>
             </form>
         </div>
-        <div class="account-payment">
+    </div>
+    <div class="row">
+        <div class="account-payment three centered column">
             <h2>4. Payment Method</h2>
             <form action="">
-                <div class="input-row">
-                    <input id="cc" type="radio" name="payment-method"><label for="cc">Credit Card</label>
+                <div class="input-row row">
+                    <label for="cc" class="column"><input id="cc" type="radio" name="payment-method"> Credit Card</label>
                 </div>
                 <div class="account-payment-cc">
-                    <div class="input-row">
-                        <label for="">Card Type</label>
-                        <select name="" id="">
+                    <div class="input-row row">
+                        <label for="" class="one column inline">Card Type</label>
+                        <select name="" id="" class="three column end">
                             <option value="">Entry 1</option>
                             <option value="">Entry 2</option>
                             <option value="">Entry 3</option>
                             <option value="">Entry 4</option>
                         </select>
                     </div>
-                    <div class="input-row">
-                        <label for="">Card Number</label>
-                        <input type="text">
+                    <div class="input-row row">
+                        <label for="" class="one column inline">Card Number</label>
+                        <input type="text" class="three column end">
                     </div>
-                    <div class="input-row">
-                        <label for="">Expiration</label>
-                        <select name="" id="">
+                    <div class="input-row row">
+                        <label for="" class="one column inline">Expiration</label>
+                        <select name="" id="" class="one column">
                             <option value="">Entry 1</option>
                             <option value="">Entry 2</option>
                             <option value="">Entry 3</option>
                             <option value="">Entry 4</option>
                         </select>
-                        <select name="" id="">
+                        <select name="" id="" class="two column end">
                             <option value="">Entry 1</option>
                             <option value="">Entry 2</option>
                             <option value="">Entry 3</option>
                             <option value="">Entry 4</option>
                         </select>
                     </div>
-                    <div class="input-row">
-                        <label for="">CVN</label>
-                        <input type="text"><small><a href="#">What is this?</a></small>
+                    <div class="input-row row">
+                        <label for="" class="one column inline">CVN</label>
+                        <input type="text" class="three column"><small class="one column end"><a href="#">What is this?</a></small>
                     </div>
                 </div>
-                <div class="input-row">
-                    <input id="paypal" type="radio" name="payment-method"><label for="paypal">PayPal</label>
+                <div class="input-row row">
+                    <label for="paypal" class="column"><input id="paypal" type="radio" name="payment-method"> PayPal</label>
                 </div>
-                <button type="button"><h2>Continue</h2></button>
+                <a class="btn btn-large three offset-by-one" href="">Continue</a>
             </form>
         </div>
+    </div>
+    <div class="row">
         <div class="account-review">
-        <h2>Review</h2>
-        <div class="l-grid-six">
-            <!-- cart review -->
-            <div class="four columns">
-                {{# cart }}
-                    {{> m-product-table }}
-                {{/ cart }}
-                <!-- cart total -->
-                <table>
-                    <tr>
-                        <td><h2>Subtotal:</h2></td>
-                        <td> $125</td>
-                    </tr>
-                    <tr>
-                        <td>Tax &amp; Shipping:</td>
-                        <td>$7</td>
-                    </tr>
-                </table>
-                <h1><small>Total:</small> $125</h1>
-            </div>
-            <!-- /cart review -->
-            <!-- payment info review -->
-            <div class="two column">
-                <h3>Payment info</h3>
-                <div class="l-row">
-                    <div class="three column">
-                        <strong>Card Type</strong>
-                    </div>
-                    <div class="three column">
-                        Visa
-                    </div>
-                </div>
-                <div class="l-row">
-                    <div class="three column">
-                        <strong>Card Number</strong>
-                    </div>
-                    <div class="three column">
-                        ***********5555
-                    </div>
-                </div>
-                <div class="l-row">
-                    <div class="three column">
-                        <strong>Expires</strong>
-                    </div>
-                    <div class="three column">
-                        01/18
-                    </div>
-                </div>
-                <div class="l-row">
-                    <div class="three column">
-                        <strong>CVN</strong>
-                    </div>
-                    <div class="three column">
-                        1234
-                    </div>
+            <div class="row">
+                <div class="three column centered">
+                    <h2>Review</h2>
+                    <hr>
                 </div>
             </div>
-            <!-- /payment info review -->
-
-            <!-- billing info review -->
-            <div class="three column">
-                <h3>Billing info</h3>
-                <div class="l-row">
-                    <div class="three column">
-                        <strong>First Name</strong>
+            <div class="row">
+                <!-- cart review -->
+                <div class="three column padded">
+                    {{# cart }}
+                        {{> m-product-table }}
+                    {{/ cart }}
+                    <!-- cart total -->
+                    <table class="three column offset-by-three text-right">
+                        <tr>
+                            <td><strong>Subtotal:</strong> </td>
+                            <td> $125</td>
+                        </tr>
+                        <tr>
+                            <td>Tax &amp; Shipping: </td>
+                            <td>$7</td>
+                        </tr>
+                        <tr>
+                            <td><h1><small>Total:</small></h1> </td>
+                            <td><h1>$132</h1></td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /cart review -->
+                <!-- payment info review -->
+                <div class="three column padded">
+                    <a href="" class="btn btn-small right">edit</a>
+                    <h3>Payment info</h3>
+                    <div class="row">
+                        <div class="three column">
+                            <strong>Card Type</strong>
+                        </div>
+                        <div class="three column">
+                            Visa
+                        </div>
                     </div>
-                    <div class="three column">
-                        Bill
+                    <div class="row">
+                        <div class="three column">
+                            <strong>Card Number</strong>
+                        </div>
+                        <div class="three column">
+                            ***********5555
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="three column">
+                            <strong>Expires</strong>
+                        </div>
+                        <div class="three column">
+                            01/18
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="three column">
+                            <strong>CVN</strong>
+                        </div>
+                        <div class="three column">
+                            1234
+                        </div>
                     </div>
                 </div>
-                <div class="l-row">
-                    <div class="three column">
-                        <strong>Last Name</strong>
-                    </div>
-                    <div class="three column">
-                        Hamfist
-                    </div>
-                </div>
-                <div class="l-row">
-                    <div class="three column">
-                        <strong>Address</strong>
-                    </div>
-                    <div class="three column">
-                        123 Fake St.
-                    </div>
-                </div>
-                <div class="l-row">
-                    <div class="three column">
-                        <strong>City</strong>
-                    </div>
-                    <div class="three column">
-                        Crooklyn
-                    </div>
-                </div>
+                <!-- /payment info review -->
             </div>
-            <!-- /billing info review -->
-            <!-- shipping info review -->
-            <div class="three column">
-                <h3>Shipping info</h3>
-                <div class="l-row">
-                    <div class="three column">
-                        <strong>First Name</strong>
-                    </div>
-                    <div class="three column">
-                        Bill
-                    </div>
-                </div>
-                <div class="l-row">
-                    <div class="three column">
-                        <strong>Last Name</strong>
-                    </div>
-                    <div class="three column">
-                        Hamfist
+            <div class="row">
+                <!-- billing info review -->
+                <div class="three column padded">
+                    <a href="" class="btn btn-small right">edit</a>
+                    <h3>Billing info</h3>
+                    <div id="billing-address" class="address-review">
+                        {{# billing }}
+                            {{> m-account-address }}
+                        {{/ billing }}
                     </div>
                 </div>
-                <div class="l-row">
-                    <div class="three column">
-                        <strong>Address</strong>
-                    </div>
-                    <div class="three column">
-                        123 Fake St.
-                    </div>
-                </div>
-                <div class="l-row">
-                    <div class="three column">
-                        <strong>City</strong>
-                    </div>
-                    <div class="three column">
-                        Crooklyn
+                <!-- /billing info review -->
+                <!-- shipping info review -->
+                <div class="three column padded">
+                    <a href="" class="btn btn-small right">edit</a>
+                    <h3>Shipping info</h3>
+                    <div id="shipping-address" class="address-review">
+                        {{# shipping }}
+                            {{> m-account-address }}
+                        {{/ shipping }}
                     </div>
                 </div>
+                <!-- /shipping info review -->
+                <hr>
+                <div class="row">
+                    <form action="" class="three column offset-by-two">
+                        <div class="input-row row">
+                            <input type="hidden"> <!-- use hidden fields + javascript to gather all the data from above forms? -->
+                            <label for="newsletter"><input id="newsletter" type="checkbox" name="newsletter"> Sign up for the occasional newsletter</label>
+                            <p class="four"><small>Your privacy is important to us. We'll never share or sell your information to 3rd parties. You can easily unsubscribe at any time.</small></p>
+                        </div>
+                        <a class="btn btn-large four" href="thank-you"><strong>Complete your order</strong></a>
+                    </form>
+                </div>
+                <!-- /cart total -->
             </div>
-            <!-- /shipping info review -->
-            <form action="">
-                <div class="input-row">
-                    <input type="hidden"> <!-- use hidden fields + javascript to gather all the data from above forms? -->
-                    <input id="newsletter" type="checkbox" name="newsletter"><label for="newsletter">Sign up for the occasional newsletter</label>
-                    <p>Your privacy is important to us. We'll never share or sell your information to 3rd parties. You can easily unsubscribe at any time.</p>
-                </div>
-                <a href="thank-you"><h2>Complete your order</h2></a>
-            </form>
-        </div>
-        <!-- /cart total -->
-        </div>
-	</div>
+        </div> <!-- /account review   -->
+    </div>
 
 </article>
-		
+        
 {{> sidebar }}
 
 {{> foot }}
