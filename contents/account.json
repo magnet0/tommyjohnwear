@@ -12,5 +12,19 @@
 		"city":"New York",
 		"state":"NY",
 		"zip":"12345"
+	},
+	"shipping": {
+		"name":"Thomas Patterson Jr",
+		"address":"123 Sesame St.",
+		"city":"New York",
+		"state":"NY",
+		"zip":"12345"
+	},
+	"shipping2": {
+		"name":"Thomas Patterson Jr",
+		"address":"321 Emases St.",
+		"city":"New York",
+		"state":"NY",
+		"zip":"12345"
 	}
 }

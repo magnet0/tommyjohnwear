@@ -3,6 +3,20 @@
 		"title": "Secure checkout",
 		"description": "Meta description"
 	},
+	"billing": {
+		"name":"Thomas Patterson",
+		"address":"123 Sesame St.",
+		"city":"New York",
+		"state":"NY",
+		"zip":"12345"
+	},
+	"shipping": {
+		"name":"Thomas Patterson Jr",
+		"address":"123 Sesame St.",
+		"city":"New York",
+		"state":"NY",
+		"zip":"12345"
+	},
 	"cart": {
 		"products": [
 			{

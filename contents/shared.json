@@ -20,6 +20,14 @@
 		{
 			"title": "Referals",
 			"id": "referral"
+		},
+		{
+			"title": "Account",
+			"id": "account"
+		},
+		{
+			"title": "Checkout",
+			"id": "checkout"
 		}
 	],
 	"undershirts": [
