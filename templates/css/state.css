@@ -26,3 +26,28 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 	body:after { content: 'wide'; } /* JS Hook for responsive variables */
 	body { font-size: 125%; }
 }
+
+/*collapse element*/
+
+.collapse {
+	border-top: 1px solid #CCCCCC;
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+     -moz-transition: height 0.35s ease;
+       -o-transition: height 0.35s ease;
+          transition: height 0.35s ease;
+}
+
+.collapse.in {
+	border:none;
+  height: auto;
+}
+
+/*affix*/
+
+.affix { position: fixed; top:0;}
+
+.affix.right { right: 0; }
+.affix.left { left: 0; }

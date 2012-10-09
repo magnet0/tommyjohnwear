@@ -1,165 +1,179 @@
 {{> head }}
 		
 <article role="main">
+    <div class="m-nav right padded" data-spy="affix" data-offset-top="113">
+        <p>Checkout Method</p>
+        <ol>
+            <li><a href="#account-billing" data-toggle="collapse" data-target="#billing">Billing Address</a></li>
+            <li><a href="#account-shipping" data-toggle="collapse" data-target="#shipping">Shipping Address</a></li>
+            <li><a href="#account-method" data-toggle="collapse" data-target="#method">Shipping Method</a></li>
+            <li><a href="#account-payment" data-toggle="collapse" data-target="#payment">Payment Method</a></li>
+        </ol>
+    </div>
     <div class="row">
         <div class="three centered column">
             <h1>{{ meta.title }}</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div id="checkout-account" class="three centered column">
+            <button data-toggle="collapse" data-target="#checkout" class="btn tiny right">Show/Hide</button>
             <h2>Checkout Method</h2>
+            <div id="checkout" class="collapse in">
+                <!-- create account/login -->
+                <div class="account-create four">
+                    <h2>New Customer</h2>
+                    <a class="btn btn-large six" href="#checkout-account" data-toggle="collapse" data-target="#checkout,#billing">Create and account with Facebook</a>
+                    <p class="text-center">or</p>
+                    <form action="">
+                        <div class="input-row">
+                            <label for="new-email">Email</label>
+                            <input id="new-email" type="text">
+                        </div>
+                        <div class="input-row">
+                            <label for="new-password">Password</label>
+                            <input id="new-password" type="password">
+                        </div>
+                        <a class="btn btn-large" href="#checkout-account" data-toggle="collapse" data-target="#checkout,#billing">Create Account</a>
+                    </form>
+                </div>
+                <div class="account-login four">
+                    <h2>Returning Customer</h2>
+                    <a class="btn btn-large six" href="#checkout-account" data-toggle="collapse" data-target="#checkout,#billing">Login with Facebook</a>
+                    <p class="text-center">or</p>
+                    <form action="">
+                        <div class="input-row">
+                            <label for="email">Email</label>
+                            <input id="email" type="text">
+                        </div>
+                        <div class="input-row">
+                            <label for="password">Password</label>
+                            <input id="password" type="password">
+                        </div>
+                        <a class="btn btn-large" href="#checkout-account" data-toggle="collapse" data-target="#checkout,#billing">Log in</a>
+                    </form>
+                </div>
+                <!-- /create account/login -->
+            </div>
         </div>
     </div>
     <div class="row">
-        <div class="checkout-nav right padded">
-            <p>Checkout Method</p>
-            <ol>
-                <li>Billing Address</li>
-                <li>Shipping Address</li>
-                <li>Shipping Method</li>
-                <li>Payment Method</li>
-            </ol>
-        </div>
-        <div class="checkout-account three centered column">
-            <!-- create account/login -->
-            <div class="account-create four">
-                <h2>New Customer</h2>
-                <a class="btn btn-large six" href="">Create and account with Facebook</a>
-                <p class="text-center">or</p>
-                <form action="">
-                    <div class="input-row">
-                        <label for="new-email">Email</label>
-                        <input id="new-email" type="text">
-                    </div>
-                    <div class="input-row">
-                        <label for="new-password">Password</label>
-                        <input id="new-password" type="password">
-                    </div>
-                    <input type="submit" class="btn btn-large" value="Create Account">
-                </form>
-            </div>
-            <div class="account-login four">
-                <h2>Returning Customer</h2>
-                <a class="btn btn-large six" href="">Login with Facebook</a>
-                <p class="text-center">or</p>
-                <form action="">
-                    <div class="input-row">
-                        <label for="email">Email</label>
-                        <input id="email" type="text">
-                    </div>
-                    <div class="input-row">
-                        <label for="password">Password</label>
-                        <input id="password" type="password">
-                    </div>
-                    <input type="submit" class="btn btn-large" value="Log in">
-                </form>
-            </div>
-            <!-- /create account/login -->
-        </div>
-    </div>
-    <div class="row">
-        <div class="account-billing three centered column">
+        <div id="account-billing" class="three centered column">
+            <button data-toggle="collapse" data-target="#billing" class="btn tiny right">Show/Hide</button>
             <h2>2. Billion Address</h2>
-            <form action="">
-                {{> m-form-billing }}
-                <div class="input-row row">
-                        <label for="shiptosame" class="inline offset-by-one"><input id="shiptosame" type="radio" name="shipto"> Ship to this address</label>
-                </div>
-                <div class="input-row row">
-                        <label for="shiptodiff" class="inline offset-by-one"><input id="shiptodiff" type="radio" name="shipto"> Ship to different address</label>
-                </div>
-                <a class="btn btn-large three offset-by-one" href="">Continue</a>
-            </form>
+            <div id="billing" class="collapse">
+                <form action="">
+                    {{> m-form-billing }}
+                    <div class="input-row row">
+                            <label for="shiptosame" class="inline offset-by-one"><input id="shiptosame" type="radio" name="shipto"> Ship to this address</label>
+                    </div>
+                    <div class="input-row row">
+                            <label for="shiptodiff" class="inline offset-by-one"><input id="shiptodiff" type="radio" name="shipto"> Ship to different address</label>
+                    </div>
+                    <a class="btn btn-large three offset-by-one" href="#account-billing" data-toggle="collapse" data-target="#shipping,#billing">Continue</a>
+                </form>
+            </div>
         </div>
     </div>
     <div class="row">
-        <div class="account-shipping three centered column">
-            
+        <div id="account-shipping" class="three centered column">
+            <button data-toggle="collapse" data-target="#shipping" class="btn tiny right">Show/Hide</button>
             <h2>3. Shipping Address</h2>
-            <h3>Use a saved address</h3>
-            <form action="">
-                <div class="input-row row">
-                    <label for="" class="one column inline">Location</label>
-                    <select name="" id="" class="three column end">
-                        <option value="">Home</option>
-                        <option value="">Work</option>
-                    </select>
-                </div>
-                <a class="btn btn-large three offset-by-one" href="">Continue</a> 
-            </form>
-            <hr class="four">
-            <h3>Add a new address</h3>
-            <form action="">
-                {{> m-form-shipping }}
-                <div class="input-row row">
-                    <label for="giftwrap" class="inline offset-by-one"><input id="giftwrap" type="checkbox" name="giftwrap"> Gift wrap item - add $5.00</label>
-                </div>
-                <a class="btn btn-large three offset-by-one" href="">Continue</a>
-            </form>
-        </div>
-    </div>
-    <div class="row">
-        <div class="account-method three centered column">
-            <h2>3. Shipping Method</h2>
-            <form action="">
-                <div class="input-row row"><label for="shipping1" class="column"><input type="radio" name="shipping" id="shipping1"> USPS - $x.xx</label></div>
-                <div class="input-row row"><label for="shipping2" class="column"><input type="radio" name="shipping" id="shipping2"> UPS Ground - $x.xx</label></div>
-                <div class="input-row row"><label for="shipping3" class="column"><input type="radio" name="shipping" id="shipping3"> UPS 2 day - $x.xx</label></div>
-                <div class="input-row row"><label for="shipping4" class="column"><input type="radio" name="shipping" id="shipping4"> UPS Overnight - $x.xx</label></div>
-                <a class="btn btn-large three" href="">Continue</a>
-            </form>
-        </div>
-    </div>
-    <div class="row">
-        <div class="account-payment three centered column">
-            <h2>4. Payment Method</h2>
-            <form action="">
-                <div class="input-row row">
-                    <label for="cc" class="column"><input id="cc" type="radio" name="payment-method"> Credit Card</label>
-                </div>
-                <div class="account-payment-cc">
+            <div id="shipping" class="collapse">
+                <h3>Use a saved address</h3>
+                <form action="">
                     <div class="input-row row">
-                        <label for="" class="one column inline">Card Type</label>
+                        <label for="" class="one column inline">Location</label>
                         <select name="" id="" class="three column end">
-                            <option value="">Entry 1</option>
-                            <option value="">Entry 2</option>
-                            <option value="">Entry 3</option>
-                            <option value="">Entry 4</option>
+                            <option value="">Home</option>
+                            <option value="">Work</option>
                         </select>
                     </div>
+                    <a class="btn btn-large three offset-by-one" href="#account-shipping" data-toggle="collapse" data-target="#shipping,#method">Continue</a> 
+                </form>
+                <hr class="four">
+                <h3>Add a new address</h3>
+                <form action="">
+                    {{> m-form-shipping }}
                     <div class="input-row row">
-                        <label for="" class="one column inline">Card Number</label>
-                        <input type="text" class="three column end">
+                        <label for="giftwrap" class="inline offset-by-one"><input id="giftwrap" type="checkbox" name="giftwrap"> Gift wrap item - add $5.00</label>
                     </div>
-                    <div class="input-row row">
-                        <label for="" class="one column inline">Expiration</label>
-                        <select name="" id="" class="one column">
-                            <option value="">Entry 1</option>
-                            <option value="">Entry 2</option>
-                            <option value="">Entry 3</option>
-                            <option value="">Entry 4</option>
-                        </select>
-                        <select name="" id="" class="two column end">
-                            <option value="">Entry 1</option>
-                            <option value="">Entry 2</option>
-                            <option value="">Entry 3</option>
-                            <option value="">Entry 4</option>
-                        </select>
-                    </div>
-                    <div class="input-row row">
-                        <label for="" class="one column inline">CVN</label>
-                        <input type="text" class="three column"><small class="one column end"><a href="#">What is this?</a></small>
-                    </div>
-                </div>
-                <div class="input-row row">
-                    <label for="paypal" class="column"><input id="paypal" type="radio" name="payment-method"> PayPal</label>
-                </div>
-                <a class="btn btn-large three offset-by-one" href="">Continue</a>
-            </form>
+                    <a class="btn btn-large three offset-by-one" href="#account-shipping" data-toggle="collapse" data-target="#shipping,#method">Continue</a>
+                </form>
+            </div>
         </div>
     </div>
     <div class="row">
-        <div class="account-review">
+        <div id="account-method" class="three centered column">
+            <button data-toggle="collapse" data-target="#method" class="btn tiny right">Show/Hide</button>
+            <h2>4. Shipping Method</h2>
+            <div id="method" class="collapse">
+                <form action="">
+                    <div class="input-row row"><label for="shipping1" class="column"><input type="radio" name="shipping" id="shipping1"> USPS - $x.xx</label></div>
+                    <div class="input-row row"><label for="shipping2" class="column"><input type="radio" name="shipping" id="shipping2"> UPS Ground - $x.xx</label></div>
+                    <div class="input-row row"><label for="shipping3" class="column"><input type="radio" name="shipping" id="shipping3"> UPS 2 day - $x.xx</label></div>
+                    <div class="input-row row"><label for="shipping4" class="column"><input type="radio" name="shipping" id="shipping4"> UPS Overnight - $x.xx</label></div>
+                    <a class="btn btn-large three" href="#account-method" data-toggle="collapse" data-target="#payment,#method">Continue</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div id="account-payment" class="three centered column">
+            <button data-toggle="collapse" data-target="#payment" class="btn tiny right">Show/Hide</button>
+            <h2>5. Payment Method</h2>
+            <div id="payment" class="collapse">
+                <form action="">
+                    <div class="input-row row">
+                        <label for="cc" class="column"><input id="cc" type="radio" name="payment-method"> Credit Card</label>
+                    </div>
+                    <div class="account-payment-cc">
+                        <div class="input-row row">
+                            <label for="" class="one column inline">Card Type</label>
+                            <select name="" id="" class="three column end">
+                                <option value="">Entry 1</option>
+                                <option value="">Entry 2</option>
+                                <option value="">Entry 3</option>
+                                <option value="">Entry 4</option>
+                            </select>
+                        </div>
+                        <div class="input-row row">
+                            <label for="" class="one column inline">Card Number</label>
+                            <input type="text" class="three column end">
+                        </div>
+                        <div class="input-row row">
+                            <label for="" class="one column inline">Expiration</label>
+                            <select name="" id="" class="one column">
+                                <option value="">Entry 1</option>
+                                <option value="">Entry 2</option>
+                                <option value="">Entry 3</option>
+                                <option value="">Entry 4</option>
+                            </select>
+                            <select name="" id="" class="two column end">
+                                <option value="">Entry 1</option>
+                                <option value="">Entry 2</option>
+                                <option value="">Entry 3</option>
+                                <option value="">Entry 4</option>
+                            </select>
+                        </div>
+                        <div class="input-row row">
+                            <label for="" class="one column inline">CVN</label>
+                            <input type="text" class="three column"><small class="one column end"><a href="#">What is this?</a></small>
+                        </div>
+                    </div>
+                    <div class="input-row row">
+                        <label for="paypal" class="column"><input id="paypal" type="radio" name="payment-method"> PayPal</label>
+                    </div>
+                    <a class="btn btn-large three offset-by-one" href="#account-payment" data-toggle="collapse" data-target="#payment,#review">Continue</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div id="review" class="account-review collapse">
             <div class="row">
                 <div class="three column centered">
-                    <h2>Review</h2>
+                    <h2>6. Review</h2>
                     <hr>
                 </div>
             </div>
@@ -265,7 +279,5 @@
     </div>
 
 </article>
-        
-{{> sidebar }}
 
 {{> foot }}
