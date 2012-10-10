@@ -28,11 +28,13 @@
 			"children":[
 				{
 					"child-title":"Your Account",
-					"child-id":"account"
+					"child-id":"account",
+					"icon":"cogs"
 				},
 				{
 					"child-title":"Your Wishlist",
-					"child-id":"wishlist"
+					"child-id":"wishlist",
+					"icon":"gift"
 				}
 			]
 		},
@@ -106,7 +108,7 @@
 					"href":"store-locator"
 				},
 				{
-					"title":"Shipping &amp; Returns",
+					"title":"Shipping & Returns",
 					"href":"shipping-and-returns"
 				}
 			]
