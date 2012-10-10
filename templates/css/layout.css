@@ -17,3 +17,5 @@
 /* forms */
 
 select.inline { width:auto; }
+
+fieldset.collapsed { padding: 0; }

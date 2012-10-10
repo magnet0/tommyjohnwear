@@ -9,7 +9,7 @@
 	},
 	"bundles": {
 		"/css/module.css": [
-			"/css/modules/*.css"
+			"css/modules/*.css"
 		],
 		"/css/framework.css": [
 			"/css/framework/normalize.css",

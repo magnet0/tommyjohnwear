@@ -23,7 +23,7 @@
 
 	.product-size {}
 	
-		.product-size > legend { float: left; }
+		.product-size > legend { background:none; float: left; }
 
 		.product-size > label {
 	        -webkit-transition: all .25s;
@@ -64,7 +64,7 @@
 	
 	.product-color {}
 	
-		.product-color > legend { float: left; }
+		.product-color > legend { background:none; float: left; }
 
 		.product-color > label {
 	        -webkit-transition: all .25s;

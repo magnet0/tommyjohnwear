@@ -27,6 +27,13 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 	body { font-size: 125%; }
 }
 
+/*affix*/
+
+.affix { position: fixed; top:0;}
+
+.affix.right { right: 0; }
+.affix.left { left: 0; }
+
 /*collapse element*/
 
 .collapse {
@@ -49,9 +56,24 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 
 }
 
-/*affix*/
+/*tabbed hide/display*/
 
-.affix { position: fixed; top:0;}
+.tabs {
+	
+}
 
-.affix.right { right: 0; }
-.affix.left { left: 0; }
+	.tabs li.active {
+
+	}
+
+.tab-content {
+	
+}
+
+	.tab-pane {
+		display: none;
+	}
+
+	.tab-pane.active {
+		display: block;
+	}

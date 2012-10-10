@@ -29,24 +29,29 @@
 		],
 		"images":[
 			{
-				"large":"images/placehold-600x600.jpg",
+				"active":true,
+				"name":"slide1",
+				"large":"images/product/placehold-big_slider.jpg",
 				"medium":"images/placehold-480x420.jpg",
-				"thumb":"images/placehold-120x120.jpg"
+				"thumb":"images/product/placehold-big_slider_thumb.jpg"
 			},
 			{
-				"large":"images/placehold-600x600.jpg",
+				"name":"slide2",
+				"large":"images/product/placehold-big_slider2.jpg",
 				"medium":"images/placehold-480x420.jpg",
-				"thumb":"images/placehold-120x120.jpg"
+				"thumb":"images/product/placehold-big_slider2_thumb.jpg"
 			},
 			{
-				"large":"images/placehold-600x600.jpg",
+				"name":"slide3",
+				"large":"images/product/placehold-big_slider3.jpg",
 				"medium":"images/placehold-480x420.jpg",
-				"thumb":"images/placehold-120x120.jpg"
+				"thumb":"images/product/placehold-big_slider3_thumb.jpg"
 			},
 			{
-				"large":"images/placehold-600x600.jpg",
+				"name":"slide4",
+				"large":"images/product/placehold-big_slider4.jpg",
 				"medium":"images/placehold-480x420.jpg",
-				"thumb":"images/placehold-120x120.jpg"
+				"thumb":"images/product/placehold-big_slider4_thumb.jpg"
 			}
 		]
 	},

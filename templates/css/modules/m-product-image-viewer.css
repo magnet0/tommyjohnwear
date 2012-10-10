@@ -1,0 +1,29 @@
+/*
+
+	Image Viewer Module
+	Usage: <div.m-image-viewer>
+
+*/
+.image-viewer {
+    
+}
+
+    .image-viewer-stage {
+        border-bottom: 1px solid;
+    }
+
+        ..image-viewer-stage img {
+            display: block;
+        }
+
+    .image-viewer-nav {
+        list-style: none;
+    }
+
+    .image-viewer-thumb {
+
+    }
+
+        .image-viewer-thumb img {
+            float: left;
+        }

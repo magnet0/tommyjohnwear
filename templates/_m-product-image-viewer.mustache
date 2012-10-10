@@ -1,0 +1,19 @@
+
+        <!-- m-image-viewer -->
+        <div class="image-viewer">
+            <div class="image-viewer-stage tab-content">
+                {{# product.images }}
+                <div id="{{ name }}" class="image-viewer-large tab-pane{{# active }} active{{/ active }}">
+                    <img src="{{ large }}" alt="">
+                </div>
+                {{/ product.images }}
+            </div>
+            <ul class="image-viewer-nav tabs">
+                {{# product.images }}
+                <li class="image-viewer-thumb{{# active }} active{{/ active }}">
+                    <a href="#{{ name }}" data-toggle="tab"><img src="{{ thumb }}" alt=""></a>
+                </li>
+                {{/ product.images }}
+            </ul>
+        </div>
+        <!-- /m-image-viewer -->
