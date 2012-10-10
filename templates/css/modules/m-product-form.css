@@ -1,6 +1,7 @@
 /*
 
 	Product shopping cart form
+	including m-product-size, m-product-color
 
 */
 
@@ -16,7 +17,9 @@
 	
 	.product-options {}
 	
-	/* Product size modual */
+	/*/////////////////////////////////////////////////
+	Product size modual
+	/////////////////////////////////////////////////*/
 
 	.product-size {}
 	
@@ -55,7 +58,9 @@
 	        border-color:red;
 	    }
 	
-	/* Product color modual */
+	/*/////////////////////////////////////////////////
+	Product color modual
+	/////////////////////////////////////////////////*/
 	
 	.product-color {}
 	

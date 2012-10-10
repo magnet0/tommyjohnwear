@@ -8,6 +8,8 @@
 
 .invisible { visibility: hidden; }
 
+.pointer { cursor: pointer; }
+
 /* grid */
 
 .padded { padding:1.5em }

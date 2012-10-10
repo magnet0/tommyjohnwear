@@ -1,35 +1,35 @@
 {{> head }}
 		
 <article role="main">
+    <div class="m-nav left padded" data-spy="affix" data-offset-top="113">
+        <ol>
+            <li><a href="wishlist">Wishlist</a></li>
+            <li><a href="">Account Dashboard</a></li>
+            <li><a href="">Account Information</a></li>
+            <li><a href="">Address Book</a></li>
+            <li><a href="">Order History</a></li>
+            <li><a href="">Store Credit</a></li>
+            <li><a href="">Gift Certificate</a></li>
+        </ol>
+    </div>
     <div class="content row">
         <div class="three centered column">
             <h1>{{ meta.title }}</h1>
             <p>Hi {{ name }}! Welcome to your account overview</p>
         </div>
         <div class="row">
-            <div class="account-nav left">
-                <ol>
-                    <li><a href="wishlist">Wishlist</a></li>
-                    <li><a href="">Account Dashboard</a></li>
-                    <li><a href="">Account Information</a></li>
-                    <li><a href="">Address Book</a></li>
-                    <li><a href="">Order History</a></li>
-                    <li><a href="">Store Credit</a></li>
-                    <li><a href="">Gift Certificate</a></li>
-                </ol>
-            </div>
-            <div class="three centered column"><h2>Account Information <small><a class="btn btn-small" href="">edit</a></small></h2>
+            <div class="three centered column"><h2>Account Information <a class="btn tiny" href="">edit</a></h2>
                 <p>
                     {{ full name }}<br>
                     {{ email }}
                 </p>
-                <h2>Default Billing Address <small><a class="btn btn-small" href="">edit</a> <a class="btn btn-small" href="">add</a></small></h2>
+                <h2>Default Billing Address <a class="btn tiny" href="">edit</a> <a class="btn tiny" href="">add</a></h2>
                 <p>
                     {{# billing }}
                         {{> m-account-address }}
                     {{/ billing }}
                 </p>
-                <h2>Default Shipping Address <small><a class="btn btn-small" href="">edit</a> <a class="btn btn-small" href="">add</a></small></h2>
+                <h2>Default Shipping Address <a class="btn tiny" href="">edit</a> <a class="btn tiny" href="">add</a></h2>
                 <h3>Home</h3>
                 <p>
                     {{# shipping }}

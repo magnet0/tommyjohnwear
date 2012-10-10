@@ -29,24 +29,24 @@
 		],
 		"images":[
 			{
-				"large":"//placehold.it/600x600",
-				"medium":"//placehold.it/480x420",
-				"thumb":"//placehold.it/120x120"
+				"large":"images/placehold-600x600.jpg",
+				"medium":"images/placehold-480x420.jpg",
+				"thumb":"images/placehold-120x120.jpg"
 			},
 			{
-				"large":"//placehold.it/600x600",
-				"medium":"//placehold.it/480x420",
-				"thumb":"//placehold.it/120x120"
+				"large":"images/placehold-600x600.jpg",
+				"medium":"images/placehold-480x420.jpg",
+				"thumb":"images/placehold-120x120.jpg"
 			},
 			{
-				"large":"//placehold.it/600x600",
-				"medium":"//placehold.it/480x420",
-				"thumb":"//placehold.it/120x120"
+				"large":"images/placehold-600x600.jpg",
+				"medium":"images/placehold-480x420.jpg",
+				"thumb":"images/placehold-120x120.jpg"
 			},
 			{
-				"large":"//placehold.it/600x600",
-				"medium":"//placehold.it/480x420",
-				"thumb":"//placehold.it/120x120"
+				"large":"images/placehold-600x600.jpg",
+				"medium":"images/placehold-480x420.jpg",
+				"thumb":"images/placehold-120x120.jpg"
 			}
 		]
 	},

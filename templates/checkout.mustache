@@ -20,40 +20,8 @@
             <button data-toggle="collapse" data-target="#checkout" class="btn tiny right">Show/Hide</button>
             <h2>Checkout Method</h2>
             <div id="checkout" class="collapse in">
-                <!-- create account/login -->
-                <div class="account-create four">
-                    <h2>New Customer</h2>
-                    <a class="btn btn-large six" href="#checkout-account" data-toggle="collapse" data-target="#checkout,#billing">Create and account with Facebook</a>
-                    <p class="text-center">or</p>
-                    <form action="">
-                        <div class="input-row">
-                            <label for="new-email">Email</label>
-                            <input id="new-email" type="text">
-                        </div>
-                        <div class="input-row">
-                            <label for="new-password">Password</label>
-                            <input id="new-password" type="password">
-                        </div>
-                        <a class="btn btn-large" href="#checkout-account" data-toggle="collapse" data-target="#checkout,#billing">Create Account</a>
-                    </form>
-                </div>
-                <div class="account-login four">
-                    <h2>Returning Customer</h2>
-                    <a class="btn btn-large six" href="#checkout-account" data-toggle="collapse" data-target="#checkout,#billing">Login with Facebook</a>
-                    <p class="text-center">or</p>
-                    <form action="">
-                        <div class="input-row">
-                            <label for="email">Email</label>
-                            <input id="email" type="text">
-                        </div>
-                        <div class="input-row">
-                            <label for="password">Password</label>
-                            <input id="password" type="password">
-                        </div>
-                        <a class="btn btn-large" href="#checkout-account" data-toggle="collapse" data-target="#checkout,#billing">Log in</a>
-                    </form>
-                </div>
-                <!-- /create account/login -->
+                {{> m-account-create }}
+                {{> m-account-login }}
             </div>
         </div>
     </div>
@@ -63,7 +31,7 @@
             <h2>2. Billion Address</h2>
             <div id="billing" class="collapse">
                 <form action="">
-                    {{> m-form-billing }}
+                    {{> m-account-form-billing }}
                     <div class="input-row row">
                             <label for="shiptosame" class="inline offset-by-one"><input id="shiptosame" type="radio" name="shipto"> Ship to this address</label>
                     </div>
@@ -94,7 +62,7 @@
                 <hr class="four">
                 <h3>Add a new address</h3>
                 <form action="">
-                    {{> m-form-shipping }}
+                    {{> m-account-form-shipping }}
                     <div class="input-row row">
                         <label for="giftwrap" class="inline offset-by-one"><input id="giftwrap" type="checkbox" name="giftwrap"> Gift wrap item - add $5.00</label>
                     </div>
@@ -123,159 +91,114 @@
             <button data-toggle="collapse" data-target="#payment" class="btn tiny right">Show/Hide</button>
             <h2>5. Payment Method</h2>
             <div id="payment" class="collapse">
-                <form action="">
-                    <div class="input-row row">
-                        <label for="cc" class="column"><input id="cc" type="radio" name="payment-method"> Credit Card</label>
-                    </div>
-                    <div class="account-payment-cc">
-                        <div class="input-row row">
-                            <label for="" class="one column inline">Card Type</label>
-                            <select name="" id="" class="three column end">
-                                <option value="">Entry 1</option>
-                                <option value="">Entry 2</option>
-                                <option value="">Entry 3</option>
-                                <option value="">Entry 4</option>
-                            </select>
-                        </div>
-                        <div class="input-row row">
-                            <label for="" class="one column inline">Card Number</label>
-                            <input type="text" class="three column end">
-                        </div>
-                        <div class="input-row row">
-                            <label for="" class="one column inline">Expiration</label>
-                            <select name="" id="" class="one column">
-                                <option value="">Entry 1</option>
-                                <option value="">Entry 2</option>
-                                <option value="">Entry 3</option>
-                                <option value="">Entry 4</option>
-                            </select>
-                            <select name="" id="" class="two column end">
-                                <option value="">Entry 1</option>
-                                <option value="">Entry 2</option>
-                                <option value="">Entry 3</option>
-                                <option value="">Entry 4</option>
-                            </select>
-                        </div>
-                        <div class="input-row row">
-                            <label for="" class="one column inline">CVN</label>
-                            <input type="text" class="three column"><small class="one column end"><a href="#">What is this?</a></small>
-                        </div>
-                    </div>
-                    <div class="input-row row">
-                        <label for="paypal" class="column"><input id="paypal" type="radio" name="payment-method"> PayPal</label>
-                    </div>
-                    <a class="btn btn-large three offset-by-one" href="#account-payment" data-toggle="collapse" data-target="#payment,#review">Continue</a>
-                </form>
+                {{> m-account-form-payment }}
             </div>
         </div>
     </div>
+    <!-- /account review   -->
     <div class="row">
-        <div id="review" class="account-review collapse">
+        <div id="review" class="account-review collapse three centered column">
             <div class="row">
-                <div class="three column centered">
-                    <h2>6. Review</h2>
-                    <hr>
-                </div>
+                <h2>6. Review</h2>
+                <hr>
             </div>
             <div class="row">
                 <!-- cart review -->
-                <div class="three column padded">
-                    {{# cart }}
-                        {{> m-product-table }}
-                    {{/ cart }}
-                    <!-- cart total -->
-                    <table class="three column offset-by-three text-right">
-                        <tr>
-                            <td><strong>Subtotal:</strong> </td>
-                            <td> $125</td>
-                        </tr>
-                        <tr>
-                            <td>Tax &amp; Shipping: </td>
-                            <td>$7</td>
-                        </tr>
-                        <tr>
-                            <td><h1><small>Total:</small></h1> </td>
-                            <td><h1>$132</h1></td>
-                        </tr>
-                    </table>
-                </div>
+                {{# cart }}
+                    {{> m-product-table }}
+                {{/ cart }}
+                <!-- cart total -->
+                <table class="three column offset-by-three text-right">
+                    <tr>
+                        <td><strong>Subtotal:</strong> </td>
+                        <td> $125</td>
+                    </tr>
+                    <tr>
+                        <td>Tax &amp; Shipping: </td>
+                        <td>$7</td>
+                    </tr>
+                    <tr>
+                        <td><h1><small>Total:</small></h1> </td>
+                        <td><h1>$132</h1></td>
+                    </tr>
+                </table>
+                <!-- /cart total -->
                 <!-- /cart review -->
+            </div>
+            <hr>
+            <div class="row">
                 <!-- payment info review -->
-                <div class="three column padded">
-                    <a href="" class="btn btn-small right">edit</a>
-                    <h3>Payment info</h3>
-                    <div class="row">
-                        <div class="three column">
-                            <strong>Card Type</strong>
-                        </div>
-                        <div class="three column">
-                            Visa
-                        </div>
+                <h3>Payment info <a href="" class="btn tiny">edit</a></h3>
+                <div class="row">
+                    <div class="three column">
+                        <strong>Card Type</strong>
                     </div>
-                    <div class="row">
-                        <div class="three column">
-                            <strong>Card Number</strong>
-                        </div>
-                        <div class="three column">
-                            ***********5555
-                        </div>
+                    <div class="three column">
+                        Visa
                     </div>
-                    <div class="row">
-                        <div class="three column">
-                            <strong>Expires</strong>
-                        </div>
-                        <div class="three column">
-                            01/18
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="three column">
+                        <strong>Card Number</strong>
                     </div>
-                    <div class="row">
-                        <div class="three column">
-                            <strong>CVN</strong>
-                        </div>
-                        <div class="three column">
-                            1234
-                        </div>
+                    <div class="three column">
+                        ***********5555
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="three column">
+                        <strong>Expires</strong>
+                    </div>
+                    <div class="three column">
+                        01/18
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="three column">
+                        <strong>CVN</strong>
+                    </div>
+                    <div class="three column">
+                        1234
                     </div>
                 </div>
                 <!-- /payment info review -->
             </div>
+            <hr>
             <div class="row">
                 <!-- billing info review -->
-                <div class="three column padded">
-                    <a href="" class="btn btn-small right">edit</a>
-                    <h3>Billing info</h3>
-                    <div id="billing-address" class="address-review">
-                        {{# billing }}
-                            {{> m-account-address }}
-                        {{/ billing }}
-                    </div>
+                <h3>Billing info <a href="" class="btn tiny">edit</a></h3>
+                <div id="billing-address" class="address-review">
+                    {{# billing }}
+                        {{> m-account-address }}
+                    {{/ billing }}
                 </div>
                 <!-- /billing info review -->
+            </div>
+            <hr>
+            <div class="row">
                 <!-- shipping info review -->
-                <div class="three column padded">
-                    <a href="" class="btn btn-small right">edit</a>
-                    <h3>Shipping info</h3>
-                    <div id="shipping-address" class="address-review">
-                        {{# shipping }}
-                            {{> m-account-address }}
-                        {{/ shipping }}
-                    </div>
+                <h3>Shipping info <a href="" class="btn tiny">edit</a></h3>
+                <div id="shipping-address" class="address-review">
+                    {{# shipping }}
+                        {{> m-account-address }}
+                    {{/ shipping }}
                 </div>
                 <!-- /shipping info review -->
-                <hr>
-                <div class="row">
-                    <form action="" class="three column offset-by-two">
-                        <div class="input-row row">
-                            <input type="hidden"> <!-- use hidden fields + javascript to gather all the data from above forms? -->
-                            <label for="newsletter"><input id="newsletter" type="checkbox" name="newsletter"> Sign up for the occasional newsletter</label>
-                            <p class="four"><small>Your privacy is important to us. We'll never share or sell your information to 3rd parties. You can easily unsubscribe at any time.</small></p>
-                        </div>
-                        <a class="btn btn-large four" href="thank-you"><strong>Complete your order</strong></a>
-                    </form>
-                </div>
-                <!-- /cart total -->
             </div>
-        </div> <!-- /account review   -->
+            <hr>
+            <div class="row">
+                <form action="" class="four centered column">
+                    <div class="input-row row">
+                        <input type="hidden"> <!-- use hidden fields + javascript to gather all the data from above forms? -->
+                        <label for="newsletter"><input id="newsletter" type="checkbox" name="newsletter"> Sign up for the occasional newsletter</label>
+                        <p><small>Your privacy is important to us. We'll never share or sell your information to 3rd parties. You can easily unsubscribe at any time.</small></p>
+                    </div>
+                    <a class="btn btn-large expand" href="thank-you"><strong>Complete your order</strong></a>
+                </form>
+            </div>
+            <!-- /cart total -->
+        </div>
+        <!-- /account review   -->
     </div>
 
 </article>
