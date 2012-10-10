@@ -12,8 +12,13 @@
             <h2>Site Navigation</h2>
             <ul class="hlist nav-bar">
                 {{#pages}}
-                <li class="hlist-item nav-item">
-                    <a href="{{id}}">{{title}}</a>
+                <li class="hlist-item nav-item{{# dropdown}} dropdown{{/ dropdown}}">
+                    <a href="{{id}}"{{# dropdown}} class="dropdown-toggle" data-toggle="dropdown" data-target="#{{ id }}"{{/ dropdown}}>{{title}}</a>
+                    {{# dropdown}}<ul class="dropdown-menu">{{/ dropdown}}
+                        {{# children}}
+                            <li><a href="{{ child-id }}">{{ child-title }}</a></li>
+                        {{/ children}}
+                    {{# dropdown}}</ul>{{/ dropdown}}
                 </li>
                 {{/pages}}
             </ul>

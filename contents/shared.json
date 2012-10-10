@@ -23,7 +23,18 @@
 		},
 		{
 			"title": "Account",
-			"id": "account"
+			"id": "account",
+			"dropdown": true,
+			"children":[
+				{
+					"child-title":"Your Account",
+					"child-id":"account"
+				},
+				{
+					"child-title":"Your Wishlist",
+					"child-id":"wishlist"
+				}
+			]
 		},
 		{
 			"title": "Checkout",
