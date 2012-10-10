@@ -45,6 +45,10 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
   height: auto;
 }
 
+.collapsed[data-toggle="collapse"]{
+
+}
+
 /*affix*/
 
 .affix { position: fixed; top:0;}

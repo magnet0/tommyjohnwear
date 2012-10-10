@@ -4,10 +4,10 @@
     <div class="m-nav right padded" data-spy="affix" data-offset-top="113">
         <p>Checkout Method</p>
         <ol>
-            <li><a href="#account-billing" data-toggle="collapse" data-target="#billing">Billing Address</a></li>
-            <li><a href="#account-shipping" data-toggle="collapse" data-target="#shipping">Shipping Address</a></li>
-            <li><a href="#account-method" data-toggle="collapse" data-target="#method">Shipping Method</a></li>
-            <li><a href="#account-payment" data-toggle="collapse" data-target="#payment">Payment Method</a></li>
+            <li class="icon-ok-sign"><a href="#account-billing" data-toggle="collapse" data-target="#billing">Billing Address</a></li>
+            <li class="icon-ok-sign"><a href="#account-shipping" data-toggle="collapse" data-target="#shipping">Shipping Address</a></li>
+            <li class="icon-ok-sign"><a href="#account-method" data-toggle="collapse" data-target="#method">Shipping Method</a></li>
+            <li class="icon-ok-sign"><a href="#account-payment" data-toggle="collapse" data-target="#payment">Payment Method</a></li>
         </ol>
     </div>
     <div class="row">
@@ -17,7 +17,7 @@
     </div>
     <div class="row">
         <div id="checkout-account" class="three centered column">
-            <button data-toggle="collapse" data-target="#checkout" class="btn tiny right">Show/Hide</button>
+            <button data-toggle="collapse" data-target="#checkout" class="btn tiny right"><i class="icon-sort"></i></button>
             <h2>Checkout Method</h2>
             <div id="checkout" class="collapse in">
                 {{> m-account-create }}
@@ -27,7 +27,7 @@
     </div>
     <div class="row">
         <div id="account-billing" class="three centered column">
-            <button data-toggle="collapse" data-target="#billing" class="btn tiny right">Show/Hide</button>
+            <button data-toggle="collapse" data-target="#billing" class="btn tiny right"><i class="icon-sort"></i></button>
             <h2>2. Billion Address</h2>
             <div id="billing" class="collapse">
                 <form action="">
@@ -45,7 +45,7 @@
     </div>
     <div class="row">
         <div id="account-shipping" class="three centered column">
-            <button data-toggle="collapse" data-target="#shipping" class="btn tiny right">Show/Hide</button>
+            <button data-toggle="collapse" data-target="#shipping" class="btn tiny right"><i class="icon-sort"></i></button>
             <h2>3. Shipping Address</h2>
             <div id="shipping" class="collapse">
                 <h3>Use a saved address</h3>
@@ -73,7 +73,7 @@
     </div>
     <div class="row">
         <div id="account-method" class="three centered column">
-            <button data-toggle="collapse" data-target="#method" class="btn tiny right">Show/Hide</button>
+            <button data-toggle="collapse" data-target="#method" class="btn tiny right"><i class="icon-sort"></i></button>
             <h2>4. Shipping Method</h2>
             <div id="method" class="collapse">
                 <form action="">
@@ -88,7 +88,7 @@
     </div>
     <div class="row">
         <div id="account-payment" class="three centered column">
-            <button data-toggle="collapse" data-target="#payment" class="btn tiny right">Show/Hide</button>
+            <button data-toggle="collapse" data-target="#payment" class="btn tiny right"><i class="icon-sort"></i></button>
             <h2>5. Payment Method</h2>
             <div id="payment" class="collapse">
                 {{> m-account-form-payment }}
@@ -100,7 +100,6 @@
         <div id="review" class="account-review collapse three centered column">
             <div class="row">
                 <h2>6. Review</h2>
-                <hr>
             </div>
             <div class="row">
                 <!-- cart review -->
@@ -128,7 +127,7 @@
             <hr>
             <div class="row">
                 <!-- payment info review -->
-                <h3>Payment info <a href="" class="btn tiny">edit</a></h3>
+                <h3>Payment info <a href="" class="btn tiny"><i class="icon-cog"></i> edit</a></h3>
                 <div class="row">
                     <div class="three column">
                         <strong>Card Type</strong>
@@ -166,7 +165,7 @@
             <hr>
             <div class="row">
                 <!-- billing info review -->
-                <h3>Billing info <a href="" class="btn tiny">edit</a></h3>
+                <h3>Billing info <a href="" class="btn tiny"><i class="icon-cog"></i> edit</a></h3>
                 <div id="billing-address" class="address-review">
                     {{# billing }}
                         {{> m-account-address }}
@@ -177,7 +176,7 @@
             <hr>
             <div class="row">
                 <!-- shipping info review -->
-                <h3>Shipping info <a href="" class="btn tiny">edit</a></h3>
+                <h3>Shipping info <a href="" class="btn tiny"><i class="icon-cog"></i> edit</a></h3>
                 <div id="shipping-address" class="address-review">
                     {{# shipping }}
                         {{> m-account-address }}
