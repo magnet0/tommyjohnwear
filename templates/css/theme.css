@@ -80,7 +80,12 @@ h3, .h3 {
 }
 
 /* Lead */
-.lead { line-height: 1.5; }
+.lead {
+	font-size: 1.125em;
+	font-weight: lighter;
+	margin-bottom: 1.285714286em;
+	line-height: 1.285714286;
+}
 
 /* Links */
 a {
@@ -123,31 +128,48 @@ header[role="banner"] {
 		border: none;
 	}
 	
-	nav[role="navigation"] > h2 {
-		height: 0;
-		overflow: hidden;
-		position: absolute;
-		width: 0;
+		header[role="banner"] .base {
+			float: left;
+		}
+	
+		header[role="banner"] .logo {
+			height: 1em;
+		}
+		
+	
+	nav[role="navigation"] {
+		float: right;
 	}
 	
-	header[role="banner"] .logo {
-		height: 1.5em;
-	}
+		nav[role="navigation"] > h2 {
+			height: 0;
+			overflow: hidden;
+			position: absolute;
+			width: 0;
+		}
+
 
 	/* Navigation */
 	
 	.nav-bar {
 		font-family: "dosis-medium";
+		font-size: .888888889em;
 		text-transform: uppercase;
 	}
 		
 		.nav-item {
-			font-size: 1em;
+			line-height: 1.5;
 		}
+		
+			.nav-item > a {
+				padding: 0 .75em;
+			}
 
 
 /* Stage */
-.stage {}
+.stage {
+	padding: 6em 0;
+}
 
 
 /* Category Items */
