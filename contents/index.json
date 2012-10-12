@@ -10,56 +10,53 @@
 	"primary-feature":[
 		{
 			"href":"tech",
-			"img":"images/placehold-350x200.jpg",
+			"img":"images/dummy.png",
 			"alt":"image alt text",
-			"append-text":"What makes our underwear better than any other? <em>learn about our technology and fit</em>"
+			"text":"Ethical tumblr bicycle rights before they technology.",
+			"action": "Learn more"
 		},
 		{
-			"href":"tech",
-			"img":"images/placehold-350x200.jpg",
+			"href":"#video",
+			"img":"images/dummy.png",
 			"alt":"This picture",
-			"prepend-text": false,
-			"append-text":"What makes our underwear better than any other? <em>learn about our technology and fit</em>"
+			"text":"Ethical tumblr bicycle rights before they technology.",
+			"action": "Watch explanation"
 		},
 		{
-			"href":"tech",
-			"img":"images/placehold-350x200.jpg",
+			"href":"#garauntee",
+			"img":"images/dummy.png",
 			"alt":"Another picture",
-			"prepend-text": false,
-			"append-text":"What makes our underwear better than any other? <em>learn about our technology and fit</em>"
+			"text":"Ethical tumblr bicycle rights before they technology.",
+			"action": "See our garauntee"
 		}
 	],
 	"secondary-feature":[
 		{
 			"href":"category",
-			"wrapper-class":"m-padding",
-			"img":"images/placehold-350x200.jpg",
-			"append-text":"Second Skin"
+			"img":"images/dummy.png",
+			"title":"Second Skin"
 		},
 		{
 			"href":"category",
-			"wrapper-class":"m-padding",
-			"img":"images/placehold-350x200.jpg",
-			"append-text":"Sport"
+			"img":"images/dummy.png",
+			"title":"Sport"
 		},
 		{
 			"href":"category",
-			"wrapper-class":"m-padding",
-			"img":"images/placehold-350x200.jpg",
-			"append-link":"",
-			"append-text":"Active"
+			"img":"images/dummy.png",
+			"title":"Active"
 		}
 	],
-	"tertiary-feature":[
+	"promos":[
 		{
 			"href":"challenge",
-			"append-text":"The Tommy John Challenge promo"
+			"text":"The Tommy John Challenge promo"
 		},
 		{
 			"href":"starter-kit",
 			"title":"The Starter Kit",
-			"prepend-text":"Purchase and Lorem ipsum <strong>free</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-			"append-text":"Details"
+			"text":"Purchase and Lorem ipsum <strong>free</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+			"action":"Details"
 		}
 	]
 }

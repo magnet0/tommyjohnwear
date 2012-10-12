@@ -1,8 +1,5 @@
-<a href="{{ href }}">
-{{#wrapper-class}}<div class="{{ wrapper-class }}">{{/wrapper-class}}
-  {{#title}}<h2>{{{ title }}}</h2>{{/title}}
-  {{#prepend-text}}<p>{{{ prepend-text }}}</p>{{/prepend-text}}
-  {{#img}}<img src="{{{ img }}}" alt="{{alt}}">{{/img}}
-  {{#append-text}}<p>{{{ append-text }}}</p>{{/append-text}}
-{{#wrapper-class}}</div>{{/wrapper-class}}
+<a class="m-primary-feature" href="{{ href }}">
+    {{#title}}<h2 class="pf-title">{{{ title }}}</h2>{{/title}}
+    {{#img}}<img class="pf-img" src="{{{ img }}}" alt="{{alt}}">{{/img}}
+    {{#text}}<p clas="pf-content">{{{ text }}} <em class="pf-action h3">{{action}}</em></p>{{/text}}
 </a>

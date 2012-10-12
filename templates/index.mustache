@@ -15,7 +15,7 @@
 	</div>
 	<div class="content">
 	    
-	    <div class="m-primary-feature m-feature row">
+	    <div class="m-primary-features row">
 	    	{{#primary-feature}}
     		<div class="two columns text-center">
     			{{> m-feature}}
@@ -25,20 +25,20 @@
 
         <hr>
 
-        <div class="m-secondary-feature m-feature row">
+        <div class="m-secondary-features row">
             {{#secondary-feature}}
             <div class="two columns text-center">
-                {{> m-feature}}
+                {{> m-secondary-feature}}
             </div>
             {{/secondary-feature}}
         </div>
 
         <div class="row">
-            {{#tertiary-feature}}
+            {{#promos}}
             <div class="three columns text-center">
-                {{> m-feature}}
+                {{> m-promo}}
             </div>
-            {{/tertiary-feature}}
+            {{/promos}}
         </div>
         
 	</div>
