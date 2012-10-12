@@ -42,7 +42,7 @@
                     <div class="input-row row">
                             <label for="shiptodiff" class="inline offset-by-one"><input id="shiptodiff" type="radio" name="shipto"> Ship to different address</label>
                     </div>
-                    <a class="btn btn-large three offset-by-one" href="#account-billing" data-toggle="collapse" data-target="#shipping,#billing">Continue</a>
+                    <a class="btn large three offset-by-one" href="#account-billing" data-toggle="collapse" data-target="#shipping,#billing">Continue</a>
                 </form>
             </div>
         </div>
@@ -61,7 +61,7 @@
                             <option value="">Work</option>
                         </select>
                     </div>
-                    <a class="btn btn-large three offset-by-one" href="#account-shipping" data-toggle="collapse" data-target="#shipping,#method">Continue</a> 
+                    <a class="btn large three offset-by-one" href="#account-shipping" data-toggle="collapse" data-target="#shipping,#method">Continue</a> 
                 </form>
                 <hr class="four">
                 <h3>Add a new address</h3>
@@ -70,7 +70,7 @@
                     <div class="input-row row">
                         <label for="giftwrap" class="inline offset-by-one"><input id="giftwrap" type="checkbox" name="giftwrap"> Gift wrap item - add $5.00</label>
                     </div>
-                    <a class="btn btn-large three offset-by-one" href="#account-shipping" data-toggle="collapse" data-target="#shipping,#method">Continue</a>
+                    <a class="btn large three offset-by-one" href="#account-shipping" data-toggle="collapse" data-target="#shipping,#method">Continue</a>
                 </form>
             </div>
         </div>
@@ -85,7 +85,7 @@
                     <div class="input-row row"><label for="shipping2" class="column"><input type="radio" name="shipping" id="shipping2"> UPS Ground - $x.xx</label></div>
                     <div class="input-row row"><label for="shipping3" class="column"><input type="radio" name="shipping" id="shipping3"> UPS 2 day - $x.xx</label></div>
                     <div class="input-row row"><label for="shipping4" class="column"><input type="radio" name="shipping" id="shipping4"> UPS Overnight - $x.xx</label></div>
-                    <a class="btn btn-large three" href="#account-method" data-toggle="collapse" data-target="#payment,#method">Continue</a>
+                    <a class="btn large three" href="#account-method" data-toggle="collapse" data-target="#payment,#method">Continue</a>
                 </form>
             </div>
         </div>
@@ -130,41 +130,8 @@
             </div>
             <hr>
             <div class="row">
-                <!-- payment info review -->
                 <h3>Payment info <a href="" class="btn tiny"><i class="icon-cog"></i> edit</a></h3>
-                <div class="row">
-                    <div class="three column">
-                        <strong>Card Type</strong>
-                    </div>
-                    <div class="three column">
-                        Visa
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="three column">
-                        <strong>Card Number</strong>
-                    </div>
-                    <div class="three column">
-                        ***********5555
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="three column">
-                        <strong>Expires</strong>
-                    </div>
-                    <div class="three column">
-                        01/18
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="three column">
-                        <strong>CVN</strong>
-                    </div>
-                    <div class="three column">
-                        1234
-                    </div>
-                </div>
-                <!-- /payment info review -->
+                {{> m-account-payment }}
             </div>
             <hr>
             <div class="row">
@@ -196,7 +163,7 @@
                         <label for="newsletter"><input id="newsletter" type="checkbox" name="newsletter"> Sign up for the occasional newsletter</label>
                         <p><small>Your privacy is important to us. We'll never share or sell your information to 3rd parties. You can easily unsubscribe at any time.</small></p>
                     </div>
-                    <a class="btn btn-large expand" href="thank-you"><strong>Complete your order</strong></a>
+                    <a class="btn large expand" href="thank-you"><strong>Complete your order</strong></a>
                 </form>
             </div>
             <!-- /cart total -->

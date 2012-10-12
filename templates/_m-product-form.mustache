@@ -6,7 +6,7 @@
                 <div class="row collapsed"><span class="label">{{ product.category }}</span></div>
                 <h1 class="product-form-title">{{ product.name }} <small class="product-form-subtitle">{{ product.subtitle }}</small></h1>
                 <div class="product-form-meta">
-                    <div class="row">{{> m-rated }} {{ total reviews }} reviews</div>
+                    <div class="row">{{> m-review-rating }} {{ total reviews }} reviews</div>
                     <h4 class="product-form-price"><span class="currency-type">$</span>{{ product.price }}</h4>
                 </div>
                     {{> m-product-form-size }}

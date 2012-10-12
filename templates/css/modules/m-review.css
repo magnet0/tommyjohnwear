@@ -1,9 +1,21 @@
 /*
-
-	Rating Module
-	Usage: <fieldset.rating>
+	Product Review
+	including m-review-rating, m-review-write
 
 */
+
+.m-review {}
+
+	.review-rating {}
+	.review-title {}
+	.review-meta {}
+	.review-author-info {}
+	.review-interact {}
+
+/*/////////////////////////////////////////////////
+Review-Rating - fieldset.rating
+/////////////////////////////////////////////////*/
+
 .rating {
 	float: left;
 	border: none;

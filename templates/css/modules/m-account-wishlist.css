@@ -1,0 +1,14 @@
+/*
+	Wishlist styles
+*/
+
+.m-wishlist-item {}
+	
+	.wishlist-remove { font-size: 200%; }
+	.wishlist-remove i {  }
+	.wishlist-remove i:before {  }
+	.wishlist-img {}
+	.wishlist-product-info {}
+	.wishlist-name {}
+	.wishlist-category {}
+	.wishlist-button {}

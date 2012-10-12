@@ -1,0 +1,35 @@
+/*
+
+	cart shopping cart tabel
+	Usage: <tabel.m-cart-table>
+
+*/
+
+.m-cart-table {}
+
+	.m-cart-table thead {}
+		.m-cart-table thead tr {}
+		.m-cart-table thead th {}
+	
+	.m-cart-table tbody {}
+		.m-cart-table tbody tr {}
+		.m-cart-table tbody th {}
+
+	.cart-table-delete { text-align: center; }
+
+  .cart-table-info {}
+	  .cart-table-img { vertical-align: middle; height: 25px; }
+	  .cart-table-name {}
+	  .cart-table-category {}
+	  .cart-table-size {}
+	  .cart-table-aside {
+	  	color:#666;
+	  	margin-left:2em;
+	  	font-size:.85em;
+	  }
+
+  .cart-table-price {}
+
+  .cart-table-quantity {}
+
+  .cart-table-subtotal {}

@@ -39,8 +39,21 @@
 			]
 		},
 		{
-			"title": "Checkout",
-			"id": "checkout"
+			"title": "Cart",
+			"id": "cart",
+			"dropdown": true,
+			"children":[
+				{
+					"child-title":"Cart",
+					"child-id":"cart",
+					"icon":"shopping-cart"
+				},
+				{
+					"child-title":"Checkout",
+					"child-id":"checkout",
+					"icon":"credit-card"
+				}
+			]
 		}
 	],
 	"undershirts": [

@@ -1,0 +1,17 @@
+            <!-- cart table row -->
+            <tr>
+                <td class="cart-table-delete"><i class="icon-remove-sign"></i></td>
+                <td class="cart-table-info">
+                    <img  class="cart-table-img" src="{{ image.thumb }}" alt="" class="cart-table-img">
+                    <span class="cart-table-name">{{ name }}</span> -
+                    <span class="cart-table-category">{{ category }}</span> -
+                    <span class="cart-table-size">{{ size }}</span>
+                    {{# autoship }}
+                    <span class="cart-table-aside">Auto-ship ever {{ autoship }} <a href="#">edit</a></span>
+                    {{/ autoship }}
+                </td>
+                <td class="cart-table-price">${{ price }}</td>
+                <td class="cart-table-quantity">{{ quantity }}</td>
+                <td class="cart-table-subtotal">$54</td>
+            </tr>
+            <!-- /cart table row -->

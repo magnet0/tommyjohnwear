@@ -10,6 +10,8 @@
 
 .pointer { cursor: pointer; }
 
+hr.space { border: none; border-width: 0; clear: both; margin: 22px 0 22px; height: 0; }
+
 /* grid */
 
 .padded { padding:1.5em }
