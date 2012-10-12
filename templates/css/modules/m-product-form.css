@@ -1,59 +1,59 @@
 /*
 
 	Product shopping cart form
-	including m-product-size, m-product-color
+	including m-product-form-size, m-product-form-color
 
 */
 
-.product {}
+.m-product-form {}
 
-	.product-title {}
+	.product-form-title {}
 
-	.product-subtitle {}
+	.product-form-subtitle {}
 
-	.product-meta {}
+	.product-form-meta {}
 
-		.product-price {}
+		.product-form-price {}
 	
-	.product-options {}
+	.product-form-options {}
 	
 	/*/////////////////////////////////////////////////
 	Product size modual
 	/////////////////////////////////////////////////*/
 
-	.product-size {}
+	.product-form-size {}
 	
-		.product-size > legend { background:none; float: left; }
+		.product-form-size > legend { background:none; float: left; }
 
-		.product-size > label {
+		.product-form-size > label {
 	        -webkit-transition: all .25s;
 	           -moz-transition: all .25s;
 	             -o-transition: all .25s;
 	                transition: all .25s;
 	    }
 
-		.product-size:not(:checked) > input {
+		.product-form-size:not(:checked) > input {
       position: absolute;
       top: -9999px;
       clip: rect(0,0,0,0);
     }
 
-		.product-size:not(:checked) > label {
+		.product-form-size:not(:checked) > label {
 			border:1px solid #ccc;
 			cursor: pointer;
 			float: left;
 			padding: .25em .5em;
     }
 
-		.product-size > label .hide-on-small-screen {
+		.product-form-size > label .hide-on-small-screen {
 			display: none;
     }
 
-	    .product-size:not(:checked) > label:hover {
+	    .product-form-size:not(:checked) > label:hover {
 	    	border-color:red;
 	    }
 
-	    .product-size > input:checked + label {
+	    .product-form-size > input:checked + label {
 	        background-color: red;
 	        border-color:red;
 	    }
@@ -62,24 +62,24 @@
 	Product color modual
 	/////////////////////////////////////////////////*/
 	
-	.product-color {}
+	.product-form-color {}
 	
-		.product-color > legend { background:none; float: left; }
+		.product-form-color > legend { background:none; float: left; }
 
-		.product-color > label {
+		.product-form-color > label {
 	        -webkit-transition: all .25s;
 	           -moz-transition: all .25s;
 	             -o-transition: all .25s;
 	                transition: all .25s;
 	    }
 
-		.product-color:not(:checked) > input {
+		.product-form-color:not(:checked) > input {
 	        position: absolute;
 	        top: -9999px;
 	        clip: rect(0,0,0,0);
 	    }
 
-		.product-color:not(:checked) > label {
+		.product-form-color:not(:checked) > label {
 			border:#FFF .25em solid;
 			cursor: pointer;
 			display: inline-block;
@@ -90,7 +90,7 @@
 			height:1.5em;
 	    }
 
-	    .product-color:not(:checked) > label:hover,
-	    .product-color > input:checked + label {
+	    .product-form-color:not(:checked) > label:hover,
+	    .product-form-color > input:checked + label {
             border: transparent 0 solid;
         }

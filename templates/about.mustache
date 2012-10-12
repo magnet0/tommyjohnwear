@@ -1,0 +1,53 @@
+{{> head }}
+
+<div role="main">
+    <div class="m-stage row">
+        
+        <div class="four column centered text-center">
+            <div class="m-stage-content">
+                <h1 class="heading">{{stage.heading}}</h1>
+                <p class="lead">{{stage.lead}}</p>
+            </div>
+        </div>
+        
+	</div>
+	<div class="content">
+	    
+	    <div class="m-primary-feature m-feature row">
+	    	{{#primary-feature}}
+    		<div class="two centered columns text-center">
+    			{{> m-feature}}
+    		</div>
+	    	{{/primary-feature}}
+        </div>
+
+        <div class="row">
+            <div class="two centered column">
+                <div class="two column"><img src="images/placehold-200x350.jpg" alt=""></div>
+                <div class="two column text-center">
+                    <p>OR</p>
+                </div>
+                <div class="two column"><img src="images/placehold-200x350.jpg" alt=""></div>
+            </div>
+        </div>
+
+        <div class="m-secondary-feature m-feature row">
+            <div class="two centered columns text-center">
+                <h1>The problems we solve</h1>
+                <p>We felt cheated when the shirts that fit the models so well on department store packaging and magazines made us look like a box and appear 10-30 lbs heavier. Instead of complaining or “dealing” with it, we did something about it.</p>
+            </div>
+            {{#secondary-feature}}
+            <div class="two centered columns text-center">
+                {{> m-feature}}
+            </div>
+            {{/secondary-feature}}
+            <!-- last column floats, this dummy column prevents that -->
+            <div class="columns hide"></div>
+        </div>
+        
+	</div>
+</div>
+		
+{{> sidebar}}
+
+{{> foot }}

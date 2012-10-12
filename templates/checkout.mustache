@@ -20,8 +20,12 @@
             <button data-toggle="collapse" data-target="#checkout" class="btn tiny right"><i class="icon-sort"></i></button>
             <h2>Checkout Method</h2>
             <div id="checkout" class="collapse in">
-                {{> m-account-create }}
-                {{> m-account-login }}
+                <div class="account-login four">
+                    {{> m-account-create }}
+                </div>
+                <div class="account-create four">
+                    {{> m-account-login }}
+                </div>
             </div>
         </div>
     </div>

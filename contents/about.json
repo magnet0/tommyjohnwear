@@ -1,0 +1,42 @@
+{
+	"meta": {
+		"title": "Meta Title",
+		"description": "Meta description"
+	},
+	"stage":{
+		"heading":"We make undergarments that fit you",
+		"lead":"Our founder Tom Patterson was fed up with the way his undershirt fit and set out to make the ultimate undershirt that is now the must have for every man."
+	},
+	"primary-feature":[
+		{
+			"title":"The difference",
+			"append-text":"Men's undershirts in general do not fit well; they are either too baggy, too short, cut like a box, give you EFG “excess fabric gut” or BMT \"billowy muffin top\" appearance, shrink quickly, and are overall unflattering. We make clothes that fit and look better on men of all shapes and sizes."
+		}
+	],
+	"secondary-feature":[
+		{
+			"title":"Box Fit",
+			"prepend-text":"Men's undershirts today are made to fit boxes. We don’t know many men who have a torso shaped like a box, either. Why are the leading designer undershirts the same width at the waist as they are in the chest area?"
+		},
+		{
+			"title":"Untucking",
+			"prepend-text":"Due to the box cut and shrinkage, undershirts quickly bunch up and ride up above the beltline. Basically, we got sick of constantly unzipping our pants, pulling our undershirt down, and re-tucking our undershirts every time we got up to go somewhere."
+		},
+		{
+			"title":"Excess Fabric Gut (EFG)",
+			"prepend-text":"Look around the office. Almost every man (fit or unfit) suffers from the appearance of the dreaded “excess fabric gut” appearance that is caused by the undershirt untucking, bunching, and riding up above his beltline."
+		},
+		{
+			"title":"Shrinkage",
+			"prepend-text":"The majority of men’s undershirts today are made out of cheap cotton blends that quickly yellow in the armpits and shrink quickly to a size that no longer fits. This is why they make good dish rags."
+		},
+		{
+			"title":"Sweating and Yellowing",
+			"prepend-text":"Most undershirts are made out of thicker cotton blends that don’t breathe well. They cause your body temperature to quickly rise, forcing you to sweat more, thus turning your shirt yellow very quickly."
+		},
+		{
+			"title":"Breathability",
+			"prepend-text":"If you sweat and wear a moisture wicking undershirt, your outershirt will likely be wetter than if you were wearing an undershirt made of a material that will absorb moisture (like a Micro Modal blend)."
+		}
+	]
+}

@@ -1,0 +1,9 @@
+
+                <!-- m-product-color -->
+                <fieldset class="product-form-color collapsed">
+                    <legend>Color:</legend>
+                    {{# product.colors }}
+                    	<input type="radio" id="color-{{ id }}" name="color" value="{{ id }}"><label class="product-form-color-label" for="color-{{ id }}" title="{{ name }}" style="background-color:#{{ hex }}">{{ name }}</label>
+                    {{/ product.colors }}
+                </fieldset>
+                <!-- /m-product-color -->

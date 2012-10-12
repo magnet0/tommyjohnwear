@@ -4,7 +4,7 @@
 	Usage: <div.m-image-viewer>
 
 */
-.image-viewer {
+.m-product-image-viewer {
     
 }
 
@@ -12,7 +12,11 @@
         border-bottom: 1px solid;
     }
 
-        ..image-viewer-stage img {
+        .image-viewer-display {
+            
+        }
+
+        .image-viewer-stage img {
             display: block;
         }
 

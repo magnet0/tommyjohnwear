@@ -1,17 +1,17 @@
 
-            <!-- m-product-cart -->
-            <form action="" class="product">
+            <!-- m-product-form-cart -->
+            <form action="" class="m-product-form">
                 <input type="hidden" name="title" value="{{ product.name }}">
                 <input type="hidden" name="price" value="{{ product.price }}">
-                <h1 class="product-title">{{ product.name }}</h1>
-                <h3 class="product-subtitle">{{ product.subtitle }}</h3>
-                <div class="product-meta row">
-                    <h4 class="product-price three column"><span class="currency-type">$</span>{{ product.price }}</h4>
-                    <div class="three column">{{> m-rated }} {{ total reviews }} reviews</div>
+                <div class="row collapsed"><span class="label">{{ product.category }}</span></div>
+                <h1 class="product-form-title">{{ product.name }} <small class="product-form-subtitle">{{ product.subtitle }}</small></h1>
+                <div class="product-form-meta">
+                    <div class="row">{{> m-rated }} {{ total reviews }} reviews</div>
+                    <h4 class="product-form-price"><span class="currency-type">$</span>{{ product.price }}</h4>
                 </div>
-                    {{> m-product-size }}
-                    {{> m-product-color }}
-                <fieldset class="product-options collapsed">
+                    {{> m-product-form-size }}
+                    {{> m-product-form-color }}
+                <fieldset class="product-form-options collapsed">
                     <div class="row">
                         <div class="column">
                             <label class="right inline" for="quantity">Qty.</label>
@@ -43,8 +43,8 @@
                 <p>
                     <a href="fit-guide">Fit Guide</a>
                 </p>
-                <p class="product-description">
+                <p class="product-form-description">
                     {{ product.description }}
                 </p>
             </form>
-            <!-- /m-product-cart -->
+            <!-- /m-product-form-cart -->
