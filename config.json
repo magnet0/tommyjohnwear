@@ -12,6 +12,7 @@
 			"css/modules/*.css"
 		],
 		"/css/framework.css": [
+			"/css/framework/bootstrap.css",
 			"/css/framework/normalize.css",
 			"/css/framework/foundation.css"
 		],

@@ -14,3 +14,34 @@
 	.feature-row-content {}
 		.feature-row-content .feature-row-title {}
 		.feature-row-content p {}
+
+.m-primary-feature,
+.m-secondary-feature {
+	border: none;
+	display: block;
+	position: relative;
+}
+
+	.pf-img,
+	.sf-img {
+		width: 100%;
+	}
+
+	.pf-action,
+	.sf-action {
+		display: block;
+		font-style: normal;
+		text-transform: uppercase;
+	}
+
+.m-primary-feature {
+	background-color: #f1f1f1;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+	   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+	     -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+	        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+	margin: 0 2.333333333em;
+}
+
+
+.m-secondary-feature {}
