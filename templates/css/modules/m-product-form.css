@@ -5,57 +5,79 @@
 
 */
 
-.m-product-form {}
+.m-product-form { margin-top:3em; }
 
-	.product-form-title {}
+	.product-form-title { margin: 0.375em 0; }
 
 	.product-form-subtitle {}
 
 	.product-form-meta {}
 
-		.product-form-price {}
+		.product-form-price { margin: .75em 0; }
 	
 	.product-form-options {}
+
+	.product-form-size,
+	.product-form-color { padding: 0.5em 0; }
 	
 	/*/////////////////////////////////////////////////
 	Product size modual
 	/////////////////////////////////////////////////*/
 
 	.product-form-size {}
+	.product-form-size a:last-child { margin-left:1.5em }
 	
-		.product-form-size > legend { background:none; float: left; }
+		.product-form-size > legend { background:none; margin: 0; }
 
-		.product-form-size > label {
+		.product-form-size label {
 	        -webkit-transition: all .25s;
 	           -moz-transition: all .25s;
 	             -o-transition: all .25s;
 	                transition: all .25s;
 	    }
 
-		.product-form-size:not(:checked) > input {
+		.product-form-size:not(:checked)  input {
       position: absolute;
       top: -9999px;
       clip: rect(0,0,0,0);
     }
 
-		.product-form-size:not(:checked) > label {
-			border:1px solid #ccc;
+		.product-form-size:not(:checked)  label {
+			background-color: #F3F4F9;
+			border-width:1px;
+			border-style:solid;
+			border-color:#EAEBEF #EAEBEF #F9F9F9 #F9F9F9;
+			box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.2);
 			cursor: pointer;
-			float: left;
-			padding: .25em .5em;
+			margin: 0 -3px;
+			padding: 0.6em 1em;
     }
 
-		.product-form-size > label .hide-on-small-screen {
+		.product-form-size:not(:checked)  label:hover {
+			color:#2284A1;
+    }
+
+		.product-form-size  label .hide-on-small-screen {
 			display: none;
     }
-
-	    .product-form-size:not(:checked) > label:hover {
-	    	border-color:red;
+			/*button activated*/    	
+	    .product-form-size  input:checked + label {
+				background-color: #FFF;
+				box-shadow: inset 0 0.5px 1px rgba(0, 0, 0, 0.2);
+				color:inherit;
 	    }
-
-	    .product-form-size > input:checked + label {
-	        background-color: red;
-	        border-color:red;
+			/*button pressed*/
+			.product-form-size:not(:checked) input:not([disabled]) + label:active {
+				background-color: #FFF;
+				box-shadow: inset 0 0.5px 1px rgba(0, 0, 0, 0.2);
+				color:#2284A1;
+	    }
+			/*button disabled*/
+	    .product-form-size  input[disabled] + label {
+				background-color: transparent;
+				border:none;
+				box-shadow: none;
+				color:#CCC;
 	    }
 	
 	/*/////////////////////////////////////////////////
@@ -64,33 +86,48 @@
 	
 	.product-form-color {}
 	
-		.product-form-color > legend { background:none; float: left; }
+		.product-form-color legend { background:none; margin: 0; }
 
-		.product-form-color > label {
+		.product-form-color label {
 	        -webkit-transition: all .25s;
 	           -moz-transition: all .25s;
 	             -o-transition: all .25s;
 	                transition: all .25s;
 	    }
 
-		.product-form-color:not(:checked) > input {
+		.product-form-color:not(:checked) input {
 	        position: absolute;
 	        top: -9999px;
 	        clip: rect(0,0,0,0);
 	    }
 
-		.product-form-color:not(:checked) > label {
-			border:#FFF .25em solid;
+		.product-form-color:not(:checked) label {
+			box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.2);
 			cursor: pointer;
-			display: inline-block;
-			float: left;
-			padding: .25em .5em;
-			text-indent: -5000px;
-			width:1.5em;
-			height:1.5em;
+			margin: 0 -3px;
+			padding: 0.6em 1em;
 	    }
 
-	    .product-form-color:not(:checked) > label:hover,
-	    .product-form-color > input:checked + label {
-            border: transparent 0 solid;
-        }
+	  .product-form-color:not(:checked) label > i { visibility: hidden; }
+	    /*button hover*/
+			.product-form-color:not(:checked) input:not([disabled]) + label:hover > i {
+				visibility: visible;
+				color:rgba(125,125,125,.5);
+			}
+	    /*button pressed*/
+			.product-form-color:not(:checked) input:not([disabled]) + label:active {
+				box-shadow: inset 0 0.5px 1px rgba(0, 0, 0, 0.2);
+	    }
+	    /*button disabled*/
+	    .product-form-color input[disabled] + label {
+				
+	    }
+
+	  	/*button activated*/
+	  	.product-form-color input:checked + label > i { 
+	  		visibility: visible; 
+				color:#69C771 !important;
+	  	}
+	    .product-form-color input:checked + label {
+				box-shadow: inset 0 0.5px 1px rgba(0, 0, 0, 0.2);
+	    }

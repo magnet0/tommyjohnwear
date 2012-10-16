@@ -64,12 +64,11 @@ body {
 }
 
 /* Headings */
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3 {
+h1,.h1 { color: #40190B; }
+
+h1,.h1,
+h2,.h2,
+h3,.h3 {
 	font-family: "dosis-medium";
 	text-transform: uppercase;
 }
@@ -80,6 +79,11 @@ h2, .h2 {
 
 h3, .h3 {
 	font-size: 1.333333333em;
+}
+
+h1 small, .h1 small {
+	color:#999;
+	font-size: 0.5em; 
 }
 
 /* Lead */
@@ -116,6 +120,26 @@ a {
 	text-transform: uppercase;
 	*zoom: 1;
 }
+
+/*/////////////////////////////////////////////////
+Common Elements
+/////////////////////////////////////////////////*/
+
+.category-label { 
+	background-color: #66C7BE;
+	color:#FFF;
+	padding:0 0.5em;
+	display: inline;
+	font-family: "dosis-medium";
+	font-weight: bold;
+	line-height: 1;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+	.category-label .second-skin { background-color: #66C7BE; } /*why the hell isn't this working?*/
 
 /*/////////////////////////////////////////////////
 Header
@@ -198,9 +222,3 @@ Page
 .stage {
 	padding: 6em 0;
 }
-
-
-/* Category Items */
-.cat-item { text-align: center; }
-
-	.cat-item-title {}

@@ -9,19 +9,31 @@
 }
 
     .image-viewer-stage {
-        border-bottom: 1px solid;
+        height: 800px;
+        position: relative;
+        width: 100%;
     }
 
         .image-viewer-display {
-            
-        }
-
-        .image-viewer-stage img {
-            display: block;
+            background-position: center top;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
         }
 
     .image-viewer-nav {
-        list-style: none;
+        left: 1.5em;
+        list-style: none outside none;
+        position: absolute;
+        top: 1.5em;
+        width: 10%;
+    }
+
+    .image-viewer-nav-top {
+        background-color: #40190B;
+        border-radius: 5px 5px 0 0;
+        color:#FFF;
+        padding:0 .75em;
     }
 
     .image-viewer-thumb {
