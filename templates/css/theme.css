@@ -167,7 +167,7 @@ header[role="banner"] {
 
 /* Footer */
 footer[role="contentinfo"] {
-	background-color: #d0d4d8;
+	background-color: #d4d4d4;
 	color: #454545;
 	font-size: .888888889em;
 }
@@ -179,7 +179,7 @@ footer[role="contentinfo"] {
 
 
 /* Stage */
-.stage {
+.m-stage {
 	padding: 6em 0;
 }
 
