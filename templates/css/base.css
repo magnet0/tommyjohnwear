@@ -196,9 +196,9 @@
 				width: auto;
 			}
 	
-	:invalid {
+/*	:invalid {
 		border: 1px solid rgb(255, 0, 0);
-	}
+	}*/
 
 	/* Links */
 	a {

@@ -1,0 +1,13 @@
+/*
+
+
+	Product Item Module
+
+
+*/
+
+.cat-item {}
+	
+	.cat-item a { border: none; }
+	.cat-item-price { margin-bottom:0; }
+	.cat-item .rating { float: none; margin:0 auto; width: 6.6em; }

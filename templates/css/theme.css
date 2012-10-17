@@ -202,7 +202,7 @@ Footer
 /////////////////////////////////////////////////*/
 
 footer[role="contentinfo"] {
-	background-color: #d0d4d8;
+	background-color: #D0D3D8;
 	color: #454545;
 	font-size: .888888889em;
 }
@@ -212,6 +212,58 @@ footer[role="contentinfo"] {
 		color: #6f6f6f;
 	}
 
+	footer[role="contentinfo"] a:hover {
+		color: inherit;
+	}
+
+	footer[role="contentinfo"] .row {
+		padding: 0 2.33333em;
+	}
+
+	footer[role="contentinfo"] header {
+		background-color: #D5D8DD;
+		border-bottom: 1px solid #B7BABF;
+	}
+
+		footer[role="contentinfo"] header form {
+			margin: 1.5em 0;
+		}
+
+	.sitemap {
+		padding-top:3em;
+	}
+
+		.sitemap-header {
+			color:#555;
+		}
+
+		.social-btn {
+			float: left;
+			font-size: 45px;
+			text-shadow:-1px -1px 0 rgba(255,255,255,.5);
+			-webkit-transition:all .5s ease-out;
+			-moz-transition:all .5s ease-out;
+			-o-transition:all .5s ease-out;
+			-ms-transition:all .5s ease-out;
+			transition:all .5s ease-out;
+		}
+
+		.social-btn:hover {
+			text-shadow:-1px -1px 0 rgba(255,255,255,.5), 0 0 15px #FFF;
+		}
+
+		.social-btn.social-facebook:hover a {
+			color:#3B5998;
+		}
+
+		.social-btn.social-twitter:hover a {
+			color:#4099FF;
+		}
+
+		.social-btn.social-pintrist:hover a {
+			color:#CB2027;
+		}
+
 
 /*/////////////////////////////////////////////////
 Page
@@ -219,6 +271,6 @@ Page
 
 
 /* Stage */
-.stage {
+.m-stage {
 	padding: 6em 0;
 }

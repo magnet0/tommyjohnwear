@@ -21,3 +21,11 @@ hr.space { border: none; border-width: 0; clear: both; margin: 22px 0 22px; heig
 select.inline { width:auto; }
 
 fieldset.collapsed { padding: 0; }
+
+/*/////////////////////////////////////////////////
+Footer
+/////////////////////////////////////////////////*/
+
+footer[role="contentinfo"] {
+	margin-top:1.5em;
+}
