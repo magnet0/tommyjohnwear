@@ -2,13 +2,49 @@
 	Wishlist styles
 */
 
-.m-wishlist-item {}
+.m-wishlist-item {
+	position: relative;
+	padding: .75em 0 .75em 2em;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
 	
-	.wishlist-remove { font-size: 200%; }
-	.wishlist-remove i {  }
-	.wishlist-remove i:before {  }
-	.wishlist-img {}
-	.wishlist-product-info {}
+	.wishlist-remove {
+		width: 2em;
+		bottom: 0;
+		left: 0;
+		bottom: 0;
+		position: absolute;
+		top: 0;
+	}
+	
+		.wishlist-remove i {
+			font-size: 1.5em;
+			margin-top: -.75em;
+			position: absolute;
+			top: 50%;
+		}
+		
+		.wishlist-remove i:hover {
+			color: #d24136;
+			cursor: pointer;
+		}
+		
+	.wishlist-img {
+		padding-left: .75em;
+	}
+
+		.wishlist-img img {
+			vertical-align: middle;
+		}
+		
+	.wishlist-product-info {
+		padding: 0 .75em;
+	}
+	
+	.wishlist-product-info h2,
+	.wishlist-product-info p {
+		margin-bottom: 0;
+	}
 	.wishlist-name {}
 	.wishlist-category {}
 	.wishlist-button {}

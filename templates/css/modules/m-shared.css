@@ -573,6 +573,78 @@ Drop Down - from Bootstrap
 Video
 /////////////////////////////////////////////////*/
 
+.video-btn {
+	background-color: rgba(0, 0, 0, 0.2);
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNSIvPgogIDwvcmFkaWFsR3JhZGllbnQ+CiAgPHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);
+	background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);
+	border-radius: 0.125em;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+	text-align: center;
+}
+
+	.video-btn a {
+		border: none;
+		color: white;
+		display: block;
+		position: relative;
+		text-decoration: none;
+		-webkit-transition: all .25s;
+		   -moz-transition: all .25s;
+		     -o-transition: all .25s;
+		        transition: all .25s;
+	}
+	
+		.video-btn a:after {
+			background-color: #40190b;
+			border-radius: 100%;
+			content: '▸';
+			font-size: 2em;
+			left: 50%;
+			line-height: 1.5em;
+			margin-left: -.75em;
+			margin-top: -.75em;
+			position: absolute;
+			top: 40%;
+			width: 1.5em;
+		}
+		
+	.video-btn-thmb {
+		max-width: 100%;
+		opacity: 0.5;
+		-webkit-transition: all .25s;
+		   -moz-transition: all .25s;
+		     -o-transition: all .25s;
+		        transition: all .25s;
+		vertical-align: middle;
+		width: 100%;
+	}
+	
+	.video-btn-cap {
+		background-color: #40190b;
+		border-radius: 0 0 .125em .125em;
+		line-height: 1;
+		padding: 0.75em 0;
+		text-transform: uppercase
+	}
+	
+		.video-btn-cap em {
+			font-style: normal;
+			font-weight: bold;
+		}
+
+/* State */
+.video-btn a:hover .video-btn-thmb {
+	opacity: 1;
+}
+
+
+
+/* Depr */
 .m-video {
     border: medium none;
     border-radius: 5px 5px 5px 5px;
