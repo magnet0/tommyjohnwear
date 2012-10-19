@@ -8,23 +8,23 @@
 	"product":{
 		"name": "Crew Neck",
 		"subtitle": "Undershirt",
-		"category": "Stay Tucked",
+		"category": "Second Skin",
 		"description": "This undershirt is the ultimate replacement to your current “box cut” short sleeve undershirts that give you EFG (excess fabric gut) appearance.",
 		"price": "25",
 		"colors":[
 			{
-				"hex":"FF0000",
-				"name":"Red",
+				"hex":"E1DEE5",
+				"name":"Power Blanco",
 				"id":"red"
 			},
 			{
-				"hex":"00FF00",
-				"name":"Green",
+				"hex":"111111",
+				"name":"Thunder Steal",
 				"id":"green"
 			},
 			{
-				"hex":"0000FF",
-				"name":"Blue",
+				"hex":"EBE2C1",
+				"name":"Yacht Sand",
 				"id":"blue"
 			}
 		],
@@ -32,9 +32,9 @@
 			{
 				"active":true,
 				"name":"slide1",
-				"large":"images/product/placehold-big_slider.jpg",
+				"large":"images/product/dummy_product.jpg",
 				"medium":"images/placehold-480x420.jpg",
-				"thumb":"images/product/placehold-big_slider_thumb.jpg"
+				"thumb":"images/product/dummy_product_thumb.jpg"
 			},
 			{
 				"name":"slide2",
@@ -58,24 +58,24 @@
 	},
 	"primary-feature":[
 		{
-			"href":"technology",
-			"title":"Stay Tucked",
-			"append-text":"What makes our underwear better than any other? <em>learn about our technology and fit</em>"
+			"img":"images/dudebro/dummy2.png",
+			"title":"Fit",
+			"text":"Longer, tapered design hugs thelower torso to prevent bunching and EFG (excess fabric gut)."
 		},
 		{
-			"href":"technology",
-			"title":"Feature",
-			"append-text":"What makes our underwear better than any other? <em>learn about our technology and fit</em>"
+			"img":"images/dudebro/dummy1.png",
+			"title":"Control",
+			"text":"Moves with you, while being invisible under your outter shirts."
 		},
 		{
-			"href":"technology",
-			"title":"Feature",
-			"append-text":"What makes our underwear better than any other? <em>learn about our technology and fit</em>"
+			"img":"images/dudebro/dummy3.png",
+			"title":"Stay Dry",
+			"text":"Controls your body temperature to keep you cool and confident all day."
 		},
 		{
-			"href":"technology",
-			"title":"Feature",
-			"append-text":"What makes our underwear better than any other? <em>learn about our technology and fit</em>"
+			"img":"images/dudebro/dummy2.png",
+			"title":"Quick Draw Fly",
+			"text":"Horizontal fly for quick access when nature calls."
 		}
 	],
 	"reviews":[

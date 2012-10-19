@@ -80,11 +80,12 @@ small { font-size: 60%; line-height: inherit; }
 
 code { font-weight: bold; background: #ffff99; }
 
-/* Lists ---------------------- */
+/* Lists ---------------------- 
 ul, ol { font-size: 14px; line-height: 1.6; margin-bottom: 17px; list-style-position: inside; }
 
 ul li ul, ul li ol { margin-left: 20px; margin-bottom: 0; }
 ul.square, ul.circle, ul.disc { margin-left: 17px; }
+*/
 ul.square { list-style-type: square; }
 ul.square li ul { list-style: inherit; }
 ul.circle { list-style-type: circle; }
@@ -92,9 +93,6 @@ ul.circle li ul { list-style: inherit; }
 ul.disc { list-style-type: disc; }
 ul.disc li ul { list-style: inherit; }
 ul.no-bullet { list-style: none; }
-ul.large li { line-height: 21px; }
-
-ol li ul, ol li ol { margin-left: 20px; margin-bottom: 0; }
 
 /* Blockquotes ---------------------- */
 blockquote, blockquote p { line-height: 1.5; color: #6f6f6f; }
@@ -138,7 +136,7 @@ form { margin: 0 0 19.41641px; }
 .row form .row.collapsed { margin: 0; }
 .row form .row.collapsed .column, .row form .row.collapsed .columns { padding: 0; }
 
-label { font-size: 14px; color: #4d4d4d; cursor: pointer; display: block; font-weight: 500; margin-bottom: 3px; }
+/*label { font-size: 14px; color: #4d4d4d; cursor: pointer; display: block; font-weight: 500; margin-bottom: 3px; }*/
 label.right { float: none; text-align: right; }
 label.inline { line-height: 32px; margin: 0 0 12px 0; }
 

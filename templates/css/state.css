@@ -27,6 +27,20 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 	body { font-size: 125%; }
 }
 
+/*fade*/
+
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+     -moz-transition: opacity 0.15s linear;
+       -o-transition: opacity 0.15s linear;
+          transition: opacity 0.15s linear;
+}
+
+.fade.in {
+  opacity: 1;
+}
+
 /*affix*/
 
 .affix { position: fixed; top:0;}

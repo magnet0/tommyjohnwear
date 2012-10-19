@@ -1,3 +1,3 @@
 $(document).ready(function() {
-   $('#cvn').popover();
+   $('.popover-trigger').popover({delay: { show: 500, hide: 100 }});
 });

@@ -10,21 +10,21 @@
 	"primary-feature":[
 		{
 			"href":"tech",
-			"img":"images/dummy.png",
+			"img":"images/dudebro/dummy1.png",
 			"alt":"image alt text",
 			"text":"Ethical tumblr bicycle rights before they technology.",
 			"action": "Learn more"
 		},
 		{
 			"href":"#video",
-			"img":"images/dummy.png",
+			"img":"images/dudebro/dummy2.png",
 			"alt":"This picture",
 			"text":"Ethical tumblr bicycle rights before they technology.",
 			"action": "Watch explanation"
 		},
 		{
 			"href":"#garauntee",
-			"img":"images/dummy.png",
+			"img":"images/dudebro/dummy3.png",
 			"alt":"Another picture",
 			"text":"Ethical tumblr bicycle rights before they technology.",
 			"action": "See our garauntee"
@@ -33,17 +33,17 @@
 	"secondary-feature":[
 		{
 			"href":"category",
-			"img":"images/dummy.png",
+			"img":"images/dudebro/dummy2.png",
 			"title":"Second Skin"
 		},
 		{
 			"href":"category",
-			"img":"images/dummy.png",
+			"img":"images/dudebro/dummy3.png",
 			"title":"Sport"
 		},
 		{
 			"href":"category",
-			"img":"images/dummy.png",
+			"img":"images/dudebro/dummy1.png",
 			"title":"Active"
 		}
 	],

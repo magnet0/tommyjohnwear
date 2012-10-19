@@ -4,27 +4,40 @@
     <header class="m-stage row">
         
         <div class="four column centered">
-            <div class="m-stage-content">
+            <div class="m-stage-content text-center">
                 <h1 class="heading">{{stage.heading}}</h1>
                 <p class="lead">{{stage.lead}}</p>
-                <p class="text-center"><a href=""><img src="images/placehold-240x180.jpg"></a></p>
-                <p class="text-center"><a href="">Watch this explanation</a> video about what makes a Tommy John undergarment</p>
+                <div class="two centered column text-center">
+                    <a href="#" class="m-video icon-play">
+                        <img src="images/placehold-240x180.jpg">
+                        <div class="video-caption">
+                        Watch <strong>US VS. THEM</strong>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
         
     </header>
 
-    <hr>
-
     <div class="content">
+
+        <div class="row">
+            <div class="m-huge-promo" style="background-image:url(images/dudebro/hero.png)">
+                <h2>Something Globaly Cool</h2>
+                <p>These are the best because cosby sweater tofu, hella godard salvia vinyl kogi 3 wolf</p>
+            </div>
+        </div>
 
         <div class="row">
             {{#feature-rows}}
                 {{>m-feature-row }}
             {{/feature-rows}}
         </div>
+
+        <hr class="space">
         
-        <div class="m-primary-feature m-feature row">
+        <div class="m-primary-features row">
             {{#primary-feature}}
                 <div class="two column">
                     {{> m-feature}}

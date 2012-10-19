@@ -3,17 +3,17 @@
             <form action="" class="m-product-form">
                 <input type="hidden" name="title" value="{{ product.name }}">
                 <input type="hidden" name="price" value="{{ product.price }}">
-                <div class="row collapsed"><span class="label">{{ product.category }}</span></div>
+                <div class="row collapsed"><span class="category-label second-skin">{{ product.category }}</span></div>
                 <h1 class="product-form-title">{{ product.name }} <small class="product-form-subtitle">{{ product.subtitle }}</small></h1>
                 <div class="product-form-meta">
-                    <div class="row">{{> m-review-rating }} {{ total reviews }} reviews</div>
-                    <h4 class="product-form-price"><span class="currency-type">$</span>{{ product.price }}</h4>
+                    <div class="row collapsed">{{> m-review-rating }} <a href="#reviews">{{ total reviews }} reviews</a></div>
+                    <h2 class="product-form-price"><span class="currency-type">$</span>{{ product.price }}</h2>
                 </div>
                     {{> m-product-form-size }}
                     {{> m-product-form-color }}
                 <fieldset class="product-form-options collapsed">
-                    <div class="row">
-                        <div class="column">
+                    <div class="row collapsed">
+                        <div class="one column">
                             <label class="right inline" for="quantity">Qty.</label>
                         </div>
                         <div class="column end">
@@ -33,16 +33,14 @@
                             <input type="number" id="purchase-repeat-months">
                         </div>
                         <div class="column end">
-                            <label class="inline" for="purchase-repeat-months">months</label>
+                            <label class="inline" for="purchase-repeat-months">Days</label>
                         </div>
                     </div>
                 <div class="row">
                     <a href="cart" class="btn three"><i class="icon-plus icon-large left"></i> Add to <strong>CART</strong></a>
                 </div>
                 </fieldset>
-                <p>
-                    <a href="fit-guide">Fit Guide</a>
-                </p>
+                
                 <p class="product-form-description">
                     {{ product.description }}
                 </p>

@@ -21,7 +21,6 @@ Review-Rating - fieldset.rating
 	border: none;
     margin: 0 1.5em 0 0;
     padding: 0;
-	width: 8em;
 }
 
     .rating > label {
@@ -42,9 +41,10 @@ Review-Rating - fieldset.rating
         cursor: pointer;
         float: right;
         font-size: 150%;
+        line-height: 1.5rem;
         overflow: hidden;
         white-space: nowrap;
-        width: 1em;
+        width: 0.875em;
     }
 
         .rating:not(:checked) > label:before {
@@ -53,12 +53,12 @@ Review-Rating - fieldset.rating
 
 
     .rating > input:checked ~ label {
-        color: #333;
+        color: #40190B;
     }
 
     .rating:not(:checked) > label:hover,
     .rating:not(:checked) > label:hover ~ label {
-        color: gold;
+        color: #2284A1;
     }
 
     .rating > input:checked + label:hover,
@@ -66,7 +66,7 @@ Review-Rating - fieldset.rating
     .rating > input:checked ~ label:hover,
     .rating > input:checked ~ label:hover ~ label,
     .rating > label:hover ~ input:checked ~ label {
-        color: gold;
+        color: #2284A1;
     }
 
     .rating > label:active {}

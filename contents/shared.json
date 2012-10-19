@@ -104,7 +104,6 @@
 			"children": [
 				{
 					"title": "1-800-123-4567",
-					"href": "tel:+18001234567",
 					"class":"addr-phone"
 				},
 				{
@@ -149,16 +148,19 @@
 			"id":"follow-us",
 			"children": [
 				{
-					"title":"Twitter",
-					"href":"//twitter.com",
-					"class":"social-btn social-twitter"
-				},
-				{
+					"social": "icon-facebook",
 					"title":"Facebook",
 					"href":"//facebook.com",
 					"class":"social-btn social-facebook"
 				},
 				{
+					"social": "icon-twitter",
+					"title":"Twitter",
+					"href":"//twitter.com",
+					"class":"social-btn social-twitter"
+				},
+				{
+					"social": "icon-pinterest",
 					"title":"Pinterest",
 					"href":"//pinterest.com",
 					"class":"social-btn social-pintrist"
