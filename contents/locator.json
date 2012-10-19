@@ -1,0 +1,62 @@
+{
+	"meta": {
+		"title": "Meta Title",
+		"description": "Meta description"
+	},
+	"stage":{
+		"heading":"Bring back the undergarment",
+		"lead":"These are the best because cosby sweater tofu, hella godard salvia vinyl kogi 3 wolf moon tattooed blog put a bird on it letterpress next level 8-bit chillwave."
+	},
+	"primary-feature":[
+		{
+			"href":"tech",
+			"img":"images/dudebro/dummy1.png",
+			"alt":"image alt text",
+			"text":"Ethical tumblr bicycle rights before they technology.",
+			"action": "Learn more"
+		},
+		{
+			"href":"#video",
+			"img":"images/dudebro/dummy2.png",
+			"alt":"This picture",
+			"text":"Ethical tumblr bicycle rights before they technology.",
+			"action": "Watch explanation"
+		},
+		{
+			"href":"#garauntee",
+			"img":"images/dudebro/dummy3.png",
+			"alt":"Another picture",
+			"text":"Ethical tumblr bicycle rights before they technology.",
+			"action": "See our garauntee"
+		}
+	],
+	"secondary-feature":[
+		{
+			"href":"category",
+			"img":"images/dudebro/dummy2.png",
+			"title":"Second Skin"
+		},
+		{
+			"href":"category",
+			"img":"images/dudebro/dummy3.png",
+			"title":"Sport"
+		},
+		{
+			"href":"category",
+			"img":"images/dudebro/dummy1.png",
+			"title":"Active"
+		}
+	],
+	"promos":[
+		{
+			"href":"challenge",
+			"text":"The Tommy John Challenge promo"
+		},
+		{
+			"href":"starter-kit",
+			"title":"The Starter Kit",
+			"text":"Purchase and Lorem ipsum <strong>free</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+			"action":"Details"
+		}
+	]
+}
