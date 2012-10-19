@@ -4,11 +4,35 @@
 
   Contents:
   Buttons - m-shared-button
+  Divider - m-divider - vertical line with text
   Drop Down - from Bootstrap
+  Locations - m-locations - list of locations
   Popover - based on bootstrap
   video - m-video - video link wrapper
 
 */
+
+/*/////////////////////////////////////////////////
+Divider
+/////////////////////////////////////////////////*/
+
+.m-divider {
+  box-shadow: 1px 1px 0 rgba(255,255,255,.75);
+  margin:1.5em 1.5em;
+  width: 0;
+  height: 0;
+}
+  /*vertical divider two rows + half over/under*/
+  .m-divider.vertical {
+    border-left: 1px solid #DDDDDD;
+    margin: -0.75em 1.5em;
+    padding: 2.25em 0 3.75em;
+  }
+  .m-divider span { 
+    background-color: #EEF0F7;
+    margin-left: -0.75em;
+    padding: 0.75em 0; 
+  }
 
 /*/////////////////////////////////////////////////
 Buttons - m-shared-button
@@ -143,6 +167,18 @@ div.btn-bar ul.btn-group:last-child { margin-left: 0; }
 
 /*align buttons to top of header items*/
 h1 > .btn, h2 > .btn, h3 > .btn, h4 > .btn, h5 > .btn, h6 > .btn { vertical-align: top; }
+
+/*postfix and prefix collapse elements to but up against form inputs*/
+.prefix, .postfix { display: block; position: relative; z-index: 2; text-align: center; width: 100%; padding-top: 0; padding-bottom: 0; height: 32px; line-height: 31px; }
+
+a.button.prefix, a.button.postfix { padding-left: 0; padding-right: 0; text-align: center; }
+
+span.prefix, span.postfix { background: #f2f2f2; border: 1px solid #cccccc; }
+
+.prefix { left: 2px; -moz-border-radius-topleft: 2px; -webkit-border-top-left-radius: 2px; border-top-left-radius: 2px; -moz-border-radius-bottomleft: 2px; -webkit-border-bottom-left-radius: 2px; border-bottom-left-radius: 2px; overflow: hidden; }
+
+.postfix { right: 2px; -moz-border-radius-topright: 2px; -webkit-border-top-right-radius: 2px; border-top-right-radius: 2px; -moz-border-radius-bottomright: 2px; -webkit-border-bottom-right-radius: 2px; border-bottom-right-radius: 2px; }
+
 
 /*/////////////////////////////////////////////////
 ToolTips - based on bootstrap
@@ -568,6 +604,28 @@ Drop Down - from Bootstrap
   padding-right: 20px;
   padding-left: 20px;
 }
+
+/*/////////////////////////////////////////////////
+Locations list
+/////////////////////////////////////////////////*/
+
+.m-locations {}
+  .m-locations li { border-bottom: 1px solid #DDD; padding-top: 1.5em; }
+  .m-locations li .loc-map { 
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    opacity: .5;
+    -webkit-transition:all .5s ease-in-out;
+    -moz-transition:all .5s ease-in-out;
+    -o-transition:all .5s ease-in-out;
+    -ms-transition:all .5s ease-in-out;
+    transition:all .5s ease-in-out;
+  }
+  .m-locations li a:hover .loc-map {
+      -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+      filter: alpha(opacity=100);
+      opacity: 1;
+  }
 
 /*/////////////////////////////////////////////////
 Video
