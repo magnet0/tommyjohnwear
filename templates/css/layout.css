@@ -16,6 +16,8 @@ hr.space { border: none; border-width: 0; clear: both; margin: 22px 0 22px; heig
 
 .padded { padding:1.5em }
 
+.margined { margin: 0 2.33333em; }
+
 /* forms */
 
 select.inline { width:auto; }

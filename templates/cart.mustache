@@ -3,13 +3,13 @@
 <article role="main">
     <div class="content row">
         <h1>{{ meta.title }}</h1>
-        <div class="m-primary-feature padded">
+        <div class="inset margined padded">
             {{# cart }}
                 {{> m-cart-table }}
             {{/ cart }}
             <div>
-                <a href="">Update Cart</a>
-                <a href="category">Continue Shopping</a>
+                <a class="btn btn-secondary small" href=""><i class="icon-refresh icon-large"></i> Update Cart</a>
+                <a class="btn btn-secondary small" href="category"><i class="icon-shopping-cart icon-large"></i> Continue Shopping</a>
             </div>
         </div>
 
@@ -17,19 +17,22 @@
 
         <div class="row">
             <div class="two column">
-                <div class="m-primary-feature padded">
+                <div class="inset margined padded">
                     <!-- promo code -->
-                    <h2>Promotional Code</h2>
-                    <input type="text">
-                    <label for=""><a href="">apply code</a></label>
+                    <div class="row">
+                        <h2>Promotional Code</h2>
+                        <input type="text">
+                        <label for=""><a class="btn small right" href=""><i class="icon-share-alt icon-large"></i> apply code</a></label>
+                    </div>
                     <h2>Gift Certificate</h2>
                     <input type="text">
-                    <label for=""><a href="">apply code</a></label>
+                    <label for=""><a class="btn small right" href=""><i class="icon-share-alt icon-large"></i> apply code</a></label>
+                    <hr class="space">
                     <!-- /promo code -->
                 </div>
             </div>
             <div class="two column">
-                <div class="m-primary-feature padded">
+                <div class="inset margined padded">
                 <!-- shipping calculator -->
                     <h2>Estimate Tax &amp; Shipping</h2>
                     <div>
@@ -54,12 +57,12 @@
                         <label for="postal">Postal Code</label>
                         <input type="number">
                     </div>
-                    <a href="">Calculate Shipping</a>
+                    <a class="btn" href=""><i class="icon-truck icon-large"></i> Calculate Shipping</a>
                 <!-- /shipping calculator -->
                 </div>
             </div>
             <div class="two column">
-                <div class="m-primary-feature padded">
+                <div class="inset margined padded">
                 <!-- cart total -->
                     <table class="text-right">
                         <tr>
