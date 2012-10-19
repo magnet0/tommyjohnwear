@@ -1,7 +1,4 @@
 {
-	"timestamp":function(){
-      return Math.round(new Date().getTime() / 1000);
-  },
 	"base": "//tommyjohnwear.com",
 	"pages": [
 		{
@@ -171,5 +168,6 @@
 			]
 		}
 	],
-	"copyright":"Company Copyright info"
+	"copyright":"Company Copyright info",
+	"timestamp":"Math.round(new Date().getTime() / 1000)"
 }
