@@ -131,9 +131,18 @@ a {
 Common Elements
 /////////////////////////////////////////////////*/
 
+
 .img-circle {
 	border-radius: 500px;
 }
+
+.panel {
+	background-color: #DEDFE4;
+	-webkit-box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75), -1px -1px 0 rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.05) inset;
+	box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75), -1px -1px 0 rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.05) inset;
+}
+
+.panel hr { border-color: #AAA; }
 
 .inset {
 	-webkit-box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75), -1px -1px 0 rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.05) inset;

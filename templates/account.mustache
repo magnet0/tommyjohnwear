@@ -1,7 +1,7 @@
 {{> head }}
 		
 <article role="main">
-    <div class="m-nav left padded" data-spy="affix" data-offset-top="113">
+    <div class="m-nav left padded" data-spy="affix" data-offset-top="71">
         <ol>
             <li class="icon-gift"><a href="wishlist">Wishlist</a></li>
             <li class="icon-cogs"><a href="">Account Dashboard</a></li>
@@ -18,17 +18,22 @@
             <p>Hi {{ name }}! Welcome to your account overview</p>
         </div>
         <div class="row">
-            <div class="three centered column"><h2>Account Information <a class="btn tiny" href=""><i class="icon-cog"></i> edit</a></h2>
+            <div class="three centered column padded inset">
+                <h2>Account Information <a class="btn tiny" href=""><i class="icon-cog"></i> edit</a></h2>
                 <p>
                     {{ full name }}<br>
                     {{ email }}
                 </p>
+            </div>
+            <div class="three centered column padded inset">
                 <h2>Default Billing Address <a class="btn tiny" href=""><i class="icon-cog"></i> edit</a> <a class="btn tiny" href=""><i class="icon-plus"></i> add</a></h2>
                 <p>
                     {{# billing }}
                         {{> m-account-address }}
                     {{/ billing }}
                 </p>
+            </div>
+            <div class="three centered column padded inset">
                 <h2>Default Shipping Address <a class="btn tiny" href=""><i class="icon-cog"></i> edit</a> <a class="btn tiny" href=""><i class="icon-plus"></i> add</a></h2>
                 <h3>Home</h3>
                 <p>
@@ -42,6 +47,8 @@
                         {{> m-account-address }}
                     {{/ shipping2 }}
                 </p>
+            </div>
+            <div class="three centered column padded inset">
                 <h2>Order History</h2>
                 <p>Want to auto-refresh your dresser? Perhaps you'd be interested in a <a href="">subscription</a></p>
                 <!-- order history -->
@@ -101,7 +108,9 @@
                         </tbody>
                     </table>
                 </div>
-                <!-- /order history --></div>
+                <!-- /order history -->
+            </div>
+            <div class="column hidden"></div>
         </div>
 	</div>
 
