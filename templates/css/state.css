@@ -91,3 +91,25 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 	.tab-pane.active {
 		display: block;
 	}
+	
+/* --- Offscreen Panel --- */
+[role="banner"],
+[role="main"],
+[role="contentinfo"] {
+    position: relative;
+	width: 100%;
+    -webkit-transition: all .2s ease;
+       -moz-transition: all .2s ease;
+         -o-transition: all .2s ease;
+            transition: all .2s ease;
+}
+.active-os-panel [role="banner"],
+.active-os-panel [role="main"],
+.active-os-panel [role="contentinfo"] {
+	opacity: .5;
+	margin-left: -16em;
+}
+
+.active-os-panel .os-panel {	
+    right: 0;
+}
