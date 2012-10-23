@@ -241,17 +241,14 @@ footer[role="contentinfo"] {
 		color: inherit;
 	}
 
-	footer[role="contentinfo"] .row {
-		padding: 0 2.33333em;
-	}
-
-	footer[role="contentinfo"] header {
-		background-color: #D5D8DD;
+	.footboard {
+		background-color: #dbdbdb;
 		border-bottom: 1px solid #B7BABF;
+		padding: 1.5em 2.33333em;
 	}
 
-		footer[role="contentinfo"] header form {
-			margin: 1.5em 0;
+		.footboard form {
+			margin-bottom: 0;
 		}
 
 	.sitemap {
