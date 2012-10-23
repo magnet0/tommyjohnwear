@@ -1,33 +1,31 @@
 <div role="complimentary" class="os-panel">
     <div class="os-nav-item">
-        <a href="#main" class="os-toggle">Back</a>
+        <a href="#main" id="os-close" class="os-toggle">Back</a>
     </div>
     <ul id="account" class="os-nav-bar">
+        {{#util-account}}
 	    <li class="os-nav-item">
-			<a href="#two">One A</a>
+			<a href="{{id}}">{{#icon}}<i class="icon-{{icon}}"></i> {{/icon}}{{title}}</a>
 		</li>
-		<li class="os-nav-item">
-			<a href="#three">One B</a>
-		</li>
-		<li class="os-nav-item">
-			<a href="#four">One C</a>
-		</li>
-		<li class="os-nav-item">
-			<a href="#four">One D</a>
-		</li>
+		{{/util-account}}
 	</ul>
-	<ul id="mini-cart" class="os-nav-bar">
-	    <li class="os-nav-item">
-			<a href="#two">Two A</a>
-		</li>
-		<li class="os-nav-item">
-			<a href="#three">Two B</a>
-		</li>
-		<li class="os-nav-item">
-			<a href="#four">Two C</a>
-		</li>
-		<li class="os-nav-item">
-			<a href="#four">Two D</a>
-		</li>
-	</ul>
+	<div id="cart" class="minicart os-nav-bar">
+    	<ul class="mc-items">
+    	    {{# minicart.products }}
+            {{> m-cart-mini-item }}
+            {{/ minicart.products }}
+    	</ul>
+        <dl class="mc-totals">
+            <dt class="mct-label">Item Subtotal</dt>
+            <dd class="mct-amount">$214</dd>
+            <dt class="mct-label">Buy more save more discount</dt>
+            <dd class="mct-amount">- $53</dd>
+            <dt class="mct-label mct-total">SubTotal</dt>
+            <dd class="mct-amount mct-total">$160.5</dd>
+            <dd><small>Tax and shipping calculated at checkout</small></dd>
+        </dl>
+        <div class="mc-actions">
+            <a href="checkout" class="btn light">Review &amp; <b>Checkout</b></a>
+        </div>
+	</div>
 </div>

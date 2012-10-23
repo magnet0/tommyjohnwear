@@ -102,7 +102,7 @@ a {
 
 /* Buttons */
 .btn {
-	background-color: #40190b;
+	background-color: #40190b; /*@t-brown*/
 	border: none;
 	-webkit-border-radius: 0.125em;
 	   -moz-border-radius: 0.125em;
@@ -121,6 +121,11 @@ a {
 	text-transform: uppercase;
 	*zoom: 1;
 }
+
+	.btn.light {
+		background-color: #f1f1f1; /*@t-warmgray*/
+		color: #40190b; /*@t-brown*/
+	}
 
 /*/////////////////////////////////////////////////
 Common Elements
