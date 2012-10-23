@@ -1,0 +1,98 @@
+/*
+
+	Minicart
+	
+*/
+.minicart {
+	color: rgba(255, 255, 255, 0.5);
+}
+	
+	.minicart a {
+		color: #f1f1f1; /*@t-warmgray*/
+	}
+	
+	/* Minicart Items */
+	.mc-item {
+		border-style: solid;
+		border-width: 1px 0;
+			border-bottom-color: rgba(0, 0, 0, 0.2);
+			border-top-color: rgba(255, 255, 255, 0.125);
+		list-style: none;
+		margin: 0;
+		padding-left: 2em;
+		position: relative;
+	}
+	
+		.mci-delete,
+		.mci-info,
+		.mci-price {
+			display: inline-block;
+			padding-bottom: 1.5em;
+			padding-top: 1.5em;
+		}
+	
+		.mci-delete {
+			background-color: rgba(0, 0, 0, 0.2);
+			bottom: 0;
+			left: 0;
+			position: absolute;
+			text-align: center;
+			top: 0;
+			width: 2em;
+			-webkit-transition: background-color .25s;
+			   -moz-transition: background-color .25s;
+			     -o-transition: background-color .25s;
+			        transition: background-color .25s;
+		}
+		
+			.mci-delete > i {
+				left: 50%;
+				margin-left: -.5625em;
+				margin-top: -.5625em;
+				position: absolute;
+				top: 50%;
+				-webkit-transition: color .25s;
+				   -moz-transition: color .25s;
+				     -o-transition: color .25s;
+				        transition: color .25s;
+			}
+			
+		
+		.mci-delete:hover {
+			background-color: #d24136;
+			cursor: pointer;
+		}
+		
+			.mci-delete:hover > i {
+				color: black; /*@t-brown*/
+			}
+		
+		.mci-info {
+			padding-left: .75em;
+			padding-right: .75em;
+		}
+
+	/* Mincart Totals/Info */
+	.mc-totals {
+		padding: .75em;
+		text-align: right;
+	}
+	
+		.mct-label,
+		.mct-amount {
+			font-size: .777777778em;
+		}
+		
+		.mct-total {
+			color: #f1f1f1; /*@t-warmgray*/
+			font-size: 1em;
+		}
+	
+	/* Minicart Actions */
+	.mc-actions {
+		padding: .75em;
+	}
+	
+		.mc-actions .btn {
+			display: block;
+		}

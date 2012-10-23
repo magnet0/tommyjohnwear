@@ -10,12 +10,13 @@
             <ul class="hlist nav-bar">
                 {{#pages}}
                 <li class="hlist-item nav-item{{# dropdown}} dropdown{{/ dropdown}}">
-                    <a href="{{id}}"{{# dropdown}} class="dropdown-toggle os-toggle" data-toggle="dropdown" data-target="#{{ id }}"{{/ dropdown}}>{{title}}{{# dropdown}} <i class="icon-caret-down"></i>{{/ dropdown}}</a>
+                    <a href="{{id}}"{{#utility}} class="os-toggle" data-target="#{{ id }}"{{/utility}}{{# dropdown}} class="dropdown-toggle"{{/ dropdown}}>{{title}}{{# dropdown}} <i class="icon-caret-down"></i>{{/ dropdown}}</a>
+                    <!--
                     {{# dropdown}}<ul class="dropdown-menu">{{/ dropdown}}
                         {{# children}}
                             <li><a href="{{ child-id }}">{{# icon }}<i class="icon-{{ icon }}"></i> {{/ icon }}{{ child-title }}</a></li>
                         {{/ children}}
-                    {{# dropdown}}</ul>{{/ dropdown}}
+                    {{# dropdown}}</ul>{{/ dropdown}} -->
                 </li>
                 {{/pages}}
             </ul>

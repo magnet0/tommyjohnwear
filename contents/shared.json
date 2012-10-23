@@ -24,7 +24,8 @@
 		{
 			"title": "Account",
 			"id": "account",
-			"dropdown": true,
+			"dropdown": false,
+			"utility": true,
 			"children":[
 				{
 					"child-title":"Your Account",
@@ -41,7 +42,8 @@
 		{
 			"title": "Cart",
 			"id": "cart",
-			"dropdown": true,
+			"dropdown": false,
+			"utility": true,
 			"children":[
 				{
 					"child-title":"Cart",
@@ -166,6 +168,38 @@
 					"class":"social-btn social-pintrist"
 				}
 			]
+		}
+	],
+	"minicart": {
+		"products": [
+			{
+				"name": "Crew Neck",
+				"category": "Second Skin",
+				"price": "25",
+				"size": "medium",
+				"qty": "2",
+				"url": "product"
+			},
+			{
+				"name": "Tank",
+				"category": "Second Skin",
+				"price": "25",
+				"size": "medium",
+				"qty": "1",
+				"url": "product"
+			}
+		]
+	},
+	"util-account": [
+		{
+			"title":"Your Account",
+			"id":"account",
+			"icon":"cogs"
+		},
+		{
+			"title":"Your Wishlist",
+			"id":"wishlist",
+			"icon":"gift"
 		}
 	],
 	"copyright":"Company Copyright info",
