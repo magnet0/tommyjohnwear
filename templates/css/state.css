@@ -91,7 +91,7 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 	.tab-pane.active {
 		display: block;
 	}
-	
+
 /* --- Offscreen Panel --- */
 [role="banner"],
 [role="main"],
