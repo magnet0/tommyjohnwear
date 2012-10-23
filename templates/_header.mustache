@@ -2,9 +2,6 @@
 	<div class="row">
 		
 		<a href="{{base}}" class="base">
-            <!-- <object data="images/tommyjohn.svg" type="image/svg+xml" class="logo">
-                <img src="images/tommyjohn.png" class="logo" alt="Tommy John">
-            </object> -->
             <img src="images/tommyjohn.svg" class="logo" alt="Tommy John">
 		</a>
 		
@@ -13,7 +10,7 @@
             <ul class="hlist nav-bar">
                 {{#pages}}
                 <li class="hlist-item nav-item{{# dropdown}} dropdown{{/ dropdown}}">
-                    <a href="{{id}}"{{# dropdown}} class="dropdown-toggle" data-toggle="dropdown" data-target="#{{ id }}"{{/ dropdown}}>{{title}}{{# dropdown}} <i class="icon-caret-down"></i>{{/ dropdown}}</a>
+                    <a href="{{id}}"{{# dropdown}} class="dropdown-toggle os-toggle" data-toggle="dropdown" data-target="#{{ id }}"{{/ dropdown}}>{{title}}{{# dropdown}} <i class="icon-caret-down"></i>{{/ dropdown}}</a>
                     {{# dropdown}}<ul class="dropdown-menu">{{/ dropdown}}
                         {{# children}}
                             <li><a href="{{ child-id }}">{{# icon }}<i class="icon-{{ icon }}"></i> {{/ icon }}{{ child-title }}</a></li>
