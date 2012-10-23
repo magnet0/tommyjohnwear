@@ -10,6 +10,8 @@
 
 .pointer { cursor: pointer; }
 
+.space { margin-top: 1.5em; margin-bottom: 1.5em; }
+
 hr.space { border: none; border-width: 0; clear: both; margin: 22px 0 22px; height: 0; }
 
 /* grid */
@@ -23,6 +25,53 @@ hr.space { border: none; border-width: 0; clear: both; margin: 22px 0 22px; heig
 select.inline { width:auto; }
 
 fieldset.collapsed { padding: 0; }
+
+/*/////////////////////////////////////////////////
+Checkout
+/////////////////////////////////////////////////*/
+
+#checkout {
+	background:transparent url(../images/line.png) repeat-y scroll center top;
+}
+
+.checkout-step {}
+
+	.checkout-head { margin: 1.5em 0 1.5em 50%; }
+
+	.checkout-head h2 { color:#454545; font-size:2em; margin: 0; padding: .25em 0 ; }
+
+	#checkout .checkout-head i {
+		background-color: #454545;
+		color: #EFEFF7;
+		border-radius: 500px;
+		font-style: normal;
+		font-size: 200%;
+		float: left;
+    height: 1.5em;
+    line-height: 1.5;
+    margin: 0 .75em 0 -.75em;
+    overflow: hidden;
+    width: 1.5em;
+	}
+
+	#checkout .checkout-head i:before { display: none; }
+	#checkout .checkout-head.checkout-complete i:before { display: inline-block; }
+	#checkout .checkout-head.checkout-complete i span { display: none; }
+	
+	.checkout-content .padded { padding:.75em 3em; }
+	
+	.checkout-content details:not([open]) { background-color:#EAEBF0; }
+
+	.checkout-content summary {
+		cursor: pointer;
+		font-size: 150%;
+    line-height: 1;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    outline: none;
+	}
+	.checkout-content summary::-webkit-details-marker { float: left; }
+
 
 /*/////////////////////////////////////////////////
 Footer
