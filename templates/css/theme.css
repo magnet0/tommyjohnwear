@@ -131,6 +131,7 @@ a {
 Common Elements
 /////////////////////////////////////////////////*/
 
+.popover-trigger { cursor: pointer; }
 
 .img-circle {
 	border-radius: 500px;
@@ -149,6 +150,24 @@ Common Elements
 	box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75), -1px -1px 0 rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.05) inset;
 }
 
+i.sign {
+	background-color: #454545;
+	color: #EFEFF7;
+	border-radius: 500px;
+	font-family: "dosis-medium";
+	font-style: normal;
+	font-size: 200%;
+	float: left;
+	height: 1.5em;
+	line-height: 1.5;
+	overflow: hidden;
+	text-align: center;
+	width: 1.5em;
+}
+
+i.sign.left { margin-right: .25em; }
+i.sign.right { margin-left: .25em; }
+
 .category-label { 
 	background-color: #66C7BE;
 	color:#FFF;
@@ -164,6 +183,25 @@ Common Elements
 	white-space: nowrap;
 }
 	.category-label .second-skin { background-color: #66C7BE; } /*why the hell isn't this working?*/
+
+/* Tables ---------------------- */
+table { background: #fff; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; margin: 0 0 1.5em; border: 1px solid #ddd; }
+
+table thead, table tfoot { background: #F1F1F1; }
+
+table thead tr th, table tfoot tr th, table tbody tr td, table tr td, table tfoot tr td { font-size: 1em; line-height: 1; text-align: left; }
+
+table thead tr th, table tfoot tr td { padding: 0.75em; font-size: 1em; font-weight: bold; color: #222; }
+
+table thead tr th:first-child, table tfoot tr td:first-child { border-left: none; }
+
+table thead tr th:last-child, table tfoot tr td:last-child { border-right: none; }
+
+table tbody tr.even, table tbody tr.alt { background: #F5F6FA; }
+
+table tbody tr:nth-child(even) { background: #F5F6FA; }
+
+table tbody tr td { color: #333; padding: .75em; vertical-align: top; border: none; }
 
 /*/////////////////////////////////////////////////
 Header

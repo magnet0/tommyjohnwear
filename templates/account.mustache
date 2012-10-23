@@ -1,40 +1,48 @@
 {{> head }}
 		
 <article role="main">
-    <div class="m-nav left padded" data-spy="affix" data-offset-top="71">
-        <ol>
-            <li class="icon-gift"><a href="wishlist">Wishlist</a></li>
-            <li class="icon-cogs"><a href="">Account Dashboard</a></li>
-            <li class="icon-info-sign"><a href="">Account Information</a></li>
-            <li class="icon-map-marker"><a href="">Address Book</a></li>
-            <li class="icon-shopping-cart"><a href="">Order History</a></li>
-            <li class="icon-trophy"><a href="">Store Credit</a></li>
-            <li class="icon-credit-card"><a href="">Gift Certificate</a></li>
-        </ol>
-    </div>
     <div class="content row">
-        <div class="three centered column">
+        <div class="three centered column space">
             <h1>{{ meta.title }} <i class="icon-cogs"></i></h1>
             <p>Hi {{ name }}! Welcome to your account overview</p>
         </div>
         <div class="row">
-            <div class="three centered column padded inset">
-                <h2>Account Information <a class="btn tiny" href=""><i class="icon-cog"></i> edit</a></h2>
+            <div class="three centered column">
+                <div class="three column">
+                    <i class="sign left">4</i>
+                    <h3 class="no-margin">Total Refferals</h3>
+                    That's <strong>$100</strong> <i class="icon-question-sign popover-trigger" data-title="http://tmjn.co/xY8ab3" data-content="Share the above code with Friends, Give your friends $25 off when they spend $75 or more. You get something too, a $25 gift code."></i>
+                </div>
+                <div class="three column">
+                    <i class="sign left">15</i>
+                    <h3 class="no-margin">Items on Wishlist</h3>
+                    <a href=""><i class="icon-envelope-alt"></i> Email list</a> <a href="wishlist">View list</a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="three centered column">
+                <h2>Account Information <a class="btn tiny" href=""><i class="icon-cog icon-large"></i> edit</a></h2>
                 <p>
                     {{ full name }}<br>
                     {{ email }}
                 </p>
             </div>
-            <div class="three centered column padded inset">
-                <h2>Default Billing Address <a class="btn tiny" href=""><i class="icon-cog"></i> edit</a> <a class="btn tiny" href=""><i class="icon-plus"></i> add</a></h2>
+            <hr>
+            <div class="three centered column">
+                <h2>Default Billing Address <a class="btn tiny" href=""><i class="icon-cog icon-large"></i> edit</a> <a class="btn tiny" href=""><i class="icon-plus icon-large"></i> add</a></h2>
                 <p>
                     {{# billing }}
                         {{> m-account-address }}
                     {{/ billing }}
                 </p>
             </div>
-            <div class="three centered column padded inset">
-                <h2>Default Shipping Address <a class="btn tiny" href=""><i class="icon-cog"></i> edit</a> <a class="btn tiny" href=""><i class="icon-plus"></i> add</a></h2>
+            <hr>
+            <div class="three centered column">
+                <h2>Default Shipping Address <a class="btn tiny" href=""><i class="icon-cog icon-large"></i> edit</a> <a class="btn tiny" href=""><i class="icon-plus icon-large"></i> add</a></h2>
                 <h3>Home</h3>
                 <p>
                     {{# shipping }}
@@ -48,7 +56,8 @@
                     {{/ shipping2 }}
                 </p>
             </div>
-            <div class="three centered column padded inset">
+            <hr>
+            <div class="three centered column">
                 <h2>Order History</h2>
                 <p>Want to auto-refresh your dresser? Perhaps you'd be interested in a <a href="">subscription</a></p>
                 <!-- order history -->

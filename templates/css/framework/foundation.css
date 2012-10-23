@@ -222,7 +222,7 @@ form.custom .custom.disabled { background-color: #ddd; }
 .row .row.collapsed { margin: 0; }
 
 .column, .columns { float: left; min-height: 1px; padding: 0 0px; position: relative; }
-.column.centered, .columns.centered { float: none; margin: 0 auto; }
+.column.centered, .columns.centered { float: none; margin-left: auto; margin-right: auto; }
 
 [class*="column"] + [class*="column"]:last-child { float: right; }
 

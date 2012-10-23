@@ -14,6 +14,8 @@
 
 hr.space { border: none; border-width: 0; clear: both; margin: 22px 0 22px; height: 0; }
 
+.no-margin { margin:0 !important; }
+
 /* grid */
 
 .padded { padding:1.5em }
@@ -41,17 +43,7 @@ Checkout
 	.checkout-head h2 { color:#454545; font-size:2em; margin: 0; padding: .25em 0 ; }
 
 	#checkout .checkout-head i {
-		background-color: #454545;
-		color: #EFEFF7;
-		border-radius: 500px;
-		font-style: normal;
-		font-size: 200%;
-		float: left;
-    height: 1.5em;
-    line-height: 1.5;
     margin: 0 .75em 0 -.75em;
-    overflow: hidden;
-    width: 1.5em;
 	}
 
 	#checkout .checkout-head i:before { display: none; }
