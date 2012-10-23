@@ -10,7 +10,6 @@ $(document).ready(function() {
 	    $ostoggle.click(function(e) {
 	        var ostarget = $(this).data('target');
 	        $('body').toggleClass('active-os-panel');
-            $(ostarget).toggleClass('is-showing');
             e.preventDefault();
 	    });
 	}
