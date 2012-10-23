@@ -9,23 +9,23 @@
 	},
 	"primary-feature":[
 		{
+			"id": "pf-tech",
 			"href":"tech",
 			"img":"images/dudebro/dummy1.png",
-			"alt":"image alt text",
 			"text":"Ethical tumblr bicycle rights before they technology.",
 			"action": "Learn more"
 		},
 		{
+			"id": "pf-video",
 			"href":"#video",
-			"img":"images/dudebro/dummy2.png",
-			"alt":"This picture",
+			"img":"images/feat-video.png",
 			"text":"Ethical tumblr bicycle rights before they technology.",
 			"action": "Watch explanation"
 		},
 		{
+			"id": "pf-garauntee",
 			"href":"#garauntee",
 			"img":"images/dudebro/dummy3.png",
-			"alt":"Another picture",
 			"text":"Ethical tumblr bicycle rights before they technology.",
 			"action": "See our garauntee"
 		}

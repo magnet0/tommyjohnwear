@@ -6,11 +6,15 @@
 
 */
 
+.m-primary-features {
+	padding-top: 1.5em;
+}
+
 .feature-grid {
 	background-color: #F1F1F1;
-  background-position: center center;
-  background-size: cover;
-  border-bottom:1px solid #DDDDDD;
+	background-position: center center;
+	background-size: cover;
+	border-bottom:1px solid #DDDDDD;
 	min-height: 15em;
 	padding:3em 3em 0 15em;
 	text-align: center;
@@ -21,9 +25,10 @@
 	background-position: center top;
 	padding: 20% 30% 0;
 	min-height: 25em;
-  text-align: center;
+	text-align: center;
 }
 
+/* --- Shared --- */
 .m-primary-feature,
 .m-secondary-feature {
 	border: none;
@@ -31,32 +36,38 @@
 	position: relative;
 }
 
-	.pf-img,
-	.sf-img {
-		width: 100%;
-	}
+.pf-img,
+.sf-img {
+	width: 100%;
+}
 
-	.pf-action,
-	.sf-action {
-		display: block;
-		font-style: normal;
-		text-transform: uppercase;
-	}
+.pf-action,
+.sf-action {
+	display: block;
+	font-style: normal;
+	text-transform: uppercase;
+}
+
+/* --- Primary --- */
+.m-primary-feature {
+	background: #F1F1F1 no-repeat center center;
+	background-size: cover;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+	  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+	    -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+	       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+	margin: 0 2.333333333em;
+	min-height: 12em;
+	position: relative;
+}
 
 	.pf-content {
 		padding-top: 3em;
 	}
 
-.m-primary-feature {
-	background-color: #F1F1F1;
-  background-position: center center;
-  background-size: cover;
-	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
-	   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
-	     -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
-	        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
-	margin: 0 2.333333333em;
-	min-height: 15em;
+/* --- Secondary --- */
+.m-secondary-feature {
+	padding: 6em 1em;
 }
 
 
