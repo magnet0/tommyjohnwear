@@ -42,7 +42,7 @@
                         {{> m-account-form-billing }}
                         <div class="input-row row">
                             <div class="space">
-                                <label for="shiptosame"><input id="shiptosame" type="checkbox" name="shipto"> Ship to this address</label>
+                                <label class="m-custom" for="shiptosame"><input id="shiptosame" type="checkbox" name="shipto"><span class="checkbox"><i class="icon-ok"></i></span> Ship to this address</label>
                             </div>
                         </div>
                         <div class="centered three column">
@@ -75,7 +75,7 @@
                         <div id="add-account" class="collapse">{{> m-account-form-shipping }}</div>
                         <div class="input-row row">
                             <div class="space">
-                                <label for="giftwrap" class="inline offset-by-one"><input id="giftwrap" type="checkbox" name="giftwrap"> Gift wrap item - add $5.00</label>
+                                <label class="m-custom" for="giftwrap"><input id="giftwrap" type="checkbox" name="giftwrap"><span class="checkbox"><i class="icon-ok"></i></span> Gift wrap this item <small>(add $5.00)</small></label>
                             </div>
                         </div>
                         <div class="centered three column">
@@ -92,11 +92,12 @@
             </header>
             <div class="checkout-content row">
                 <div class="two centered column panel padded">
+                    <hr class="space">
                     <form action="">
-                        <div class="input-row row"><label for="shipping1" class="column six"><input type="radio" name="shipping" id="shipping1"> USPS <span class="right">$x.xx</span></label></div>
-                        <div class="input-row row"><label for="shipping2" class="column six"><input type="radio" name="shipping" id="shipping2"> UPS Ground <span class="right">$x.xx</span></label></div>
-                        <div class="input-row row"><label for="shipping3" class="column six"><input type="radio" name="shipping" id="shipping3"> UPS 2 day <span class="right">$x.xx</span></label></div>
-                        <div class="input-row row"><label for="shipping4" class="column six"><input type="radio" name="shipping" id="shipping4"> UPS Overnight <span class="right">$x.xx</span></label></div>
+                        <div class="input-row row"><label for="shipping1" class="m-custom column six"><input type="radio" name="shipping" id="shipping1"><span class="radio"><i class="icon-ok-sign"></i></span> USPS <span class="right">$x.xx</span></label></div>
+                        <div class="input-row row"><label for="shipping2" class="m-custom column six"><input type="radio" name="shipping" id="shipping2"><span class="radio"><i class="icon-ok-sign"></i></span> UPS Ground <span class="right">$x.xx</span></label></div>
+                        <div class="input-row row"><label for="shipping3" class="m-custom column six"><input type="radio" name="shipping" id="shipping3"><span class="radio"><i class="icon-ok-sign"></i></span> UPS 2 day <span class="right">$x.xx</span></label></div>
+                        <div class="input-row row"><label for="shipping4" class="m-custom column six"><input type="radio" name="shipping" id="shipping4"><span class="radio"><i class="icon-ok-sign"></i></span> UPS Overnight <span class="right">$x.xx</span></label></div>
                         <hr class="space">
                         <div class="centered three column">
                             <a class="btn large expand secondary">Next</a>
@@ -128,13 +129,19 @@
                 <i class="icon-ok sign h2"><span>6</span></i><h2>Review</h2>
             </header>
             <div class="checkout-content row">
-                <div class="two centered column panel padded">
+                <div class="two centered column">
                     <div class="row">
                         <!-- cart review -->
                         {{# cart }}
                             {{> m-cart-table }}
                         {{/ cart }}
                         <!-- cart total -->
+                    </div>
+                </div>
+            </div>
+            <div class="checkout-content row">
+                <div class="two centered column panel padded">
+                    <div class="row">
                         <table class="four column offset-by-two text-right">
                             <tr>
                                 <td><strong>Subtotal:</strong> </td>
@@ -145,8 +152,8 @@
                                 <td>$7</td>
                             </tr>
                             <tr>
-                                <td><h1><small>Total:</small></h1> </td>
-                                <td><h1>$132</h1></td>
+                                <td><h1 class="no-margin"><small>Total:</small></h1> </td>
+                                <td><h1 class="no-margin">$132</h1></td>
                             </tr>
                         </table>
                         <!-- /cart total -->
@@ -184,7 +191,7 @@
                         <form action="" class="">
                             <div class="input-row row">
                                 <input type="hidden"> <!-- use hidden fields + javascript to gather all the data from above forms? -->
-                                <label for="newsletter"><input id="newsletter" type="checkbox" name="newsletter"> Sign up for the occasional newsletter</label><br>
+                                <label class="m-custom" for="newsletter"><input id="newsletter" type="checkbox" name="newsletter"><span class="checkbox"><i class="icon-ok"></i></span> Sign up for the occasional newsletter</label><br>
                                 <small>Your privacy is important to us. We'll never share or sell your information to 3rd parties. You can easily unsubscribe at any time.</small>
                             </div>
                         </form>
