@@ -2,54 +2,61 @@
 		
 <article role="main">
     <div class="content row">
-        <div class="four column">
-            {{> m-product-image-viewer }}
-        </div>
-        <div class="two column">
-            {{> m-product-form }}
+        <div class="row">
+            <div class="four column">
+                {{> m-product-image-viewer }}
+            </div>
+            <div class="two column">
+                {{> m-product-form }}
+            </div>
         </div>
         
-        <div class="m-feature row">
-            {{#primary-feature}}
-                    {{> m-feature-row}}
-            {{/primary-feature}}
-        </div>
-
-        <hr class="space">
-
-        <div class="row text-center">
-            <a class="btn large" href="technology">Learn more about our <strong>technology</strong> &nbsp;<i class="icon-chevron-right"></i></a>
-        </div>
-        <hr>
-        <h2 class="text-center">You might also be interested in</h2>
-        <div class="row">    
-        {{#undershirts}}
-            <div class="quarter column">
-                {{> m-item }}
+        <div class="bkg-light row">
+            <div class="m-feature row">
+                {{#primary-feature}}
+                        {{> m-feature-row}}
+                {{/primary-feature}}
             </div>
-        {{/undershirts}}
-        </div>
-        <hr>
-        <div id="reviews" class="reviews row">
-            <div class="column">{{ total reviews }} reviews {{> m-review-rating }}</div> 
-            <div class="column">
-                <a href="">Write a review</a>
+            
+            <div class="row text-center space">
+                <a class="btn large" href="technology">Learn more about our <strong>technology</strong> &nbsp;<i class="icon-chevron-right"></i></a>
             </div>
+
         </div>
-        <div class="row">
-            <div class="three column centered">
-                <!-- reviews -->
-                {{# reviews }}
-                    {{> m-review }}
-                {{/ reviews }}
-                <!-- /reviews -->
-                <hr>
-                <div class="text-center">
-                    <button class="btn large three" type="button">Read more reviews</button>
-                    <br>
-                    <button class="btn large three" type="button">Write a review</button>
+        
+        <h2 class="text-center space">You might also be interested in</h2>
+        <div class="row space">    
+            {{#undershirts}}
+                <div class="quarter column">
+                    {{> m-item }}
+                </div>
+            {{/undershirts}}
+        </div>
+        
+        <div id="reviews" class="reviews row bkg-light">
+            <div class="row space">
+                <div class="two centered column text-center">
+                    <h2>Reviews for {{ product.category }} {{ product.name }}</h2>
+                    <a href="">Write a review</a> | Average Rating <span class="m-review-inline">{{> m-review-rating }}</span>
                 </div>
             </div>
+            <hr>
+            <div class="row">
+                <div class="two centered column">
+                    <!-- reviews -->
+                    {{# reviews }}
+                        {{> m-review }}
+                    {{/ reviews }}
+                    <!-- /reviews -->
+                    <hr class="space">
+                    <div class="three centered column text-center">
+                        <button class="btn large expand secondary" type="button">Read more reviews</button>
+                        <hr class="space">
+                        <button class="btn large expand" type="button"><i class="icon-pencil left"></i> Write a review</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="space">
         </div>
 	</div>
 </article>

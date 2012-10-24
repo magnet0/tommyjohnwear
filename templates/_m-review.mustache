@@ -1,19 +1,22 @@
             <!-- single review -->
             <div class="m-review">
                 <div class="review-rating row">{{> m-review-rating }}</div>
-                <h4 class="review-title">{{ title }}</h4>
-                <div class="review-meta">
+                <h4 class="review-title no-margin"><strong>{{ title }}</strong></h4>
+                <p class="review-meta">
                     <span class="review-date">{{ date }}</span>
-                    <span class="review-author">{{ author }}</span>
-                </div>
+                    <span class="review-author">By <a href="">{{ author }}</a></span>
+                </p>
                 <div class="row">
                     <p>{{ copy }}</p>
                 </div>
-                <p class="review-author-info">
-                    {{ author }}'s info: Height: {{ height }} | Weight: {{ weight }} | Chest: {{ chest }} | Waist: {{ waist }}
-                </p>
+                <div class="review-author-info row">
+                    <h4 class="no-margin"><strong>{{ author }}'s info:</strong></h4>
+                    <p>
+                        Height: {{ height }} | Weight: {{ weight }} | Chest: {{ chest }} | Waist: {{ waist }}
+                    </p>
+                </div>
                 <p class="review-interact">
-                    <a href="">comment</a> | Was this review helpful? <a class="btn tiny" href="">Yes</a> <a class="btn tiny" href="">No</a>
+                    <small><a href="">comment</a> | Was this review helpful?</small> <a class="btn small light" href="">Yes</a> <a class="btn small light" href="">No</a>
                 </p>
             </div>
             <!-- /single review -->

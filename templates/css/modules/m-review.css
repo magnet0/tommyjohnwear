@@ -5,16 +5,29 @@
 */
 
 .m-review {}
+    .m-review p,
+    .review-author-info h4 { color: #AAA; }
 
 	.review-rating {}
 	.review-title {}
 	.review-meta {}
-	.review-author-info {}
+	.review-author-info { font-size: 80%; }
 	.review-interact {}
 
 /*/////////////////////////////////////////////////
 Review-Rating - fieldset.rating
 /////////////////////////////////////////////////*/
+
+.m-review-inline .rating {
+    float: none;
+    display: inline-block;
+    margin: 0;
+    height: 1em;
+}
+
+.m-review-inline .rating:not(:checked) > label {
+    line-height: 1.25rem;
+}
 
 .rating {
 	float: left;

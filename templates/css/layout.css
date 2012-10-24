@@ -12,6 +12,8 @@
 
 .space { margin-top: 1.5em; margin-bottom: 1.5em; }
 
+.row.space { margin-top: 1.5em; margin-bottom: 1.5em; }
+
 hr.space { border: none; border-width: 0; clear: both; margin: 22px 0 22px; height: 0; }
 
 .no-margin { margin:0 !important; }
@@ -20,7 +22,7 @@ hr.space { border: none; border-width: 0; clear: both; margin: 22px 0 22px; heig
 
 .padded { padding:1.5em }
 
-.margined { margin: 0 2.33333em; }
+.margined { margin-left: 2.33333em; margin-right: 2.33333em; }
 
 /* forms */
 
