@@ -14,7 +14,7 @@
 }
 
 	.nav-item {
-		float: left;
+		display: inline-block;
 		position: relative;
 	}
 
