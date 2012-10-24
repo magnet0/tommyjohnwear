@@ -222,6 +222,7 @@ header[role="banner"] {
 	     -o-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
 	        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
 	padding: 1.5em 0;
+	text-align: center;
 }
 
 	header[role="banner"] a {
@@ -229,18 +230,13 @@ header[role="banner"] {
 	}
 	
 		header[role="banner"] .base {
-			float: left;
-			margin-left: 1em;
+			display: block;
+			margin-bottom: 1.5em;
 		}
 	
 		header[role="banner"] .logo {
 			height: .888888889em;
 		}
-		
-	
-	nav[role="navigation"] {
-		float: right;
-	}
 	
 		nav[role="navigation"] > h2 {
 			height: 0;
