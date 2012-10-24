@@ -1,11 +1,20 @@
 $(document).ready(function() {
 
-   $('.popover-trigger').popover({delay: { show: 500, hide: 100 }});
-
-   $(document).foundationCustomForms();
-
 	// Scroll past chrome on mobile
 	setTimeout(function () {window.scrollTo(0, 1); }, 1000);
+	
+	// ?
+	$('.popover-trigger').popover({delay: { show: 500, hide: 100 }});
+	$(document).foundationCustomForms();
+
+	// Smooth scrolling anchors
+	$('[href^=#]').smoothmove();
+
+	/*
+	
+		Functions
+	
+	*/
 
 	// Offscreen Panel
 	function offscreen () {

@@ -8,6 +8,25 @@
 
 .cat-item {}
 	
-	.cat-item a { border: none; }
+	.cat-item a {
+		border: none;
+		display: block;
+		padding: 0 .75em .75em;
+		-webkit-transition: background-color .25s;
+		   -moz-transition: background-color .25s;
+		     -o-transition: background-color .25s;
+		        transition: background-color .25s;
+	}
+	
+	.cat-item a:hover {
+		background-color: rgba(255, 255, 255, 0.5);
+	}
+	
 	.cat-item-price { margin-bottom:0; }
-	.cat-item .rating { float: none; margin:0 auto; width: 6.6em; }
+	
+	.cat-item .rating {
+		float: none;
+		font-size: .875em;
+		margin:0 auto;
+		width: 6.6em;
+	}

@@ -18,13 +18,15 @@
 	text-align: left;
 	top: 0;
 	width: 80%;
-    -webkit-transition: all .2s ease;
-       -moz-transition: all .2s ease;
-         -o-transition: all .2s ease;
-            transition: all .2s ease;
+    -webkit-transition: all .3s ease;
+       -moz-transition: all .3s ease;
+         -o-transition: all .3s ease;
+            transition: all .3s ease;
 	-webkit-transform: translateX(0,0,0);
+	   -moz-transform: translateX(0,0,0);
+	     -o-transform: translateX(0,0,0);
 	        transform: translateX(0,0,0);
-	
+	z-index: 10;
 }
 	
 	.os-panel a {
