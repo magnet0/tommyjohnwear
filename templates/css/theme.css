@@ -97,7 +97,7 @@ h1 small, .h1 small {
 
 /* Links */
 a {
-	color: #40190b;
+	color: #40190b; /*@t-brown*/
 }
 
 /* Buttons */
@@ -208,13 +208,15 @@ Header
 /////////////////////////////////////////////////*/ 
 
 header[role="banner"] {
-	background-color: #f1f1f1;
+	background-color: #f1f1f1; /*@t-wramgray*/
 	-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
 	   -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
 	     -o-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
 	        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
 	padding: 1.5em 0;
+	position: relative;
 	text-align: center;
+	z-index: 1;
 }
 
 	header[role="banner"] a {
