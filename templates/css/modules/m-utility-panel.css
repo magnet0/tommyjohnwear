@@ -5,23 +5,21 @@
 */
 .os-panel {
     background-color: #40190b;
-	-webkit-box-shadow: 0 0 .333333333em rgba(0, 0, 0, 0.4);
-	   -moz-box-shadow: 0 0 .333333333em rgba(0, 0, 0, 0.4);
-	     -o-box-shadow: 0 0 .333333333em rgba(0, 0, 0, 0.4);
-	        box-shadow: 0 0 .333333333em rgba(0, 0, 0, 0.4);
     bottom: 0;
 	color: rgba(255, 255, 255, 0.5);
+	font-size: 1.125em;
     list-style: none;
+	opacity: 0;
     padding: 0;
 	position: absolute;
-	right: -81%;
+	right: -80%;
 	text-align: left;
 	top: 0;
 	width: 80%;
-    -webkit-transition: all .3s ease;
-       -moz-transition: all .3s ease;
-         -o-transition: all .3s ease;
-            transition: all .3s ease;
+    -webkit-transition: -webkit-transform .3s ease, opacity .1s;
+       -moz-transition: -moz-transform .3s ease, opacity .1s;
+         -o-transition: -o-transform .3s ease, opacity .1s;
+            transition: transform .3s ease, opacity .1s;
 	-webkit-transform: translateX(0,0,0);
 	   -moz-transform: translateX(0,0,0);
 	     -o-transform: translateX(0,0,0);
@@ -33,10 +31,10 @@
 		color: #f1f1f1; /*@t-warmgray*/
 	}
 	
-	.os-nav-item {
-		padding: 1.5em;
+	.os-ctl-panel {
+		padding: 1.35em;
 	}
 
-	.os-close {
-		
+	.btn.os-close {
+		background-color: rgba(255,255,255,0.125);
 	}

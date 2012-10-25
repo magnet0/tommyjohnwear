@@ -40,12 +40,14 @@ Checkout
 
 .checkout-step {}
 
-	.checkout-head { margin: 1.5em 0 1.5em 50%; }
-
-	.checkout-head h2 { color:#454545; font-size:2em; margin: 0; padding: .25em 0 ; }
+	.checkout-head {
+		font-size: 2em;
+		margin: .75em 0 .75em 50%;
+	}
 
 	#checkout .checkout-head i {
-    margin: 0 .75em 0 -.75em;
+		font-size: 1em;
+    	margin: -.25em .75em 0 -.75em;
 	}
 
 	#checkout .checkout-head i:before { display: none; }
