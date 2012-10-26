@@ -21,6 +21,10 @@
 			'target': null
 		};
 
+		if (this.data("target") !== undefined ) {
+			settings.target = this.data("target");
+		}
+
 		return this.each(function() {
 			if ( options ) { 
 				$.extend( settings, options );
