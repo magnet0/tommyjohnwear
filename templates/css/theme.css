@@ -107,7 +107,7 @@ small { color: #999; }
 
 	.btn.small {
 		font-size: .777777778em;
-		padding: .65em 1em;
+		padding: 0.55em 1em;
 	}
 
 	.btn.light {

@@ -9,6 +9,12 @@
 
 
 */
+
+.baseline {
+	background: url(../images/baseline-16-24.png) repeat;
+	background-size: 1.5em;
+}
+
 @media screen {
 	/* HTML5 Bootstrap */
 	article, aside, canvas, details, embed, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
@@ -168,6 +174,11 @@
 			select {
 				display: inline-block;
 				font-size: 100%;
+				line-height: 1.5;
+			}
+
+			select {
+				margin: -0.125em 0 0;
 			}
 
 			input,
@@ -218,6 +229,16 @@
 				min-width: 1em;
 				width: auto;
 			}
+
+			input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
+	    border: 1px solid #CCCCCC;
+	    border-radius: 2px 2px 2px 2px;
+	    font-family: 'Helmet', 'Freesans', sans-serif;
+	    font-size: 1em;
+	    height: 2em;
+	    margin: 0 0 0.5em;
+	    padding: 0 0.25em;
+	  }
 	
 /*	:invalid {
 		border: 1px solid rgb(255, 0, 0);
