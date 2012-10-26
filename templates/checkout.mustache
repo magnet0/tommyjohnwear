@@ -46,7 +46,7 @@
                             <label for="giftwrap"><input id="giftwrap" type="checkbox" name="giftwrap"> Gift wrap this item <small>(add $5.00)</small></label>
                         </div>
                         <div class="centered three column">
-                            <a class="btn large expand secondary">Next</a>
+                            <a class="btn large expand secondary smoothmove" href="#shipping" data-toggle="collapse" data-target="#shipping .checkout-content">Next</a>
                         </div>
                     </form>
                 </div>
@@ -57,7 +57,7 @@
             <h2 class="checkout-head">
                 <i class="icon-ok sign h2"><span>3</span></i> Shipping Address
             </h2>
-            <div class="checkout-content row">
+            <div class="checkout-content row collapse">
                 <div class="two centered column panel padded">
                     <h3 class="text-center">Use a saved address</h3>
                     <form action="">
@@ -74,7 +74,7 @@
                     <form action="">
                         <div id="add-account" class="collapse">{{> m-account-form-shipping }}</div>
                         <div class="centered three column">
-                            <a class="btn large expand secondary">Next</a>
+                            <a class="btn large expand secondary smoothmove" href="#shipping-method" data-toggle="collapse" data-target="#shipping-method .checkout-content">Next</a>
                         </div>
                     </form>
                 </div>
@@ -95,7 +95,7 @@
                         <div class="input-row row"><label for="shipping4" class="column six"><input type="radio" name="shipping" id="shipping4"> UPS Overnight <span class="right">$x.xx</span></label></div>
                         <hr class="space">
                         <div class="centered three column">
-                            <a class="btn large expand secondary">Next</a>
+                            <a class="btn large expand secondary smoothmove" href="#payment" data-toggle="collapse" data-target="#payment .checkout-content">Next</a>
                         </div>
                     </form>
                 </div>
@@ -112,7 +112,7 @@
                         {{> m-account-form-payment }}
                         <hr class="space">
                         <div class="centered three column">
-                            <a class="btn large expand secondary">Next</a>
+                            <a class="btn large expand secondary smoothmove" href="#review" data-toggle="collapse" data-target="#review">Next</a>
                         </div>
                     </form>
                 </div>
