@@ -357,11 +357,12 @@ Page
 /////////////////////////////////////////////////*/
 
 
-/*
 
-	Stage
-	
+/*
+Modules
 */
+
+/* --- Stage --- */
 .m-stage {
 	padding: 3em 1.5em;
 	position: relative;
@@ -416,12 +417,51 @@ Page
 			z-index: 1;
 		}
 		
-/*
-
-	Standard Page Header
-
-*/
+/* --- Standard Page Header --- */
 .page-header {
 	padding: 3em 0 1.5em;
 	text-align: center;
+}
+
+/* --- Features --- */
+.m-secondary-feature {
+	-webkit-transition: background .125s;
+	   -moz-transition: background .125s;
+	     -o-transition: background .125s;
+	        transition: background .125s;
+}
+
+	.sf-title {
+		-webkit-transition: color .125s;
+		   -moz-transition: color .125s;
+		     -o-transition: color .125s;
+		        transition: color .125s;
+	}
+
+.m-secondary-feature.second-skin,
+.second-skin .sf-title { color: #65c7be; }
+
+.m-secondary-feature.active,
+.active .sf-title { color: #f0b12f; }
+
+.m-secondary-feature.sport,
+.sport .sf-title { color: #ef4136; }
+
+.m-secondary-feature:hover .sf-title {
+	color: white;
+}
+
+.m-secondary-feature.second-skin:hover,
+.m-secondary-feature.second-skin:hover .sf-title {
+	background-color: #65c7be;
+}
+
+.m-secondary-feature.active:hover,
+.m-secondary-feature.active:hover .sf-title {
+	background-color: #f0b12f;
+}
+
+.m-secondary-feature.sport:hover,
+.m-secondary-feature.sport:hover .sf-title {
+	background-color: #ef4136;
 }
