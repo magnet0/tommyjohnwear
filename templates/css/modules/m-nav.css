@@ -46,6 +46,15 @@
 		}
 
 	/* Dropdown */
+	.dropdown-menu a {
+		line-height: 1.5;
+		padding: 0 .75em;
+	}
+	
+		.dropdown-menu li a:hover {
+			background: #0088cc;
+		}
+	
 	.dropdown-toggle:after {
 		border: .25em solid;
 		border-bottom-color: transparent;

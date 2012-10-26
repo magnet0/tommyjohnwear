@@ -8,7 +8,7 @@ $(document).ready(function() {
 	$(document).foundationCustomForms();
 
 	// Smooth scrolling anchors
-	$('[href^=#]').smoothmove();
+	$('[href^=#]').not('[data-target]').smoothmove();
 
 	/*
 	

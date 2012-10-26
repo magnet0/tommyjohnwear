@@ -231,14 +231,26 @@
 			}
 
 			input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
-	    border: 1px solid #CCCCCC;
-	    border-radius: 2px 2px 2px 2px;
-	    font-family: 'Helmet', 'Freesans', sans-serif;
-	    font-size: 1em;
-	    height: 2em;
-	    margin: 0 0 0.5em;
-	    padding: 0 0.25em;
-	  }
+				border: 1px solid;
+				border-color: rgba(0, 0, 0, 0.35) rgba(0, 0, 0, 0.25) rgba(0, 0, 0, 0.125);
+				-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+				   -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+				     -o-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+				        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+				font-size: 1em;
+				height: 2em;
+				margin: 0 0 0.5em;
+				padding: 0 0.25em;
+			}
+			
+			input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, textarea:focus {
+				border-color: rgba(64, 25, 11, 0.8);
+				-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 0 4px rgba(64, 25, 11, 0.6);
+				   -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 0 4px rgba(64, 25, 11, 0.6);
+				     -o-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 0 4px rgba(64, 25, 11, 0.6);
+				        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 0 4px rgba(64, 25, 11, 0.6);
+				outline: 0;
+			}
 	
 /*	:invalid {
 		border: 1px solid rgb(255, 0, 0);
@@ -249,6 +261,10 @@
 		border-bottom: 1px solid;
 		margin-bottom: -1px;
 		text-decoration: none;
+	}
+	
+	a:hover {
+		color: #0088cc;
 	}
 	
 	a:active {
