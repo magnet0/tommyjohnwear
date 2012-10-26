@@ -12,8 +12,15 @@
 			border-top-color: rgba(255, 255, 255, 0.125);
 		list-style: none;
 		margin: 0;
+		overflow: hidden;
 		padding-left: 2em;
 		position: relative;
+	}
+	
+	.mc-item:after {
+		clear: both;
+		content: "";
+		*zoom: 1;
 	}
 	
 		.mci-delete,
@@ -61,6 +68,23 @@
 			}
 		
 		.mci-info {
+			float: left;
+			max-width: 80%;
+			padding-left: .75em;
+			padding-right: .75em;
+		}
+		
+			.mci-name {
+				border: none;
+				font-weight: 600;
+			}
+			
+			.mci-cat {
+				font-size: .777777778em;
+			}
+			
+		.mci-price {
+			float: right;
 			padding-left: .75em;
 			padding-right: .75em;
 		}

@@ -1,14 +1,14 @@
 <header role="banner">
 	<div class="row">
 		
-		<a href="{{base}}" class="base">
+		<a href="./" class="base">
             <img src="images/tommyjohn.svg" class="logo" alt="Tommy John">
 		</a>
 		
 		<nav role="navigation">
-            <h2>Site Navigation</h2>
-            <ul class="hlist nav-bar">
-                {{#pages}}
+            <h2 class="nav-title toggle">Menu</h2>
+            <ul class="hlist nav-bar resp">
+                {{#primary-nav}}
                 <li class="hlist-item nav-item{{# dropdown}} dropdown{{/ dropdown}}">
                     <a href="{{id}}"{{#utility}} class="os-toggle" data-target="#{{ id }}"{{/utility}}{{# dropdown}} class="dropdown-toggle" data-toggle="dropdown"{{/ dropdown}}>{{title}}{{# dropdown}} <i class="icon-caret-down"></i>{{/ dropdown}}</a>
                     
@@ -18,7 +18,14 @@
                         {{/ children}}
                     {{# dropdown}}</ul>{{/ dropdown}}
                 </li>
-                {{/pages}}
+                {{/primary-nav}}
+            </ul>
+            <ul class="hlist nav-bar">
+                {{#util-nav}}
+                <li class="hlist-item nav-item">
+                    <a href="{{id}}" class="os-toggle" data-target="#{{ id }}">{{title}}</a>
+                </li>
+                {{/util-nav}}
             </ul>
 		</nav>
 		

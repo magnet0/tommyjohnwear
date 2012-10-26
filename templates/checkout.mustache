@@ -2,18 +2,15 @@
 
 <article role="main">
 
-    <div class="row">
-        <div class="three centered column text-center">
-            <hr class="space">
-            <h1>{{ meta.title }}</h1>
-        </div>
-    </div>
+    <header class="page-header">
+        <h1>{{ meta.title }}</h1>
+    </header>
 
     <ul id="checkout" class="no-bullet">
         <li id="identificaion" class="checkout-step">
-            <header class="checkout-head">
-                <i class="icon-ok sign h2"><span>1</span></i><h2>Identification</h2>
-            </header>
+            <h2 class="checkout-head">
+                <i class="icon-ok sign h2"><span>1</span></i> Identification
+            </h2>
             <div class="checkout-content row">
                 <div class="two centered column panel">
                     <details class="account-login padded">
@@ -22,7 +19,7 @@
                         </summary>
                         {{> m-account-login }}
                     </details>
-                    <details class="account-create padded" open>
+                    <details class="account-create padded">
                         <summary class="text-center h2">
                             New Customer
                         </summary>
@@ -33,9 +30,12 @@
         </li>
 
         <li id="billing" class="checkout-step">
-            <header class="checkout-head">
+            <!-- <div class="checkout-head">
                 <i class="icon-ok sign h2"><span>2</span></i><h2>Billing Address</h2>
-            </header>
+            </div> -->
+            <h2 class="checkout-head">
+                <i class="icon-ok sign h2"><span>2</span></i> Billing Address
+            </h2>
             <div class="checkout-content row">
                 <div class="two centered column panel padded">
                     <form action="">
@@ -54,9 +54,9 @@
         </li>
 
         <li id="shipping" class="checkout-step">
-            <header class="checkout-head">
-                <i class="icon-ok sign h2"><span>3</span></i><h2>Shipping Address</h2>
-            </header>
+            <h2 class="checkout-head">
+                <i class="icon-ok sign h2"><span>3</span></i> Shipping Address
+            </h2>
             <div class="checkout-content row">
                 <div class="two centered column panel padded">
                     <h3 class="text-center">Use a saved address</h3>
@@ -87,9 +87,9 @@
         </li>
 
         <li id="shipping-method" class="checkout-step">
-            <header class="checkout-head">
-                <i class="icon-ok sign h2"><span>4</span></i><h2>Shipping Method</h2>
-            </header>
+            <h2 class="checkout-head">
+                <i class="icon-ok sign h2"><span>4</span></i> Shipping Method
+            </h2>
             <div class="checkout-content row">
                 <div class="two centered column panel padded">
                     <hr class="space">
@@ -108,9 +108,9 @@
         </li>
 
         <li id="payment" class="checkout-step">
-            <header class="checkout-head">
-                <i class="icon-ok sign h2"><span>5</span></i><h2>Payment Method</h2>
-            </header>
+            <h2 class="checkout-head">
+                <i class="icon-ok sign h2"><span>5</span></i> Payment Method
+            </h2>
             <div class="checkout-content row">
                 <div class="two centered column panel padded">
                     <form action="">
@@ -125,9 +125,9 @@
         </li>
 
         <li id="review" class="checkout-step">
-            <header class="checkout-head">
-                <i class="icon-ok sign h2"><span>6</span></i><h2>Review</h2>
-            </header>
+            <h2 class="checkout-head">
+                <i class="icon-ok sign h2"><span>6</span></i> Review
+            </h2>
             <div class="checkout-content row">
                 <div class="two centered column">
                     <div class="row">

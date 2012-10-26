@@ -17,22 +17,58 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 /* Media Queries */
 @media screen and (min-width: 37.5em) {
 	body:after { content: 'small'; } /* JS Hook for responsive variables */
+	
+	/* --- @small Base --- */
 	body { font-size: 87.5%; }
 	
-	/* --- Offscreen Panel --- */
+	/* --- @small Offscreen Panel --- */
 	.os-panel {
-		right: -61%;
+		right: -60%;
 		width: 60%;
 	}
 }
-@media screen and (min-width: 50em) {
+@media screen and (min-width: 45em) {
 	body:after { content: 'medium'; } /* JS Hook for responsive variables */
+	
+	/* --- @medium Base --- */
 	body { font-size: 100%; }
+	
+	/* --- @medium Navigation --- */
+	.nav-title { display: none; }
+	.nav-bar.resp {
+		display: inline-block;
+		opacity: 1;
+		overflow: visible;
+		height: auto;
+	}
+		.nav-bar.resp .nav-item { display: inline-block; }
+	
+}
+@media screen and (min-width: 50em) {
+	body:after { content: 'medium2'; } /* JS Hook for responsive variables */
+	
+	/* --- @medium2 Base --- */
+	body { font-size: 112.5%; }
+	
+	/* --- @medium2 Stage --- */
+	.m-stage {
+		padding-bottom: 4.5em;
+		padding-top: 4.5em;
+	}
+	
+	/* --- @medium2 Navigation --- */
+	nav[role="navigation"] {
+		font-size: 1em;
+	}
+	
 }
 @media screen and (min-width: 60em) {
 	body:after { content: 'large'; } /* JS Hook for responsive variables */
+	
+	/* --- @large Base --- */
 	body { font-size: 112.5%; }
-	/* --- Header --- */
+
+	/* --- @large Header --- */
 	header[role="banner"] { text-align: left; }
 	
 		header[role="banner"] .base {
@@ -43,19 +79,39 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 
 		nav[role="navigation"] { float: right; }
 	
-	/* --- Navigation --- */
-	.nav-item { float: left; }
+	/* --- @large Navigation --- */
+	.nav-bar { font-size: .888888889em; }
+		.nav-item { float: left; }
 	
-	/* --- Offscreen Panel --- */
+	/* --- @large Offscreen Panel --- */
 	.os-panel {
-		right: -22.333333em;
+		font-size: 1em;
+		right: -22em;
 		width: 22em;
+	}
+	
+	/* --- @large Stage --- */
+	.m-stage {
+		padding-bottom: 6em;
+		padding-top: 6em;
+	}
+	
+	/* --- @large Featurettes --- */
+	.m-primary-feature {
+		margin: 0 1.5em;
 	}
 	
 }
 @media screen and (min-width: 90em) {	
 	body:after { content: 'wide'; } /* JS Hook for responsive variables */
+	
+	/* --- @wide Base --- */
 	body { font-size: 125%; }
+	
+	/* --- @wide Featurettes --- */
+	.m-primary-feature {
+		margin: 0 2.333333333em;
+	}
 }
 
 /*fade*/
@@ -147,7 +203,12 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 	filter: blur(.25em);*/
 }
 
-.active-os-panel .os-panel {	
+.active-os-panel .os-panel {
+	opacity: 1;
+	-webkit-box-shadow: 0 0 .333333333em rgba(0, 0, 0, 0.4);
+	   -moz-box-shadow: 0 0 .333333333em rgba(0, 0, 0, 0.4);
+	     -o-box-shadow: 0 0 .333333333em rgba(0, 0, 0, 0.4);
+	        box-shadow: 0 0 .333333333em rgba(0, 0, 0, 0.4);
 	-webkit-transform: translate3d(-100%,0,0);
 	   -moz-transform: translate3d(-100%,0,0);
 	     -o-transform: translate3d(-100%,0,0);

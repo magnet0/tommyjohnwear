@@ -64,29 +64,6 @@ body {
 	overflow-x: hidden;
 }
 
-/* Headings */
-h1,.h1 { color: #40190B; }
-
-h1,.h1,
-h2,.h2,
-h3,.h3 {
-	font-family: "dosis-medium";
-	text-transform: uppercase;
-}
-
-h2, .h2 {
-	font-size: 1.5em;
-}
-
-h3, .h3 {
-	font-size: 1.333333333em;
-}
-
-h1 small, .h1 small {
-	color:#999;
-	font-size: 0.5em; 
-}
-
 /* Lead */
 .lead {
 	font-size: 1.125em;
@@ -128,8 +105,14 @@ small { color: #999; }
 	*zoom: 1;
 }
 
+	.btn.small {
+		font-size: .777777778em;
+		padding: .65em 1em;
+	}
+
 	.btn.light {
 		background-color: #f1f1f1; /*@t-warmgray*/
+		border-top: 1px solid #fafafa;
 		color: #40190b; /*@t-brown*/
 	}
 	
@@ -143,7 +126,9 @@ small { color: #999; }
 	.btn.twitter { background-color: #00A0D1; color:#FFF; }
 	.btn.twitter:hover { background-color: #06546E; }
 
+
 .bkg-light { background-color: #F7F7F7; }
+
 
 /*/////////////////////////////////////////////////
 Common Elements
@@ -155,16 +140,20 @@ Common Elements
 	border-radius: 500px;
 }
 
-.panel {
-	background-color: #DEDFE4;
-}
+.panel { background-color: #DEDFE4; }
 
 .panel hr { border-color: #AAA; }
 
-.inset {
-	-webkit-box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75), -1px -1px 0 rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.05) inset;
-	box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75), -1px -1px 0 rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.05) inset;
-}
+	.bordered {
+		border: 1px solid rgba(0,0,0,0.125);
+	}
+
+	.inset {	
+		-webkit-box-shadow: 0 1px 1px rgba(255,255,255,0.75), inset 0 1px 1px rgba(0,0,0,0.2);
+		   -moz-box-shadow: 0 1px 1px rgba(255,255,255,0.75), inset 0 1px 1px rgba(0,0,0,0.2);
+		     -o-box-shadow: 0 1px 1px rgba(255,255,255,0.75), inset 0 1px 1px rgba(0,0,0,0.2);
+		        box-shadow: 0 1px 1px rgba(255,255,255,0.75), inset 0 1px 1px rgba(0,0,0,0.2);
+	}
 
 i.sign {
 	background-color: #454545;
@@ -249,16 +238,17 @@ header[role="banner"] {
 			display: block;
 			margin-bottom: 1.5em;
 		}
+		
+			header[role="banner"] .base .icon-home {
+				opacity: 0;
+			}
+			
+			header[role="banner"] .base:hover .icon-home {
+				opacity: 1;
+			}
 	
 		header[role="banner"] .logo {
 			height: .888888889em;
-		}
-	
-		nav[role="navigation"] > h2 {
-			height: 0;
-			overflow: hidden;
-			position: absolute;
-			width: 0;
 		}
 
 
@@ -266,9 +256,20 @@ header[role="banner"] {
 	Navigation
 	/////////////////////////////////////////////////*/	
 
+	nav[role="navigation"] {
+		font-size: 1.25em;
+	}
+
+	.nav-bar.resp {
+		display: block;
+	}
+
+	.nav-title.toggle {
+		font-size: 1em;
+	}
+
 	.nav-bar {
 		font-family: "dosis-medium";
-		font-size: .888888889em;
 		text-transform: uppercase;
 	}
 		
@@ -362,7 +363,7 @@ Page
 	
 */
 .m-stage {
-	padding: 6em 0;
+	padding: 3em 1.5em;
 	position: relative;
 	text-align: center;
 }
@@ -414,3 +415,13 @@ Page
 			position: relative;
 			z-index: 1;
 		}
+		
+/*
+
+	Standard Page Header
+
+*/
+.page-header {
+	padding: 3em 0 1.5em;
+	text-align: center;
+}
