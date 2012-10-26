@@ -103,6 +103,10 @@ small { color: #999; }
 	padding: 1em 1.5em;
 	text-transform: uppercase;
 	*zoom: 1;
+	-webkit-transition: all .2s;
+	   -moz-transition: all .2s;
+	     -o-transition: all .2s;
+	        transition: all .2s;
 }
 
 	.btn.small {
@@ -121,6 +125,7 @@ small { color: #999; }
 	}
 	
 	.btn.light:hover {
+		border-top-color: transparent;
 		color: white;
 	}
 	
@@ -433,17 +438,17 @@ Modules
 
 /* --- Features --- */
 .m-secondary-feature {
-	-webkit-transition: background .125s;
-	   -moz-transition: background .125s;
-	     -o-transition: background .125s;
-	        transition: background .125s;
+	-webkit-transition: background .1s;
+	   -moz-transition: background .1s;
+	     -o-transition: background .1s;
+	        transition: background .1s;
 }
 
 	.sf-title {
-		-webkit-transition: color .125s;
-		   -moz-transition: color .125s;
-		     -o-transition: color .125s;
-		        transition: color .125s;
+		-webkit-transition: color .1s;
+		   -moz-transition: color .1s;
+		     -o-transition: color .1s;
+		        transition: color .1s;
 	}
 
 .m-secondary-feature.second-skin,
@@ -459,17 +464,14 @@ Modules
 	color: white;
 }
 
-.m-secondary-feature.second-skin:hover,
-.m-secondary-feature.second-skin:hover .sf-title {
+.m-secondary-feature.second-skin:hover {
 	background-color: #65c7be;
 }
 
-.m-secondary-feature.active:hover,
-.m-secondary-feature.active:hover .sf-title {
+.m-secondary-feature.active:hover {
 	background-color: #f0b12f;
 }
 
-.m-secondary-feature.sport:hover,
-.m-secondary-feature.sport:hover .sf-title {
+.m-secondary-feature.sport:hover {
 	background-color: #ef4136;
 }

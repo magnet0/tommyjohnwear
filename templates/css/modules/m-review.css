@@ -71,7 +71,7 @@ Review-Rating - fieldset.rating
 
     .rating:not(:checked) > label:hover,
     .rating:not(:checked) > label:hover ~ label {
-        color: #2284A1;
+        color: #0088cc; /*@hover-blue*/
     }
 
     .rating > input:checked + label:hover,
@@ -79,7 +79,7 @@ Review-Rating - fieldset.rating
     .rating > input:checked ~ label:hover,
     .rating > input:checked ~ label:hover ~ label,
     .rating > label:hover ~ input:checked ~ label {
-        color: #2284A1;
+        color: #0088cc; /*@hover-blue*/
     }
 
     .rating > label:active {}
