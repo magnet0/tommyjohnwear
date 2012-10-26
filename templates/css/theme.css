@@ -157,8 +157,6 @@ Common Elements
 
 .panel {
 	background-color: #DEDFE4;
-	-webkit-box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75), -1px -1px 0 rgba(0, 0, 0, 0.1);
-	box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75), -1px -1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .panel hr { border-color: #AAA; }
