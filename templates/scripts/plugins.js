@@ -21,12 +21,16 @@
 			'target': null
 		};
 
+		if (this.data("target") !== undefined && settings.target !== null ) {
+			settings.target = this.data("target");
+		}
+
 		return this.each(function() {
 			if ( options ) { 
 				$.extend( settings, options );
 			}
 
-			$(this).click(function() {
+			$(this).click(function(e) {
                 var scrollTarget;
 				if (settings.target !== null) {
 					scrollTarget = settings.target;
@@ -37,7 +41,7 @@
 				if ($(scrollTarget).length > 0) {
 					var destination = $(scrollTarget).offset().top;
 					$("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination - settings.offset}, settings.speed );
-					return false;
+					e.preventDefault();
 				} else {
 					return;
 				}

@@ -36,7 +36,7 @@
             <h2 class="checkout-head">
                 <i class="icon-ok sign h2"><span>2</span></i> Billing Address
             </h2>
-            <div class="checkout-content row">
+            <div class="checkout-content row collapse">
                 <div class="two centered column panel padded">
                     <form action="">
                         {{> m-account-form-billing }}
@@ -70,7 +70,7 @@
                         </div>
                     </form>
                     <hr>
-                    <a href="#add-account" data-toggle="collapse" data-target="#add-account"><h3 class="text-center"><i class="icon-plus"></i>Add a new address</h3></a>
+                    <a class="smoothmove" href="#add-account" data-toggle="collapse" data-target="#add-account"><h3 class="text-center"><i class="icon-plus"></i>Add a new address</h3></a>
                     <form action="">
                         <div id="add-account" class="collapse">{{> m-account-form-shipping }}</div>
                         <div class="centered three column">
@@ -85,7 +85,7 @@
             <h2 class="checkout-head">
                 <i class="icon-ok sign h2"><span>4</span></i> Shipping Method
             </h2>
-            <div class="checkout-content row">
+            <div class="checkout-content row collapse">
                 <div class="two centered column panel padded">
                     <hr class="space">
                     <form action="">
@@ -106,7 +106,7 @@
             <h2 class="checkout-head">
                 <i class="icon-ok sign h2"><span>5</span></i> Payment Method
             </h2>
-            <div class="checkout-content row">
+            <div class="checkout-content row collapse">
                 <div class="two centered column panel padded">
                     <form action="">
                         {{> m-account-form-payment }}
@@ -119,7 +119,7 @@
             </div>
         </li>
 
-        <li id="review" class="checkout-step">
+        <li id="review" class="checkout-step collapse">
             <h2 class="checkout-head">
                 <i class="icon-ok sign h2"><span>6</span></i> Review
             </h2>
