@@ -56,8 +56,6 @@ Checkout
 	
 	.checkout-content .padded { padding:.75em 3em; }
 	
-	.checkout-content details:not([open]) { background-color:#EAEBF0; }
-
 	.checkout-content summary {
 		cursor: pointer;
 		font-size: 150%;

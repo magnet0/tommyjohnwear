@@ -157,6 +157,8 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 
 }
 
+#checkout .collapse { border-top:none; }
+
 /*tabbed hide/display*/
 
 .tabs {

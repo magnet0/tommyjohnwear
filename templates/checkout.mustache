@@ -12,7 +12,7 @@
                 <i class="icon-ok sign h2"><span>1</span></i> Identification
             </h2>
             <div class="checkout-content row">
-                <div class="two centered column panel">
+                <div class="two centered column panel detail-accordion">
                     <details class="account-login padded">
                         <summary class="text-center h2">
                             Returning Customer
@@ -46,7 +46,7 @@
                             <label for="giftwrap"><input id="giftwrap" type="checkbox" name="giftwrap"> Gift wrap this item <small>(add $5.00)</small></label>
                         </div>
                         <div class="centered three column">
-                            <a class="btn large expand secondary smoothmove" href="#shipping" data-toggle="collapse" data-target="#shipping .checkout-content">Next</a>
+                            <a class="btn large expand secondary" href="#shipping" data-toggle="collapse" data-target="#shipping .checkout-content">Next</a>
                         </div>
                     </form>
                 </div>
@@ -70,11 +70,11 @@
                         </div>
                     </form>
                     <hr>
-                    <a class="smoothmove" href="#add-account" data-toggle="collapse" data-target="#add-account"><h3 class="text-center"><i class="icon-plus"></i>Add a new address</h3></a>
+                    <a href="#add-account" data-toggle="collapse" data-target="#add-account"><h3 class="text-center"><i class="icon-plus"></i>Add a new address</h3></a>
                     <form action="">
                         <div id="add-account" class="collapse">{{> m-account-form-shipping }}</div>
                         <div class="centered three column">
-                            <a class="btn large expand secondary smoothmove" href="#shipping-method" data-toggle="collapse" data-target="#shipping-method .checkout-content">Next</a>
+                            <a class="btn large expand secondary" href="#shipping-method" data-toggle="collapse" data-target="#shipping-method .checkout-content">Next</a>
                         </div>
                     </form>
                 </div>
@@ -95,7 +95,7 @@
                         <div class="input-row row"><label for="shipping4" class="column six"><input type="radio" name="shipping" id="shipping4"> UPS Overnight <span class="right">$x.xx</span></label></div>
                         <hr class="space">
                         <div class="centered three column">
-                            <a class="btn large expand secondary smoothmove" href="#payment" data-toggle="collapse" data-target="#payment .checkout-content">Next</a>
+                            <a class="btn large expand secondary" href="#payment" data-toggle="collapse" data-target="#payment .checkout-content">Next</a>
                         </div>
                     </form>
                 </div>
@@ -112,7 +112,7 @@
                         {{> m-account-form-payment }}
                         <hr class="space">
                         <div class="centered three column">
-                            <a class="btn large expand secondary smoothmove" href="#review" data-toggle="collapse" data-target="#review">Next</a>
+                            <a class="btn large expand secondary" href="#review" data-toggle="collapse" data-target="#review">Next</a>
                         </div>
                     </form>
                 </div>

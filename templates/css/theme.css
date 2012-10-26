@@ -296,7 +296,7 @@ Checkout
 
 	.checkout-head h2 { color:#454545; }
 	
-	.checkout-content details:not([open]) { background-color:#EAEBF0; }
+	.checkout-content details[open] { background-color:#EAEBF0; }
 
 	.checkout-content .m-cart-table { font-size: 80%; }
 
