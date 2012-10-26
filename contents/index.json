@@ -34,17 +34,20 @@
 		{
 			"href":"category",
 			"img":"images/dudebro/dummy2.png",
-			"title":"Second Skin"
+			"title":"Second Skin",
+			"slug": "second-skin"
 		},
 		{
 			"href":"category",
 			"img":"images/dudebro/dummy3.png",
-			"title":"Sport"
+			"title":"Sport",
+			"slug": "sport"
 		},
 		{
 			"href":"category",
 			"img":"images/dudebro/dummy1.png",
-			"title":"Active"
+			"title":"Active",
+			"slug": "active"
 		}
 	],
 	"promos":[

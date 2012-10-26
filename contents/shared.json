@@ -80,7 +80,7 @@
 				},
 				{
 					"title":"Privacy Policy",
-					"href":"privacy-policy"
+					"href":"page"
 				}
 			]
 		},
@@ -99,7 +99,7 @@
 				},
 				{
 					"title":"FAQ's",
-					"href":"faqs"
+					"href":"page"
 				},
 				{
 					"title":"Store Locator",
@@ -107,7 +107,7 @@
 				},
 				{
 					"title":"Shipping & Returns",
-					"href":"shipping-and-returns"
+					"href":"page"
 				}
 			]
 		},
@@ -117,15 +117,15 @@
 			"children": [
 				{
 					"title":"Size Guide",
-					"href":"size-guide"
+					"href":"page"
 				},
 				{
 					"title":"Fabric",
-					"href":"fabric"
+					"href":"page"
 				},
 				{
 					"title":"Care Instructions",
-					"href":"care"
+					"href":"page"
 				}
 			]
 		},

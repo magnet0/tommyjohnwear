@@ -58,6 +58,8 @@
 	       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
 	margin: 0 .75em;
 	min-height: 12em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
 	position: relative;
 }
 
@@ -67,8 +69,11 @@
 
 /* --- Secondary --- */
 .m-secondary-feature {
-	padding: 6em 1em;
+	padding: 6em 1.5em;
+	margin-bottom: 1.5em;
 }
 
-
-.m-secondary-feature {}
+	.sf-title {
+		font-size: 2em;
+		margin-bottom: 0;
+	}
