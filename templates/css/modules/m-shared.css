@@ -280,6 +280,18 @@ Divider - div.m-divider>span{text}
     margin-top: -0.75em;
   }
 
+.seperator {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	height: .75em;
+	text-align: center;
+}
+
+	.seperator em {
+		background-color: #eef0f7;
+		font-style: normal;
+		font-weight: bold;
+		padding: .5em;
+	}
 
 /*/////////////////////////////////////////////////
 ToolTips - based on bootstrap

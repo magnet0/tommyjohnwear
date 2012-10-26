@@ -4,9 +4,7 @@
 	Usage: <div.m-image-viewer>
 
 */
-.m-product-image-viewer {
-    
-}
+.m-product-image-viewer {}
 
     .image-viewer-stage {
         height: 800px;
@@ -22,6 +20,10 @@
         }
 
     .image-viewer-nav {
+		-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+	       -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+	         -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+	            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
         left: 1.5em;
         list-style: none outside none;
         position: absolute;

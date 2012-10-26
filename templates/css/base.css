@@ -264,7 +264,7 @@
 	}
 	
 	a:hover {
-		color: #0088cc;
+		color: #0088cc; /*@hover-blue*/
 	}
 	
 	a:active {

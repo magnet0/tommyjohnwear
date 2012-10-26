@@ -1,8 +1,9 @@
 $(document).ready(function() {
-
-	// Scroll past chrome on mobile
-	setTimeout(function () {window.scrollTo(0, 1); }, 1000);
 	
+	// move to reponsive check
+	// Scroll past chrome on mobile
+	// setTimeout(function () {window.scrollTo(0, 1); }, 1000);
+		
 	// ?
 	$('.popover-trigger').popover({delay: { show: 500, hide: 100 }});
 	$(document).foundationCustomForms();
