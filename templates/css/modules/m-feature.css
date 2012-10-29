@@ -14,9 +14,9 @@
 	background-color: #F1F1F1;
 	background-position: center center;
 	background-size: cover;
-	border-bottom:1px solid #DDDDDD;
+	border-bottom:1px solid #ddd;
 	min-height: 15em;
-	padding:3em 3em 0 15em;
+	padding:3em 3em 0 50%;
 	text-align: center;
 }
 
@@ -61,6 +61,7 @@
 	padding-left: 1.5em;
 	padding-right: 1.5em;
 	position: relative;
+	text-align: center;
 }
 
 	.pf-content {

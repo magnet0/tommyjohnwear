@@ -31,6 +31,12 @@
 		.ie6 *, .ie7 * { behavior: url(../scripts/polyfill/boxsizing.htc); }
 
 	/* Page */	
+	html,
+	body {
+		overflow-x: hidden;
+		width: 100%;
+	}
+	
 	html {
 		background-color: #fafafa;
 		padding: 0;
@@ -261,6 +267,10 @@
 		border-bottom: 1px solid;
 		margin-bottom: -1px;
 		text-decoration: none;
+		-webkit-transition: color .125s, background .125s;
+		   -moz-transition: color .125s, background .125s;
+		     -o-transition: color .125s, background .125s;
+		        transition: color .125s, background .125s;
 	}
 	
 	a:hover {

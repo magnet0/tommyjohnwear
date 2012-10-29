@@ -31,24 +31,25 @@
 	],
 	"primary-feature":[
 		{
-			"href":"tech",
+			"href":"category",
 			"img":"images/dudebro/dummy1.png",
 			"alt":"image alt text",
-			"append-text":"What makes our underwear better than any other? <em>learn about our technology and fit</em>"
+			"text":"Ready to feel the difference?",
+			"action": "Shop underwear"
 		},
 		{
-			"href":"tech",
+			"href":"category",
 			"img":"images/dudebro/dummy2.png",
 			"alt":"This picture",
-			"prepend-text": false,
-			"append-text":"What makes our underwear better than any other? <em>learn about our technology and fit</em>"
+			"text":"Something something?",
+			"action": "Shop something"
 		},
 		{
-			"href":"tech",
+			"href":"guarantee",
 			"img":"images/dudebro/dummy3.png",
 			"alt":"Another picture",
-			"prepend-text": false,
-			"append-text":"What makes our underwear better than any other? <em>learn about our technology and fit</em>"
+			"text":"Need more convincing?",
+			"action": "See our guarantee"
 		}
 	]
 }
