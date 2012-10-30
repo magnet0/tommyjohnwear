@@ -29,6 +29,7 @@
                 <div class="row collapsed">
                     <div class="one centered column">
                         <div class="three column">
+                            <label for="distance">Distance</label>
                             <select style="display:none;" id="customDropdown">
                                 <option SELECTED>1 Mile</option>
                                 <option value="">2 Mile</option>
@@ -48,7 +49,7 @@
                               </ul>
                             </div>
                         </div>
-                        <div class="three column"><a href="" class="btn expand">Find</a></div>
+                        <div class="three column"><a href="#locations" class="btn expand">Find</a></div>
                     </div>
                 </div>
             </form>
@@ -58,7 +59,7 @@
     
     <div class="row">
         <div class="three centered column">
-            <ul class="m-locations no-bullet">
+            <ul id="locations" class="m-locations no-bullet">
                 <li class="row">
                     <a href="">
                         <div class="one mobile-one column loc-map"><img src="http://maps.googleapis.com/maps/api/staticmap?center=850+2nd+ave+New+York+NY+10017&zoom=12&size=113x113&sensor=false" alt="" class="img-circle inset shadow-inner"></div>

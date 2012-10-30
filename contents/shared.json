@@ -46,19 +46,27 @@
 		{
 			"title": "Crew Neck",
 			"id": "crew-neck",
+			"cat": "Second Skin",
+			"cat-slug": "second-skin",
 			"4star": true
 		},
 		{
 			"title": "V Neck",
-			"id": "v-neck"
+			"id": "v-neck",
+			"cat": "Second Skin",
+			"cat-slug": "second-skin"
 		},
 		{
 			"title": "Tank",
-			"id": "tank"
+			"id": "tank",
+			"cat": "Second Skin",
+			"cat-slug": "second-skin"
 		},
 		{
 			"title": "Long Sleeve",
-			"id": "long-sleeve"
+			"id": "long-sleeve",
+			"cat": "Second Skin",
+			"cat-slug": "second-skin"
 		}
 	],
 	"sitemap": [

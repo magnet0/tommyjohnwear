@@ -1,8 +1,10 @@
-<div class="cat-item">
+<div class="cat-item {{cat-slug}}">
     <a href="product" class="block">
         <img src="http:images/dudebro/category.png" alt="dummy">
-        <div class="cat-item-title category-label">{{title}}</div>
-        <h3 class="cat-item-price">$45</h3>
+        <div class="category-label">{{cat}}</div>
+        <h3 class="cat-item-title">{{title}}</h3>
+        <div><small>more colors available</small></div>
+        <div class="cat-item-price">$45</div>
     </a>
-        {{> m-review-rating }}
+    {{> m-review-rating }}
 </div>

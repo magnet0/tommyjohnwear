@@ -157,6 +157,10 @@
 	}
 	
 	/* Forms */
+	form {
+		margin-bottom: 1.5em;
+	}
+	
 	fieldset {
 		border: none;
 		margin: 0 0 1.5em;
@@ -274,7 +278,7 @@
 	}
 	
 	a:hover {
-		color: #0088cc; /*@hover-blue*/
+		color: #0088cc; /*@tj-blue*/
 	}
 	
 	a:active {

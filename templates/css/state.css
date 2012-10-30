@@ -26,6 +26,7 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 		right: -60%;
 		width: 60%;
 	}
+	
 }
 @media screen and (min-width: 45em) {
 	body:after { content: 'medium'; } /* JS Hook for responsive variables */
@@ -42,6 +43,7 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 		height: auto;
 	}
 		.nav-bar.resp .nav-item { display: inline-block; }
+
 	
 }
 @media screen and (min-width: 50em) {
@@ -59,6 +61,16 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 	/* --- @medium2 Navigation --- */
 	nav[role="navigation"] {
 		font-size: 1em;
+	}
+	
+	/* --- @medium Product --- */
+	.m-product-image-viewer {
+		width: 100%;
+	}
+	
+	/* --- @medium2 Product info --- */
+	.m-product-form {
+		padding-left: 16.666666667%;
 	}
 	
 }
@@ -101,6 +113,31 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 		margin: 0 1.5em;
 	}
 	
+	/* --- @medium2 Product --- */
+/*	.m-product-image-viewer {
+		width: 80%;
+	}*/
+		
+}
+@media screen and (min-width: 75em) {
+	body:after { content: 'large2'; } /* JS Hook for responsive variables */
+
+	/* --- @large2 Product --- */		
+	.image-viewer-nav {
+		left: 1.5em;
+		position: absolute;
+		top: 1.5em;
+		width: 12.5%;
+    }
+
+		.image-viewer-nav:before {
+			content: "Views";
+		}
+
+		.image-viewer-thumb {
+			float: none;
+			width: auto;
+	    }
 }
 @media screen and (min-width: 90em) {	
 	body:after { content: 'wide'; } /* JS Hook for responsive variables */
@@ -112,6 +149,12 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 	.m-primary-feature {
 		margin: 0 2.333333333em;
 	}
+	
+	/* --- @medium2 Product --- */
+	.m-product-image-viewer {
+		width: 100%;
+	}
+
 }
 
 /*fade*/

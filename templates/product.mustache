@@ -3,25 +3,29 @@
 <article role="main">
     <div class="content row">
         <div class="row">
-            <div class="four column">
+            <div class="column three mobile-four">
                 {{> m-product-image-viewer }}
             </div>
-            <div class="two column">
+            <div class="column three mobile-four">
                 {{> m-product-form }}
             </div>
         </div>
-        
+        <div class="row">
+            <ul class="pslist">
+                <li class="pslist-item"><div class="fb-like" data-href="http://tommyjohnwear.com/#url" data-send="false" data-layout="button_count" data-width="80" data-show-faces="false"></div></li>
+            </ul>
+        </div>
         <div class="bkg-light row">
             <div class="m-feature row">
                 {{#primary-feature}}
-                        {{> m-feature-row}}
+                <div class="column three mobile-four">
+                    {{> m-feature-row}}
+                </div>
                 {{/primary-feature}}
             </div>
-            
             <div class="row text-center space">
                 <a class="btn large" href="technology">Learn more about our <strong>technology</strong> &nbsp;<i class="icon-chevron-right"></i></a>
             </div>
-
         </div>
         
         <h2 class="text-center space">You might also be interested in</h2>

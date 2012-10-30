@@ -186,13 +186,11 @@ i.sign {
 i.sign.left { margin-right: .25em; }
 i.sign.right { margin-left: .25em; }
 
-.category-label { 
-	background-color: #66C7BE;
-	color:#FFF;
-	padding:0 0.5em;
+.category-label {
+	color: white;
+	padding: 0 0.5em;
 	display: inline;
 	font-family: "dosis-medium";
-	font-weight: bold;
 	line-height: 1;
 	position: relative;
 	text-align: center;
@@ -200,7 +198,13 @@ i.sign.right { margin-left: .25em; }
 	text-transform: uppercase;
 	white-space: nowrap;
 }
-	.category-label .second-skin { background-color: #66C7BE; } /*why the hell isn't this working?*/
+
+	.second-skin .category-label,
+	.category-label.second-skin { background-color: #66c7be; /*@tj-aqua*/ }
+	.sport .category-label,
+	.category-label.sport { background-color: #ef4136; /*@tj-red*/ }
+	.active .category-label,
+	.category-label.active { background-color: #f0b12f; /*@tj-gold*/ }
 
 /* Forms ---------------------- */
 
