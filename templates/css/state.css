@@ -265,3 +265,16 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 .no-csstransforms .active-os-panel .os-panel {	
 	right: 0;
 }
+
+/* --- Checkout --- */
+
+.checkout-head.checkout-complete { cursor: pointer; }
+.checkout-head.checkout-complete:after {
+	content: "Edit";
+	color: #999;
+	font-size:.5em;
+}
+
+.checkout-head.checkout-complete:hover:after {
+	color: #08C;
+}

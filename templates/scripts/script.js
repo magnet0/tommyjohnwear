@@ -11,6 +11,54 @@ $(document).ready(function() {
 	// Smooth scrolling anchors
 	$('[href^=#]').smoothmove();
 
+	//checkout hide/show handling
+	$('.checkout-step').each(function(){
+		var step = $(this);
+		var title = $('.checkout-head', this);
+		var content = $('.checkout-content', this);
+		var next = $('form .btn', this);
+		var edit = $('.co-edit', this);
+		var target = next.data('target');
+
+		content.collapse({
+		  toggle: false
+		})
+
+		//on click hide self and revile next
+		next.click(function(){
+			
+			//this is where form validation would happen
+
+			//swap title icon for check
+			title.addClass('checkout-complete').click(function(){
+					content.collapse('toggle');
+			});
+
+			//close this step
+			content.collapse('hide');
+
+			//open next step
+			if ( step.next('.checkout-step').children('.checkout-complete').length == 0 )
+			{
+				step.next('.checkout-step').children('.checkout-content').collapse('show');
+			}
+
+			
+		});
+
+		//on click hide self and revile next
+		edit.click(function(){
+			
+			var target = $(this).data('target');
+
+			//open target
+			$(target).collapse('show');
+
+			return false;
+		});
+
+	});
+
 	/*
 	
 		Functions
