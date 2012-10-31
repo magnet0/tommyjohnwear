@@ -241,7 +241,7 @@ header[role="banner"] {
 	   -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
 	     -o-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
 	        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
-	padding: 1.5em 0;
+	padding: 1.5em 0 0;
 	position: relative;
 	text-align: center;
 	z-index: 1;
@@ -275,10 +275,7 @@ header[role="banner"] {
 
 	nav[role="navigation"] {
 		font-size: 1.25em;
-	}
-
-	.nav-bar.resp {
-		display: block;
+		position: relative;
 	}
 
 	.nav-title.toggle {
@@ -289,14 +286,6 @@ header[role="banner"] {
 		font-family: "dosis-medium";
 		text-transform: uppercase;
 	}
-		
-		.nav-item {
-			line-height: 1.5;
-		}
-		
-			.nav-item > a {
-				padding: 0 .75em;
-			}
 
 /*/////////////////////////////////////////////////
 Checkout
