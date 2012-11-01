@@ -257,6 +257,11 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
   opacity: 1;
 }
 
+/* --- Hidden --- */
+.is-hidden {
+	display: none;
+}
+
 /*affix*/
 
 .affix { position: fixed; top:0;}
