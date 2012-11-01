@@ -2,7 +2,10 @@
     <div class="mci-delete"><i class="icon-ban-circle"></i></div>
     <div class="mci-info">
         <span class="mci-qty">{{qty}} x </span><a href="{{url}}" class="mci-name">{{name}} {{type}}</a>
-        <div class="mci-cat">{{category}}</div>
+        <div>
+            <span class="mci-cat category-label  {{#dasherize}}{{#downcase}}{{category}}{{/downcase}}{{/dasherize}}">{{category}}</span>
+            <span class="mci-price">${{price}} ea.</span>
+        </div>
     </div>
-    <div class="mci-price">${{price}}</div>
+    <div class="mci-total">${{total}}</div>
 </li>

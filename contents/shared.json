@@ -168,18 +168,20 @@
 				"name": "Crew Neck",
 				"type": "Undershirts",
 				"category": "Second Skin",
-				"price": "25",
+				"price": "25.00",
 				"size": "medium",
 				"qty": "2",
+				"total": "50.00",
 				"url": "product"
 			},
 			{
 				"name": "Tank",
 				"type": "Undershirt",
 				"category": "Second Skin",
-				"price": "25",
+				"price": "25.00",
 				"size": "medium",
 				"qty": "1",
+				"total": "25.00",
 				"url": "product"
 			}
 		]
