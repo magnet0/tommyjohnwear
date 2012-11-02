@@ -38,8 +38,6 @@
                     <form action="">
                         {{> m-account-form-billing }}
                         <div class="input-row row space">
-                            <label for="shiptosame"><input id="shiptosame" type="checkbox" name="shipto"> Ship to this address</label>
-                            <br>
                             <label for="giftwrap"><input id="giftwrap" type="checkbox" name="giftwrap"> Gift wrap this item <small>(add $5.00)</small></label>
                         </div>
                         <div class="centered three column">
@@ -65,6 +63,8 @@
                                 <option value="">Work</option>
                             </select>
                         </div>
+                        <p class="seperator horizontal"><em>or</em></p>
+                        <label for="shiptosame"><input id="shiptosame" type="checkbox" name="shipto"> Ship to billing address</label>
                     </form>
                     <hr>
                     <a href="#add-account" data-toggle="collapse" data-target="#add-account"><h3 class="text-center"><i class="icon-plus"></i>Add a new address</h3></a>
@@ -186,8 +186,8 @@
                         <form action="" class="">
                             <div class="input-row row">
                                 <input type="hidden"> <!-- use hidden fields + javascript to gather all the data from above forms? -->
-                                <label for="newsletter"><input id="newsletter" type="checkbox" name="newsletter"> Sign up for the occasional newsletter</label><br>
-                                <small>Your privacy is important to us. We'll never share or sell your information to 3rd parties. You can easily unsubscribe at any time.</small>
+                                <label for="newsletter"><input id="newsletter" type="checkbox" name="newsletter" checked> Sign up for the occasional newsletter</label><br>
+                                <small><a href="/page">View our Privacy Policy</a></small>
                             </div>
                         </form>
                     </div>

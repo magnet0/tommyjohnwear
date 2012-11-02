@@ -37,6 +37,8 @@ $(document).ready(function() {
 			//close this step
 			content.collapse('hide');
 
+			
+
 			//open next step
 			if ( step.next('.checkout-step').children('.checkout-complete').length == 0 )
 			{
