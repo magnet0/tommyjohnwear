@@ -11,6 +11,22 @@ $(document).ready(function() {
 	// Smooth scrolling anchors
 	$('[href^=#]').smoothmove();
 
+	//checkout saved address handling
+	$('#saved-location').change(function(){
+		// var target = '#' + $( '#saved-location option[value!=""]:selected' ).val();
+
+		// $( '#shipping-address-preview .address-preview' ).collapse('hide');
+		// $( target ).collapse('show');
+
+
+		// $('option[value!=""]', this).each(function(){
+		// 	var target = '#' + $(this).val();
+		// 	if ( $(this).is(':selected') ) { $(target).collapse('show') }
+		// 	if ( $(this).not(':selected') ) { $(target).collapse('hide') }
+		// })
+
+	});
+
 	//checkout hide/show handling
 	$('.checkout-step').each(function(){
 		var step = $(this);
@@ -24,7 +40,7 @@ $(document).ready(function() {
 		  toggle: false
 		})
 
-		//on click hide self and revile next
+		//on click hide self and reveal next
 		next.click(function(){
 			
 			//this is where form validation would happen
@@ -42,13 +58,22 @@ $(document).ready(function() {
 			//open next step
 			if ( step.next('.checkout-step').children('.checkout-complete').length == 0 )
 			{
-				step.next('.checkout-step').children('.checkout-content').collapse('show');
+				if ( step.find('#shiptosame').is(':checked') )
+				{
+					//handle ship to billing address, skip next
+					step.next('.checkout-step').children('.checkout-head').addClass('checkout-complete').click(function(){
+							content.collapse('toggle');
+					}); // check off step and enable toggle
+					step.next('.checkout-step').next('.checkout-step').children('.checkout-content').collapse('show'); // reveal step after next 
+				} else {
+					step.next('.checkout-step').children('.checkout-content').collapse('show');
+				}
 			}
 
 			
 		});
 
-		//on click hide self and revile next
+		//on click hide self and reveal next
 		edit.click(function(){
 			
 			var target = $(this).data('target');

@@ -38,6 +38,7 @@
                     <form action="">
                         {{> m-account-form-billing }}
                         <div class="input-row row space">
+                            <label for="shiptosame"><input id="shiptosame" type="checkbox" name="shipto"> Ship to billing address</label><br>
                             <label for="giftwrap"><input id="giftwrap" type="checkbox" name="giftwrap"> Gift wrap this item <small>(add $5.00)</small></label>
                         </div>
                         <div class="centered three column">
@@ -58,15 +59,31 @@
                     <form action="">
                         <div class="input-row row">
                             <label for="location">Location</label>
-                            <select name="" id="location">
-                                <option value="">Home</option>
-                                <option value="">Work</option>
+                            <select name="" id="saved-location">
+                                <option value="" selected>Select Location</option>
+                                <option value="home">Home</option>
+                                <option value="work">Work</option>
                             </select>
                         </div>
-                        <p class="seperator horizontal"><em>or</em></p>
-                        <label for="shiptosame"><input id="shiptosame" type="checkbox" name="shipto"> Ship to billing address</label>
                     </form>
-                    <hr>
+
+                    <div id="shipping-address-preview">
+                        <!-- loop saved address -->
+                        <div id="home" class="address-preview collapse">
+                            <h4>Home</h4>
+                            {{# billing }}
+                                {{> m-account-address }}
+                            {{/ billing }}
+                        </div>
+                        <div id="work" class="address-preview collapse">
+                            <h4>Work</h4>
+                            {{# billing }}
+                                {{> m-account-address }}
+                            {{/ billing }}
+                        </div>
+                    </div>
+
+                    <p class="seperator horizontal"><em>or</em></p>
                     <a href="#add-account" data-toggle="collapse" data-target="#add-account"><h3 class="text-center"><i class="icon-plus"></i>Add a new address</h3></a>
                     <form action="">
                         <div id="add-account" class="collapse">{{> m-account-form-shipping }}</div>
@@ -128,6 +145,11 @@
                             {{> m-cart-table }}
                         {{/ cart }}
                         <!-- cart total -->
+                    </div>
+                </div>
+                <div class="checkout-content row">
+                    <div class="two centered column panel padded">
+                        <a class="btn large expand" href="thank-you"><strong>Place your order</strong></a>
                     </div>
                 </div>
             </div>
