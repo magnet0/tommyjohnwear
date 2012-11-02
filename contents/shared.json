@@ -144,19 +144,19 @@
 				{
 					"social": "icon-facebook",
 					"title":"Facebook",
-					"href":"//facebook.com",
+					"href":"//facebook.com/TommyJohnWear",
 					"class":"social-btn social-facebook"
 				},
 				{
 					"social": "icon-twitter",
 					"title":"Twitter",
-					"href":"//twitter.com",
+					"href":"//twitter.com/TommyJohn",
 					"class":"social-btn social-twitter"
 				},
 				{
 					"social": "icon-pinterest",
 					"title":"Pinterest",
-					"href":"//pinterest.com",
+					"href":"//pinterest.com/tommyjohnwear/",
 					"class":"social-btn social-pintrist"
 				}
 			]

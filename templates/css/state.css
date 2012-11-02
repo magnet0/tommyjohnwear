@@ -316,27 +316,23 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 	}
 
 /* --- Offscreen Panel --- */
-[role="banner"],
-[role="main"],
-[role="contentinfo"] {
-    -webkit-transition: opacity .6s ease, -webkit-filter .6s ease;
-       -moz-transition: opacity .6s ease, -moz-filter .6s ease;
-         -o-transition: opacity .6s ease, -o-filter .6s ease;
-            transition: opacity .6s ease, filter .6s ease;
+.wrap {
+    -webkit-transition: opacity .6s ease;
+       -moz-transition: opacity .6s ease;
+         -o-transition: opacity .6s ease;
+            transition: opacity .6s ease;
 	-webkit-backface-visibility: hidden;
 	-webkit-perspective: 1000;
 }
 
-.active-os-panel [role="banner"],
-.active-os-panel [role="main"],
-.active-os-panel [role="contentinfo"] {
+.active-os-panel .wrap {
 	opacity: .2;
-/*	
-	Cool! But not smooth
-	-webkit-filter: blur(.125em);
-	   -moz-filter: blur(.125em);
-	    -ms-filter: blur(.125em);
-	filter: blur(.25em);*/
+	
+/*	Cool! But not smooth*/
+/*	-webkit-filter: blur(.0625em);
+	   -moz-filter: blur(.0625em);
+	    -ms-filter: blur(.0625em);
+	filter: blur(.0625em);*/
 }
 
 .active-os-panel .os-panel {

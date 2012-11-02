@@ -486,3 +486,9 @@ Modules
 .m-secondary-feature.sport:hover {
 	background-color: #ef4136;
 }
+
+/* Asides */
+.referral-aside {
+	text-align: center;
+}
+
