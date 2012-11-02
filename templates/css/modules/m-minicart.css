@@ -25,7 +25,7 @@
 	
 		.mci-delete,
 		.mci-info,
-		.mci-price {
+		.mci-total {
 			display: inline-block;
 			padding-bottom: 1.5em;
 			padding-top: 1.5em;
@@ -79,11 +79,12 @@
 				font-weight: 600;
 			}
 			
-			.mci-cat {
+			.mci-cat,
+			.mci-price {
 				font-size: .777777778em;
 			}
 			
-		.mci-price {
+		.mci-total {
 			float: right;
 			padding-left: .75em;
 			padding-right: .75em;
@@ -98,6 +99,12 @@
 		.mct-label,
 		.mct-amount {
 			font-size: .777777778em;
+		}
+		
+		.mct-label {
+			clear: left;
+			float: left;
+			width: 66.666666666%;
 		}
 		
 		.mct-total {

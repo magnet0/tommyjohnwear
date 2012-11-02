@@ -7,7 +7,7 @@
 .pslist {
 	background-color: #dbdbdb;
 	border: solid rgba(0, 0, 0, 0.125);
-	border-width: 1px 0;
+	border-width: 0 0 1px;
 	list-style: none;
 	margin-bottom: 0;
 	padding: 3em 0;
@@ -15,7 +15,7 @@
 }
 
 	.pslist-item {
-		background-color: #fafafa;
+		background-color: rgba(255, 255, 255, 0.4);
 		-webkit-border-radius: .125em;
 		   -moz-border-radius: .125em;
 		        border-radius: .125em;

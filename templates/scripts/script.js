@@ -87,11 +87,6 @@ $(document).ready(function() {
 	})
 
 
-	/*
-	
-		Prototype
-	
-	*/
 	// Showing how deleting items would look
 	function itmRemove(trig,item) {
 		trig.click(function() {
@@ -101,9 +96,7 @@ $(document).ready(function() {
 
 
 	// Load
-	
 	offscreen();
 	itmRemove($('.mci-delete'), $('.mc-item'));
 	
-
 });
