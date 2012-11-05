@@ -327,12 +327,6 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 
 .active-os-panel .wrap {
 	opacity: .2;
-	
-/*	Cool! But not smooth*/
-/*	-webkit-filter: blur(.0625em);
-	   -moz-filter: blur(.0625em);
-	    -ms-filter: blur(.0625em);
-	filter: blur(.0625em);*/
 }
 
 .active-os-panel .os-panel {
