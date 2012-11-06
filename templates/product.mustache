@@ -11,11 +11,18 @@
             </div>
         </div>
         <div class="row">
-            <ul class="pslist">
-                <li class="pslist-item"><div class="fb-like" data-href="http://tommyjohnwear.com/#url" data-send="false" data-layout="button_count" data-width="80" data-show-faces="false"></div></li>
-            </ul>
+            <div class="column three centered">
+                <div class="product-description">
+                    <h2 class="text-center">Description</h2>
+                    <p class="product-form-description">
+                        {{{ product.description }}}
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="bkg-light row">
+        
+        <div class="product-features bkg-light row">
+            <h2 class="text-center">Features</h2>
             <div class="m-feature row">
                 {{#primary-feature}}
                 <div class="column three mobile-four">
@@ -28,14 +35,18 @@
             </div>
         </div>
         
-        <h2 class="text-center space">You might also be interested in</h2>
-        <div class="row space">    
+        <aside class="related-products row">
+            <div class="column four centered mobile-two">
+            <h2 class="text-center space">You might also be interested in</h2>
+            <div class="row space">    
             {{#undershirts}}
                 <div class="quarter column">
                     {{> m-item }}
                 </div>
             {{/undershirts}}
-        </div>
+            </div>
+            </div>
+        </aside>
         
         <div id="reviews" class="reviews row bkg-light">
             <div class="row space">

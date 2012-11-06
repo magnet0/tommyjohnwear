@@ -1,0 +1,23 @@
+.tag {
+	border: none;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	     -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	font-size: .75em;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	line-height: 1;
+	white-space: nowrap;
+	display: inline;
+	display: inline-block;
+	padding: .25em .5em;
+	position: relative;
+	color: white;
+	background: #aaa;
+}
+
+	.tag:hover {
+		color: white;
+	}

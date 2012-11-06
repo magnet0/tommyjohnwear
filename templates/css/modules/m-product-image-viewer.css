@@ -5,6 +5,12 @@
 
 */
 .m-product-image-viewer {
+/*	background-image: -ms-radial-gradient(center bottom, ellipse farthest-side, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+	background-image: -moz-radial-gradient(center bottom, ellipse farthest-side, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+	background-image: -o-radial-gradient(center bottom, ellipse farthest-side, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+	background-image: -webkit-gradient(radial, center bottom, 0, center bottom, 477, color-stop(0, rgba(0, 0, 0, 1)), color-stop(1, rgba(0, 0, 0, 0)));
+	background-image: -webkit-radial-gradient(center bottom, ellipse farthest-side, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+	background-image: radial-gradient(ellipse farthest-side at center bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);*/
 	margin-left: auto;
 	margin-right: auto;
 	width: 66.666666666%;
@@ -16,14 +22,17 @@
     }
 
 		.image-viewer-stage img {
+			position: relative;
 			vertical-align: middle;
+			z-index: -1;
 		}
 
         .image-viewer-display {
             background-position: center top;
             background-repeat: no-repeat;
-            height: 100%;
-            width: 100%;
+			margin: auto;
+			max-width: 500px;
+            width: 80%;
         }
 
     .image-viewer-nav {

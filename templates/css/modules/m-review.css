@@ -4,15 +4,28 @@
 
 */
 
-.m-review {}
-    .m-review p,
-    .review-author-info h4 { color: #AAA; }
+.m-review {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+	margin-bottom: 1.5em;
+	padding-bottom: 1.5em;
+}
+    .m-review p { color: #AAA; }
 
 	.review-rating {}
 	.review-title {}
 	.review-meta {}
-	.review-author-info { font-size: 80%; }
 	.review-interact {}
+	
+/*	.review-author-info,
+	.review-tags,
+	.review-comments { font-size: 80%; }*/
+	.review-tags {
+		margin-bottom: 1.5em;
+	}
+	
+	.comment-list {
+		font-size: .875em;
+	}
 
 /*/////////////////////////////////////////////////
 Review-Rating - fieldset.rating
