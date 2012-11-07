@@ -5,6 +5,9 @@
                 {{# product.images }}
                 <div id="{{ name }}" class="image-viewer-display tab-pane{{# active }} active{{/ active }}" data-img="{{ large }}">
                     <img src="{{ large }}" alt="">
+                    <div class="image-viewer-zoom">
+                        <a href="{{zoom}}" data-toggle="modal" data-target="#zoom"><i class="icon-zoom-in"></i> Zoom</a>
+                    </div>
                 </div>
                 {{/ product.images }}
             </div>
@@ -14,9 +17,6 @@
                     <a href="#{{ name }}" data-toggle="tab"><img src="{{ thumb }}" alt=""></a>
                 </li>
                 {{/ product.images }}
-                <li class="image-viewer-thumb">
-                    <a href="{{zoom}}" data-toggle="modal" data-target="#zoom"><i class="icon-zoom-in"></i> Zoom</a>
-                </li>
             </ul>
         </div>
         <!-- /m-image-viewer -->
