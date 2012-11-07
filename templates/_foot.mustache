@@ -1,24 +1,39 @@
         {{> footer}}
+        </div> <!-- /wrap -->
 
         {{> utility}}
 
-        <!-- Scripts -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="scripts/lib/jquery.js"><\/script>')</script>
-
-        <script src="scripts/framework/bootstrap.js?{{ timestamp }}"></script>
-        <script src="scripts/framework/foundation.js?{{ timestamp }}"></script>
-        <script src="scripts/plugins.js?{{ timestamp }}"></script>
-        <script src="scripts/script.js?{{ timestamp }}"></script>
+        <!-- 
+            
+            Scripts
+            
+            Need to use Require.js or the like to mange async
+            loading of scripts and requirements
+            
+        -->
         
-        <!-- Better double bag it... -->
+        <!-- Leveraging Modernizr will do for now.. -->
+        <script type="text/javascript">
+            yepnope({
+               load: [
+               'http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js',
+               'scripts/framework/bootstrap.js',
+               'scripts/framework/foundation.js',
+               'scripts/plugins.js',
+               'scripts/script.js',
+               'scripts/facebook.js',
+               'scripts/demo.js'
+               ]
+            });
+            Modernizr.load({
+                test: Modernizr.geolocation,
+                yep: ['scripts/geo.js']
+            });
+            Modernizr.load({
+                test: Modernizr.details,
+                nope: ['scripts/polyfill/jquery.details.min.js', 'scripts/details.js']
+            });
+        </script>
         <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
 	</body>
 </html>

@@ -11,6 +11,81 @@ $(document).ready(function() {
 	// Smooth scrolling anchors
 	$('[href^=#]').smoothmove();
 
+	//checkout saved address handling
+	$('#saved-location').change(function(){
+		// var target = '#' + $( '#saved-location option[value!=""]:selected' ).val();
+
+		// $( '#shipping-address-preview .address-preview' ).collapse('hide');
+		// $( target ).collapse('show');
+
+
+		// $('option[value!=""]', this).each(function(){
+		// 	var target = '#' + $(this).val();
+		// 	if ( $(this).is(':selected') ) { $(target).collapse('show') }
+		// 	if ( $(this).not(':selected') ) { $(target).collapse('hide') }
+		// })
+
+	});
+
+	//checkout hide/show handling
+	$('.checkout-step').each(function(){
+		var step = $(this);
+		var title = $('.checkout-head', this);
+		var content = $('.checkout-content', this);
+		var next = $('form .btn', this);
+		var edit = $('.co-edit', this);
+		var target = next.data('target');
+
+		content.collapse({
+		  toggle: false
+		})
+
+		//on click hide self and reveal next
+		next.click(function(){
+			
+			//this is where form validation would happen
+
+			//swap title icon for check
+			title.addClass('checkout-complete').click(function(){
+					content.collapse('toggle');
+			});
+
+			//close this step
+			content.collapse('hide');
+
+			
+
+			//open next step
+			if ( step.next('.checkout-step').children('.checkout-complete').length == 0 )
+			{
+				if ( step.find('#shiptosame').is(':checked') )
+				{
+					//handle ship to billing address, skip next
+					step.next('.checkout-step').children('.checkout-head').addClass('checkout-complete').click(function(){
+							content.collapse('toggle');
+					}); // check off step and enable toggle
+					step.next('.checkout-step').next('.checkout-step').children('.checkout-content').collapse('show'); // reveal step after next 
+				} else {
+					step.next('.checkout-step').children('.checkout-content').collapse('show');
+				}
+			}
+
+			
+		});
+
+		//on click hide self and reveal next
+		edit.click(function(){
+			
+			var target = $(this).data('target');
+
+			//open target
+			$(target).collapse('show');
+
+			return false;
+		});
+
+	});
+
 	/*
 	
 		Functions
@@ -37,11 +112,6 @@ $(document).ready(function() {
 	})
 
 
-	/*
-	
-		Prototype
-	
-	*/
 	// Showing how deleting items would look
 	function itmRemove(trig,item) {
 		trig.click(function() {
@@ -51,9 +121,7 @@ $(document).ready(function() {
 
 
 	// Load
-	
 	offscreen();
 	itmRemove($('.mci-delete'), $('.mc-item'));
 	
-
 });

@@ -14,7 +14,9 @@
 	background-color: #F1F1F1;
 	background-position: center center;
 	background-size: cover;
-	border-bottom:1px solid #ddd;
+	border: solid #ddd;
+	border-color: rgba(0, 0, 0, 0.125);
+	border-width: 0 0 1px 1px;
 	min-height: 15em;
 	padding:3em 3em 0 50%;
 	text-align: center;

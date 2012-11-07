@@ -14,6 +14,62 @@
 */
 body:after { content: 'default'; display: none; } /* JS Hook for responsive variables */
 
+/*
+
+	Mobile defaults
+
+*/
+/* Navigation */
+.nav-title.toggle {
+	background-color: rgba(255, 255, 255, 0.5);
+	border-right: 1px solid rgba(0, 0, 0, 0.2);
+	float: left;
+	width: 50%;
+}
+
+	.nav-title.toggle:hover {
+		color: #0088cc; /*@tj-blue*/
+	}
+
+.nav-title.toggle.is-open,
+.nav-bar.resp.is-open {
+	background-color: #40190b; /*@tj-brown*/
+}
+
+.nav-bar.resp.is-open {
+	clear: left;
+}
+
+	.nav-title.toggle.is-open,
+	.nav-bar.resp.is-open a {
+		color: white;
+	}
+	
+	.nav-bar.resp.is-open a {
+		padding: .75em;
+	}
+	
+	.nav-bar.resp.is-open a:hover {
+		background-color: #0088cc; /*@tj-blue*/
+	}
+
+.nav-bar.util {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 50%;
+}
+	
+	.nav-bar.util .nav-item,
+	.nav-bar.util .nav-item a {
+		display: block;
+	}
+	
+	.nav-bar.util .nav-item a {
+		background-color: rgba(255, 255, 255, 0.5);
+		padding: 0.75em 1.5em;
+	}
+
 /* Media Queries */
 @media screen and (min-width: 37.5em) {
 	body:after { content: 'small'; } /* JS Hook for responsive variables */
@@ -34,8 +90,25 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 	/* --- @medium Base --- */
 	body { font-size: 100%; }
 	
+	/* --- @medium Banner --- */
+	header[role="banner"] {
+		padding-bottom: 1.5em;
+	}
+	
 	/* --- @medium Navigation --- */
+	nav[role="navigation"] {
+		font-size: 1em;
+	}
+	
 	.nav-title { display: none; }
+	
+	.nav-bar .nav-item a,
+	.nav-bar.util .nav-item a {
+		background-color: transparent;
+		padding-left: .75em;
+		padding-right: .75em;
+	}
+	
 	.nav-bar.resp {
 		display: inline-block;
 		opacity: 1;
@@ -43,8 +116,18 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 		height: auto;
 	}
 		.nav-bar.resp .nav-item { display: inline-block; }
-
 	
+		
+	.nav-bar.util {
+		position: static;
+		width: auto;
+	}
+
+		.nav-bar.util .nav-item,
+		.nav-bar.util .nav-item a {
+			display: inline-block;
+		}
+
 }
 @media screen and (min-width: 50em) {
 	body:after { content: 'medium2'; } /* JS Hook for responsive variables */
@@ -56,11 +139,6 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 	.m-stage {
 		padding-bottom: 4.5em;
 		padding-top: 4.5em;
-	}
-	
-	/* --- @medium2 Navigation --- */
-	nav[role="navigation"] {
-		font-size: 1em;
 	}
 	
 	/* --- @medium Product --- */
@@ -81,7 +159,9 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 	body { font-size: 112.5%; }
 
 	/* --- @large Header --- */
-	header[role="banner"] { text-align: left; }
+	header[role="banner"] {
+		text-align: left;
+	}
 	
 		header[role="banner"] .base {
 			float: left;
@@ -138,6 +218,12 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 			float: none;
 			width: auto;
 	    }
+	
+	/* --- @large2 Navigation --- */
+	.nav-bar .nav-item a {
+		padding-left: 1.5em;
+		padding-right: 1.5em;
+	}
 }
 @media screen and (min-width: 90em) {	
 	body:after { content: 'wide'; } /* JS Hook for responsive variables */
@@ -169,6 +255,11 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 
 .fade.in {
   opacity: 1;
+}
+
+/* --- Hidden --- */
+.is-hidden {
+	display: none;
 }
 
 /*affix*/
@@ -225,27 +316,17 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 	}
 
 /* --- Offscreen Panel --- */
-[role="banner"],
-[role="main"],
-[role="contentinfo"] {
-    -webkit-transition: opacity .6s ease, -webkit-filter .6s ease;
-       -moz-transition: opacity .6s ease, -moz-filter .6s ease;
-         -o-transition: opacity .6s ease, -o-filter .6s ease;
-            transition: opacity .6s ease, filter .6s ease;
+.wrap {
+    -webkit-transition: opacity .6s ease;
+       -moz-transition: opacity .6s ease;
+         -o-transition: opacity .6s ease;
+            transition: opacity .6s ease;
 	-webkit-backface-visibility: hidden;
 	-webkit-perspective: 1000;
 }
 
-.active-os-panel [role="banner"],
-.active-os-panel [role="main"],
-.active-os-panel [role="contentinfo"] {
+.active-os-panel .wrap {
 	opacity: .2;
-/*	
-	Cool! But not smooth
-	-webkit-filter: blur(.125em);
-	   -moz-filter: blur(.125em);
-	    -ms-filter: blur(.125em);
-	filter: blur(.25em);*/
 }
 
 .active-os-panel .os-panel {
@@ -264,4 +345,17 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 
 .no-csstransforms .active-os-panel .os-panel {	
 	right: 0;
+}
+
+/* --- Checkout --- */
+
+.checkout-head.checkout-complete { cursor: pointer; }
+.checkout-head.checkout-complete:after {
+	content: "Edit";
+	color: #999;
+	font-size:.5em;
+}
+
+.checkout-head.checkout-complete:hover:after {
+	color: #08C;
 }

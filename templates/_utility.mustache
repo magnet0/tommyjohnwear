@@ -3,6 +3,16 @@
         <a href="#main" class="os-toggle os-close btn small"><i class="icon-remove-sign"></i> Close</a>
     </div>
 	<div id="cart" class="minicart os-nav-bar">
+	    <div class="mc-actions">
+            <a href="cart" class="btn light"><i class="icon-shopping-cart"></i> Review &amp; <b>Checkout</b></a>
+        </div>
+        <div class="thermo">
+            <div class="meter">
+                <div class="meter-fill" style="width: 50%">
+                    <span>10%</span>
+                </div>
+            </div>
+        </div>
     	<ul class="mc-items">
     	    {{# minicart.products }}
             {{> m-cart-mini-item }}
@@ -10,15 +20,14 @@
     	</ul>
         <dl class="mc-totals">
             <dt class="mct-label">Item Subtotal</dt>
-            <dd class="mct-amount">$214</dd>
+            <dd class="mct-amount">$214.00</dd>
             <dt class="mct-label">Buy more save more discount</dt>
-            <dd class="mct-amount">- $53</dd>
+            <dd class="mct-amount">- $53.00</dd>
+            <dt class="mct-label">Some other discount</dt>
+            <dd class="mct-amount">- $5.00</dd>
             <dt class="mct-label mct-total">SubTotal</dt>
-            <dd class="mct-amount mct-total">$160.5</dd>
+            <dd class="mct-amount mct-total">$155.50</dd>
             <dd><small>Tax and shipping calculated at checkout</small></dd>
         </dl>
-        <div class="mc-actions">
-            <a href="cart" class="btn light"><i class="icon-shopping-cart"></i> Review &amp; <b>Checkout</b></a>
-        </div>
 	</div>
 </div>

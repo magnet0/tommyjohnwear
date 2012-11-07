@@ -6,15 +6,25 @@
                 <div class="row collapsed"><span class="category-label second-skin">{{ product.category }}</span></div>
                 <h1 class="product-form-title">{{ product.name }} <small class="product-form-subtitle">{{ product.subtitle }}</small></h1>
                 <div class="product-form-meta">
-                    <div class="row collapsed">{{> m-review-rating }} <a href="#reviews">{{ total reviews }} reviews</a></div>
                     <h2 class="product-form-price"><span class="currency-type">$</span>{{ product.price }}</h2>
+                    <div class="review-preview">
+                        <div class="rating-preview">{{> m-review-rating }} <a href="#reviews">{{ total-reviews }} reviews</a></div>
+                        <ul class="pslist">
+                            <li class="pslist-item"><div class="fb-like" data-href="http://tommyjohnwear.com/#url" data-send="false" data-layout="button_count" data-width="80" data-show-faces="false"></div></li>
+                            <li class="pslist-item"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
+                        </ul>
+                    </div>
                 </div>
                 {{> m-product-form-size }}
                 {{> m-product-form-color }}
+                <p>
+                    <small><a href="#notify">Don't see your size or color?</a></small>
+                </p>
                 <fieldset class="product-form-options collapsed">
                     <div class="row collapsed">
                         <div class="one column">
-                            <label class="right inline" for="quantity">Qty.</label>
+                            <label class="right inline" for="quantity"><b>Qty.</b></label>
                         </div>
                         <div class="column end">
                             <input class="two" type="number" id="quantity" name="quanitity">
@@ -22,7 +32,7 @@
                     </div>
                     <div class="row">
                         <div class="">
-                            <label class="inline" for="purchase-one-time"><input type="radio" id="purchase-one-time" name="purchase"> One time purchase</label>
+                            <label class="inline" for="purchase-one-time"><input type="radio" id="purchase-one-time" name="purchase" checked> One time purchase</label>
                         </div>
                     </div>
                     <div class="row">
@@ -40,9 +50,5 @@
                     <a href="cart" class="btn three"><i class="icon-plus icon-large left"></i> Add to <strong>CART</strong></a>
                 </div>
                 </fieldset>
-                
-                <p class="product-form-description">
-                    {{ product.description }}
-                </p>
             </form>
             <!-- /m-product-form-cart -->

@@ -1,4 +1,5 @@
 .DS_Store
 site/
 *.sh
+!static_push.sh
 .last_published

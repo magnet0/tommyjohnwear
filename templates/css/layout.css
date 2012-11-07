@@ -24,6 +24,7 @@ hr.space { border: none; border-width: 0; clear: both; margin: 22px 0 22px; heig
 
 .margined { margin-left: 2.33333em; margin-right: 2.33333em; }
 
+
 /* forms */
 
 select.inline { width:auto; }
@@ -41,7 +42,7 @@ Checkout
 .checkout-step {}
 
 	.checkout-head {
-		font-size: 2em;
+		font-size: 1.5em;
 		margin: .75em 0 .75em 50%;
 	}
 

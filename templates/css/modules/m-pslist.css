@@ -5,20 +5,11 @@
 */
 
 .pslist {
-	background-color: #dbdbdb;
-	border: solid rgba(0, 0, 0, 0.125);
-	border-width: 1px 0;
 	list-style: none;
-	margin-bottom: 0;
-	padding: 3em 0;
-	text-align: center;
+	padding: 0;
 }
 
 	.pslist-item {
-		background-color: #fafafa;
-		-webkit-border-radius: .125em;
-		   -moz-border-radius: .125em;
-		        border-radius: .125em;
 		display: inline-block;
 		padding: .25em;
 	}
@@ -26,4 +17,5 @@
 		.pslist-item * {
 			margin: 0;
 			padding: 0;
+			vertical-align: middle;
 		}

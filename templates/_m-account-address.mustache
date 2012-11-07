@@ -2,7 +2,7 @@
     <div class="fn org">{{ name }}</div>
     <div class="adr">
         <span class="street-address">{{ address }}</span>, 
-        <span class="extended-address">{{ address2 }}</span>, 
+        {{# address2 }}<span class="extended-address">{{ address2 }}</span>, {{/ address2 }}
         <span class="locality">{{ city }}</span>, <span class="region">{{ state }}</span> <span class="postal-code">{{ zip }}</span>
     </div>
 </div>

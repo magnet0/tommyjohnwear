@@ -5,30 +5,39 @@
 
 */
 
-.m-product-form {
-	padding: 3em 1.5em 0;
-	
-}
+.m-product-form { padding: 1.5em 1.5em 0; }
 
-	.product-form-title { margin: 0.375em 0; }
+	.product-form-title {
+		font-size: 2.5em;
+		line-height: 1;
+		margin: 0 0 .25em;
+	}
 
-	.product-form-subtitle {}
-
-	.product-form-meta {}
-
-		.product-form-price { margin: .75em 0; }
-	
-	.product-form-options {}
+		.product-form-price { margin: 0 0 1em; }
 
 	.product-form-size,
-	.product-form-color { padding: 0.5em 0; }
+	.product-form-color { padding: 0; }
+	
+	.product-description {
+		border: solid rgba(0, 0, 0, 0.125);
+		border-width: 1px 0 0;
+		margin: 1.5em 0 0;
+		padding: 1.5em 0;
+	}
+	
+	.review-preview {
+		border: solid rgba(0, 0, 0, 0.125);
+		border-width: 0 0 1px;
+		margin-bottom: 1.5em;
+	}
+	
+		.review-preview .pslist { clear: both; }
 	
 	/*/////////////////////////////////////////////////
 	Product size modual
 	/////////////////////////////////////////////////*/
 
 	.product-form-size {}
-	.product-form-size div:last-child { margin-top: .25em; }
 	
 		.product-form-size > legend { background:none; margin: 0; }
 
@@ -40,10 +49,10 @@
 	    }
 
 		.product-form-size:not(:checked)  input {
-      position: absolute;
-      top: -9999px;
-      clip: rect(0,0,0,0);
-    }
+			position: absolute;
+			top: -9999px;
+			clip: rect(0,0,0,0);
+		}
 
 		.product-form-size:not(:checked)  label {
 			background-color: #F3F4F9;

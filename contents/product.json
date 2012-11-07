@@ -3,13 +3,13 @@
 		"title": "Meta Title",
 		"description": "Meta description"
 	},
-	"total reviews":"20",
+	"total-reviews":"20",
 	"4star":true,
 	"product":{
-		"name": "Crew Neck",
+		"name": "Crew Neck Stay Tucked",
 		"subtitle": "Undershirt",
 		"category": "Second Skin",
-		"description": "This undershirt is the ultimate replacement to your current “box cut” short sleeve undershirts that give you EFG (excess fabric gut) appearance.",
+		"description": "<p>This undershirt is the ultimate replacement to your current “box cut” short sleeve undershirts that give you EFG <q>excess fabric gut</q> and BMT <q>billowy muffin top.</q></p><p>Once you pull this undershirt down, it will stay in place by hugging your lower body. It will not ride up, bunch up, or come untucked....ever. You'll wonder how you ever lived without this undershirt.</p><p>Memory collar prevents bacon neck appearance.</p><p>Fabric: 90% Non-Pilling Micro Modal 10% Spandex <a href=\"page\">fabric glossary</a></p>",
 		"price": "25",
 		"colors":[
 			{
@@ -32,50 +32,65 @@
 			{
 				"active":true,
 				"name":"slide1",
-				"large":"images/product/dummy_product.jpg",
-				"medium":"images/placehold-480x420.jpg",
-				"thumb":"images/product/dummy_product_thumb.jpg"
+				"large":"images/product/prod_001-view_000-large.jpg",
+				"medium":"images/product/prod_001-view_000-med.jpg",
+				"thumb":"images/product/prod_001-view_000-thumb.jpg"
 			},
 			{
 				"name":"slide2",
-				"large":"images/product/placehold-big_slider2.jpg",
-				"medium":"images/placehold-480x420.jpg",
-				"thumb":"images/product/placehold-big_slider2_thumb.jpg"
+				"large":"images/product/prod_001-view_001-large.jpg",
+				"medium":"images/product/prod_001-view_001-med.jpg",
+				"thumb":"images/product/prod_001-view_001-thumb.jpg"
 			},
 			{
 				"name":"slide3",
-				"large":"images/product/placehold-big_slider3.jpg",
-				"medium":"images/placehold-480x420.jpg",
-				"thumb":"images/product/placehold-big_slider3_thumb.jpg"
+				"large":"images/product/prod_001-view_002-large.jpg",
+				"medium":"images/product/prod_001-view_002-med.jpg",
+				"thumb":"images/product/prod_001-view_002-thumb.jpg"
 			},
 			{
 				"name":"slide4",
-				"large":"images/product/placehold-big_slider4.jpg",
-				"medium":"images/placehold-480x420.jpg",
-				"thumb":"images/product/placehold-big_slider4_thumb.jpg"
+				"large":"images/product/prod_001-view_003-large.jpg",
+				"medium":"images/product/prod_001-view_003-med.jpg",
+				"thumb":"images/product/prod_001-view_003-thumb.jpg"
 			}
 		]
 	},
 	"primary-feature":[
 		{
 			"img":"images/dudebro/dummy2.png",
-			"title":"Fit",
-			"text":"Longer, tapered design hugs thelower torso to prevent bunching and EFG (excess fabric gut)."
+			"title":"Streamlines",
+			"text":"Gives you a tailored and form fitting look"
 		},
 		{
 			"img":"images/dudebro/dummy1.png",
-			"title":"Control",
-			"text":"Moves with you, while being invisible under your outter shirts."
-		},
-		{
-			"img":"images/dudebro/dummy3.png",
-			"title":"Stay Dry",
-			"text":"Controls your body temperature to keep you cool and confident all day."
+			"title":"Stay Tucked",
+			"text":"<a href=\"http://www.tommyjohnwear.com/Tailored-Stretch-Technology-W17.aspx\">Tailored Stretch™ Technology</a> ensures undershirt stays tucked in all day long"
 		},
 		{
 			"img":"images/dudebro/dummy2.png",
-			"title":"Quick Draw Fly",
-			"text":"Horizontal fly for quick access when nature calls."
+			"title":"Second Skin Feel",
+			"text":"Silky soft and lightweight Micro Modal for enhanced feel"
+		},
+		{
+			"img":"images/dudebro/dummy1.png",
+			"title":"Fit",
+			"text":"Longer tapered design hugs torso to prevent bunching and <abbr title=\"Excess Fabric Gut\">EFG</abbr>"
+		},
+		{
+			"img":"images/dudebro/dummy2.png",
+			"title":"Control",
+			"text":"Moves with you, while invisible under outershirts"
+		},
+		{
+			"img":"images/dudebro/dummy1.png",
+			"title":"Stay Dry",
+			"text":"Controls body temperature to keep you cool and confident"
+		},
+		{
+			"img":"images/dudebro/dummy2.png",
+			"title":"Tag-free",
+			"text":"Tagless label for maximized comfort"
 		}
 	],
 	"reviews":[
