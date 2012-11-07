@@ -7,10 +7,10 @@
 	"total-reviews":"20",
 	"4star":true,
 	"product":{
-		"name": "Crew Neck Stay Tucked",
-		"subtitle": "Undershirt",
-		"category": "Second Skin",
-		"description": "<p>This undershirt is the ultimate replacement to your current “box cut” short sleeve undershirts that give you EFG <q>excess fabric gut</q> and BMT <q>billowy muffin top.</q></p><p>Once you pull this undershirt down, it will stay in place by hugging your lower body. It will not ride up, bunch up, or come untucked....ever. You'll wonder how you ever lived without this undershirt.</p><p>Fabric: 90% Non-Pilling Micro Modal 10% Spandex <a href=\"page\">fabric glossary</a></p>",
+		"name": "360 Sport Trunk",
+		"subtitle": "Underwear",
+		"category": "Sport",
+		"description": "<p>The 360 Sport Trunk is the ultimate active underwear for all day performance. Designed for men who want more out of their underwear. Arguably, the best performance underwear you’ll wear to keep you cool and dry; regardless of activity.</p>",
 		"price": "25",
 		"colors":[
 			{
@@ -33,10 +33,9 @@
 			{
 				"active":true,
 				"name":"slide1",
-				"zoom": "images/product/prod_001-view_000-zoom.jpg",
-				"large":"images/product/prod_001-view_000-large.jpg",
-				"medium":"images/product/prod_001-view_000-med.jpg",
-				"thumb":"images/product/prod_001-view_000-thumb.jpg"
+				"large":"images/product/prod_002-view_000-large.jpg",
+				"medium":"images/product/prod_002-view_000-med.jpg",
+				"thumb":"images/product/prod_002-view_000-thumb.jpg"
 			},
 			{
 				"name":"slide2",
@@ -70,12 +69,12 @@
 			"text":"<a href=\"http://www.tommyjohnwear.com/Tailored-Stretch-Technology-W17.aspx\">Tailored Stretch™ Technology</a> ensures undershirt stays tucked in all day long"
 		},
 		{
-			"img":"images/dudebro/dummy1.png",
+			"img":"images/dudebro/dummy2.png",
 			"title":"Second Skin Feel",
 			"text":"Silky soft and lightweight Micro Modal for enhanced feel"
 		},
 		{
-			"img":"images/dudebro/dummy2.png",
+			"img":"images/dudebro/dummy1.png",
 			"title":"Fit",
 			"text":"Longer tapered design hugs torso to prevent bunching and <abbr title=\"Excess Fabric Gut\">EFG</abbr>"
 		},
@@ -88,11 +87,6 @@
 			"img":"images/dudebro/dummy1.png",
 			"title":"Stay Dry",
 			"text":"Controls body temperature to keep you cool and confident"
-		},
-		{
-			"img":"images/dudebro/dummy1.png",
-			"title":"Memory collar",
-			"text":"Prevents bacon neck appearance"
 		},
 		{
 			"img":"images/dudebro/dummy2.png",

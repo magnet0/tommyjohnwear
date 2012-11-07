@@ -9,12 +9,14 @@
                 {{/ product.images }}
             </div>
             <ul class="image-viewer-nav tabs">
-                <!-- <li class="image-viewer-nav-top"><i class="icon-eye-open"></i></li> -->
                 {{# product.images }}
                 <li class="image-viewer-thumb{{# active }} active{{/ active }}">
                     <a href="#{{ name }}" data-toggle="tab"><img src="{{ thumb }}" alt=""></a>
                 </li>
                 {{/ product.images }}
+                <li class="image-viewer-thumb">
+                    <a href="{{zoom}}" data-toggle="modal" data-target="#zoom"><i class="icon-zoom-in"></i> Zoom</a>
+                </li>
             </ul>
         </div>
         <!-- /m-image-viewer -->

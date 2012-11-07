@@ -42,6 +42,7 @@
 	            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
         list-style: none outside none;
 		overflow: hidden;
+		text-align: center;
     }
 
 		.image-viewer-nav:before {
@@ -58,16 +59,9 @@
 			text-transform: uppercase;
 		}
 
-/*    .image-viewer-nav-top {
-        background-color: #40190B;
-        border-radius: 5px 5px 0 0;
-        color:#FFF;
-        padding:0 .75em;
-    }*/
-
     .image-viewer-thumb {
 		float: left;
-		width: 25%;
+/*		width: 25%;*/
     }
 
 		.image-viewer-thumb a {

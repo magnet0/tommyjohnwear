@@ -123,5 +123,7 @@ $(document).ready(function() {
 	// Load
 	offscreen();
 	itmRemove($('.mci-delete'), $('.mc-item'));
+	// Image zoomer via Bootstrap
+	// $('#zoom').modal({ remote: true });
 	
 });

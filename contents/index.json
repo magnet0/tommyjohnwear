@@ -5,29 +5,29 @@
 	},
 	"class": "is-home",
 	"stage":{
-		"heading":"Bring back the undergarment",
-		"lead":"These are the best because cosby sweater tofu, hella godard salvia vinyl kogi 3 wolf moon tattooed blog put a bird on it letterpress next level 8-bit chillwave."
+		"heading":"The fit you never knew you needed",
+		"lead":"Proper fitting undergarments are the foundation for better fitting clothes. When you look and feel your best, there’s nothing you can’t do."
 	},
 	"primary-feature":[
 		{
 			"id": "pf-tech",
 			"href":"tech",
 			"img":"images/dudebro/dummy1.png",
-			"text":"Ethical tumblr bicycle rights before they technology.",
-			"action": "Learn more"
+			"text":"Unmatched comfort and functionality. Not restrictive.",
+			"action": "Discover our game-changing fit"
 		},
 		{
 			"id": "pf-video",
 			"href":"#video",
 			"img":"images/feat-video.png",
-			"text":"Ethical tumblr bicycle rights before they technology.",
-			"action": "Watch explanation"
+			"text":"Upgrade to smarter fabrics and innovative design.",
+			"action": "Unlock our technology"
 		},
 		{
 			"id": "pf-garauntee",
 			"href":"#garauntee",
 			"img":"images/dudebro/dummy3.png",
-			"text":"Ethical tumblr bicycle rights before they technology.",
+			"text":"Best undergarments on the planet or your money back.",
 			"action": "See our garauntee"
 		}
 	],

@@ -127,6 +127,11 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 		.nav-bar.util .nav-item a {
 			display: inline-block;
 		}
+		
+	/* -- @medium product viewer --- */
+	.image-viewer-display {
+		margin-left: 20%;
+	}
 
 }
 @media screen and (min-width: 50em) {
@@ -207,7 +212,7 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 		left: 1.5em;
 		position: absolute;
 		top: 1.5em;
-		width: 12.5%;
+		width: 6em;
     }
 
 		.image-viewer-nav:before {
