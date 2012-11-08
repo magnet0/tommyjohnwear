@@ -198,6 +198,11 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 		margin: 0 1.5em;
 	}
 	
+	/* --- @large tech page --- */
+	.m-huge-promo {
+		width: 75%;
+	}
+	
 	/* --- @medium2 Product --- */
 /*	.m-product-image-viewer {
 		width: 80%;

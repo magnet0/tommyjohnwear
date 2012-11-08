@@ -1,11 +1,11 @@
 {
 	"meta": {
-		"title": "Meta Title",
+		"title": "About Tommy John",
 		"description": "Meta description"
 	},
 	"stage":{
 		"heading":"We make undergarments that fit you",
-		"lead":"Our founder Tom Patterson was fed up with the way his undershirt fit and set out to make the ultimate undershirt that is now the must have for every man."
+		"lead":"Our founder <a href=\"about-tom\">Tom Patterson</a> was fed up with the way his undershirt fit and set out to make the ultimate undershirt that is now the must have for every man."
 	},
 	"primary-feature":[
 		{

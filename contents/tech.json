@@ -1,6 +1,6 @@
 {
 	"meta": {
-		"title": "Meta Title",
+		"title": "Technology",
 		"description": "Meta description"
 	},
 	"stage": {
@@ -9,9 +9,9 @@
 	},
 	"feature-rows":[
 		{
-			"img":"images/dudebro/dummy2.png",
+			"img":"images/features/fit.jpg",
 			"title":"Fit",
-			"text":"Longer, tapered design hugs thelower torso to prevent bunching and EFG (excess fabric gut)."
+			"text":"Longer, tapered design hugs the lower torso to prevent bunching and <abbr title=\"Excess Fabric Gut\" class=\"popover-trigger\" data-title=\"Excess Fabric Gut\" data-placement=\"top\" data-trigger=\"click\">EFG</abbr>."
 		},
 		{
 			"img":"images/dudebro/dummy1.png",
@@ -19,12 +19,12 @@
 			"text":"Moves with you, while being invisible under your outter shirts."
 		},
 		{
-			"img":"images/dudebro/dummy3.png",
+			"img":"images/features/staydry.jpg",
 			"title":"Stay Dry",
 			"text":"Controls your body temperature to keep you cool and confident all day."
 		},
 		{
-			"img":"images/dudebro/dummy2.png",
+			"img":"images/features/quickdraw.jpg",
 			"title":"Quick Draw Fly",
 			"text":"Horizontal fly for quick access when nature calls."
 		}
