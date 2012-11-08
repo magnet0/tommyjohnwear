@@ -140,6 +140,10 @@ small { color: #999; }
 	.btn.twitter:hover { background-color: #06546E; }
 
 
+	.btn.block {
+		display: block;
+	}
+
 .bkg-light { background-color: #F7F7F7; }
 
 
@@ -632,4 +636,26 @@ Modules
 .referral-aside {
 	text-align: center;
 }
+
+/*
+
+	Interactive Diagram
+
+*/
+/* Us */
+#blt-1 {
+	left: 25%;
+	top: 50%;
+}
+#blt-2 {
+	left: 50%;
+	top: 70%;
+}
+#blt-3 {
+	left: 70%;
+	top: 25%;
+}
+
+
+
 

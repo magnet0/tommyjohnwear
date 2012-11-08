@@ -32,24 +32,21 @@
 	"primary-feature":[
 		{
 			"href":"category",
-			"img":"images/dudebro/dummy1.png",
-			"alt":"image alt text",
 			"text":"Ready to feel the difference?",
-			"action": "Shop underwear"
+			"action": "Shop underwear",
+			"basic": true
 		},
 		{
 			"href":"category",
-			"img":"images/dudebro/dummy2.png",
-			"alt":"This picture",
 			"text":"Something something?",
-			"action": "Shop something"
+			"action": "Shop something",
+			"basic": true
 		},
 		{
 			"href":"guarantee",
-			"img":"images/dudebro/dummy3.png",
-			"alt":"Another picture",
 			"text":"Need more convincing?",
-			"action": "See our guarantee"
+			"action": "See our guarantee",
+			"basic": true
 		}
 	]
 }

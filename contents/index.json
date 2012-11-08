@@ -10,23 +10,23 @@
 	},
 	"primary-feature":[
 		{
-			"id": "pf-tech",
-			"href":"tech",
+			"id": "pf-about",
+			"href":"about",
 			"img":"images/dudebro/dummy1.png",
 			"text":"Unmatched comfort and functionality. Not restrictive.",
 			"action": "Discover our game-changing fit"
 		},
 		{
-			"id": "pf-video",
-			"href":"#video",
-			"img":"images/feat-video.png",
+			"id": "pf-tech",
+			"href":"tech",
+			"img":"images/features/unlock-our-tech.jpg",
 			"text":"Upgrade to smarter fabrics and innovative design.",
 			"action": "Unlock our technology"
 		},
 		{
 			"id": "pf-garauntee",
 			"href":"#garauntee",
-			"img":"images/dudebro/dummy3.png",
+			"img":"images/features/guarantee.jpg",
 			"text":"Best undergarments on the planet or your money back.",
 			"action": "See our garauntee"
 		}
@@ -59,7 +59,7 @@
 			"action":"Details"
 		},
 		{
-			"href":"starter-kit",
+			"href":"starterkit",
 			"title":"The Starter Kit",
 			"text":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
 			"action":"Details"

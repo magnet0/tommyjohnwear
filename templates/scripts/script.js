@@ -85,6 +85,16 @@ $(document).ready(function() {
 		});
 
 	});
+	
+	// Quickly trying to get the fucking last minute
+	// diagram bullets things...
+	$('.diagram-bullet').toggle(function() {
+		$(this).next('.diagram-content').show();
+	}, function() {
+		$(this).next('.diagram-content').hide();
+	});
+	
+	
 
 	/*
 	
