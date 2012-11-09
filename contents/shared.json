@@ -42,6 +42,57 @@
 			"utility": true
 		}
 	],
+	"cat-items": [
+		{
+			"title": "Crew Neck",
+			"id": "crew-neck",
+			"cat": "Second Skin",
+			"4star": true,
+			"colors": [
+				{"name": "White", "value": "fff"},
+				{"name": "Black", "value": "000"},
+				{"name": "Tan", "value": "efe0b7"},
+				{"name": "Navy", "value": "0f2961"},
+				{"name": "Red", "value": "e3120c"}
+			]
+		},
+		{
+			"title": "V Neck",
+			"id": "v-neck",
+			"cat": "Second Skin",
+			"colors": [
+				{"name": "White", "value": "fff"},
+				{"name": "Black", "value": "000"},
+				{"name": "Tan", "value": "efe0b7"},
+				{"name": "Navy", "value": "0f2961"},
+				{"name": "Red", "value": "e3120c"}
+			]
+		},
+		{
+			"title": "Tank",
+			"id": "tank",
+			"cat": "Second Skin",
+			"colors": [
+				{"name": "White", "value": "fff"},
+				{"name": "Black", "value": "000"},
+				{"name": "Tan", "value": "efe0b7"},
+				{"name": "Navy", "value": "0f2961"},
+				{"name": "Red", "value": "e3120c"}
+			]
+		},
+		{
+			"title": "Long Sleeve",
+			"id": "long-sleeve",
+			"cat": "Second Skin",
+			"colors": [
+				{"name": "White", "value": "fff"},
+				{"name": "Black", "value": "000"},
+				{"name": "Tan", "value": "efe0b7"},
+				{"name": "Navy", "value": "0f2961"},
+				{"name": "Red", "value": "e3120c"}
+			]
+		}
+	],
 	"sitemap": [
 		{
 			"title":"Company",
