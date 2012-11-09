@@ -1,9 +1,13 @@
-<div class="cat-item {{cat-slug}}">
+<div class="cat-item {{#dasherize}}{{#downcase}}{{cat}}{{/downcase}}{{/dasherize}}">
     <a href="product" class="block">
         <img src="http:images/dudebro/category.png" alt="dummy">
         <div class="category-label">{{cat}}</div>
         <h3 class="cat-item-title">{{title}}</h3>
-        <div><small>more colors available</small></div>
+        <ul class="cat-colors">
+            {{#colors}}
+            <li class="cat-color" style="background-color: #{{value}}">{{name}}</li>
+            {{/colors}}
+        </ul>
         <div class="cat-item-price">$45</div>
     </a>
     {{> m-review-rating }}

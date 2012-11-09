@@ -33,3 +33,15 @@
 		margin:0 auto;
 		width: 6.6em;
 	}
+	
+	.cat-colors {
+		list-style: none;
+	}
+	
+		.cat-color {
+			display: inline-block;
+			height: .75em;
+			overflow: hidden;
+			text-indent: 100%;
+			width: 1.5em;
+		}

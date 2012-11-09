@@ -24,7 +24,6 @@
 		.image-viewer-stage img {
 			position: relative;
 			vertical-align: middle;
-			z-index: -1;
 		}
 
         .image-viewer-display {
