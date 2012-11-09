@@ -93,8 +93,6 @@ $(document).ready(function() {
 	}, function() {
 		$(this).next('.diagram-content').hide();
 	});
-	
-	
 
 	/*
 	
@@ -133,8 +131,5 @@ $(document).ready(function() {
 	// Load
 	offscreen();
 	itmRemove($('.mci-delete'), $('.mc-item'));
-	// Image zoomer via Bootstrap
-	// $('#zoom').modal({ remote: true });
-	// $('#sizing').modal();
 	
 });

@@ -31,29 +31,28 @@
 		],
 		"images":[
 			{
-				"active":true,
 				"name":"slide1",
-				"zoom": "images/product/prod_001-view_000-zoom.jpg",
+				"zoom":"images/product/prod_001-view_002-zoom.jpg",
 				"large":"images/product/prod_001-view_000-large.jpg",
-				"medium":"images/product/prod_001-view_000-med.jpg",
-				"thumb":"images/product/prod_001-view_000-thumb.jpg"
+				"thumb":"images/product/prod_001-view_000-thumb.jpg",
+				"active":true
 			},
 			{
 				"name":"slide2",
+				"zoom":"images/product/prod_001-view_002-zoom.jpg",
 				"large":"images/product/prod_001-view_001-large.jpg",
-				"medium":"images/product/prod_001-view_001-med.jpg",
 				"thumb":"images/product/prod_001-view_001-thumb.jpg"
 			},
 			{
 				"name":"slide3",
+				"zoom":"images/product/prod_001-view_002-zoom.jpg",
 				"large":"images/product/prod_001-view_002-large.jpg",
-				"medium":"images/product/prod_001-view_002-med.jpg",
 				"thumb":"images/product/prod_001-view_002-thumb.jpg"
 			},
 			{
 				"name":"slide4",
+				"zoom":"images/product/prod_001-view_003-zoom.jpg",
 				"large":"images/product/prod_001-view_003-large.jpg",
-				"medium":"images/product/prod_001-view_003-med.jpg",
 				"thumb":"images/product/prod_001-view_003-thumb.jpg"
 			}
 		]
