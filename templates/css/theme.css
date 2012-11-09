@@ -223,7 +223,9 @@ table.display thead, table.display tfoot { background: #F1F1F1; }
 
 table.display thead tr th, table.display tfoot tr th, table.display tbody tr td, table.display tr td, table.display tfoot tr td { font-size: 1em; line-height: 1; text-align: left; }
 
-table.display thead tr th, table.display tfoot tr td { padding: 0.75em; font-size: 1em; font-weight: bold; color: #222; }
+table.display thead tr th,
+table.display tbody tr th,
+table.display tfoot tr td { padding: 0.75em; font-size: 1em; font-weight: bold; color: #222; }
 
 table.display thead tr th:first-child, table.display tfoot tr td:first-child { border-left: none; }
 
@@ -263,7 +265,7 @@ table.display tbody tr td { color: #333; padding: .75em; vertical-align: top; bo
   bottom: 0;
   left: 0;
   z-index: 1040;
-  background-color: #000000;
+  background-color: #40190b;
 }
 
 .modal-backdrop.fade {
@@ -272,8 +274,8 @@ table.display tbody tr td { color: #333; padding: .75em; vertical-align: top; bo
 
 .modal-backdrop,
 .modal-backdrop.fade.in {
-  opacity: 0.8;
-  filter: alpha(opacity=80);
+  opacity: 0.97;
+  filter: alpha(opacity=97);
 }
 
 .modal {
@@ -281,8 +283,8 @@ table.display tbody tr td { color: #333; padding: .75em; vertical-align: top; bo
 	top: 50%;
 	left: 50%;
 	z-index: 1050;
-	width: 80%;
-	margin: -250px 0 0 -40%;
+	width: 95%;
+	margin: -250px 0 0 -47.5%;
 	overflow: auto;
 	background-color: #ffffff;
 	border: 1px solid #999;
@@ -318,10 +320,22 @@ table.display tbody tr td { color: #333; padding: .75em; vertical-align: top; bo
 .modal-header {
   padding: 9px 15px;
   border-bottom: 1px solid #eee;
+position: relative;
 }
 
 .modal-header .close {
-  margin-top: 2px;
+	padding: 0;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	-webkit-appearance: none;
+	float: right;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 20px;
+	color: black;
+	text-shadow: 0 1px 0 white;
+	opacity: 0.2;
 }
 
 .modal-header h3 {

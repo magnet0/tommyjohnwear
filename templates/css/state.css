@@ -162,6 +162,12 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 			width: 50%;
 		}
 	
+	/* --- @medium2 modal --- */
+	.modal {
+		width: 80%;
+		margin: -250px 0 0 -40%;
+	}
+	
 	
 	
 }
@@ -209,6 +215,16 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 	/* --- @large tech page --- */
 	.m-huge-promo {
 		width: 75%;
+	}
+	
+	/* --- @large modal --- */
+	.modal {
+		width: 60%;
+		margin: -250px 0 0 -30%;
+	}
+	.modal.narrow {
+		width: 20em;
+		margin: -250px 0 0 -10em;
 	}
 		
 }

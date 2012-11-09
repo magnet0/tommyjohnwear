@@ -135,5 +135,6 @@ $(document).ready(function() {
 	itmRemove($('.mci-delete'), $('.mc-item'));
 	// Image zoomer via Bootstrap
 	// $('#zoom').modal({ remote: true });
+	// $('#sizing').modal();
 	
 });

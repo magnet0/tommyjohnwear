@@ -21,17 +21,15 @@
             </div>
         </div>
         
-        <div class="product-features bkg-light row">
-            <h2 class="text-center">Features</h2>
-            <div class="m-feature row">
+        <div class="product-attributes bkg-light row">
+            <h2 class="text-center">{{product.name}} Features</h2>
+            <div class="m-feature">
                 {{#primary-feature}}
-                <div class="column three mobile-four">
-                    {{> m-feature-row}}
-                </div>
+                {{> m-product-attribute}}
                 {{/primary-feature}}
             </div>
             <div class="row text-center space">
-                <a class="btn large" href="technology">Learn more about our <strong>technology</strong> &nbsp;<i class="icon-chevron-right"></i></a>
+                <a class="btn large" href="technology">Learn more about our <strong>technologies</strong> &nbsp;<i class="icon-chevron-right"></i></a>
             </div>
         </div>
         
