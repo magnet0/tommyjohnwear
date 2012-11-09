@@ -93,11 +93,24 @@
 
 /* --- Secondary --- */
 .m-secondary-feature {
+	background-color: #40190b;
 	padding: 6em 1.5em;
-	margin-bottom: 1.5em;
+	margin: 0 10% 1.5em;
 }
 
 	.sf-title {
 		font-size: 2em;
 		margin-bottom: 0;
+		-webkit-transition: color .1s;
+		   -moz-transition: color .1s;
+		     -o-transition: color .1s;
+		        transition: color .1s;
+	}
+
+	.second-skin .sf-title { color: #65c7be; }
+	.active .sf-title { color: #f0b12f; }
+	.sport .sf-title { color: #ef4136; }
+
+	.m-secondary-feature:hover .sf-title {
+		color: white;
 	}
