@@ -14,27 +14,31 @@
 		"price": "25",
 		"colors":[
 			{
+				"checked":true,
 				"hex":"E1DEE5",
 				"name":"Power Blanco",
-				"id":"red"
+				"id":1
 			},
 			{
 				"hex":"111111",
 				"name":"Thunder Steal",
-				"id":"green"
+				"id":2
 			},
 			{
 				"hex":"EBE2C1",
 				"name":"Yacht Sand",
-				"id":"blue"
+				"id":3
 			}
 		],
 		"images":[
 			{
 				"name":"slide1",
 				"zoom":"images/product/prod_001-view_002-zoom.jpg",
+				"zoom2":"images/product/prod_001-view_002-zoom-2.jpg",
 				"large":"images/product/prod_001-view_000-large.jpg",
+				"large2":"images/product/prod_001-view_000-large-2.jpg",
 				"thumb":"images/product/prod_001-view_000-thumb.jpg",
+				"thumb2":"images/product/prod_001-view_000-thumb-2.jpg",
 				"active":true
 			},
 			{

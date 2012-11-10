@@ -27,6 +27,39 @@ $(document).ready(function() {
 
 	});
 
+	//Product page color swap
+	function colorSwap(target,set) {
+		var viewer = $('.m-product-image-viewer .color-swap');
+
+		console.log('Function ' +  set);
+
+			$('.color-swap').removeClass(set);
+			$('.' + target ).addClass(set)
+	}
+
+	$('.product-form-color-label').each(function(){
+
+		console.log(this);
+		
+		var target = $( this ).attr('for');
+		var class_active = 'color-active';
+		var class_hover = 'color-hover';
+
+		$(this).click( function () {
+			colorSwap(target,class_active);
+		});
+
+		$(this).mouseover( function () {
+			colorSwap(target,class_hover);
+		}).mouseout( function () {
+			$('.color-swap').removeClass(class_hover);
+		});
+	});
+
+
+
+
+
 	//checkout hide/show handling
 	$('.checkout-step').each(function(){
 		var step = $(this);

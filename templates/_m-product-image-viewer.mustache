@@ -5,7 +5,9 @@
                 {{#product.images }}
                 <div id="{{ name }}" class="image-viewer-display tab-pane{{# active }} active{{/ active }}" data-img="{{ large }}">
                     <a href="{{zoom}}" class="zoom-toggle">
-                    <img src="{{ large }}" alt=""><br>
+                        <!-- the color to show by default is given color-active class -->
+                    {{# large }}<img class="color-swap color-1 color-active" src="{{ large }}" alt="">{{/ large }}
+                    {{# large2 }}<img class="color-swap color-2" src="{{ large2 }}" alt="">{{/ large2 }}
                     <i class="icon-zoom-in"></i> Zoom</a>
                     <div class="image-viewer-zoom">
                         <!-- <a href="#zoom" data-toggle="modal" data-target="#zoom"><i class="icon-zoom-in"></i> Zoom</a> -->
@@ -16,7 +18,11 @@
             <ul class="image-viewer-nav tabs">
                 {{#product.images }}
                 <li class="image-viewer-thumb{{# active }} active{{/ active }}">
-                    <a href="#{{ name }}" data-toggle="tab"><img src="{{ thumb }}" alt=""></a>
+                    <a href="#{{ name }}" data-toggle="tab">
+                        <!-- the color to show by default is given color-active class -->
+                        {{# thumb }}<img class="color-swap color-1 color-active" src="{{ thumb }}" alt="">{{/ thumb }}
+                        {{# thumb2 }}<img class="color-swap color-2" src="{{ thumb2 }}" alt="">{{/ thumb2 }}
+                    </a>
                 </li>
                 {{/product.images }}
             </ul>

@@ -17,22 +17,38 @@
 }
 
     .image-viewer-stage {
-        position: relative;
 		text-align: center;
     }
 
-		.image-viewer-stage img {
-			position: relative;
-			vertical-align: middle;
-		}
-
         .image-viewer-display {
-            background-position: center top;
-            background-repeat: no-repeat;
+			background-position: center top;
+			background-repeat: no-repeat;
 			margin: auto;
 			max-width: 500px;
-            width: 80%;
+			position: relative;
+			width: 80%;
         }
+
+		.image-viewer-display img {
+			position: absolute;
+			left:0;
+			top:0;
+			vertical-align: middle;
+			z-index: 1;
+		}
+
+		.image-viewer-display .color-1 {
+			position: relative;
+			z-index: 2;
+		}
+
+		.image-viewer-display .color-active {
+			z-index: 3;
+		}
+
+		.image-viewer-display .color-hover {
+			z-index: 4;
+		}
 
     .image-viewer-nav {
 		-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
@@ -59,6 +75,7 @@
 		}
 
     .image-viewer-thumb {
+    	position: relative;
 		float: left;
 		width: 25%;
     }
@@ -68,6 +85,21 @@
 	    }
 
         .image-viewer-thumb img {
+			position: absolute;
+			left:0;
+			top:0;
 			vertical-align: middle;
             width: 100%;
+            z-index: 1;
         }
+
+		.image-viewer-thumb .color-1 {
+			position: relative;
+			z-index: 2;
+		}
+		.image-viewer-thumb .color-active {
+			z-index: 3;
+		}
+		.image-viewer-thumb .color-hover {
+			z-index: 4;
+		}
