@@ -37,7 +37,7 @@
 			z-index: 1;
 		}
 
-		.image-viewer-display .color-1 {
+		.image-viewer-display img:first-child {
 			position: relative;
 			z-index: 2;
 		}
@@ -93,7 +93,7 @@
             z-index: 1;
         }
 
-		.image-viewer-thumb .color-1 {
+		.image-viewer-thumb img:first-child {
 			position: relative;
 			z-index: 2;
 		}
