@@ -16,17 +16,17 @@
 			{
 				"hex":"E1DEE5",
 				"name":"Power Blanco",
-				"id":"red"
+				"id":"001"
 			},
 			{
 				"hex":"111111",
 				"name":"Thunder Steal",
-				"id":"green"
+				"id":"002"
 			},
 			{
 				"hex":"EBE2C1",
 				"name":"Yacht Sand",
-				"id":"blue"
+				"id":"003"
 			}
 		],
 		"images":[
