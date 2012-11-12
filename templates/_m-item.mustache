@@ -1,14 +1,14 @@
 <div class="cat-item {{#dasherize}}{{#downcase}}{{cat}}{{/downcase}}{{/dasherize}}">
-    <a href="product" class="block">
-        <img src="http:images/dudebro/category.png" alt="dummy">
+    <a href="product" class="block cat-link">
+        <img class="cat-img" src="http:images/dudebro/category.png" alt="dummy">
         <div class="category-label">{{cat}}</div>
         <h3 class="cat-item-title">{{title}}</h3>
-        <ul class="cat-colors">
-            {{#colors}}
-            <li class="cat-color" style="background-color: #{{value}}">{{name}}</li>
-            {{/colors}}
-        </ul>
         <div class="cat-item-price">$45</div>
     </a>
+    <ul class="cat-colors">
+        {{#colors}}
+        <li class="cat-color" style="background-color: #{{value}};{{#border}} border-top: .25em solid #{{border}};{{/border}}"><a href="#" rel="tooltip" title="{{name}}">{{name}}</a></li>
+        {{/colors}}
+    </ul>
     {{> m-review-rating }}
 </div>

@@ -8,7 +8,7 @@
 
 .cat-item {}
 	
-	.cat-item a {
+	.cat-link {
 		border: none;
 		display: block;
 		padding: 0 .75em .75em;
@@ -18,8 +18,14 @@
 		        transition: background-color .25s;
 	}
 	
-	.cat-item a:hover {
+	.cat-link:hover {
 		background-color: rgba(255, 255, 255, 0.7);
+	}
+	
+	.cat-img {
+		border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+		display: block;
+		margin: auto auto .75em;
 	}
 	
 	.cat-item-title,
@@ -44,4 +50,12 @@
 			overflow: hidden;
 			text-indent: 100%;
 			width: 1.5em;
+		}
+		
+		.cat-color a {
+			display: block;
+		}
+		
+		.cat-color a:hover {
+			cursor: help;
 		}

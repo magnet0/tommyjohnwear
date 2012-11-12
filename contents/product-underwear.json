@@ -14,19 +14,36 @@
 		"price": "25",
 		"colors":[
 			{
-				"hex":"E1DEE5",
-				"name":"Power Blanco",
+				"hex":"fff",
+				"name":"White",
 				"id":"001"
 			},
 			{
-				"hex":"111111",
-				"name":"Thunder Steal",
+				"hex":"03113b",
+				"name":"Navy",
 				"id":"002"
 			},
 			{
-				"hex":"EBE2C1",
-				"name":"Yacht Sand",
+				"hex":"e3120c",
+				"name":"Red",
 				"id":"003"
+			},
+			{
+				"hex":"0b41cd",
+				"name":"Royal Blue",
+				"id":"004"
+			},
+			{
+				"hex":"003f6b",
+				"border": "e6efb9",
+				"name":"Blue/Green Stripe",
+				"id":"005"
+			},
+			{
+				"hex":"003f6b",
+				"border": "923629",
+				"name":"Cinnamon/Blue Stripe",
+				"id":"006"
 			}
 		],
 		"images":[
