@@ -59,8 +59,7 @@
 	position: relative;
 }
 
-.pf-img,
-.sf-img {
+.pf-img {
 	width: 100%;
 }
 
@@ -93,24 +92,44 @@
 
 /* --- Secondary --- */
 .m-secondary-feature {
-	background-color: #40190b;
-	padding: 6em 1.5em;
+	background-color: #240e06;
+	background: -moz-radial-gradient(center, ellipse cover, transparent 0%, #40190b 100%), #240e06;
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,transparent), color-stop(100%,#40190b)), #240e06;
+	background: -webkit-radial-gradient(center, ellipse cover, transparent 0%,#40190b 100%), #240e06;
+	background: -o-radial-gradient(center, ellipse cover, transparent 0%,#40190b 100%), #240e06;
+	background: -ms-radial-gradient(center, ellipse cover, transparent 0%,#40190b 100%), #240e06;
+	background: radial-gradient(ellipse at center, transparent 0%,#40190b 100%), #240e06;
+	padding: 0;
 	margin: 0 10% 1.5em;
+	-webkit-transition: background .25s;
+	   -moz-transition: background .25s;
+	     -o-transition: background .25s;
+	        transition: background .25s;
 }
 
+	.m-secondary-feature:hover {
+		background-color: #978179;
+	}
+
+	.sf-img {
+		vertical-align: middle;
+	}
+
 	.sf-title {
-		font-size: 2em;
+		color: #40190b;
+		font-size: 1.333333333em;
 		margin-bottom: 0;
+		padding: .5625em;
 		-webkit-transition: color .1s;
 		   -moz-transition: color .1s;
 		     -o-transition: color .1s;
 		        transition: color .1s;
 	}
 
-	.second-skin .sf-title { color: #65c7be; }
-	.active .sf-title { color: #f0b12f; }
-	.sport .sf-title { color: #ef4136; }
-
-	.m-secondary-feature:hover .sf-title {
-		color: white;
-	}
+	.m-secondary-feature.second-skin:hover,
+	.m-secondary-feature.second-skin .sf-title { background-color: #65c7be; }
+	.m-secondary-feature.active:hover,
+	.m-secondary-feature.active .sf-title { background-color: #f0b12f; }
+	.m-secondary-feature.sport:hover,
+	.m-secondary-feature.sport .sf-title { background-color: #ef4136; }
+	

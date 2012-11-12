@@ -3,25 +3,18 @@
         <div class="m-product-image-viewer">
             <div class="image-viewer-stage tab-content">
                 {{#product.images }}
-                <div id="{{ name }}" class="image-viewer-display tab-pane{{# active }} active{{/ active }}" data-img="{{ large }}">
-                    <a href="{{zoom}}" class="zoom-toggle">
-                        <!-- the color to show by default is given color-active class -->
-                    {{# large }}<img class="color-swap color-1 color-active" src="{{ large }}" alt="">{{/ large }}
-                    {{# large2 }}<img class="color-swap color-2" src="{{ large2 }}" alt="">{{/ large2 }}
-                    <i class="icon-zoom-in"></i> Zoom</a>
-                    <div class="image-viewer-zoom">
-                        <!-- <a href="#zoom" data-toggle="modal" data-target="#zoom"><i class="icon-zoom-in"></i> Zoom</a> -->
-                    </div>
+                <div id="{{name}}" class="image-viewer-display tab-pane magnify{{#active}} active{{/active}}">
+                    <div class="magnifier" data-zoom-img="{{zoom}}"></div>
+                    <img class="mag-small color-swap" src="{{large}}" alt="">
+                    <div class="image-viewer-zoom"><i class="icon-zoom-in"></i> Hover to zoom</div>
                 </div>
                 {{/product.images }}
             </div>
             <ul class="image-viewer-nav tabs">
                 {{#product.images }}
-                <li class="image-viewer-thumb{{# active }} active{{/ active }}">
-                    <a href="#{{ name }}" data-toggle="tab">
-                        <!-- the color to show by default is given color-active class -->
-                        {{# thumb }}<img class="color-swap color-1 color-active" src="{{ thumb }}" alt="">{{/ thumb }}
-                        {{# thumb2 }}<img class="color-swap color-2" src="{{ thumb2 }}" alt="">{{/ thumb2 }}
+                <li class="image-viewer-thumb{{#active}} active{{/active}}">
+                    <a href="#{{name}}" data-toggle="tab">
+                        <img class="color-swap" src="{{thumb}}" alt="">
                     </a>
                 </li>
                 {{/product.images }}

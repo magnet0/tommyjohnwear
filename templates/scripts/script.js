@@ -28,32 +28,55 @@ $(document).ready(function() {
 	});
 
 	//Product page color swap
-	function colorSwap(target,set) {
-		var viewer = $('.m-product-image-viewer .color-swap');
+	// function colorSwap(target,set) {
+	// 	var viewer = $('.m-product-image-viewer .color-swap');
+	// 
+	// 	console.log('Function ' +  set);
+	// 
+	// 		$('.color-swap').removeClass(set);
+	// 		$('.' + target ).addClass(set)
+	// }
+	// 
+	// $('.product-form-color-label').each(function(){
+	// 
+	// 	console.log(this);
+	// 	
+	// 	var target = $( this ).attr('for');
+	// 	var class_active = 'color-active';
+	// 	var class_hover = 'color-hover';
+	// 
+	// 	$(this).click( function () {
+	// 		colorSwap(target,class_active);
+	// 	});
+	// 
+	// 	$(this).mouseover( function () {
+	// 		colorSwap(target,class_hover);
+	// 	}).mouseout( function () {
+	// 		$('.color-swap').removeClass(class_hover);
+	// 	});
+	// });
+	
+	
+	/* 
+	
+	Product Image Color Swap
+	
+	*/ 
+	var swapimgs = $('.m-product-image-viewer .color-swap'); // the default image
+	var swapimgssrc = swapimgs.attr('src'); // img src
+	var srcsplit = swapimgssrc.split('.'); // img src split into an array, at the file extension 
 
-		console.log('Function ' +  set);
+	console.log(srcsplit);
 
-			$('.color-swap').removeClass(set);
-			$('.' + target ).addClass(set)
-	}
-
-	$('.product-form-color-label').each(function(){
-
-		console.log(this);
+	$('.product-form-color').change(function() { // when the color chips are selected
+		var colorid = $(this).attr('id'); // get the id of the input
+		/*
+			Somehow insert the color-id into the first item
+			of srcsplit array to create the new filename to 
+			referrence, i.e. product-001-view-001-color-001
+			and then rejoin to the get the .jpg back
+		*/ 
 		
-		var target = $( this ).attr('for');
-		var class_active = 'color-active';
-		var class_hover = 'color-hover';
-
-		$(this).click( function () {
-			colorSwap(target,class_active);
-		});
-
-		$(this).mouseover( function () {
-			colorSwap(target,class_hover);
-		}).mouseout( function () {
-			$('.color-swap').removeClass(class_hover);
-		});
 	});
 
 

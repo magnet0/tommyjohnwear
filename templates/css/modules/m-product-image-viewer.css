@@ -5,35 +5,20 @@
 
 */
 .m-product-image-viewer {
-/*	background-image: -ms-radial-gradient(center bottom, ellipse farthest-side, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-	background-image: -moz-radial-gradient(center bottom, ellipse farthest-side, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-	background-image: -o-radial-gradient(center bottom, ellipse farthest-side, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-	background-image: -webkit-gradient(radial, center bottom, 0, center bottom, 477, color-stop(0, rgba(0, 0, 0, 1)), color-stop(1, rgba(0, 0, 0, 0)));
-	background-image: -webkit-radial-gradient(center bottom, ellipse farthest-side, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-	background-image: radial-gradient(ellipse farthest-side at center bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);*/
 	margin-left: auto;
 	margin-right: auto;
 	width: 66.666666666%;
 }
 
     .image-viewer-stage {
+        position: relative;
 		text-align: center;
     }
 
-        .image-viewer-display {
-			background-position: center top;
-			background-repeat: no-repeat;
-			margin: auto;
-			max-width: 500px;
+		.image-viewer-stage img {
 			position: relative;
-			width: 80%;
-        }
-
-		.image-viewer-display img {
-			position: absolute;
-			left:0;
-			top:0;
 			vertical-align: middle;
+<<<<<<< HEAD
 			z-index: 1;
 		}
 
@@ -44,11 +29,17 @@
 
 		.image-viewer-display .color-active {
 			z-index: 3;
+=======
+>>>>>>> 6fb6b2f065bbdd395ad82adb9c1ac75c30d577b8
 		}
 
-		.image-viewer-display .color-hover {
-			z-index: 4;
-		}
+        .image-viewer-display {
+            background-position: center top;
+            background-repeat: no-repeat;
+			margin: auto;
+			max-width: 500px;
+            width: 80%;
+        }
 
     .image-viewer-nav {
 		-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
@@ -75,7 +66,6 @@
 		}
 
     .image-viewer-thumb {
-    	position: relative;
 		float: left;
 		width: 25%;
     }
@@ -85,21 +75,27 @@
 	    }
 
         .image-viewer-thumb img {
-			position: absolute;
-			left:0;
-			top:0;
 			vertical-align: middle;
             width: 100%;
-            z-index: 1;
         }
 
-		.image-viewer-thumb img:first-child {
-			position: relative;
-			z-index: 2;
-		}
-		.image-viewer-thumb .color-active {
-			z-index: 3;
-		}
-		.image-viewer-thumb .color-hover {
-			z-index: 4;
-		}
+/* --- Magnifier --- */
+.magnify {
+	position: relative;
+}
+
+.magnifier {
+	background-repeat: no-repeat;
+	width: 175px; height: 175px;
+	position: absolute;
+	border-radius: 100%;
+	box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 
+	0 0 7px 7px rgba(0, 0, 0, 0.25), 
+	inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+
+	/*hide the glass by default*/
+	display: none;
+	z-index: 8;
+}
+
+.mag-small { display: block; }

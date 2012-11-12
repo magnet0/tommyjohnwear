@@ -34,19 +34,19 @@
 	"secondary-feature":[
 		{
 			"href":"category",
-			"img":"images/dudebro/dummy2.png",
+			"img":"images/features/secondskin.png",
 			"title":"Second Skin",
 			"slug": "second-skin"
 		},
 		{
 			"href":"category",
-			"img":"images/dudebro/dummy3.png",
+			"img":"images/features/sport.png",
 			"title":"Sport",
 			"slug": "sport"
 		},
 		{
 			"href":"category",
-			"img":"images/dudebro/dummy1.png",
+			"img":"images/features/active.png",
 			"title":"Active",
 			"slug": "active"
 		}
