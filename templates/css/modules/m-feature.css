@@ -126,10 +126,10 @@
 		        transition: color .1s;
 	}
 
-	.second-skin:hover,
-	.second-skin .sf-title { background-color: #65c7be; }
-	.active:hover,
-	.active .sf-title { background-color: #f0b12f; }
-	.sport:hover,
-	.sport .sf-title { background-color: #ef4136; }
+	.m-secondary-feature.second-skin:hover,
+	.m-secondary-feature.second-skin .sf-title { background-color: #65c7be; }
+	.m-secondary-feature.active:hover,
+	.m-secondary-feature.active .sf-title { background-color: #f0b12f; }
+	.m-secondary-feature.sport:hover,
+	.m-secondary-feature.sport .sf-title { background-color: #ef4136; }
 	
