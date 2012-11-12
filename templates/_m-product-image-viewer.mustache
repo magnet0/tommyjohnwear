@@ -5,9 +5,7 @@
                 {{#product.images }}
                 <div id="{{name}}" class="image-viewer-display tab-pane magnify{{#active}} active{{/active}}">
                     <div class="magnifier" data-zoom-img="{{zoom}}"></div>
-                    <!-- <img class="mag-small" src="{{large}}" alt=""> -->
-                    {{# large }}<img class="mag-small color-swap color-1 color-active" src="{{ large }}" alt="">{{/ large }}
-                    {{# large2 }}<img class="mag-small color-swap color-2" src="{{ large2 }}" alt="">{{/ large2 }}
+                    <img class="mag-small color-swap" src="{{large}}" alt="">
                     <div class="image-viewer-zoom"><i class="icon-zoom-in"></i> Hover to zoom</div>
                 </div>
                 {{/product.images }}
@@ -16,8 +14,7 @@
                 {{#product.images }}
                 <li class="image-viewer-thumb{{#active}} active{{/active}}">
                     <a href="#{{name}}" data-toggle="tab">
-                        {{# thumb }}<img class="color-swap color-1 color-active" src="{{ thumb }}" alt="">{{/ thumb }}
-                        {{# thumb2 }}<img class="color-swap color-2" src="{{ thumb2 }}" alt="">{{/ thumb2 }}
+                        <img class="color-swap" src="{{thumb}}" alt="">
                     </a>
                 </li>
                 {{/product.images }}
