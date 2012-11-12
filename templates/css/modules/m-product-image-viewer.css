@@ -90,7 +90,6 @@
 			top:0;
 			vertical-align: middle;
             width: 100%;
-<<<<<<< HEAD
             z-index: 1;
         }
 
@@ -104,8 +103,6 @@
 		.image-viewer-thumb .color-hover {
 			z-index: 4;
 		}
-=======
-        }
 
 /* --- Magnifier --- */
 .magnify {
@@ -123,8 +120,7 @@
 
 	/*hide the glass by default*/
 	display: none;
-	z-index: 3;
+	z-index: 8;
 }
 
 .mag-small { display: block; }
->>>>>>> product-zooming
