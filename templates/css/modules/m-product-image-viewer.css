@@ -71,3 +71,24 @@
 			vertical-align: middle;
             width: 100%;
         }
+
+/* --- Magnifier --- */
+.magnify {
+	position: relative;
+}
+
+.magnifier {
+	background-repeat: no-repeat;
+	width: 175px; height: 175px;
+	position: absolute;
+	border-radius: 100%;
+	box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 
+	0 0 7px 7px rgba(0, 0, 0, 0.25), 
+	inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+
+	/*hide the glass by default*/
+	display: none;
+	z-index: 3;
+}
+
+.mag-small { display: block; }
