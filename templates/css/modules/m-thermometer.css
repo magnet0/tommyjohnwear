@@ -1,0 +1,62 @@
+.thermo {
+	background-color: #454545; /*@tjgray*/
+	padding: .75em;
+}
+
+	.thermo-title {
+		font-size: 1em;
+		color: #F1F1F1;
+		margin-bottom: 0;
+	}
+	
+	.thermo-help {
+		border-bottom: none;
+		font-size: .875em;
+		line-height: 1;
+	}
+	
+	.thermo-range {
+		overflow: hidden;
+		font-size: .75em;
+	}
+	
+		.thermo-range:after {
+			content: " ";
+			padding-top: .75em;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+			display: block;
+		}
+	
+		.thermo-range .high,
+		.thermo-range .low {
+			padding: 0 .5em;
+			background-color: #454545;
+		}
+	
+		.thermo-range .high {
+			float: right;
+		}
+		
+		.thermo-range .low {
+			float: left;
+		}
+	
+	.meter {
+		padding: 1px;
+		border-radius: 1em;
+		background-color: rgba(0, 0, 0, 0.3);
+		font-size: .75em;
+	}
+	
+		.meter-fill {
+			text-align: right;
+			border-radius: 1em;
+			background-color: #08C;
+		}
+		
+			.meter-fill-amount {
+				color: white;
+				padding: 0 .75em;
+			}
+	
+	

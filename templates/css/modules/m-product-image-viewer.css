@@ -73,8 +73,8 @@
 
 .magnifier {
 	background-repeat: no-repeat;
-	width: 12em;
-	height: 12em;
+	width: 15em;
+	height: 15em;
 	position: absolute;
 	border-radius: 100%;
 	box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 

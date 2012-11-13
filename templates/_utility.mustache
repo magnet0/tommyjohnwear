@@ -4,14 +4,17 @@
     </div>
 	<div id="cart" class="minicart os-nav-bar">
 	    <div class="mc-actions">
-            <a href="cart" class="btn light"><i class="icon-shopping-cart"></i> Review &amp; <b>Checkout</b></a>
+            <a href="cart" class="btn blue"><i class="icon-shopping-cart"></i> Review &amp; <b>Checkout</b></a>
         </div>
         <div class="thermo">
+            <h3 class="thermo-title">Buy more save more meter</h3>
+            <div class="thermo-range"><span class="low">0</span> <span class="high">20%</span></div>
             <div class="meter">
-                <div class="meter-fill" style="width: 50%">
-                    <span>10%</span>
+                <div class="meter-fill" style="width: 50%"><!-- this width updates and corresponds to the savings amount. Since the min is 0 and the max is 20%, then 10% is 50% width. --> 
+                    <span class="meter-fill-amount">10%</span>
                 </div>
             </div>
+            <a href="savings-program" class="thermo-help"><small>what is this?</small></a>
         </div>
     	<ul class="mc-items">
     	    {{# minicart.products }}

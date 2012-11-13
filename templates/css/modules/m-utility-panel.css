@@ -12,10 +12,10 @@
 	opacity: 0;
     padding: 0;
 	position: absolute;
-	right: -80%;
+	right: -90%;
 	text-align: left;
 	top: 0;
-	width: 80%;
+	width: 90%;
     -webkit-transition: -webkit-transform .3s ease, opacity .1s;
        -moz-transition: -moz-transform .3s ease, opacity .1s;
          -o-transition: -o-transform .3s ease, opacity .1s;
@@ -37,4 +37,8 @@
 
 	.btn.os-close {
 		background-color: rgba(255,255,255,0.125);
+	}
+	
+	.btn.os-close:hover {
+		background-color: rgba(255,255,255,0.25);
 	}

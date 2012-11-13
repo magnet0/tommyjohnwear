@@ -120,6 +120,7 @@ small { color: #999; }
 		color: #40190b; /*@t-brown*/
 	}
 	
+	.btn.blue,
 	.btn:hover {
 		background-color: #0088cc;
 	}
