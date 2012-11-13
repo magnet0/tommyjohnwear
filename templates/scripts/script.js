@@ -26,56 +26,38 @@ $(document).ready(function() {
 		// })
 
 	});
-
-	//Product page color swap
-	// function colorSwap(target,set) {
-	// 	var viewer = $('.m-product-image-viewer .color-swap');
-	// 
-	// 	console.log('Function ' +  set);
-	// 
-	// 		$('.color-swap').removeClass(set);
-	// 		$('.' + target ).addClass(set)
-	// }
-	// 
-	// $('.product-form-color-label').each(function(){
-	// 
-	// 	console.log(this);
-	// 	
-	// 	var target = $( this ).attr('for');
-	// 	var class_active = 'color-active';
-	// 	var class_hover = 'color-hover';
-	// 
-	// 	$(this).click( function () {
-	// 		colorSwap(target,class_active);
-	// 	});
-	// 
-	// 	$(this).mouseover( function () {
-	// 		colorSwap(target,class_hover);
-	// 	}).mouseout( function () {
-	// 		$('.color-swap').removeClass(class_hover);
-	// 	});
-	// });
 	
 	
 	/* 
 	
 	Product Image Color Swap
+
+	Images MUST be formatted like so: name_of_file.color_name.jpg - color name must be seperated by a period.
 	
 	*/ 
 	var swapimgs = $('.m-product-image-viewer .color-swap'); // the default image
 	var swapimgssrc = swapimgs.attr('src'); // img src
 	var srcsplit = swapimgssrc.split('.'); // img src split into an array, at the file extension 
 
-	console.log(srcsplit);
+	console.log(swapimgs);
 
-	$('.product-form-color').change(function() { // when the color chips are selected
+	$('.product-form-color-input').change(function() { // when the color chips are selected
 		var colorid = $(this).attr('id'); // get the id of the input
-		/*
-			Somehow insert the color-id into the first item
-			of srcsplit array to create the new filename to 
-			referrence, i.e. product-001-view-001-color-001
-			and then rejoin to the get the .jpg back
-		*/ 
+		console.log('the color id from button: ' + colorid);
+
+		//replace
+		swapimgs.each(function(){
+			var iswapimgssrc = $(this).attr('src'); // img src
+			var isrcsplit = iswapimgssrc.split('.'); // img src split into an array, at the file extension 
+
+			isrcsplit[1] = colorid;
+
+			var newimgsrc = isrcsplit.join('.');
+
+			$(this).attr('src',newimgsrc);
+
+			console.log(newimgsrc);
+		});
 		
 	});
 

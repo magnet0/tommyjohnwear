@@ -33,31 +33,28 @@
 		"images":[
 			{
 				"name":"slide1",
-				"zoom":"images/product/prod_001-view_002-zoom.jpg",
-				"zoom2":"images/product/prod_001-view_002-zoom-2.jpg",
-				"large":"images/product/prod_001-view_000-large.jpg",
-				"large2":"images/product/prod_001-view_000-large-2.jpg",
-				"thumb":"images/product/prod_001-view_000-thumb.jpg",
-				"thumb2":"images/product/prod_001-view_000-thumb-2.jpg",
+				"zoom":"images/product/prod_001-view_000-zoom.color-1.jpg",
+				"large":"images/product/prod_001-view_000-large.color-1.jpg",
+				"thumb":"images/product/prod_001-view_000-thumb.color-1.jpg",
 				"active":true
 			},
 			{
 				"name":"slide2",
-				"zoom":"images/product/prod_001-view_002-zoom.jpg",
-				"large":"images/product/prod_001-view_001-large.jpg",
-				"thumb":"images/product/prod_001-view_001-thumb.jpg"
+				"zoom":"images/product/prod_001-view_001-zoom.color-1.jpg",
+				"large":"images/product/prod_001-view_001-large.color-1.jpg",
+				"thumb":"images/product/prod_001-view_001-thumb.color-1.jpg"
 			},
 			{
 				"name":"slide3",
-				"zoom":"images/product/prod_001-view_002-zoom.jpg",
-				"large":"images/product/prod_001-view_002-large.jpg",
-				"thumb":"images/product/prod_001-view_002-thumb.jpg"
+				"zoom":"images/product/prod_001-view_002-zoom.color-1.jpg",
+				"large":"images/product/prod_001-view_002-large.color-1.jpg",
+				"thumb":"images/product/prod_001-view_002-thumb.color-1.jpg"
 			},
 			{
 				"name":"slide4",
-				"zoom":"images/product/prod_001-view_003-zoom.jpg",
-				"large":"images/product/prod_001-view_003-large.jpg",
-				"thumb":"images/product/prod_001-view_003-thumb.jpg"
+				"zoom":"images/product/prod_001-view_003-zoom.color-1.jpg",
+				"large":"images/product/prod_001-view_003-large.color-1.jpg",
+				"thumb":"images/product/prod_001-view_003-thumb.color-1.jpg"
 			}
 		]
 	},
