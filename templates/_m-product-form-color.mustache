@@ -4,7 +4,7 @@
                     <legend class="one column">Color</legend>
                     <div class="five column">
                     	{{# product.colors }}
-                    		<input type="radio" id="color-{{id}}" class="product-form-color-input" name="color" value="{{ id }}" {{# checked }}checked{{/ checked}}><label class="product-form-color-label popover-trigger" for="color-{{ id }}" title="{{ name }}" data-title="{{name}}" data-placement="top" data-trigger="hover" style="background-color:#{{ hex }}"><i class="icon-ok"></i><span class="hide">{{ name }}</span></label>
+                    		<input type="radio" id="color-{{id}}" class="product-form-color-input" name="color" value="{{ id }}" {{# checked }}checked{{/ checked}}><label class="product-form-color-label popover-trigger" for="color-{{ id }}" title="{{ name }}" data-title="{{name}}" data-placement="top" data-trigger="hover" style="background-color:#{{ hex }};{{#border}} border-top: .5em solid #{{border}}; padding-top: .1em;{{/border}}"><i class="icon-ok"></i><span class="hide">{{ name }}</span></label>
                     	{{/ product.colors }}
                     </div>
                 </fieldset>

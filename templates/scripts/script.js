@@ -37,9 +37,13 @@ $(document).ready(function() {
 	*/ 
 	var swapimgs = $('.m-product-image-viewer .color-swap'); // the default image
 	var swapimgssrc = swapimgs.attr('src'); // img src
-	var srcsplit = swapimgssrc.split('.'); // img src split into an array, at the file extension 
+	// var srcsplit = swapimgssrc.split('.'); // img src split into an array, at the file extension 
 
+<<<<<<< HEAD
 	console.log(swapimgs);
+=======
+	// console.log(srcsplit);
+>>>>>>> eb41e615e8e6f29a16564e84739ea3b91c6e4383
 
 	$('.product-form-color-input').change(function() { // when the color chips are selected
 		var colorid = $(this).attr('id'); // get the id of the input
@@ -168,6 +172,7 @@ $(document).ready(function() {
 
 	// Load
 	offscreen();
-	itmRemove($('.mci-delete'), $('.mc-item'));
+	itmRemove($('.mci-delete'), $('.mc-item'));	
+	$('[rel=tooltip]').tooltip();
 	
 });

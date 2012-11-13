@@ -49,11 +49,10 @@
 			"cat": "Second Skin",
 			"4star": true,
 			"colors": [
-				{"name": "White", "value": "fff"},
-				{"name": "Black", "value": "000"},
-				{"name": "Tan", "value": "efe0b7"},
-				{"name": "Navy", "value": "0f2961"},
-				{"name": "Red", "value": "e3120c"}
+				{"name": "Grey", "value": "ccc"},
+				{"name": "Royal Blue", "value": "0b41cd"},
+				{"name": "Blue/Green Stripe", "value": "003f6b", "border": "e6efb9"},
+				{"name": "Cinnamon/Blue Stripe", "value": "003f6b", "border": "923629"}
 			]
 		},
 		{
@@ -63,9 +62,10 @@
 			"colors": [
 				{"name": "White", "value": "fff"},
 				{"name": "Black", "value": "000"},
-				{"name": "Tan", "value": "efe0b7"},
-				{"name": "Navy", "value": "0f2961"},
-				{"name": "Red", "value": "e3120c"}
+				{"name": "Grey", "value": "ccc"},
+				{"name": "Royal Blue", "value": "0b41cd"},
+				{"name": "Blue/Green Stripe", "value": "003f6b", "border": "e6efb9"},
+				{"name": "Cinnamon/Blue Stripe", "value": "003f6b", "border": "923629"}
 			]
 		},
 		{
@@ -85,11 +85,10 @@
 			"id": "long-sleeve",
 			"cat": "Second Skin",
 			"colors": [
-				{"name": "White", "value": "fff"},
-				{"name": "Black", "value": "000"},
-				{"name": "Tan", "value": "efe0b7"},
-				{"name": "Navy", "value": "0f2961"},
-				{"name": "Red", "value": "e3120c"}
+				{"name": "Grey", "value": "ccc"},
+				{"name": "Royal Blue", "value": "0b41cd"},
+				{"name": "Blue/Green Stripe", "value": "003f6b", "border": "e6efb9"},
+				{"name": "Cinnamon/Blue Stripe", "value": "003f6b", "border": "923629"}
 			]
 		}
 	],
