@@ -127,6 +127,16 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 		.nav-bar.util .nav-item a {
 			display: inline-block;
 		}
+	
+	/* --- @medium stage --- */
+	.is-home .m-stage:after {
+		background-image: url(../images/stage/stage-home-med.png);
+	}
+	
+	.is-home .m-stage-content {
+		padding-right: 33.333333333%;
+		text-align: left;
+	}
 		
 	/* -- @medium product viewer --- */
 	.image-viewer-display {
@@ -146,6 +156,10 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 		padding-top: 4.5em;
 	}
 	
+	.is-home .m-stage:after {
+		background-image: url(../images/stage/stage-home-large.png);
+	}
+
 	/* --- @medium Product --- */
 	.m-product-image-viewer {
 		width: 100%;
@@ -215,6 +229,7 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 		padding-top: 6em;
 	}
 	
+	
 	/* --- @large Featurettes --- */
 	.m-primary-feature {
 		margin: 0 1.5em;
@@ -262,6 +277,12 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 		padding-right: 1.5em;
 	}
 	
+	/* --- @large2 Stage --- */
+	.is-home .m-stage-content {
+		padding-right: 0;
+		text-align: center;
+	}
+	
 	/* --- @large product attributes --- */
 /*	.product-attr {
 		min-height: 9em;
@@ -279,7 +300,13 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 		margin: 0 2.333333333em;
 	}
 	
-	/* --- @medium2 Product --- */
+	
+	/* --- @wide Stage --- */
+	.is-home .m-stage:after {
+		background-image: url(../images/stage/stage-home-wide.png);
+	}
+	
+	/* --- @wide Product --- */
 	.m-product-image-viewer {
 		width: 100%;
 	}

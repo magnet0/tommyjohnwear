@@ -149,6 +149,20 @@ $(document).ready(function() {
 	}, function() {
 		$(this).next('.diagram-content').hide();
 	});
+	
+	
+	// 
+	// Add a review prototype
+	// 
+	var revformhandle = $('a[href=#load-review-form]');
+	var revform = $('.add-review');
+	
+	revform.hide();
+	
+	revformhandle.click(function() {
+		$(this).hide();
+		revform.show();
+	});
 
 	/*
 	
@@ -183,10 +197,14 @@ $(document).ready(function() {
 		});
 	}
 
-
-	// Load
-	offscreen();
-	itmRemove($('.mci-delete'), $('.mc-item'));	
-	$('[rel=tooltip]').tooltip();
+	/*
+	
+		Load
+	
+	*/
+	offscreen(); // offscreen utility panel
+	itmRemove($('.mci-delete'), $('.mc-item'));	// removing items from minicart
+	$('[rel=tooltip]').tooltip(); // tooltips, global
+	$('.tag-input').tagsInput(); // tags in input fields
 	
 });
