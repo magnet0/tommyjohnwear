@@ -36,18 +36,21 @@
 			"href":"category",
 			"img":"images/features/secondskin.png",
 			"title":"Second Skin",
+			"cat": "Undershirts and Underwear",
 			"slug": "second-skin"
 		},
 		{
 			"href":"category",
 			"img":"images/features/sport.png",
 			"title":"Sport",
+			"cat": "Underwear",
 			"slug": "sport"
 		},
 		{
 			"href":"category",
 			"img":"images/features/active.png",
 			"title":"Active",
+			"cat": "Underwear",
 			"slug": "active"
 		}
 	],

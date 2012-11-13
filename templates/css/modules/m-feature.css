@@ -115,21 +115,26 @@
 		vertical-align: middle;
 	}
 
+	.sf-meta > * {
+		color: #40190b;
+	}
+
+	.sf-meta {
+		padding: .75em;
+	}
+
+	
+
 	.sf-title {
 		color: #40190b;
 		font-size: 1.333333333em;
 		margin-bottom: 0;
-		padding: .5625em;
-		-webkit-transition: color .1s;
-		   -moz-transition: color .1s;
-		     -o-transition: color .1s;
-		        transition: color .1s;
 	}
 
 	.m-secondary-feature.second-skin:hover,
-	.m-secondary-feature.second-skin .sf-title { background-color: #65c7be; }
+	.m-secondary-feature.second-skin .sf-meta { background-color: #65c7be; }
 	.m-secondary-feature.active:hover,
-	.m-secondary-feature.active .sf-title { background-color: #f0b12f; }
+	.m-secondary-feature.active .sf-meta { background-color: #f0b12f; }
 	.m-secondary-feature.sport:hover,
-	.m-secondary-feature.sport .sf-title { background-color: #ef4136; }
+	.m-secondary-feature.sport .sf-meta { background-color: #ef4136; }
 	
