@@ -14,63 +14,63 @@
 		"price": "25",
 		"colors":[
 			{
-				"hex":"fff",
-				"name":"White",
-				"id":"001"
-			},
-			{
 				"hex":"03113b",
 				"name":"Navy",
-				"id":"002"
+				"id":"1"
+			},
+			{
+				"hex":"fff",
+				"name":"White",
+				"id":"2"
 			},
 			{
 				"hex":"e3120c",
 				"name":"Red",
-				"id":"003"
+				"id":"3"
 			},
 			{
 				"hex":"0b41cd",
 				"name":"Royal Blue",
-				"id":"004"
+				"id":"4"
 			},
 			{
 				"hex":"003f6b",
 				"border": "e6efb9",
 				"name":"Blue/Green Stripe",
-				"id":"005"
+				"id":"5"
 			},
 			{
 				"hex":"003f6b",
 				"border": "923629",
 				"name":"Cinnamon/Blue Stripe",
-				"id":"006"
+				"id":"6"
 			}
 		],
 		"images":[
 			{
 				"active":true,
 				"name":"slide1",
-				"zoom":"images/product/prod_002-view_000-zoom.jpg",
-				"large":"images/product/prod_002-view_000-large.jpg",
-				"thumb":"images/product/prod_002-view_000-thumb.jpg"
+				"zoom":"images/product/prod_002-view_000-zoom.color-1.jpg",
+				"large":"images/product/prod_002-view_000-large.color-1.jpg",
+				"thumb":"images/product/prod_002-view_000-thumb.color-1.jpg"
 			},
 			{
 				"name":"slide2",
-				"zoom":"images/product/prod_001-view_001-zoom.jpg",
-				"large":"images/product/prod_001-view_001-large.jpg",
-				"thumb":"images/product/prod_001-view_001-thumb.jpg"
+				"zoom":"images/product/prod_001-view_001-zoom.color-1.jpg",
+				"large":"images/product/prod_001-view_001-large.color-1.jpg",
+				"thumb":"images/product/prod_001-view_001-thumb.color-1.jpg"
 			},
 			{
 				"name":"slide3",
-				"zoom":"images/product/prod_001-view_002-zoom.jpg",
-				"large":"images/product/prod_001-view_002-large.jpg",
-				"thumb":"images/product/prod_001-view_002-thumb.jpg"
+				"zoom":"images/product/prod_001-view_002-zoom.color-1.jpg",
+				"large":"images/product/prod_001-view_002-large.color-1.jpg",
+				"thumb":"images/product/prod_001-view_002-thumb.color-1.jpg"
 			},
 			{
 				"name":"slide4",
-				"zoom":"images/product/prod_001-view_003-zoom.jpg",
-				"large":"images/product/prod_001-view_003-large.jpg",
-				"thumb":"images/product/prod_001-view_003-thumb.jpg"
+				"zoom":"images/product/prod_001-view_003-zoom.color-1.jpg",
+				"large":"images/product/prod_001-view_003-large.color-1.jpg",
+				"thumb":"images/product/prod_001-view_003-thumb.color-1.jpg"
 			}
 		]
 	},

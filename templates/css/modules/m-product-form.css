@@ -25,6 +25,15 @@
 		padding: 1.5em 0;
 	}
 	
+	.product-form-action {
+		padding-top: .75em;
+	}
+	
+	.product-form-action .btn {
+		display: block;
+		margin-bottom: .75em;
+	}
+	
 	.review-preview {
 		border: solid rgba(0, 0, 0, 0.125);
 		border-width: 0 0 1px;
