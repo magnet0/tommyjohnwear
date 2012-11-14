@@ -8,17 +8,51 @@
 		<link rel="dns-prefetch" href="//ajax.googleapis.com">
 		<title>{{meta.title}}</title>
 		<meta name="description" content="{{meta.description}}">
-		<meta name="viewport" content="width=device-width">
-		
-		<link rel="stylesheet" href="css/base.css">
-		
-        <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
-        <!-- {{#stylesheet_bundle}}/css/all.css{{/stylesheet_bundle}} -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700">
+				<link rel="stylesheet" href="css/print.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/framework/normalize.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/framework/foundation.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/plugins/jquery.tagsinput.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/base.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/layout.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/modules/m-shared.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/modules/m-account-wishlist.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/modules/m-icons.less?{{ timestamp }}">
+				<link rel="stylesheet" href="css/modules/m-clearing.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/modules/m-review.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/modules/m-product-image-viewer.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/modules/m-icons.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/modules/m-item.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/modules/m-nav.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/modules/m-cart.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/modules/m-inset-input.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/modules/m-product-form.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/modules/m-product.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/modules/m-feature.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/modules/m-product-attribute.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/modules/m-promo.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/modules/m-utility-panel.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/modules/m-thermometer.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/modules/m-minicart.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/modules/m-dropdown.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/modules/m-pslist.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/modules/m-promo-bar.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/modules/m-tag.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/modules/m-diagram.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/modules/m-add-review.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/theme.css?{{ timestamp }}">
+				<link rel="stylesheet" href="css/state.css?{{ timestamp }}">
+
         
-		<script src="scripts/lib/modernizr.js"></script>
+		<script src="scripts/lib/modernizr.dev.js"></script>
+        
 		<!--[if IE]><meta http-equiv="imagetoolbar" content="no"><![endif]-->
 		<!--[if lte IE 8]><script src="scripts/polyfill/selectivizr.js"></script><![endif]-->
 		<link type="text/plain" rel="author" href="humans.txt">
 	</head>
-	<body>
+	<body{{#class}} class="{{class}}"{{/class}}>
+	    <div class="wrap">
 	    {{> header }}
+	    {{> m-promo-bar }}

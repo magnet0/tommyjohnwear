@@ -1,10 +1,6 @@
 {
 	"base": "//tommyjohnwear.com",
-	"pages": [
-		{
-			"title": "Home",
-			"id": "./"
-		},
+	"primary-nav": [
 		{
 			"title": "Undershirts",
 			"id": "category"
@@ -20,24 +16,78 @@
 		{
 			"title": "Referals",
 			"id": "referral"
+		},
+		{
+			"title": "Account",
+			"id": "account",
+			"dropdown": true,
+			"children":[
+				{
+					"child-title":"Your Account",
+					"child-id":"account"
+				},
+				{
+					"child-title":"Your Wishlist",
+					"child-id":"wishlist"
+				}
+			]
 		}
 	],
-	"undershirts": [
+	"util-nav": [
+		{
+			"title": "Cart",
+			"id": "cart",
+			"utility": true
+		}
+	],
+	"cat-items": [
 		{
 			"title": "Crew Neck",
-			"id": "crew-neck"
+			"id": "crew-neck",
+			"cat": "Second Skin",
+			"4star": true,
+			"colors": [
+				{"name": "Grey", "value": "ccc"},
+				{"name": "Royal Blue", "value": "0b41cd"},
+				{"name": "Blue/Green Stripe", "value": "003f6b", "border": "e6efb9"},
+				{"name": "Cinnamon/Blue Stripe", "value": "003f6b", "border": "923629"}
+			]
 		},
 		{
 			"title": "V Neck",
-			"id": "v-neck"
+			"id": "v-neck",
+			"cat": "Second Skin",
+			"colors": [
+				{"name": "White", "value": "fff"},
+				{"name": "Black", "value": "000"},
+				{"name": "Grey", "value": "ccc"},
+				{"name": "Royal Blue", "value": "0b41cd"},
+				{"name": "Blue/Green Stripe", "value": "003f6b", "border": "e6efb9"},
+				{"name": "Cinnamon/Blue Stripe", "value": "003f6b", "border": "923629"}
+			]
 		},
 		{
 			"title": "Tank",
-			"id": "tank"
+			"id": "tank",
+			"cat": "Second Skin",
+			"colors": [
+				{"name": "White", "value": "fff"},
+				{"name": "Black", "value": "000"},
+				{"name": "Tan", "value": "efe0b7"},
+				{"name": "Navy", "value": "0f2961"},
+				{"name": "Red", "value": "e3120c"}
+			]
 		},
 		{
 			"title": "Long Sleeve",
-			"id": "long-sleeve"
+			"id": "long-sleeve",
+			"cat": "Second Skin",
+			"colors": [
+				{"name": "Grey", "value": "ccc"},
+				{"name": "Royal Blue", "value": "0b41cd"},
+				{"name": "Blue/Green Stripe", "value": "003f6b", "border": "e6efb9"},
+				{"name": "Cinnamon/Blue Stripe", "value": "003f6b", "border": "923629"}
+			]
 		}
 	],
 	"sitemap": [
@@ -59,7 +109,7 @@
 				},
 				{
 					"title":"Privacy Policy",
-					"href":"privacy-policy"
+					"href":"page"
 				}
 			]
 		},
@@ -69,7 +119,6 @@
 			"children": [
 				{
 					"title": "1-800-123-4567",
-					"href": "tel:+18001234567",
 					"class":"addr-phone"
 				},
 				{
@@ -79,15 +128,15 @@
 				},
 				{
 					"title":"FAQ's",
-					"href":"faqs"
+					"href":"page"
 				},
 				{
 					"title":"Store Locator",
-					"href":"store-locator"
+					"href":"locator"
 				},
 				{
-					"title":"Shipping &amp; Returns",
-					"href":"shipping-and-returns"
+					"title":"Shipping & Returns",
+					"href":"page"
 				}
 			]
 		},
@@ -101,11 +150,11 @@
 				},
 				{
 					"title":"Fabric",
-					"href":"fabric"
+					"href":"page"
 				},
 				{
 					"title":"Care Instructions",
-					"href":"care"
+					"href":"page"
 				}
 			]
 		},
@@ -114,22 +163,50 @@
 			"id":"follow-us",
 			"children": [
 				{
-					"title":"Twitter",
-					"href":"//twitter.com",
-					"class":"social-btn social-twitter"
-				},
-				{
+					"social": "icon-facebook",
 					"title":"Facebook",
-					"href":"//facebook.com",
+					"href":"//facebook.com/TommyJohnWear",
 					"class":"social-btn social-facebook"
 				},
 				{
+					"social": "icon-twitter",
+					"title":"Twitter",
+					"href":"//twitter.com/TommyJohn",
+					"class":"social-btn social-twitter"
+				},
+				{
+					"social": "icon-pinterest",
 					"title":"Pinterest",
-					"href":"//pinterest.com",
+					"href":"//pinterest.com/tommyjohnwear/",
 					"class":"social-btn social-pintrist"
 				}
 			]
 		}
 	],
-	"copyright":"Company Copyright info"
+	"minicart": {
+		"products": [
+			{
+				"name": "Crew Neck",
+				"type": "Undershirts",
+				"category": "Second Skin",
+				"price": "25.00",
+				"size": "medium",
+				"qty": "2",
+				"total": "50.00",
+				"url": "product"
+			},
+			{
+				"name": "Tank",
+				"type": "Undershirt",
+				"category": "Second Skin",
+				"price": "25.00",
+				"size": "medium",
+				"qty": "1",
+				"total": "25.00",
+				"url": "product"
+			}
+		]
+	},
+	"copyright":"Company Copyright info",
+	"timestamp":"Math.round(new Date().getTime() / 1000)"
 }

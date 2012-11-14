@@ -1,0 +1,23 @@
+
+        <!-- m-image-viewer -->
+        <div class="m-product-image-viewer">
+            <div class="image-viewer-stage tab-content">
+                {{#product.images}}
+                <div id="{{name}}" class="image-viewer-display tab-pane magnify{{#active}} active{{/active}}">
+                    <div class="magnifier" data-zoom-img="{{zoom}}"></div>
+                    <img class="mag-small color-swap" src="{{large}}" alt="Test">
+                    <div class="image-viewer-zoom"><i class="icon-zoom-in"></i> Hover to zoom</div>
+                </div>
+                {{/product.images}}
+            </div>
+            <ul class="image-viewer-nav tabs">
+                {{#product.images}}
+                <li class="image-viewer-thumb{{#active}} active{{/active}}">
+                    <a href="#{{name}}" data-toggle="tab">
+                        <img class="color-swap" src="{{thumb}}" alt="">
+                    </a>
+                </li>
+                {{/product.images}}
+            </ul>
+        </div>
+        <!-- /m-image-viewer -->

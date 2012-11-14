@@ -1,3 +1,20 @@
+/*
+
+	Base
+
+	This file is a less aggressive "reset" and provides some baseline
+	settings as well as some HTML5 bootstrapping.
+	
+	*Should never need modification, use theme.css
+
+
+*/
+
+.baseline {
+	background: url(../images/baseline-16-24.png) repeat;
+	background-size: 1.5em;
+}
+
 @media screen {
 	/* HTML5 Bootstrap */
 	article, aside, canvas, details, embed, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
@@ -14,6 +31,12 @@
 		.ie6 *, .ie7 * { behavior: url(../scripts/polyfill/boxsizing.htc); }
 
 	/* Page */	
+	html,
+	body {
+		overflow-x: hidden;
+		width: 100%;
+	}
+	
 	html {
 		background-color: #fafafa;
 		padding: 0;
@@ -26,8 +49,10 @@
 		font-size: 100%;
 		margin: auto;
 		min-height: 100%;
-		-webkit-tap-highlight-color: rgb(255, 255, 158);
+		-webkit-tap-highlight-color: rgba(101, 199, 190, 0);
 	}
+
+	hr { clear: both; }
 
 	/* Headings */
 	h1, h2, h3, h4, h5, h6 {
@@ -67,6 +92,29 @@
 		margin-bottom: 1.5em;
 		margin-top: 0;
 	}
+	
+	/* Headings */
+	h1,.h1 { color: #40190B; }
+
+	h1,.h1,
+	h2,.h2,
+	h3,.h3 {
+		font-family: "dosis-medium";
+		text-transform: uppercase;
+	}
+
+	h2, .h2 {
+		font-size: 1.5em;
+	}
+
+	h3, .h3 {
+		font-size: 1.333333333em;
+	}
+
+	h1 small, .h1 small {
+		color:#999;
+		font-size: 0.5em; 
+	}
 
 	/* Paragraphs */
 	p {
@@ -90,8 +138,13 @@
 	dl,
 	ol,
 	ul {
+		font-size: 1em;
 		margin-bottom: 1.5em;
 		margin-top: 0;
+	}
+	
+	li {
+		line-height: 1.5;
 	}
 
 	dt {
@@ -104,6 +157,10 @@
 	}
 	
 	/* Forms */
+	form {
+		margin-bottom: 1.5em;
+	}
+	
 	fieldset {
 		border: none;
 		margin: 0 0 1.5em;
@@ -111,10 +168,10 @@
 		position: relative;
 	}
 
-		fieldset + fieldset {
+		/*fieldset + fieldset {
 			border-top: 1px solid rgba(0, 0, 0, 0.0625);
 			margin-top: -1px;
-		}
+		}*/
 
 		legend {
 /*			font-size: 1em;
@@ -127,10 +184,16 @@
 			select {
 				display: inline-block;
 				font-size: 100%;
+				line-height: 1.5;
+			}
+
+			select {
+				margin: -0.125em 0 0;
 			}
 
 			input,
-			textarea {
+			textarea,
+			div.tagsinput {
 				-webkit-transition: border 0.5s, box-shadow 0.5s;
 				   -moz-transition: border 0.5s, box-shadow 0.5s;
 				     -o-transition: border 0.5s, box-shadow 0.5s;
@@ -138,7 +201,8 @@
 			}
 
 			input,
-			textarea {
+			textarea,
+			div.tagsinput {
 				border: 1px solid;
 				border-color: rgba(0, 0, 0, 0.35) rgba(0, 0, 0, 0.25) rgba(0, 0, 0, 0.125);
 				-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -177,17 +241,46 @@
 				min-width: 1em;
 				width: auto;
 			}
+
+			input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
+				border: 1px solid;
+				border-color: rgba(0, 0, 0, 0.35) rgba(0, 0, 0, 0.25) rgba(0, 0, 0, 0.125);
+				-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+				   -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+				     -o-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+				        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+				font-size: 1em;
+				height: 2em;
+				margin: 0 0 0.5em;
+				padding: 0 0.25em;
+			}
+			
+			input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, textarea:focus {
+				border-color: rgba(64, 25, 11, 0.8);
+				-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 0 4px rgba(64, 25, 11, 0.6);
+				   -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 0 4px rgba(64, 25, 11, 0.6);
+				     -o-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 0 4px rgba(64, 25, 11, 0.6);
+				        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 0 4px rgba(64, 25, 11, 0.6);
+				outline: 0;
+			}
 	
-	:invalid {
+/*	:invalid {
 		border: 1px solid rgb(255, 0, 0);
-	}
+	}*/
 
 	/* Links */
 	a {
 		border-bottom: 1px solid;
-		font-weight: bold;
 		margin-bottom: -1px;
 		text-decoration: none;
+		-webkit-transition: color .125s, background .125s;
+		   -moz-transition: color .125s, background .125s;
+		     -o-transition: color .125s, background .125s;
+		        transition: color .125s, background .125s;
+	}
+	
+	a:hover {
+		color: #0088cc; /*@tj-blue*/
 	}
 	
 	a:active {
@@ -227,6 +320,8 @@
 	strong {
 		font-weight: bold;
 	}
+
+	small { font-size: 80%; }
 
 	sub,
 	sup {

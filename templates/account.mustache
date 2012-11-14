@@ -1,0 +1,134 @@
+{{> head }}
+		
+<article role="main">
+    <div class="content row">
+        <header class="page-header">
+            <h1>{{ meta.title }} <i class="icon-cogs"></i></h1>
+            <p>Hi {{ name }}! Welcome to your account overview</p>
+        </header>
+        <!-- <div class="three centered column space">
+
+        </div> -->
+        <div class="row">
+            <div class="three centered column">
+                <div class="three column">
+                    <i class="sign left">4</i>
+                    <h3 class="no-margin">Total Refferals</h3>
+                    That's <strong>$100</strong> <i class="icon-question-sign popover-trigger" data-title="http://tmjn.co/xY8ab3" data-content="Share the above code with Friends, Give your friends $25 off when they spend $75 or more. You get something too, a $25 gift code."></i>
+                </div>
+                <div class="three column">
+                    <i class="sign left">15</i>
+                    <h3 class="no-margin">Items on Wishlist</h3>
+                    <a href=""><i class="icon-envelope-alt"></i> Email list</a> <a href="wishlist">View list</a>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="three centered column">
+                <a class="btn small light right" href=""><i class="icon-cog icon-large"></i> edit</a>
+                <h2>Account Information</h2>
+                <p>
+                    {{ full name }}<br>
+                    {{ email }}
+                </p>
+                <hr>
+            </div>
+            <div class="three centered column">
+                <a class="btn small light right" href=""><i class="icon-cog icon-large"></i> edit</a> <a class="btn small light right" href=""><i class="icon-plus icon-large"></i> add</a>
+                <h2>Default Billing Address</h2>
+                <p>
+                    {{# billing }}
+                        {{> m-account-address }}
+                    {{/ billing }}
+                </p>
+                <hr>
+            </div>
+            <div class="three centered column">
+                <a class="btn small light right" href=""><i class="icon-cog icon-large"></i> edit</a> <a class="btn small light right" href=""><i class="icon-plus icon-large"></i> add</a>
+                <h2>Default Shipping Address</h2>
+                <h3>Home</h3>
+                <p>
+                    {{# shipping }}
+                        {{> m-account-address }}
+                    {{/ shipping }}
+                </p>
+                <h3>Work</h3>
+                <p>
+                    {{# shipping2 }}
+                        {{> m-account-address }}
+                    {{/ shipping2 }}
+                </p>
+                <hr>
+            </div>
+            <div class="three centered column">
+                <h2>Order History</h2>
+                <p>Want to auto-refresh your dresser? Perhaps you'd be interested in a <a href="">subscription</a></p>
+                <!-- order history -->
+                <div class="m-order-history">
+                    <table class="display">
+                        <thead>
+                            <tr>
+                                <th>Order #</th>
+                                <th>Date</th>
+                                <th>Shipped to</th>
+                                <th>Total</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /order history -->
+            </div>
+            <div class="column hidden"></div>
+        </div>
+	</div>
+
+</article>
+		
+{{> sidebar }}
+
+{{> foot }}

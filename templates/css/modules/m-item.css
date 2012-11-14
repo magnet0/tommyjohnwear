@@ -1,0 +1,61 @@
+/*
+
+
+	Product Item Module
+
+
+*/
+
+.cat-item {}
+	
+	.cat-link {
+		border: none;
+		display: block;
+		padding: 0 .75em .75em;
+		-webkit-transition: background-color .25s;
+		   -moz-transition: background-color .25s;
+		     -o-transition: background-color .25s;
+		        transition: background-color .25s;
+	}
+	
+	.cat-link:hover {
+		background-color: rgba(255, 255, 255, 0.7);
+	}
+	
+	.cat-img {
+		border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+		display: block;
+		margin: auto auto .75em;
+	}
+	
+	.cat-item-title,
+	.cat-item-price {
+		margin-bottom: 0;
+	}
+	
+	.cat-item .rating {
+		float: none;
+		font-size: .875em;
+		margin:0 auto;
+		width: 6.6em;
+	}
+	
+	.cat-colors {
+		list-style: none;
+	}
+	
+		.cat-color {
+			display: inline-block;
+			height: .75em;
+			overflow: hidden;
+			text-indent: 100%;
+			width: 1.5em;
+		}
+		
+		.cat-color a {
+			display: block;
+		}
+		
+		.cat-color a:hover {
+			cursor: help;
+		}

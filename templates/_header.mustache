@@ -1,20 +1,40 @@
 <header role="banner">
-	<div class="l-wrapper">
+	<div class="row">
 		
-		<a href="{{base}}">
-            <object data="images/tommyjohn.svg" type="image/svg+xml" class="logo">
-                <img src="images/tommyjohn.png" class="logo" alt="Tommy John">
-            </object>
+		<a href="./" class="base">
+            <img src="images/tommyjohn.svg" class="logo" alt="Tommy John">
 		</a>
 		
-		<nav>
-            <h2>Site Navigation</h2>
-            <ul class="hlist nav-bar">
-                {{#pages}}
-                <li class="hlist-item nav-item">
-                    <a href="{{id}}">{{title}}</a>
+		<nav role="navigation">
+            <h2 class="nav-title toggle">Menu</h2>
+            <ul class="hlist nav-bar resp">
+                {{#primary-nav}}
+                <li class="hlist-item nav-item{{# dropdown}} dropdown{{/ dropdown}}">
+                    <a href="{{id}}"{{#utility}} class="os-toggle" data-target="#{{ id }}"{{/utility}}{{# dropdown}} class="dropdown-toggle" data-toggle="dropdown"{{/ dropdown}}>{{title}}</a>
+                    
+                    {{# dropdown}}<ul class="dropdown-menu">{{/ dropdown}}
+                        {{# children}}
+                            <li><a href="{{ child-id }}">{{# icon }}<i class="icon-{{ icon }}"></i> {{/ icon }}{{ child-title }}</a></li>
+                        {{/ children}}
+                    {{# dropdown}}</ul>{{/ dropdown}}
                 </li>
-                {{/pages}}
+                {{/primary-nav}}
+            </ul>
+            <ul class="hlist nav-bar util">
+                {{#util-nav}}
+                <li class="hlist-item nav-item">
+                    <a href="{{id}}" class="cart-link os-toggle" data-target="#{{ id }}">
+                        {{title}}
+                        <!-- This thermometer thing is a nightmare
+                        <div class="cart-thermo">
+                            <span class="cart-thermo-amount">10% Off</span>
+                            <div class="mini-meter">
+                                <div class="mm-pie is-10-percent"></div>
+                            </div>
+                        </div> -->
+                    </a>
+                </li>
+                {{/util-nav}}
             </ul>
 		</nav>
 		

@@ -1,0 +1,42 @@
+.diagram {
+	position: relative;
+}
+
+	.diagram-item {
+		list-style: none;
+	}
+	
+	.diagram-bullet {
+		background-color: #40190b;
+		border: .25em solid white;
+		-webkit-border-radius: 1em;
+		   -moz-border-radius: 1em;
+		        border-radius: 1em;
+		color: white;
+		content: '';
+		display: block;
+		line-height: 1em;
+		text-align: center;
+		width: 1.5em;
+	}
+	
+		.diagram-bullet:hover {
+			background-color: #0088cc;
+			cursor: pointer;
+		}
+	
+	.js .diagram-item {
+		position: absolute;
+	}
+	
+	.js .diagram-content {
+		background-color: #40190b;
+		-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+		   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+		     -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+		        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+		color: #f1f1f1;
+		display: none;
+		padding: 1.5em;
+		width: 100%;
+	}

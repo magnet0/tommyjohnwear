@@ -1,0 +1,17 @@
+
+                <!-- m-product-color -->
+                <fieldset class="product-form-color">
+                    <legend class="one column">Color</legend>
+                    <div class="five column">
+                    	{{# product.colors }}
+                            <!-- 
+                                
+                                inline styles here should be added by system
+                                to account for color settings in the admin
+                                
+                                 -->
+                    		<input type="radio" id="color-{{id}}" class="product-form-color-input" name="color" value="{{ id }}" {{# checked }}checked{{/ checked}}><label class="product-form-color-label popover-trigger" for="color-{{ id }}" title="{{ name }}" data-title="{{name}}" data-placement="top" data-trigger="hover" style="background-color:#{{ hex }};{{#border}} border: solid #{{border}}; border-width: .5em 0; padding-bottom: .1em; padding-top: .1em;{{/border}}"><i class="icon-ok"></i><span class="hide">{{ name }}</span></label>
+                    	{{/ product.colors }}
+                    </div>
+                </fieldset>
+                <!-- /m-product-color -->

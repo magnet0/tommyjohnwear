@@ -1,0 +1,94 @@
+{{> head }}
+		
+<article role="main">
+    <div class="content row">
+        <header class="page-header margined space">
+            <h1>{{ meta.title }}</h1>
+        </header>
+        <div class="margined">
+            {{# cart }}
+                {{> m-cart-table }}
+            {{/ cart }}
+            <div>
+                <a class="btn light btn-secondary small" href=""><i class="icon-refresh icon-large"></i> Update Cart</a>
+                <a class="btn light btn-secondary small" href="category"><i class="icon-shopping-cart icon-large"></i> Continue Shopping</a>
+            </div>
+        </div>
+
+        <hr class="space">
+
+        <div class="row">
+            <div class="two column">
+                <div class="margined">
+                    <!-- promo code -->
+                    <div class="row">
+                        <h2>Promotional Code</h2>
+                        <input type="text">
+                        <label for=""><a class="btn light small right" href=""><i class="icon-share-alt icon-large"></i> apply code</a></label>
+                    </div>
+                    <h2>Gift Certificate</h2>
+                    <input type="text">
+                    <label for=""><a class="btn light small right" href=""><i class="icon-share-alt icon-large"></i> apply code</a></label>
+                    <hr class="space">
+                    <!-- /promo code -->
+                </div>
+            </div>
+            <div class="two column">
+                <div class="margined">
+                <!-- shipping calculator -->
+                    <h2>Estimate Tax &amp; Shipping</h2>
+                    <div>
+                        <label for="country">Country</label>
+                        <select name="country" id="country">
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="state">State/Province</label>
+                        <select name="state" id="state">
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="postal">Postal Code</label>
+                        <input type="number">
+                    </div>
+                    <a class="btn small light" href=""><i class="icon-truck icon-large"></i> Calculate Shipping</a>
+                <!-- /shipping calculator -->
+                </div>
+            </div>
+            <div class="two column">
+                <div class="bordered margined padded">
+                <!-- cart total -->
+                    <table class="text-right">
+                        <tr>
+                            <td><h2 class="no-margin">Subtotal:</h2></td>
+                            <td> $125</td>
+                        </tr>
+                        <tr>
+                            <td>Tax &amp; Shipping:</td>
+                            <td>$7</td>
+                        </tr>
+                        <tr>
+                            <td><h1><small>Total:</small></h1></td>
+                            <td><h1>$125</h1></td>
+                        </tr>
+                    </table>
+                    <a class="btn expand" href="checkout">Proceed to Checkout</a>
+                <!-- /cart total -->
+                </div>
+            </div>
+        </div>
+	</div>
+
+</article>
+		
+{{> sidebar }}
+
+{{> foot }}

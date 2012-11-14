@@ -1,49 +1,46 @@
 {{> head }}
 
 <div role="main">
-    <header class="stage">
+    <div class="m-stage row">
         
-        <div class="l-wrapper">
-            <h1 class="heading">{{stage.heading}}</h1>
-            <p class="lead">{{stage.lead}}</p>
-            <p><a href="shop" class="btn">Shop Now</a></p>
-            <p>or <a href="technology">Learn More</a></p>
+        <div class="four column centered text-center">
+            <div class="m-stage-content">
+                <h1 class="heading">{{stage.heading}}</h1>
+                <p class="lead">{{stage.lead}}</p>
+                <p><a href="category" class="btn">Shop Now</a></p>
+                <p>or <a href="technology">Learn More</a></p>
+            </div>
         </div>
         
-	</header>
+	</div>
 	<div class="content">
 	    
-	    <div class="m-primary-feature m-feature l-wrapper">
-  	    <div class="l-grid-six">
-  	    	{{#primary-feature}}
-  	    		<div class="l-block-third">
-  	    			{{> m-feature}}
-  	    		</div>
-  	    	{{/primary-feature}}
+	    <div class="m-primary-features row">
+	    	{{#primary-feature}}
+    		<div class="two columns text-center">
+    			{{> m-feature}}
+    		</div>
+	    	{{/primary-feature}}
         </div>
-      </div>
 
-      <hr>
+        <hr>
 
-      <div class="m-secondary-feature m-feature l-wrapper">
-      	<div class="l-grid-six">
-  	    	{{#secondary-feature}}
-  	    		<div class="l-block-third">
-  	    			{{> m-feature}}
-  	    		</div>
-  	    	{{/secondary-feature}}
+        <div class="m-secondary-features row">
+            <!-- <h2>Categories</h2> -->
+            {{#secondary-feature}}
+            <div class="two columns text-center">
+                {{> m-secondary-feature}}
+            </div>
+            {{/secondary-feature}}
         </div>
-      </div>
 
-      <div class="l-wrapper">
-      	<div class="l-grid-six">
-  	    	{{#tertiary-feature}}
-  	    		<div class="l-block-half">
-  	    			{{> m-feature}}
-  	    		</div>
-  	    	{{/tertiary-feature}}
-      	</div>
-      </div>
+        <div class="row">
+            {{#promos}}
+            <div class="three columns centered text-center">
+                {{> m-promo}}
+            </div>
+            {{/promos}}
+        </div>
         
 	</div>
 </div>

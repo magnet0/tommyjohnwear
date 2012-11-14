@@ -1,0 +1,132 @@
+{
+	"meta": {
+		"title": "Meta Title",
+		"description": "Meta description"
+	},
+	"class": "is-product",
+	"total-reviews":"20",
+	"4star":true,
+	"product":{
+		"name": "360 Sport Trunk",
+		"subtitle": "Underwear",
+		"category": "Sport",
+		"description": "<p>The 360 Sport Trunk is the ultimate active underwear for all day performance. Designed for men who want more out of their underwear. Arguably, the best performance underwear you’ll wear to keep you cool and dry; regardless of activity.</p>",
+		"price": "25",
+		"colors":[
+			{
+				"hex":"03113b",
+				"name":"Navy",
+				"id":"1"
+			},
+			{
+				"hex":"fff",
+				"name":"White",
+				"id":"2"
+			},
+			{
+				"hex":"e3120c",
+				"name":"Red",
+				"id":"3"
+			},
+			{
+				"hex":"0b41cd",
+				"name":"Royal Blue",
+				"id":"4"
+			},
+			{
+				"hex":"003f6b",
+				"border": "e6efb9",
+				"name":"Blue/Green Stripe",
+				"id":"5"
+			},
+			{
+				"hex":"280786",
+				"border": "860726",
+				"name":"Cinnamon/Blue Stripe",
+				"id":"6"
+			}
+		],
+		"images":[
+			{
+				"active":true,
+				"name":"slide1",
+				"zoom":"images/product/prod_002-view_000-zoom.color-1.jpg",
+				"large":"images/product/prod_002-view_000-large.color-1.jpg",
+				"thumb":"images/product/prod_002-view_000-thumb.color-1.jpg"
+			},
+			{
+				"name":"slide2",
+				"zoom":"images/product/prod_001-view_001-zoom.color-1.jpg",
+				"large":"images/product/prod_001-view_001-large.color-1.jpg",
+				"thumb":"images/product/prod_001-view_001-thumb.color-1.jpg"
+			},
+			{
+				"name":"slide3",
+				"zoom":"images/product/prod_001-view_002-zoom.color-1.jpg",
+				"large":"images/product/prod_001-view_002-large.color-1.jpg",
+				"thumb":"images/product/prod_001-view_002-thumb.color-1.jpg"
+			},
+			{
+				"name":"slide4",
+				"zoom":"images/product/prod_001-view_003-zoom.color-1.jpg",
+				"large":"images/product/prod_001-view_003-large.color-1.jpg",
+				"thumb":"images/product/prod_001-view_003-thumb.color-1.jpg"
+			}
+		]
+	},
+	"primary-feature":[
+		{
+			"img":"images/dudebro/dummy2.png",
+			"title":"Streamlines",
+			"text":"Gives you a tailored and form fitting look"
+		},
+		{
+			"img":"images/dudebro/dummy1.png",
+			"title":"Stay Tucked",
+			"text":"<a href=\"http://www.tommyjohnwear.com/Tailored-Stretch-Technology-W17.aspx\">Tailored Stretch™ Technology</a> ensures undershirt stays tucked in all day long"
+		},
+		{
+			"img":"images/dudebro/dummy2.png",
+			"title":"Second Skin Feel",
+			"text":"Silky soft and lightweight Micro Modal for enhanced feel"
+		},
+		{
+			"img":"images/dudebro/dummy1.png",
+			"title":"Fit",
+			"text":"Longer tapered design hugs torso to prevent bunching and <abbr title=\"Excess Fabric Gut\">EFG</abbr>"
+		},
+		{
+			"img":"images/dudebro/dummy2.png",
+			"title":"Control",
+			"text":"Moves with you, while invisible under outershirts"
+		},
+		{
+			"img":"images/dudebro/dummy1.png",
+			"title":"Stay Dry",
+			"text":"Controls body temperature to keep you cool and confident"
+		},
+		{
+			"img":"images/dudebro/dummy2.png",
+			"title":"Tag-free",
+			"text":"Tagless label for maximized comfort"
+		},
+		{
+			"img":"images/dudebro/dummy1.png",
+			"title":"Quick Draw Fly",
+			"text":"Quick access for quickflow"
+		}
+	],
+	"reviews":[
+		{
+			"4star": true,
+			"title": "Best shirt I've ever worn",
+			"date": "Aug. 10, 2012",
+			"author": "Andrew Tupper",
+			"copy": "Wes anderson small batch cray lo-fi ethnic sartorial. Flexitarian ennui sartorial vegan authentic. Organic butcher keffiyeh mlkshk, gastropub VHS skateboard brooklyn. Pork belly farm-to-table thundercats vice mixtape sartorial. Truffaut skateboard squid umami selvage sartorial. Swag scenester cosby sweater tofu, hella godard salvia vinyl kogi 3 wolf moon tattooed blog put a bird on it letterpress. Tumblr irony next level keffiyeh keytar 8-bit chillwave, godard master cleanse pinterest.",
+			"height":"5'9\"",
+			"weight":"150 lbs.",
+			"chest":"37\"",
+			"waist":"32\""
+		}
+	]
+}

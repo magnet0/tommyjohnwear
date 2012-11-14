@@ -1,0 +1,30 @@
+/*
+
+	Product attributes
+
+*/
+.product-attributes {
+	padding-top: 1.5em;
+}
+
+.product-attr {
+	background-color: #F1F1F1;
+	border: solid #ddd;
+	border-color: rgba(0, 0, 0, 0.125);
+	border-width: 1px 0 1px 1px;
+	margin-top: -1px;
+	min-height: 8em;
+	padding: 1.5em;
+	text-align: center;
+	vertical-align: top;
+}
+
+	.product-attr-title,
+	.product-attr-desc {
+		margin-bottom: 0;
+	}
+	
+	.product-attr-desc {
+		font-size: .888888889em;
+	}
+	

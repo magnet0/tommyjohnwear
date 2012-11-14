@@ -8,15 +8,33 @@
 		"serving_only": false
 	},
 	"bundles": {
+		"/css/module.css": [
+			"css/modules/*.css"
+		],
+		"/css/framework.css": [
+			"/css/framework/normalize.css",
+			"/css/framework/foundation.css"
+		],
 		"/css/all.css": [
+			"/css/framework.css",
 			"/css/base.css",
 			"/css/layout.css",
 			"/css/module.css",
 			"/css/theme.css",
 			"/css/state.css"
-		]	
+		]
 	},
 	"generator":{
 		"blank":true
-	}
+	},
+	"publish"       : {
+        "strategy" : "sftp",
+        "options" : {
+            "host" : "kandldev.com",
+            "username" : "kandldev",
+            "port" : "22",
+            "private_key" : "~/.ssh/id_rsa",
+            "upload_path" : "/home/kandldev/public_html/tommyjohnwear"
+        }
+    }
 }

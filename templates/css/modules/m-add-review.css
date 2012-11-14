@@ -1,0 +1,20 @@
+.add-review-form {
+	margin-bottom: 0;
+}
+
+	.add-review-form .field-group {
+		margin-bottom: .75em;
+	}
+
+	.add-review-form fieldset {
+		padding: 0;
+	}
+	
+		.add-review-form legend {
+			background-color: transparent;
+		}
+
+	.add-review-form textarea {
+		min-height: 14em;
+		width: 100%;
+	}

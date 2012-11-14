@@ -3,70 +3,65 @@
 		"title": "Meta Title",
 		"description": "Meta description"
 	},
+	"class": "is-home",
 	"stage":{
-		"heading":"Bring back the undergarment",
-		"lead":"These are the best because cosby sweater tofu, hella godard salvia vinyl kogi 3 wolf moon tattooed blog put a bird on it letterpress next level 8-bit chillwave."
+		"heading":"The fit you never knew you needed",
+		"lead":"Proper fitting undergarments are the foundation for better fitting clothes. When you look and feel your best, there’s nothing you can’t do."
 	},
 	"primary-feature":[
 		{
-			"href":"tech",
-			"img":"//placehold.it/350x200",
-			"alt":"image alt text",
-			"prepend-text": false,
-			"append-text":"What makes our underwear better than any other? <em>learn about our technology and fit</em>",
-			"append-link":"",
-			"append-link-text":""
+			"id": "pf-about",
+			"href":"about",
+			"img":"images/dudebro/dummy1.png",
+			"text":"Unmatched comfort and functionality. Not restrictive.",
+			"action": "Discover our game-changing fit"
 		},
 		{
+			"id": "pf-tech",
 			"href":"tech",
-			"img":"//placehold.it/350x200",
-			"alt":"This picture",
-			"prepend-text": false,
-			"append-text":"What makes our underwear better than any other? <em>learn about our technology and fit</em>",
-			"append-link":"",
-			"append-link-text":""
+			"img":"images/features/unlock-our-tech.jpg",
+			"text":"Upgrade to smarter fabrics and innovative design.",
+			"action": "Unlock our technology"
 		},
 		{
-			"href":"tech",
-			"img":"//placehold.it/350x200",
-			"alt":"Another picture",
-			"prepend-text": false,
-			"append-text":"What makes our underwear better than any other? <em>learn about our technology and fit</em>",
-			"append-link":"",
-			"append-link-text":""
+			"id": "pf-garauntee",
+			"href":"#garauntee",
+			"img":"images/features/guarantee.png",
+			"text":"Best undergarments on the planet or your money back.",
+			"action": "See our garauntee"
 		}
 	],
 	"secondary-feature":[
 		{
 			"href":"category",
-			"wrapper-class":"m-padding",
-			"img":"//placehold.it/350x200",
-			"append-text":"Second Skin"
+			"img":"images/features/secondskin.png",
+			"title":"Second Skin",
+			"cat": "Undershirts and Underwear",
+			"slug": "second-skin"
 		},
 		{
 			"href":"category",
-			"wrapper-class":"m-padding",
-			"img":"//placehold.it/350x200",
-			"append-text":"Sport"
+			"img":"images/features/sport.png",
+			"title":"Sport",
+			"cat": "Underwear",
+			"slug": "sport"
 		},
 		{
 			"href":"category",
-			"wrapper-class":"m-padding",
-			"img":"//placehold.it/350x200",
-			"append-link":"",
-			"append-text":"Active"
+			"img":"images/features/active.png",
+			"title":"Active",
+			"cat": "Underwear",
+			"slug": "active"
 		}
 	],
-	"tertiary-feature":[
+	"promos":[
 		{
-			"href":"challenge",
-			"append-text":"The Tommy John Challenge promo"
-		},
-		{
-			"href":"starter-kit",
+			"id": "starterkit",
+			"href":"starterkit",
 			"title":"The Starter Kit",
-			"prepend-text":"Purchase and Lorem ipsum <strong>free</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-			"append-text":"Details"
+			"text":"Buy any undershirt and underwear together and save 20% off your 1st order when you create an account with us through Facebook.",
+			"action":"Details",
+			"img": "images/promos/starterkit-feature.png"
 		}
 	]
 }

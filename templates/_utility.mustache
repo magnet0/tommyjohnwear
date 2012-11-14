@@ -1,0 +1,36 @@
+<div role="complimentary" class="os-panel">
+    <div class="os-ctl-panel">
+        <a href="#main" class="os-toggle os-close btn small"><i class="icon-remove-sign"></i> Close</a>
+    </div>
+	<div id="cart" class="minicart os-nav-bar">
+	    <div class="mc-actions">
+            <a href="cart" class="btn blue"><i class="icon-shopping-cart"></i> Review &amp; <b>Checkout</b></a>
+        </div>
+        <div class="thermo">
+            <h3 class="thermo-title">Buy more save more meter</h3>
+            <div class="thermo-range"><span class="low">0</span> <span class="high">20%</span></div>
+            <div class="meter">
+                <div class="meter-fill" style="width: 50%"><!-- this width updates and corresponds to the savings amount. Since the min is 0 and the max is 20%, then 10% is 50% width. --> 
+                    <span class="meter-fill-amount">10%</span>
+                </div>
+            </div>
+            <a href="savings-program" class="thermo-help"><small>what is this?</small></a>
+        </div>
+    	<ul class="mc-items">
+    	    {{# minicart.products }}
+            {{> m-cart-mini-item }}
+            {{/ minicart.products }}
+    	</ul>
+        <dl class="mc-totals">
+            <dt class="mct-label">Item Subtotal</dt>
+            <dd class="mct-amount">$214.00</dd>
+            <dt class="mct-label">Buy more save more discount</dt>
+            <dd class="mct-amount">- $53.00</dd>
+            <dt class="mct-label">Some other discount</dt>
+            <dd class="mct-amount">- $5.00</dd>
+            <dt class="mct-label mct-total">SubTotal</dt>
+            <dd class="mct-amount mct-total">$155.50</dd>
+            <dd><small>Tax and shipping calculated at checkout</small></dd>
+        </dl>
+	</div>
+</div>

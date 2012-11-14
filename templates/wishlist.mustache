@@ -1,0 +1,27 @@
+{{> head }}
+		
+<article role="main">
+    <!-- grid -->
+    <div class="row">
+        <div class="three centered column">
+            <!-- content -->
+            <header class="page-header">
+                <h1>{{ meta.title }}</h1>
+            </header>
+            <ul class="wishlist no-bullet">
+                {{# wishlist }}
+                {{> m-account-wishlist-item }}
+                {{/ wishlist }}
+            </ul>
+            <div class="text-center">
+                <a class="btn light" href="#email"><i class="icon-envelope"></i> Email this list to someone</a>
+            </div>
+            <!-- /content -->
+        </div>
+	</div>
+    <!-- /grid -->
+</article>
+		
+{{> sidebar }}
+
+{{> foot }}

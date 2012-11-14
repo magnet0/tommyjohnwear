@@ -1,0 +1,71 @@
+/*
+
+	Inset input
+	styling for inputs who's submit buttons are inside them, deep inside.
+	use .m-input-inset
+
+*/
+
+.m-input-inset {
+
+}
+
+	.inset-wrapper {
+		background-color: #C9CCD1;
+	    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) inset, 1px 1px 0 rgba(255, 255, 255, 0.25);
+	    display: block;
+	    height: 3em;
+	    padding: 0.25em;
+	}
+
+	.inset-wrapper[class^="icon-"], 
+	.inset-wrapper[class*=" icon-"] {
+		padding-left: 2em;
+	}
+
+	.inset-wrapper[class^="icon-"]:before, 
+	.inset-wrapper[class*=" icon-"]:before {
+		cursor: pointer;
+		font-size: 130%;
+		left: 10px;
+		margin-top: -0.6em;
+		position: absolute;
+		top: 50%;
+		-webkit-transition:all .5s ease-out;
+		-moz-transition:all .5s ease-out;
+		-o-transition:all .5s ease-out;
+		-ms-transition:all .5s ease-out;
+		transition:all .5s ease-out;
+	}
+
+	form:valid .inset-wrapper[class^="icon-"]:before, 
+	form:valid .inset-wrapper[class*=" icon-"]:before {
+		color:#2284A1;
+	}
+
+	.m-input-inset input[type="text"], 
+	.m-input-inset input[type="password"],
+	.m-input-inset input[type="email"],
+	.m-input-inset input[type="search"],
+	.m-input-inset input[type="tel"],
+	.m-input-inset input[type="url"] {
+		background-color: inherit;
+	    border: medium none;
+	    box-shadow: none;
+	    float: left;
+	    font-size: 1em;
+	    height: 2.5em;
+	    margin: 0;
+	    width: 60%;
+	}
+
+	.m-input-inset input[type="submit"],
+	.m-input-inset button {
+		background-color: #F1F1F1;
+		color:#444;
+		font-size: 1em;
+		float: right;
+    height: 2.5em;
+    padding: 0 0.5em;
+    width: 40%;
+	}

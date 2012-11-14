@@ -1,0 +1,98 @@
+/*
+	Product Review
+	including m-review-rating, m-review-write
+
+*/
+
+.m-review {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+	margin-bottom: 1.5em;
+	padding-bottom: 1.5em;
+}
+    .m-review p { color: #AAA; }
+
+	.review-rating {}
+	.review-title {}
+	.review-meta {}
+	.review-interact {}
+	
+/*	.review-author-info,
+	.review-tags,
+	.review-comments { font-size: 80%; }*/
+	.review-tags {
+		margin-bottom: 1.5em;
+	}
+	
+	.comment-list {
+		font-size: .875em;
+	}
+
+/*/////////////////////////////////////////////////
+Review-Rating - fieldset.rating
+/////////////////////////////////////////////////*/
+
+.m-review-inline .rating {
+    float: none;
+    display: inline-block;
+    margin: 0;
+    height: 1em;
+}
+
+.m-review-inline .rating:not(:checked) > label {
+    line-height: 1.25rem;
+}
+
+.rating {
+	float: left;
+	border: none;
+    margin: 0 1.5em 0 0;
+    padding: 0;
+}
+
+    .rating > label {
+        -webkit-transition: all .25s;
+           -moz-transition: all .25s;
+             -o-transition: all .25s;
+                transition: all .25s;
+    }
+
+    .rating:not(:checked) > input {
+        position: absolute;
+        top: -9999px;
+        clip: rect(0,0,0,0);
+    }
+    
+    .rating:not(:checked) > label {
+        color: #ddd;
+        cursor: pointer;
+        float: right;
+        font-size: 150%;
+        line-height: 1.5rem;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 0.875em;
+    }
+
+        .rating:not(:checked) > label:before {
+            content: '★ ';
+        }
+
+
+    .rating > input:checked ~ label {
+        color: #40190B;
+    }
+
+    .rating:not(:checked) > label:hover,
+    .rating:not(:checked) > label:hover ~ label {
+        color: #0088cc; /*@hover-blue*/
+    }
+
+    .rating > input:checked + label:hover,
+    .rating > input:checked + label:hover ~ label,
+    .rating > input:checked ~ label:hover,
+    .rating > input:checked ~ label:hover ~ label,
+    .rating > label:hover ~ input:checked ~ label {
+        color: #0088cc; /*@hover-blue*/
+    }
+
+    .rating > label:active {}

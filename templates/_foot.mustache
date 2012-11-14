@@ -1,6 +1,155 @@
         {{> footer}}
+        </div> <!-- /wrap -->
 
-        <!-- Scripts -->
+        {{> utility}}
+
+        <!-- if (product-page) { -->
+        <!-- Load modals -->
+        <div id="zoom" class="modal hide fade full" role="dialog" aria-labelledby="image-zoom" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3>Product zoom</h3>
+            </div>
+            <div class="modal-body">
+                <p>Dynamically load massive image</p>
+            </div>
+        </div>
         
+        <div id="sizing" class="modal hide fade" role="dialog" aria-labelledby="size-charts" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>Size charts</h3>
+            </div>
+            <div class="modal-body">
+                <table class="size-chart display">
+                    <caption>Undershirt sizing</caption>
+                    <thead>
+                        <tr>
+                            <th scope="row">Size</th>
+                            <th scope="col"><abbr title="Small">SM</abbr></th>
+                            <th scope="col"><abbr title="Medium">MED</abbr></th>
+                            <th scope="col"><abbr title="Large">LG</abbr></th>
+                            <th scope="col"><abbr title="Extra Large">XL</abbr></th>
+                            <th scope="col"><abbr title="2 x Extra Large">XXL</abbr></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Chest</th>
+                            <td>34–27"</td>
+                            <td>38–41"</td>
+                            <td>42–44"</td>
+                            <td>45–48"</td>
+                            <td>49–52"</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="size-chart display">
+                    <caption>Underwear sizing</caption>
+                    <thead>
+                        <tr>
+                            <th scope="row">Size</th>
+                            <th scope="col"><abbr title="Small">SM</abbr></th>
+                            <th scope="col"><abbr title="Medium">MED</abbr></th>
+                            <th scope="col"><abbr title="Large">LG</abbr></th>
+                            <th scope="col"><abbr title="Extra Large">XL</abbr></th>
+                            <th scope="col"><abbr title="2 x Extra Large">XXL</abbr></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Waist</th>
+                            <td>28–30"</td>
+                            <td>32–34"</td>
+                            <td>36–38"</td>
+                            <td>40–42"</td>
+                            <td>44–46"</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button class="btn small" data-dismiss="modal" aria-hidden="true">Close</button>
+            </div>
+        </div>
+        
+        <div id="notify" class="modal hide fade narrow" role="dialog" aria-labelledby="notify" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3>Be notified when stock is replenished</h3>
+            </div>
+            <div class="modal-body">
+                <form action="#" method="post" accept-charset="utf-8">
+                    <div class="field-group">
+                        <label for="notify-email">Email</label>
+                        <input type="email" name="notify-email" id="notify-email" value="">
+                    </div>
+                    <div class="field-group">
+                        <label for="notify-size">Size</label>
+                        <select name="notify-size" id="notify-size">
+                            <option value="Small">S</option>
+                            <option value="Medium">M</option>
+                            <option value="Large">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                    </div>
+                    <div class="field-group">
+                        <label for="notify-color">Color</label>
+                        <select name="notify-color" id="notify-color">
+                            <option value="white">White</option>
+                            <option value="black">Black</option>
+                            <option value="tan">Tan</option>
+                            <option value="red">Red</option>
+                            <option value="navy">Navy</option>
+                            <option value="gray">Gray</option>
+                        </select>
+                    </div>
+                    <div class="field-group">
+                        <br>
+                        <input class="btn" type="submit" name="notify" value="Set me up!">
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        
+        <!-- }; end-if -->
+
+        <!-- 
+            
+            Scripts
+            
+            Need to use Require.js or the like to mange async
+            loading of scripts and requirements
+            
+        -->
+        
+        <!-- Leveraging Modernizr will do for now.. -->
+        <script type="text/javascript">
+            yepnope({
+               load: [
+               'http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js',
+               'scripts/framework/bootstrap.js?{{timestamp}}',
+               'scripts/framework/foundation.js?{{timestamp}}',
+               'scripts/plugins/jquery.tagsinput.js?{{timestamp}}',
+               'scripts/plugins/plugins.js?{{timestamp}}',
+               'scripts/script.js?{{timestamp}}',
+               'scripts/magnifier.js?{{timestamp}}',
+               'scripts/facebook.js',
+               'scripts/demo.js'
+               ]
+            });
+            // Modernizr.load({
+            //     test: Modernizr.geolocation,
+            //     yep: ['scripts/geo.js']
+            // });
+            Modernizr.load({
+                test: Modernizr.details,
+                nope: ['scripts/polyfill/jquery.details.min.js', 'scripts/details.js']
+            });
+        </script>
+        <div id="fb-root"></div>
+        <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
 	</body>
 </html>

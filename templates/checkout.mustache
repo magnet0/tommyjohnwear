@@ -1,0 +1,240 @@
+{{> head }}
+
+<article role="main">
+
+    <header class="page-header">
+        <h1>{{ meta.title }}</h1>
+    </header>
+
+    <ul id="checkout" class="no-bullet">
+        <li id="identificaion" class="checkout-step">
+            <h2 class="checkout-head">
+                <i class="icon-ok sign h2"><span>1</span></i> Identification 
+            </h2>
+            <div class="checkout-content row">
+                <div class="two centered column panel detail-accordion">
+                    <details class="account-login padded">
+                        <summary class="text-center h2">
+                            Returning Customer
+                        </summary>
+                        {{> m-account-login }}
+                    </details>
+                    <details class="account-create padded">
+                        <summary class="text-center h2">
+                            New Customer
+                        </summary>
+                        {{> m-account-create }}
+                    </details>
+                </div>
+            </div>
+        </li>
+
+        <li id="billing" class="checkout-step">
+            <h2 class="checkout-head">
+                <i class="icon-ok sign h2"><span>2</span></i> Billing Address 
+            </h2>
+            <div class="checkout-content row collapse">
+                <div class="two centered column panel padded">
+                    <form action="">
+                        {{> m-account-form-billing }}
+                        <div class="input-row row space">
+                            <label for="shiptosame"><input id="shiptosame" type="checkbox" name="shipto"> Ship to billing address</label><br>
+                            <label for="giftwrap"><input id="giftwrap" type="checkbox" name="giftwrap"> Gift wrap this item <small>(add $5.00)</small></label>
+                        </div>
+                        <div class="centered three column">
+                            <a class="btn large expand secondary" href="#billing" data-target="#shipping .checkout-content">Next</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </li>
+
+        <li id="shipping" class="checkout-step">
+            <h2 class="checkout-head">
+                <i class="icon-ok sign h2"><span>3</span></i> Shipping Address 
+            </h2>
+            <div class="checkout-content row collapse">
+                <div class="two centered column panel padded">
+                    <h3 class="text-center">Use a saved address</h3>
+                    <form action="">
+                        <div class="input-row row">
+                            <label for="location">Location</label>
+                            <select name="" id="saved-location">
+                                <option value="" selected>Select Location</option>
+                                <option value="home">Home</option>
+                                <option value="work">Work</option>
+                            </select>
+                        </div>
+                    </form>
+
+                    <div id="shipping-address-preview">
+                        <!-- loop saved address -->
+                        <div id="home" class="address-preview collapse">
+                            <h4>Home</h4>
+                            {{# billing }}
+                                {{> m-account-address }}
+                            {{/ billing }}
+                        </div>
+                        <div id="work" class="address-preview collapse">
+                            <h4>Work</h4>
+                            {{# billing }}
+                                {{> m-account-address }}
+                            {{/ billing }}
+                        </div>
+                    </div>
+
+                    <p class="seperator horizontal"><em>or</em></p>
+                    <a href="#add-account" data-toggle="collapse" data-target="#add-account"><h3 class="text-center"><i class="icon-plus"></i>Add a new address</h3></a>
+                    <form action="">
+                        <div id="add-account" class="collapse">{{> m-account-form-shipping }}</div>
+                        <div class="centered three column">
+                            <a class="btn large expand secondary" href="#shipping" data-target="#shipping-method .checkout-content">Next</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </li>
+
+        <li id="shipping-method" class="checkout-step">
+            <h2 class="checkout-head">
+                <i class="icon-ok sign h2"><span>4</span></i> Shipping Method 
+            </h2>
+            <div class="checkout-content row collapse">
+                <div class="two centered column panel padded">
+                    <hr class="space">
+                    <form action="">
+                        <div class="input-row row"><label for="shipping1" class="column six"><input type="radio" name="shipping" id="shipping1"> USPS <span class="right">$x.xx</span></label></div>
+                        <div class="input-row row"><label for="shipping2" class="column six"><input type="radio" name="shipping" id="shipping2"> UPS Ground <span class="right">$x.xx</span></label></div>
+                        <div class="input-row row"><label for="shipping3" class="column six"><input type="radio" name="shipping" id="shipping3"> UPS 2 day <span class="right">$x.xx</span></label></div>
+                        <div class="input-row row"><label for="shipping4" class="column six"><input type="radio" name="shipping" id="shipping4"> UPS Overnight <span class="right">$x.xx</span></label></div>
+                        <hr class="space">
+                        <div class="centered three column">
+                            <a class="btn large expand secondary" href="#shipping-method" data-target="#payment .checkout-content">Next</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </li>
+
+        <li id="payment" class="checkout-step">
+            <h2 class="checkout-head">
+                <i class="icon-ok sign h2"><span>5</span></i> Payment Method 
+            </h2>
+            <div class="checkout-content row collapse">
+                <div class="two centered column panel padded">
+                    <form action="">
+                        {{> m-account-form-payment }}
+                        <hr class="space">
+                        <div class="centered three column">
+                            <a class="btn large expand secondary" href="#payment" data-target="#review .checkout-content">Next</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </li>
+
+        <li id="review" class="checkout-step">
+            <h2 class="checkout-head">
+                <i class="icon-ok sign h2"><span>6</span></i> Review
+            </h2>
+            <div class="checkout-content row collapse">
+                <div class="two centered column">
+                    <div class="row">
+                        <!-- cart review -->
+                        {{# cart }}
+                            {{> m-cart-table }}
+                        {{/ cart }}
+                        <!-- cart total -->
+                    </div>
+                </div>
+                <div class="checkout-content row">
+                    <div class="two centered column panel padded">
+                        <a class="btn large expand" href="thank-you"><strong>Place your order</strong></a>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout-content row collapse">
+                <div class="two centered column panel padded">
+                    <div class="row">
+                        <table class="text-right">
+                            <tr>
+                                <td><strong>Subtotal:</strong> </td>
+                                <td> $125</td>
+                            </tr>
+                            <tr>
+                                <td>Tax &amp; Shipping: </td>
+                                <td>$7</td>
+                            </tr>
+                            <tr>
+                                <td><h1 class="no-margin"><small>Total:</small></h1> </td>
+                                <td><h1 class="no-margin">$132</h1></td>
+                            </tr>
+                        </table>
+                        <!-- /cart total -->
+                        <!-- /cart review -->
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <a href="#payment" class="btn small light right co-edit" data-target="#payment .checkout-content"><i class="icon-cog"></i> edit</a>
+                        <h3>Payment info</h3>
+                        {{> m-account-payment }}
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <!-- billing info review -->
+                        <a href="#billing" class="btn small light right co-edit" data-target="#billing .checkout-content"><i class="icon-cog"></i> edit</a>
+                        <h3>Billing info</h3>
+                        <div id="billing-address" class="address-review">
+                            {{# billing }}
+                                {{> m-account-address }}
+                            {{/ billing }}
+                        </div>
+                        <!-- /billing info review -->
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <!-- shipping info review -->
+                        <a href="#shipping" class="btn small light right co-edit" data-target="#shipping .checkout-content"><i class="icon-cog"></i> edit</a>
+                        <h3>Shipping info</h3>
+                        <div id="shipping-address" class="address-review">
+                            {{# shipping }}
+                                {{> m-account-address }}
+                            {{/ shipping }}
+                        </div>
+                        <!-- /shipping info review -->
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <form action="" class="">
+                            <div class="input-row row">
+                                <input type="hidden"> <!-- use hidden fields + javascript to gather all the data from above forms? -->
+                                <label for="newsletter"><input id="newsletter" type="checkbox" name="newsletter" checked> Sign up for the occasional newsletter</label><br>
+                                <small><a href="/page">View our Privacy Policy</a></small>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- /cart total -->
+                </div>
+                <!-- /account review   -->
+                    <hr class="space">
+                    <div class="checkout-content row">
+                        <div class="two centered column panel padded">
+                            <a class="btn large expand" href="thank-you"><strong>Place your order</strong></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+</article>
+
+{{> foot }}
+
+<script type="text/javascript">
+    // $(document).ready(function() {
+    //    $('.checkout-step a.btn').click(function(){
+    //     $(this).parents('.checkout-step').children('.checkout-head').addClass('checkout-complete');
+    //    });
+    // });
+</script>

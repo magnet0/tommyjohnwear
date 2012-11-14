@@ -1,0 +1,184 @@
+/* --- Primary Thermometer --- */
+.thermo {
+	background-color: #454545; /*@tjgray*/
+	padding: .75em;
+}
+
+	.thermo-title {
+		font-size: 1em;
+		color: #F1F1F1;
+		margin-bottom: 0;
+	}
+	
+	.thermo-help {
+		border-bottom: none;
+		font-size: .875em;
+		line-height: 1;
+	}
+	
+	.thermo-range {
+		overflow: hidden;
+		font-size: .75em;
+	}
+	
+		.thermo-range:after {
+			content: " ";
+			padding-top: .75em;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+			display: block;
+		}
+	
+		.thermo-range .high,
+		.thermo-range .low {
+			padding: 0 .5em;
+			background-color: #454545;
+		}
+	
+		.thermo-range .high {
+			float: right;
+		}
+		
+		.thermo-range .low {
+			float: left;
+		}
+	
+	.meter {
+		padding: 1px;
+		border-radius: 1em;
+		background-color: rgba(0, 0, 0, 0.3);
+		font-size: .75em;
+	}
+	
+		.meter-fill {
+			text-align: right;
+			border-radius: 1em;
+			background-color: #08C;
+		}
+		
+			.meter-fill-amount {
+				color: white;
+				padding: 0 .75em;
+			}
+	
+/* --- Mini Meter --- */
+.cart-thermo {
+	color: #F1F1F1;
+	background-color: #40190B;
+	text-align: center;
+	margin-top: -1.25em;
+	top: 50%;
+	right: 1em;
+	position: absolute;
+	width: 4em;
+	float: right;
+	height: 2.5em;
+	overflow: hidden;
+}
+
+	.cart-thermo-amount {
+		line-height: 2;
+		font-family: sans-serif;
+		font-size: .75em;
+		text-transform: none;
+	}
+
+.mini-meter {
+	
+	margin: auto;
+	background: rgba(255, 255, 255, 0.3);
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	height: 3em;
+	overflow: hidden;
+	position: relative;
+	width: 3em;
+	
+/*    background: #ef4136;
+    -webkit-border-radius: 100%;
+       -moz-border-radius: 100%;
+            border-radius: 100%;
+    height: 3em;
+    overflow: hidden;
+    position: relative;
+    width: 3em;*/
+}
+
+    .mm-needle {
+        border: solid transparent;
+        border-width: .25em 5em .25em 0;
+        border-right-color: #65c7be;
+        border-radius: 0 .25em .25em 0;
+        left: 0;
+        margin-top: -.125em;
+        position: absolute;
+        height: 0;
+        top: 50%;
+        width: 0;
+        -webkit-transition: all .25s;
+           -moz-transition: all .25s;
+             -o-transition: all .25s;
+                transition: all .25s;
+        -webkit-transform-origin: right center;
+           -moz-transform-origin: right center;
+             -o-transform-origin: right center;
+                transform-origin: right center;
+    }
+    
+    
+    .mini-meter:after {
+        display: none;
+        content: ' ';
+    }
+    
+    .mini-meter:after,
+    .mm-pie {
+        background: #65c7be;
+        -webkit-border-radius: 0 0 5em 5em;
+           -moz-border-radius: 0 0 5em 5em;
+                border-radius: 0 0 5em 5em;
+        height: 1.5em;
+        left: 0;
+        position: absolute;
+        top: 50%;
+        width: 3em;
+    }
+    
+    .mm-pie {
+        -webkit-transition: all .25s;
+           -moz-transition: all .25s;
+             -o-transition: all .25s;
+                transition: all .25s;
+        -webkit-transform-origin: center top;
+           -moz-transform-origin: center top;
+             -o-transform-origin: center top;
+                transform-origin: center top;
+    }
+        
+        .is-5-percent {
+            -webkit-transform: rotate(45deg);
+               -moz-transform: rotate(45deg);
+                 -o-transform: rotate(45deg);
+                    transform: rotate(45deg);
+        }
+            
+        .is-10-percent {
+            -webkit-transform: rotate(90deg);
+               -moz-transform: rotate(90deg);
+                 -o-transform: rotate(90deg);
+                    transform: rotate(90deg);
+        }
+        
+        .is-15-percent {
+            -webkit-transform: rotate(135deg);
+               -moz-transform: rotate(135deg);
+                 -o-transform: rotate(135deg);
+                    transform: rotate(135deg);
+        }
+            
+        .is-20-percent {
+            -webkit-transform: rotate(180deg);
+               -moz-transform: rotate(180deg);
+                 -o-transform: rotate(180deg);
+                    transform: rotate(180deg);
+        }

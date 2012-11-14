@@ -1,24 +1,24 @@
 {{> head }}
 		
 <article role="main">
-    <header class="stage">
+    <header class="m-stage">
         
-        <div class="l-wrapper">
-            <h1 class="heading">{{stage.heading}}</h1>
-            <p class="lead">{{stage.lead}}</p>
+        <div class="row">
+            <div class="m-stage-content four centered column">
+                <h1 class="heading">{{stage.heading}}</h1>
+                <p class="lead">{{stage.lead}}</p>
+            </div>
         </div>
         
 	</header>
 	<div class="content">
 	    
-	    <div class="l-wrapper">
-    	    <div class="l-grid-six">    
-            {{#undershirts}}
-                <div class="l-block-quarter">
+	    <div class="row">
+            {{#cat-items}}
+                <div class="quarter column">
                     {{> m-item }}
                 </div>
-            {{/undershirts}}
-            </div>
+            {{/cat-items}}
         </div>
         
 	</div>

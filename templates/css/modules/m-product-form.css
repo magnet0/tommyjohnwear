@@ -1,0 +1,154 @@
+/*
+
+	Product shopping cart form
+	including m-product-form-size, m-product-form-color
+
+*/
+
+.m-product-form { padding: 1.5em 1.5em 0; }
+
+	.product-form-title {
+		font-size: 2.5em;
+		line-height: 1;
+		margin: 0 0 .25em;
+	}
+
+		.product-form-price { margin: 0 0 1em; }
+
+	.product-form-size,
+	.product-form-color { padding: 0; }
+	
+	.product-description {
+		border: solid rgba(0, 0, 0, 0.125);
+		border-width: 1px 0 0;
+		margin: 1.5em 0 0;
+		padding: 1.5em 0;
+	}
+	
+	.product-form-action {
+		padding-top: .75em;
+	}
+	
+	.product-form-action .btn {
+		display: block;
+		margin-bottom: .75em;
+	}
+	
+	.review-preview {
+		border: solid rgba(0, 0, 0, 0.125);
+		border-width: 0 0 1px;
+		margin-bottom: 1.5em;
+	}
+	
+		.review-preview .pslist { clear: both; }
+	
+	/*/////////////////////////////////////////////////
+	Product size modual
+	/////////////////////////////////////////////////*/
+
+	.product-form-size {}
+	
+		.product-form-size > legend { background:none; margin: 0; }
+
+		.product-form-size label {
+	        -webkit-transition: all .25s;
+	           -moz-transition: all .25s;
+	             -o-transition: all .25s;
+	                transition: all .25s;
+	    }
+
+		.product-form-size:not(:checked)  input {
+			position: absolute;
+			top: -9999px;
+			clip: rect(0,0,0,0);
+		}
+
+		.product-form-size:not(:checked)  label {
+			background-color: #F3F4F9;
+			border-width:1px;
+			border-style:solid;
+			border-color:#EAEBEF #EAEBEF #F9F9F9 #F9F9F9;
+			box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.2);
+			cursor: pointer;
+			margin: 0 -3px;
+			padding: 0.6em 1em;
+    }
+
+		.product-form-size:not(:checked)  label:hover {
+			color:#2284A1;
+    }
+
+		.product-form-size  label .hide-on-small-screen {
+			display: none;
+    }
+			/*button activated*/    	
+	    .product-form-size  input:checked + label {
+				background-color: #FFF;
+				box-shadow: inset 0 0.5px 1px rgba(0, 0, 0, 0.2);
+				color:inherit;
+	    }
+			/*button pressed*/
+			.product-form-size:not(:checked) input:not([disabled]) + label:active {
+				background-color: #FFF;
+				box-shadow: inset 0 0.5px 1px rgba(0, 0, 0, 0.2);
+				color:#2284A1;
+	    }
+			/*button disabled*/
+	    .product-form-size  input[disabled] + label {
+				background-color: transparent;
+				border:none;
+				box-shadow: none;
+				color:#CCC;
+	    }
+	
+	/*/////////////////////////////////////////////////
+	Product color modual
+	/////////////////////////////////////////////////*/
+	
+	.product-form-color {}
+	
+		.product-form-color legend { background:none; margin: 0; }
+
+		.product-form-color label {
+	        -webkit-transition: all .25s;
+	           -moz-transition: all .25s;
+	             -o-transition: all .25s;
+	                transition: all .25s;
+	    }
+
+		.product-form-color:not(:checked) input {
+	        position: absolute;
+	        top: -9999px;
+	        clip: rect(0,0,0,0);
+	    }
+
+		.product-form-color:not(:checked) label {
+			box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.2);
+			cursor: pointer;
+			margin: 0 -3px;
+			padding: 0.6em 1em;
+	    }
+
+	  .product-form-color:not(:checked) label > i { visibility: hidden; }
+	    /*button hover*/
+			.product-form-color:not(:checked) input:not([disabled]) + label:hover > i {
+				visibility: visible;
+				color:rgba(125,125,125,.5);
+			}
+	    /*button pressed*/
+			.product-form-color:not(:checked) input:not([disabled]) + label:active {
+				box-shadow: inset 0 0.5px 1px rgba(0, 0, 0, 0.2);
+	    }
+	    /*button disabled*/
+	    .product-form-color input[disabled] + label {
+				
+	    }
+
+	  	/*button activated*/
+	  	.product-form-color input:checked + label > i { 
+	  		visibility: visible; 
+				color:#69C771 !important;
+	  	}
+	    .product-form-color input:checked + label {
+				box-shadow: inset 0 0.5px 1px rgba(0, 0, 0, 0.2);
+	    }

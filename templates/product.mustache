@@ -1,0 +1,80 @@
+{{> head }}
+		
+<article role="main">
+    <div class="content row">
+        <div class="row">
+            <div class="column three mobile-four">
+                {{> m-product-image-viewer }}
+            </div>
+            <div class="column three mobile-four">
+                {{> m-product-form }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="column three centered">
+                <div class="product-description">
+                    <h2 class="text-center">Description</h2>
+                    <p class="product-form-description">
+                        {{{ product.description }}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="product-attributes bkg-light row">
+            <h2 class="text-center">{{product.name}} Features</h2>
+            <div class="m-feature">
+                {{#primary-feature}}
+                {{> m-product-attribute}}
+                {{/primary-feature}}
+            </div>
+            <div class="row text-center space">
+                <a class="btn large" href="technology">Learn more about our <strong>technologies</strong> &nbsp;<i class="icon-chevron-right"></i></a>
+            </div>
+        </div>
+        
+        <aside class="related-products row">
+            <div class="column four centered mobile-two">
+            <h2 class="text-center space">You might also be interested in</h2>
+            <div class="row space">    
+            {{#cat-items}}
+                <div class="quarter column">
+                    {{> m-item }}
+                </div>
+            {{/cat-items}}
+            </div>
+            </div>
+        </aside>
+        
+        <div id="reviews" class="reviews row bkg-light">
+            <div class="row space">
+                <div class="two centered column text-center">
+                    <h2>Reviews for {{ product.category }} {{ product.name }}</h2>
+                    <a href="">Write a review</a> | Average Rating <span class="m-review-inline">{{> m-review-rating }}</span>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="two centered column">
+                    <!-- reviews -->
+                    {{# reviews }}
+                        {{> m-review }}
+                    {{/ reviews }}
+                    <!-- /reviews -->
+                    <hr class="space">
+                    <div class="review-actions">
+                        <a href="#load-review-form" class="btn large expand" type="button"><i class="icon-pencil left"></i> Write a review</a>
+                        {{> m-review-create}}
+                        <hr class="space">
+                        <a href="#load-more-reviews" class="btn large expand secondary" type="button">Read more reviews</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="space">
+        </div>
+	</div>
+</article>
+		
+{{> sidebar }}
+
+{{> foot }}
