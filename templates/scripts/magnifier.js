@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
-	var native_width = 1620;
-	var native_height = 2112;
+	var native_width = 1215;
+	var native_height = 1584;
 
 	// var zoomedsrc = $('.magnifier').data('zoom-img');
 	// $('.magnifier').css('background-image', zoomedsrc);

@@ -24,13 +24,11 @@
 			"children":[
 				{
 					"child-title":"Your Account",
-					"child-id":"account",
-					"icon":"cogs"
+					"child-id":"account"
 				},
 				{
 					"child-title":"Your Wishlist",
-					"child-id":"wishlist",
-					"icon":"gift"
+					"child-id":"wishlist"
 				}
 			]
 		}

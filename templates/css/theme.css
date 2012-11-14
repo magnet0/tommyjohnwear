@@ -450,10 +450,10 @@ header[role="banner"] {
 		}
 
 
-		.promo-bar {
+/*		.promo-bar {
 			position: relative;
 			z-index: 1;
-		}
+		}*/
 
 
 	/*/////////////////////////////////////////////////
@@ -636,6 +636,31 @@ Modules
 .referral-aside {
 	text-align: center;
 }
+
+/*
+
+	PROMOS
+
+*/
+#starterkit {
+	position: relative;
+}
+#starterkit .hp-content {
+	background-color: #eef0f7;
+	border: solid rgba(0, 0, 0, .125);
+	border-width: 1px 0;
+	margin-top: -12.5%;
+	padding: 1.5em;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+}
+	#starterkit .hp-title,
+	#starterkit .hp-content p {
+		margin-bottom: 0;
+	}
+
 
 /*
 

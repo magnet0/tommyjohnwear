@@ -287,10 +287,12 @@ Divider - div.m-divider>span{text}
 }
 
 	.seperator em {
+		line-height: 1;
+		border-radius: 1.5em;
 		background-color: #DEDFE4;
 		font-style: normal;
 		font-weight: bold;
-		padding: 0 0.5em;
+		padding: .25em 0.4em;
 	}
 
 /*/////////////////////////////////////////////////

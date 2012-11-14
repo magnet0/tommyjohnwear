@@ -26,7 +26,7 @@
 		{
 			"id": "pf-garauntee",
 			"href":"#garauntee",
-			"img":"images/features/guarantee.jpg",
+			"img":"images/features/guarantee.png",
 			"text":"Best undergarments on the planet or your money back.",
 			"action": "See our garauntee"
 		}
@@ -56,10 +56,12 @@
 	],
 	"promos":[
 		{
+			"id": "starterkit",
 			"href":"starterkit",
 			"title":"The Starter Kit",
-			"text":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-			"action":"Details"
+			"text":"Buy any undershirt and underwear together and save 20% off your 1st order when you create an account with us through Facebook.",
+			"action":"Details",
+			"img": "images/promos/starterkit-feature.png"
 		}
 	]
 }

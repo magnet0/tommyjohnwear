@@ -127,6 +127,19 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 		.nav-bar.util .nav-item a {
 			display: inline-block;
 		}
+		
+	/* --- @medium cart thermometer --- */
+	.is-discounting { /*add this to the cart link*/
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+		border: 1px solid rgba(0, 0, 0, 0.4);
+		padding-right: 5em;
+		margin-right: 1em;
+	}
+	
+		.is-discounting .cart-thermo {
+			display: block;
+		}
+	
 	
 	/* --- @medium stage --- */
 	.is-home .m-stage:after {
@@ -137,7 +150,12 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 		padding-right: 33.333333333%;
 		text-align: left;
 	}
-		
+	
+	/* --- @medium2 featurettes --- */
+	.m-primary-feature {
+		min-height: 15em;
+	}
+			
 	/* -- @medium product viewer --- */
 	.image-viewer-display {
 		margin-left: 20%;
@@ -159,8 +177,17 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 	.is-home .m-stage:after {
 		background-image: url(../images/stage/stage-home-large.png);
 	}
+	
+	/* --- @medium2 featurettes --- */
+	.m-primary-feature {
+		background-position: center center;
+		background-size: cover;
+		margin: 0 .75em;
+		min-height: 20em;
+		padding-bottom: 0;
+	}
 
-	/* --- @medium Product --- */
+	/* --- @medium2 Product --- */
 	.m-product-image-viewer {
 		width: 100%;
 	}
@@ -233,6 +260,7 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 	/* --- @large Featurettes --- */
 	.m-primary-feature {
 		margin: 0 1.5em;
+		min-height: 18em;
 	}
 	
 	/* --- @large tech page --- */
@@ -283,6 +311,11 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 		text-align: center;
 	}
 	
+	/* --- @large2 Featurettes --- */
+	.m-primary-feature {
+		min-height: 16em;
+	}
+	
 	/* --- @large product attributes --- */
 /*	.product-attr {
 		min-height: 9em;
@@ -298,8 +331,8 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 	/* --- @wide Featurettes --- */
 	.m-primary-feature {
 		margin: 0 2.333333333em;
+		min-height: 13em;
 	}
-	
 	
 	/* --- @wide Stage --- */
 	.is-home .m-stage:after {

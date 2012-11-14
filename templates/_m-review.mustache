@@ -19,19 +19,22 @@
                     <a class="tag label" href="#tag-">ball hugging</a> <a class="tag label" href="#tag-">sexy</a> <a class="tag label" href="#tag-">comfortable</a> <a class="tag label" href="#tag-">abs exposing</a>
                 </div>
                 <div class="review-interact">
-                    <p><small><a href="">comment</a> | Was this review helpful?</small> <a class="btn small light" href="">Yes</a> <a class="btn small light" href="">No</a></p>
-                    <h4 class="no-margin">Comments</h4>
-                    <ol class="comment-list">
-                        <li class="comment-item">
-                            <p class="review-meta">
-                                <span class="review-date">{{ date }}</span>
-                                <span class="review-author">By <a href="">{{ author }}</a></span>
-                            </p>
-                            <div class="comment-content">
-                                Well said. I love the way this shirt hugs me.
-                            </div>
-                        </li>
-                    </ol>
+                    <p><small><a href="#add-comment">comment</a> | Was this review helpful?</small> <a class="btn small light" href="">Yes</a> <a class="btn small light" href="">No</a></p>
+                    {{>m-review-comment}}
+                    <div class="review-comments">
+                        <h4 class="no-margin">Comments</h4>
+                        <ol class="comment-list">
+                            <li class="comment-item">
+                                <p class="review-meta">
+                                    <span class="review-date">{{ date }}</span>
+                                    <span class="review-author">By <a href="">{{ author }}</a></span>
+                                </p>
+                                <div class="comment-content">
+                                    Well said. I love the way this shirt hugs me.
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
                 </div>
             </div>
             <!-- /single review -->

@@ -131,16 +131,22 @@ $(document).ready(function() {
 	
 	// 
 	// Add a review prototype
-	// 
-	var revformhandle = $('a[href=#load-review-form]');
-	var revform = $('.add-review');
+	//
 	
-	revform.hide();
-	
-	revformhandle.click(function() {
-		$(this).hide();
-		revform.show();
-	});
+	function showTarget(handle,target) {
+		target.hide();
+		handle.click(function(e) {
+			e.preventDefault();
+			target.show();
+		});
+	}
+
+	function hideTarget(handle,target) {
+		handle.click(function(e) {
+			e.preventDefault();
+			target.hide();
+		});
+	}
 
 	/*
 	
@@ -184,5 +190,10 @@ $(document).ready(function() {
 	itmRemove($('.mci-delete'), $('.mc-item'));	// removing items from minicart
 	$('[rel=tooltip]').tooltip(); // tooltips, global
 	$('.tag-input').tagsInput(); // tags in input fields
+	
+	// hide and show review and comment forms
+	showTarget($('a[href=#load-review-form]'), $('.add-review'));
+	showTarget($('a[href=#add-comment]'), $('.review-comment'));
+	hideTarget($('.hide-handle'), $('.hide-target'));
 	
 });

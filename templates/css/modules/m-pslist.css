@@ -19,3 +19,7 @@
 			padding: 0;
 			vertical-align: middle;
 		}
+		
+		.pslist-item a {
+			border: none;
+		}

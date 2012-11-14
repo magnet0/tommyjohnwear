@@ -130,12 +130,12 @@
             yepnope({
                load: [
                'http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js',
-               'scripts/framework/bootstrap.js',
-               'scripts/framework/foundation.js',
-               'scripts/plugins/jquery.tagsinput.js',
-               'scripts/plugins/plugins.js',
-               'scripts/script.js',
-               'scripts/magnifier.js',
+               'scripts/framework/bootstrap.js?{{timestamp}}',
+               'scripts/framework/foundation.js?{{timestamp}}',
+               'scripts/plugins/jquery.tagsinput.js?{{timestamp}}',
+               'scripts/plugins/plugins.js?{{timestamp}}',
+               'scripts/script.js?{{timestamp}}',
+               'scripts/magnifier.js?{{timestamp}}',
                'scripts/facebook.js',
                'scripts/demo.js'
                ]
@@ -150,5 +150,6 @@
             });
         </script>
         <div id="fb-root"></div>
+        <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
 	</body>
 </html>
