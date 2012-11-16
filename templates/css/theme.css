@@ -664,9 +664,177 @@ Modules
 
 /*
 
-	Interactive Diagram
+	Tech Interactive Diagram
 
 */
+
+
+	/* orbit loading */
+	#tech-hero {
+		background: url(../images/foundation/orbit/loading.gif) no-repeat center center;
+		min-height: 40em;
+	}
+	#tech-hero img {
+		opacity: 0;
+		-webkit-transition: opacity 1s;
+		   -moz-transition: opacity 1s;
+		     -o-transition: opacity 1s;
+		        transition: opacity 1s;
+	}
+	#tech-hero.orbit {
+		background: none;
+		min-height: auto;
+	}
+	#tech-hero.orbit img {
+		opacity: 1;
+	}
+
+.tech-stage {
+	position: relative;
+	padding-bottom: 3em;
+}
+
+	.tech-stage .js-hidden {
+		display: none;
+		opacity: 0;
+	}
+
+	.tech-hero-img {
+		height: 100%;
+		width: auto;
+	}
+	
+	.tech-stage .carousel {
+		border: solid rgba(0, 0, 0, 0.2);
+		border-width: 1px 0;
+	}
+
+/* -- the "bullets" --- */
+.tech-item-list {
+	margin: 0;
+}
+
+	.tech-item-list .tech-item {
+		list-style: none;
+	}
+
+		.tech-item-list .tech-item a {
+			display: inline-block;
+			border: none;
+			padding: 0.25em;
+			position: absolute;
+		}
+		
+			.tech-item-list .tech-item a:hover {
+				background-color: #65c7be;
+			}
+		
+		.tech-item-list .tech-item img {
+			vertical-align: middle;
+		}
+		
+		.tech-item-title {
+			display: none;
+		}
+	
+	/* undershirt positioning */
+	.tech-item a[href="#tailored-stretch"] {
+		left: 55%;
+		top: 50%;
+	}
+	.tech-item a[href="#micro-modal"] {
+		left: 35%;
+		top: 25%;
+	}
+	.tech-item a[href="#memory-collar"] {
+		left: 50%;
+		top: 10%;
+	}
+	
+	/* underwear positioning */
+	.tech-item a[href="#quick-draw"] {
+		left: 50%;
+		top: 25%;
+	}
+	.tech-item a[href="#360-stretch"] {
+		left: 72%;
+		top: 40%;
+	}
+	.tech-item a[href="#utility-pocket"] {
+		left: 22%;
+		top: 25%;
+	}
+	.tech-item a[href="#mesh-ventilation"] {
+		left: 48%;
+		top: 60%;
+	}
+	
+	
+
+
+/* overlay */
+.tech-overlay {
+	background-color: #40190b;
+	background-color: rgba(64, 25, 11, 0.9);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+	-webkit-transition: opacity .5s;
+	   -moz-transition: opacity .5s;
+	     -o-transition: opacity .5s;
+	        transition: opacity .5s;	
+}
+
+	.tech-overlay a {
+		color: #f1f1f1;
+	}
+	
+	.overlay-controls {
+		padding: .75em;
+		text-align: center;
+	}
+		.overlay-controls a { border: none; }
+	
+	
+.tech-feature-section,
+.feature-section-title {
+	color: #65c7be;
+}
+
+.tech-feature-section {
+	/* move to state.css */
+	width: 66.666666666%;
+	margin-left: -33.333333333%;
+	/**/
+	
+	
+	margin-top: -12.5%;
+	padding: 1.5em;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transition: opacity .25s;
+	   -moz-transition: opacity .25s;
+	     -o-transition: opacity .25s;
+	        transition: opacity .25s;
+}
+
+.feature-section-title {
+	font-size: 300%;
+	line-height: 1;
+	margin-bottom: .5em;
+	margin-top: 0;
+}
+
+.tech-feature-section p {
+	font-size: 1.5em;
+}
+
+
+
 /* Us */
 #blt-1 {
 	left: 25%;

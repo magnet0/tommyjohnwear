@@ -27,6 +27,16 @@
 		font-size: .875em;
 	}
 
+/*
+
+	Display rating (non-interactive)
+
+*/
+.star-rated {
+	color: #40190B;
+}
+
+
 /*/////////////////////////////////////////////////
 Review-Rating - fieldset.rating
 /////////////////////////////////////////////////*/

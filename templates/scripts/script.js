@@ -147,6 +147,12 @@ $(document).ready(function() {
 			target.hide();
 		});
 	}
+	// Showing how deleting items would look
+	function itmRemove(trig,item) {
+		trig.click(function() {
+			$(this).parent(item).fadeOut();
+		});
+	}
 
 	/*
 	
@@ -173,13 +179,7 @@ $(document).ready(function() {
 		$(this).siblings().toggleClass('is-open');
 	})
 
-
-	// Showing how deleting items would look
-	function itmRemove(trig,item) {
-		trig.click(function() {
-			$(this).parent(item).fadeOut();
-		});
-	}
+	
 
 	/*
 	
@@ -195,5 +195,13 @@ $(document).ready(function() {
 	showTarget($('a[href=#load-review-form]'), $('.add-review'));
 	showTarget($('a[href=#add-comment]'), $('.review-comment'));
 	hideTarget($('.hide-handle'), $('.hide-target'));
+	
+	// tech orbit
+	$("#tech-hero").orbit({
+		animationSpeed: 250,
+		fluid: '4x3',
+		timer: false,
+		directionalNav: true
+	});
 	
 });
