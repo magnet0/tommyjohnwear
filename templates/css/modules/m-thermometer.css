@@ -60,7 +60,25 @@
 				padding: 0 .75em;
 			}
 	
-/* --- Mini Meter --- */
+
+/*
+	
+	Image based mini meter
+
+*/
+.mini-thermo {
+	display: none; /*hide on mobile default*/
+	margin-left: .5em;
+	position: relative;
+	vertical-align: middle;
+}
+
+
+/* --- Mini Meter
+
+	Dynamic non image based meter. Not used yet
+
+--- */
 .cart-thermo {
 	color: #F1F1F1;
 	background-color: #40190B;

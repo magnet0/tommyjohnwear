@@ -128,16 +128,13 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 			display: inline-block;
 		}
 		
-	/* --- @medium cart thermometer --- */
-	.is-discounting { /*add this to the cart link*/
-		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-		border: 1px solid rgba(0, 0, 0, 0.4);
-		padding-right: 5em;
-		margin-right: 1em;
-	}
+		.mini-thermo {
+			display: inline; /*show thermometer*/
+		}
 	
-		.is-discounting .cart-thermo {
-			display: block;
+		.nav-bar.util .nav-item .cart-link {
+			padding-bottom: 0;
+			padding-top: 0;
 		}
 	
 	
