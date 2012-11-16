@@ -64,6 +64,14 @@ body {
 	overflow-x: hidden;
 }
 
+/* Cat headings */
+.cat-title {
+	border: solid rgba(0, 0, 0, 0.2);
+	border-width: 1px 0;
+	margin-bottom: 0;
+	padding: 1em;
+}
+
 /* Lead */
 .lead {
 	font-size: 1.125em;

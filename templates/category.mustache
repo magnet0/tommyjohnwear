@@ -14,6 +14,15 @@
 	<div class="content">
 	    
 	    <div class="row">
+	        <h2 class="cat-title text-center">Undershirts</h2>
+            {{#cat-items}}
+                <div class="quarter column">
+                    {{> m-item }}
+                </div>
+            {{/cat-items}}
+        </div>
+        <div class="row">
+	        <h2 class="cat-title text-center">Underwear</h2>
             {{#cat-items}}
                 <div class="quarter column">
                     {{> m-item }}

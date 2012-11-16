@@ -6,7 +6,9 @@
 
 */
 
-.cat-item {}
+.cat-item {
+	margin-bottom: 1.5em;
+}
 	
 	.cat-link {
 		border: none;
