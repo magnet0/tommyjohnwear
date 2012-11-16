@@ -1,57 +1,136 @@
 {{> head }}
 		
 <article role="main">
-    <header class="m-stage row">
+    <header class="m-stage tech-stage row">
         
         <div class="four column centered">
             <div class="m-stage-content text-center">
                 <h1 class="heading">{{stage.heading}}</h1>
                 <p class="lead">{{stage.lead}}</p>
-                
-                <!-- <div class="two centered column text-center">
-                    <figure class="video-btn">
-                        <a href="#play-video" class="video-btn-link">
-                            <img src="http://placehold.it/357x191" class="video-btn-thmb">
-                            <figcaption class="video-btn-cap">Watch <em>Us vs. Them</em></figcaption>
-                        </a>
-                    </figure>
-                </div> -->
+                <!-- orbit carousel -->
+                <div id="tech-hero" class="carousel">
+                    <div>
+                        <ul class="tech-item-list">
+                            <li class="tech-item">
+                                <a href="#tailored-stretch">
+                                    <img src="images/icons/logomark.png" alt="">
+                                    <span class="tech-item-title">Tailored stretch technology</span>
+                                </a>
+                            </li>
+                            <li class="tech-item">
+                                <a href="#micro-modal">
+                                    <img src="images/icons/logomark.png" alt="">
+                                    <span class="tech-item-title">Non-Piling Micro Modal fabric</span>
+                                </a>
+                            </li>
+                            <li class="tech-item">
+                                <a href="#memory-collar">
+                                    <img src="images/icons/logomark.png" alt="">
+                                    <span class="tech-item-title">Memory Collar</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <img src="images/dudebro/dummy-techdude.png" class="tech-hero-img">
+                    </div>
+                    <div>
+                        <ul class="tech-item-list">
+                            <li class="tech-item">
+                                <a href="#quick-draw">
+                                    <img src="images/icons/logomark.png" alt="">
+                                    <span class="tech-item-title">Quick Draw Fly</span>
+                                </a>
+                            </li>
+                            <li class="tech-item">
+                                <a href="#360-stretch">
+                                    <img src="images/icons/logomark.png" alt="">
+                                    <span class="tech-item-title">360 degree stretch fabric</span>
+                                </a>
+                            </li>
+                            <li class="tech-item">
+                                <a href="#utility-pocket">
+                                    <img src="images/icons/logomark.png" alt="">
+                                    <span class="tech-item-title">Utility pocket</span>
+                                </a>
+                            </li>
+                            <li class="tech-item">
+                                <a href="#mesh-ventilation">
+                                    <img src="images/icons/logomark.png" alt="">
+                                    <span class="tech-item-title">Mesh ventilation</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <img src="images/stage/stage-tech-underwear.png" class="tech-hero-img">
+                    </div>
+                </div>
+                <!-- /orbit carousel -->
+                <p>{{stage.copy}}</p>
             </div>
         </div>
-        
-    </header>
-
-    <div class="content">
-
-        <div class="row">
-            <div class="centered m-huge-promo">
-                <h2>Us <span class="downcase">vs.</span> Them</h2>
-                <div class="row">
-                    <div class="three column comparison-item">
-                        <img src="images/vs-them.jpg" alt="Box cut undershirt">
-                        <h3>Before</h3>
-                        <p>This is the standard “box cut” undershirt that our competitors make. You are likely wearing one right now and suffering from the dreaded EFG “excess fabric gut” appearance, bunching up, and untucking. Unfortunately, they don’t really fit or work at all as an undershirt.</p>
-                    </div>
-                    <div class="three column comparison-item">
-                        <img src="images/vs-us.jpg" alt="Our slim fitting undershirt">
-                        <h3>After</h3>
-                        <p>This is the same model in a Tommy John undershirt. This image is very powerful in that it visually shows <em>why</em> our undershirt actually works.</p>
-                    </div>
+        <div class="overlay tech-overlay js-hidden">
+            <!-- undershirt -->
+            <div id="tailored-stretch" class="tech-feature-section js-hidden">
+                <h2 class="feature-section-title">Tailored stretch technology</h2>
+                <p>ensures undershirt stays tucked in all day long</p>
+                <div class="overlay-controls">
+                    <a href="#tech-hero" class="overlay-close"><i class="icon-remove icon-large"></i></a>
+                </div>
+            </div>
+            <div id="micro-modal" class="tech-feature-section js-hidden">
+                <h2 class="feature-section-title">Non-Piling Micro Modal fabric</h2>
+                <p>Silky soft and lightweight for enhanced feel</p>
+                <div class="overlay-controls">
+                    <a href="#tech-hero" class="overlay-close"><i class="icon-remove icon-large"></i></a>
+                </div>
+            </div>
+            <div id="memory-collar" class="tech-feature-section js-hidden">
+                <h2 class="feature-section-title">Memory Collar</h2>
+                <p>Put an end to bacon neck collars</p>
+                <div class="overlay-controls">
+                    <a href="#tech-hero" class="overlay-close"><i class="icon-remove icon-large"></i></a>
+                </div>
+            </div>
+            <!-- underwear -->
+            <div id="quick-draw" class="tech-feature-section js-hidden">
+                <h2 class="feature-section-title">Quick Draw Fly</h2>
+                <p>Horizontal fly for quick access when nature calls</p>
+                <div class="overlay-controls">
+                    <a href="#tech-hero" class="overlay-close"><i class="icon-remove icon-large"></i></a>
+                </div>
+            </div>
+            <div id="360-stretch" class="tech-feature-section js-hidden">
+                <h2 class="feature-section-title">360 degree stretch fabric</h2>
+                <p>Moves with your body in all directions to prevent riding up and bunching</p>
+                <div class="overlay-controls">
+                    <a href="#tech-hero" class="overlay-close"><i class="icon-remove icon-large"></i></a>
+                </div>
+            </div>
+            <div id="utility-pocket" class="tech-feature-section js-hidden">
+                <h2 class="feature-section-title">Utility pocket</h2>
+                <p>Stash pocket for ID, keys, cash, iPod(tm), etc</p>
+                <div class="overlay-controls">
+                    <a href="#tech-hero" class="overlay-close"><i class="icon-remove icon-large"></i></a>
+                </div>
+            </div>
+            <div id="mesh-ventilation" class="tech-feature-section js-hidden">
+                <h2 class="feature-section-title">Mesh ventilation</h2>
+                <p>Targeted to keep you cool and dry during activity</p>
+                <div class="overlay-controls">
+                    <a href="#tech-hero" class="overlay-close"><i class="icon-remove icon-large"></i></a>
                 </div>
             </div>
         </div>
+    </header>
 
+    <div class="content">
         <div class="row">
-            <h2>The features that make us better</h2>
+            <h2 class="text-center" style="padding-top: 1em">More of the features that make us better</h2>
             {{#feature-rows}}
             <div class="three column">
                 {{>m-feature-row }}
             </div>
             {{/feature-rows}}
         </div>
-
         <hr class="space">
-        
         <div class="m-primary-features row">
             {{#primary-feature}}
                 <div class="two column padded">
@@ -61,7 +140,6 @@
                 </div>
             {{/primary-feature}}
         </div>
-        
 	</div>
 </article>
 		
