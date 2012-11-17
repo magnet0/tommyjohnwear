@@ -18,6 +18,7 @@ hr.space { border: none; border-width: 0; clear: both; margin: 22px 0 22px; heig
 
 .no-margin { margin:0 !important; }
 
+
 /* grid */
 
 .padded { padding:1.5em }
@@ -26,7 +27,6 @@ hr.space { border: none; border-width: 0; clear: both; margin: 22px 0 22px; heig
 
 
 /* forms */
-
 select.inline { width:auto; }
 
 fieldset.collapsed { padding: 0; }

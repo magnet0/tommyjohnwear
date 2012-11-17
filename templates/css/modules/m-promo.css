@@ -3,3 +3,7 @@
 	display: block;
 	padding: 3em 1.5em;
 }
+
+	.m-home-promo img.pull-left {
+		float: none;
+	}

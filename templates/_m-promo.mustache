@@ -1,5 +1,6 @@
 <a {{#id}}id="{{id}}" {{/id}}class="m-home-promo" href="{{ href }}">
     <div class="hp-content">
+        {{#content-img}}<img src="{{content-img}}" class="pull-left" alt="{{title}}">{{/content-img}}
         {{#title}}<h2 class="hp-title">{{{ title }}}</h2>{{/title}}
         {{#text}}<p>{{{ text }}} <b class="hp-action">{{action}}</b></p>{{/text}}
     </div>

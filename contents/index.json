@@ -19,7 +19,7 @@
 		{
 			"id": "pf-tech",
 			"href":"tech",
-			"img":"images/features/unlock-our-tech.jpg",
+			"img":"images/features/tech.png",
 			"text":"Upgrade to smarter fabrics and innovative design.",
 			"action": "Unlock our technology"
 		},
@@ -60,6 +60,7 @@
 			"href":"starterkit",
 			"title":"The Starter Kit",
 			"text":"Buy any undershirt and underwear together and save 20% off your 1st order when you create an account with us through Facebook.",
+			"content-img": "images/promos/starterkit-boxes.jpg",
 			"action":"Details",
 			"img": "images/promos/starterkit-feature.png"
 		}

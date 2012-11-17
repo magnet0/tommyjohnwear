@@ -91,6 +91,14 @@ a.clean {
 
 small { color: #999; }
 
+/* lists */
+.standard-list {
+	font-size: .888888889em;
+}
+.standard-list li {
+	margin-bottom: .75em;
+}
+
 /* Buttons */
 .btn {
 	background-color: #40190b; /*@t-brown*/
@@ -660,7 +668,7 @@ Modules
 	margin-top: -12.5%;
 	padding: 1.5em;
 	position: absolute;
-	top: 50%;
+	top: 45%;
 	left: 0;
 	right: 0;
 }
@@ -747,8 +755,8 @@ Modules
 	
 	/* undershirt positioning */
 	.tech-item a[href="#tailored-stretch"] {
-		left: 55%;
-		top: 50%;
+		left: 57%;
+		top: 70%;
 	}
 	.tech-item a[href="#micro-modal"] {
 		left: 35%;

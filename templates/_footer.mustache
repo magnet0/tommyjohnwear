@@ -13,7 +13,7 @@
 					<h2 class="sitemap-header">{{ title }}</h2>
 					<ul class="no-bullet">
 						{{#children}}
-			                    <li{{#class}} class="{{class}}"{{/class}}>{{#href}}<a href="{{ href }}">{{/href}}{{^ social }}{{ title }}{{/ social }}{{# social }}<i class="{{ social }}"></i>{{/ social }}{{#href}}</a>{{/href}}</li>
+			                    <li{{#class}} class="{{class}}"{{/class}}>{{#href}}<a href="{{ href }}" rel="external">{{/href}}{{^ social }}{{ title }}{{/ social }}{{# social }}<i class="{{ social }}"></i>{{/ social }}{{#href}}</a>{{/href}}</li>
 						{{/children}}
 					</ul>
 				</div>

@@ -1,53 +1,37 @@
 {{> head }}
-
-<div role="main">
-    <div class="m-stage row">
-        
-        <div class="four column centered text-center">
-            <div class="m-stage-content">
-                <h1 class="heading">{{stage.heading}}</h1>
-                <p class="lead">{{{stage.lead}}}</p>
-            </div>
-        </div>
-        
-	</div>
-	<div class="content">
-	    
-        <!-- <div class="m-primary-feature m-feature row">
-            {{#primary-feature}}
-            <div class="two centered columns text-center">
-                {{> m-feature}}
-            </div>
-            {{/primary-feature}}
-        </div> -->
-
-        <!-- <div class="row">
-            <div class="two centered column">
-                <div class="two column"><img src="images/placehold-200x350.jpg" alt=""></div>
-                <div class="two column text-center">
-                    <p>OR</p>
-                </div>
-                <div class="two column"><img src="images/placehold-200x350.jpg" alt=""></div>
-            </div>
-        </div> -->
-
-        <div class="m-secondary-feature m-feature row">
-            <div class="two centered columns text-center">
-                <h2>The problems we solve</h2>
-                <p>We felt cheated when the shirts that fit the models so well on department store packaging and magazines made us look like a box and appear 10-30 lbs heavier. Instead of complaining or “dealing” with it, we did something about it.</p>
-            </div>
-            {{#secondary-feature}}
-            <div class="two centered columns text-center">
-                {{> m-feature}}
-            </div>
-            {{/secondary-feature}}
-            <!-- last column floats, this dummy column prevents that -->
-            <div class="columns hide"></div>
-        </div>
-        
-	</div>
-</div>
 		
-{{> sidebar}}
+<article role="main">
+    <div class="content">
+
+        <div class="row">
+            <header class="page-header four columns centered">
+                <h1>{{stage.heading}}</h1>
+                <p class="lead">{{{stage.lead}}}</p>
+            </header>
+        </div>
+        <div class="row padded">
+            <div class="three centered columns">
+                <h2>About our solutions</h2>
+                <p>There <em>is</em> a reason why you look and feel better in Tommy John undergarments. We solve fit problems through innovative design, unmatched comfort, and smart fabric technology.</p>
+                <ul>
+                    <li>Form fitting undergarments that make your outerwear look great without feeling restricted (the opposite of shapewear)</li>
+                    <li>Non-pilling, lightweight micro modal stretch fabric for a luxurious, long lasting fit</li>
+                    <li>Undershirts that stay tucked in all day long with our Tailored Stretch Technology ™</li>
+                    <li>Innovative 360 degree stretch technology to prevent underwear from riding up</li>
+                </ul>
+                <h2>The Result</h2>
+                <p>***"Problem" / "Solution" Undershirt Image >> Will be delivered soon**</p>
+                <p>***"Before Tommy John" / "After Tommy John" Dress Shirt Image >> Will be delivered soon]**</p>
+                <h2 id="about-tom">About Our Founder</h2>
+                <p>Our founder, Tom Patterson, was fed up with the way his undershirt fit and set out to make the ultimate undershirt that is now the must have for every man. </p>
+                <img src="images/tom.jpg" class="pull-left two columns" alt="Tom Patterson">
+                <p>Raised in Milbank, South Dakota—population: 3,600, Patterson always had an entrepreneurial spirit. He started a number of small businesses when he was younger and always knew that one day, he would build a successful brand from the ground up. Before starting Tommy John, Patterson attended Arizona State University and then worked as a medical device salesman for seven years. Today, Patterson lives in New York City and on days he isn’t solving men’s undergarment problems, he enjoys traveling to Brazil and New Zealand, yoga, surfing, lifting weights, playing golf, and hunting.</p>
+            </div>
+        </div>
+        
+	</div>
+</article>
+		
+{{> sidebar }}
 
 {{> foot }}

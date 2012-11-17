@@ -279,7 +279,11 @@
 		        transition: color .125s, background .125s;
 	}
 	
-	a:hover {
+	a:hover,
+	a:hover h1,
+	a:hover h2,
+	a:hover h3,
+	a:hover h4 {
 		color: #0088cc; /*@tj-blue*/
 	}
 	

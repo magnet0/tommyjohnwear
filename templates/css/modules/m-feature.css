@@ -129,6 +129,10 @@
 		font-size: 1.333333333em;
 		margin-bottom: 0;
 	}
+	
+	.m-secondary-feature:hover .sf-title {
+		color: #40190b;
+	}
 
 	.m-secondary-feature.second-skin:hover,
 	.m-secondary-feature.second-skin .sf-meta { background-color: #65c7be; }

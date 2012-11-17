@@ -11,6 +11,12 @@ $(document).ready(function() {
 	// Smooth scrolling anchors
 	$('[href^=#]').smoothmove();
 
+	// New windows
+	$('[rel=external]').click(function() {
+		window.open( $(this).attr('href') );
+		return false;
+	});
+
 	//checkout saved address handling
 	$('#saved-location').change(function(){
 		// var target = '#' + $( '#saved-location option[value!=""]:selected' ).val();

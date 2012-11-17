@@ -148,7 +148,7 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 		text-align: left;
 	}
 	
-	/* --- @medium2 featurettes --- */
+	/* --- @medium featurettes --- */
 	.m-primary-feature {
 		min-height: 15em;
 	}
@@ -157,6 +157,8 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 	.image-viewer-display {
 		margin-left: 20%;
 	}
+	
+
 
 }
 @media screen and (min-width: 50em) {
@@ -164,6 +166,17 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 	
 	/* --- @medium2 Base --- */
 	body { font-size: 112.5%; }
+	
+	.pull-left {
+		float: left;
+		margin-right: 1.5em;
+	}
+
+	.pull-right {
+		float: right;
+		margin-left: 1.5em;
+	}
+	
 	
 	/* --- @medium2 Stage --- */
 	.m-stage {
@@ -196,8 +209,7 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 		
 		/* --- @medium2 product attributes --- */
 		.product-attr {
-			display: inline-block;
-			width: 50%;
+			width: 80%;
 		}
 	
 	/* --- @medium2 modal --- */
@@ -313,11 +325,15 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 		min-height: 16em;
 	}
 	
+	/* --- @large2 Promos --- */
+	.m-home-promo img.pull-left {
+		float: left;
+	}
+	
 	/* --- @large product attributes --- */
-/*	.product-attr {
-		min-height: 9em;
-		width: 25%;
-	}*/
+	.product-attr {
+		width: 50%;
+	}
 }
 @media screen and (min-width: 90em) {	
 	body:after { content: 'wide'; } /* JS Hook for responsive variables */
