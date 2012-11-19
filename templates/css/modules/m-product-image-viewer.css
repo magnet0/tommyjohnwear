@@ -17,6 +17,7 @@
 
 		.image-viewer-stage img {
 			position: relative;
+			top: 1px;
 			vertical-align: middle;
 		}
 
