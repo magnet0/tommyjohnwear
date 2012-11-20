@@ -329,6 +329,10 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 	.m-home-promo img.pull-left {
 		float: left;
 	}
+
+	.hp-content {
+		text-align: left;
+	}
 	
 	/* --- @large product attributes --- */
 	.product-attr {
