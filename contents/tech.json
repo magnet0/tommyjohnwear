@@ -10,22 +10,22 @@
 	},
 	"feature-rows":[
 		{
-			"img":"images/features/fit.jpg",
+			"img":"http://placehold.it/200x200",
 			"title":"Fit",
 			"text":"Longer, tapered design hugs the lower torso to prevent bunching and <abbr title=\"Excess Fabric Gut\" class=\"popover-trigger\" data-title=\"Excess Fabric Gut\" data-placement=\"top\" data-trigger=\"click\">EFG</abbr>."
 		},
 		{
-			"img":"images/dudebro/dummy1.png",
+			"img":"http://placehold.it/200x200",
 			"title":"Control",
 			"text":"Moves with you, while being invisible under your outter shirts."
 		},
 		{
-			"img":"images/features/staydry.jpg",
+			"img":"http://placehold.it/200x200",
 			"title":"Stay Dry",
 			"text":"Controls your body temperature to keep you cool and confident all day."
 		},
 		{
-			"img":"images/features/quickdraw.jpg",
+			"img":"http://placehold.it/200x200",
 			"title":"Quick Draw Fly",
 			"text":"Horizontal fly for quick access when nature calls."
 		}

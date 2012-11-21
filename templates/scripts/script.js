@@ -186,13 +186,23 @@ $(document).ready(function() {
 	})
 
 	
+	// Do this only if we are on a non IE browser
+	function loadForNonIE () {
+		if ($('html.ie').length == 0) {
+			
+			offscreen(); // offscreen utility panel *wsn't working in IE, temp solution to put it in here
+
+		};
+	}
+
 
 	/*
 	
 		Load
 	
 	*/
-	offscreen(); // offscreen utility panel
+	
+	loadForNonIE();
 	itmRemove($('.mci-delete'), $('.mc-item'));	// removing items from minicart
 	$('[rel=tooltip]').tooltip(); // tooltips, global
 	$('.tag-input').tagsInput(); // tags in input fields
