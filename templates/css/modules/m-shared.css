@@ -156,6 +156,18 @@ span.prefix, span.postfix { background: #f2f2f2; border: 1px solid #cccccc; }
 
 .postfix { right: 2px; -moz-border-radius-topright: 2px; -webkit-border-top-right-radius: 2px; border-top-right-radius: 2px; -moz-border-radius-bottomright: 2px; -webkit-border-bottom-right-radius: 2px; border-bottom-right-radius: 2px; }
 
+/* visually hidden */
+.hidden {
+	overflow: hidden; 
+	position: absolute;
+	clip: rect(0 0 0 0); 
+	height: 1px; 
+	width: 1px;
+	margin: -1px; 
+	padding: 0; 
+	border: 0;
+}
+
 /*/////////////////////////////////////////////////
 Custom Checkbox/Radio - labe.m-custom > .checkbox/.radio
 /////////////////////////////////////////////////*/

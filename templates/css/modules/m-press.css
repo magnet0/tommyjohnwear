@@ -1,0 +1,52 @@
+.press-grid,
+.press-list {
+	list-style: none;
+	margin-bottom: 3em;
+}
+
+	.press-grid {
+		margin-left: -0.75em;
+		overflow: hidden;
+	}
+
+	.press-grid-item {
+		display: inline-block;
+		margin: auto -2px;
+		padding: 0 0 1.5em .75em;
+		vertical-align: top;
+		width: 33.333333333%;
+	}
+	
+		.press-grid-item a {
+			border: none;
+			display: block;
+			overflow: hidden;
+			position: relative;
+		}
+	
+		.press-grid-item img {
+			vertical-align: middle;
+			width: 100%;
+		}
+		
+		.press-grid-item .press-item-description {
+			background-color: #08C;
+			bottom: 0;
+			color: white;
+			left: 0;
+			opacity: 0;
+			overflow: hidden;
+			padding: .75em;
+			position: absolute;
+			right: 0;
+			top: 100%;
+			-webkit-transition: all .25s;
+			   -moz-transition: all .25s;
+			     -o-transition: all .25s;
+			        transition: all .25s;
+		}
+		
+			.press-grid-item a:hover .press-item-description {
+				opacity: 1;
+				top: 20%;
+			}
