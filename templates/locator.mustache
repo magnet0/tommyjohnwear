@@ -2,70 +2,53 @@
 
 <div role="main">
     <div class="m-stage">
-        <!-- <div class="row"> -->
-            <!-- <div class="three centered column text-center"> -->
-                <h1>Find us in Stores</h1>
-                <p class="lead">Enter your location and a distance and we'll show you retail locations that carry Tommy John</p>
-            <!-- </div> -->
-        <!-- </div> -->
-        <div class="row">
-            <form action="" id="store-locator" class="custom">
-                <div class="four centered column">
-                    <fieldset class="two column">
-                        <hr class="space">
-                        <input type="text" name="zip" pattern="[\d]{5}(-[\d]{4})" placeholder="Postal Code">
-                    </fieldset>
-                    <div class="m-divider vertical column"><span class="m-div-label">OR</span></div>
-                    <fieldset class="two column end">
-                        <div class="row">
-                            <input type="text" class="six" name="address" placeholder="Street Address">
+        
+        <div class="m-stage-content">
+            <h1>Find us in Stores</h1>
+            <p class="lead">Enter your location and a distance and we'll show you retail locations that carry Tommy John</p>
+            <div class="row">
+                <form action="" id="store-locator" class="custom">
+                    <div class="row">
+                        <div class="four centered column">
+                            <fieldset class="two column offset-by-one">
+                                <hr class="space">
+                                <input type="text" name="zip" pattern="[\d]{5}(-[\d]{4})" placeholder="Postal Code">
+                            </fieldset>
+                            <div class="m-divider column"><span class="m-div-label">OR</span></div>
+                            <fieldset class="two column end">
+                                    <input type="text" class="six" name="address" placeholder="Street Address">
+                                    <input type="text" class="four column" name="city" placeholder="City">
+                                    <input type="text" class="two column" name="state" placeholder="State">
+                            </fieldset>
                         </div>
-                        <div class="row">
-                            <input type="text" class="four column" name="city" placeholder="City">
-                            <input type="text" class="two column" name="state" placeholder="State">
-                        </div>
-                    </fieldset>
-                    
-                    <!-- <fieldset class="locator-option">
-                        <hr class="space">
-                        <input type="text" name="zip" pattern="[\d]{5}(-[\d]{4})" placeholder="Postal Code">
-                    </fieldset>
-                    <div class="m-divider vertical"><span class="m-div-label">OR</span></div>
-                    <fieldset class="locator-option">
-                        <div class="row">
-                            <input type="text" class="six" name="address" placeholder="Street Address">
-                        </div>
-                        <div class="row">
-                            <input type="text" class="four column" name="city" placeholder="City">
-                            <input type="text" class="two column" name="state" placeholder="State">
-                        </div>
-                    </fieldset> -->
-                </div>
-                <div class="row collapsed">
-                    <div class="one centered column">
-                        <label for="distance">Distance</label>
-                        <select style="display:none;" id="customDropdown">
-                            <option SELECTED>1 Mile</option>
-                            <option value="">2 Mile</option>
-                            <option value="">5 Mile</option>
-                            <option value="">10 Mile</option>
-                            <option value="">25 Mile</option>
-                        </select>
-                        <div class="custom dropdown expand">
-                          <a href="#" class="current">1 Mile</a>
-                          <a href="#" class="selector"></a>
-                          <ul>
-                            <li>1 Mile</li>
-                            <li>2 Mile</li>
-                            <li>5 Mile</li>
-                            <li>10 Mile</li>
-                            <li>25 Mile</li>
-                          </ul>
-                        </div>
-                        <a href="#locations" class="btn expand">Find</a>
                     </div>
-                </div>
-            </form>
+                    <div class="row collapsed">
+                        <div class="one centered column">
+                            <label for="distance">Distance</label>
+                            <select style="display:none;" id="customDropdown">
+                                <option SELECTED>1 Mile</option>
+                                <option value="">2 Mile</option>
+                                <option value="">5 Mile</option>
+                                <option value="">10 Mile</option>
+                                <option value="">25 Mile</option>
+                            </select>
+                            <div class="custom dropdown expand">
+                              <a href="#" class="current">1 Mile</a>
+                              <a href="#" class="selector"></a>
+                              <ul>
+                                <li>1 Mile</li>
+                                <li>2 Mile</li>
+                                <li>5 Mile</li>
+                                <li>10 Mile</li>
+                                <li>25 Mile</li>
+                              </ul>
+                            </div>
+                            <a href="#locations" class="btn expand">Find</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
         </div>
     </div>
 
