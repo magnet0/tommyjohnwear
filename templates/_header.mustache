@@ -9,12 +9,12 @@
             <h2 class="nav-title toggle">Menu</h2>
             <ul class="hlist nav-bar resp">
                 {{#primary-nav}}
-                <li class="hlist-item nav-item{{# dropdown}} dropdown{{/ dropdown}}">
-                    <a href="{{id}}"{{#utility}} class="os-toggle" data-target="#{{ id }}"{{/utility}}{{# dropdown}} class="dropdown-toggle" data-toggle="dropdown"{{/ dropdown}}>{{title}}</a>
+                <li class="hlist-item nav-item{{#dropdown}} dropdown{{/dropdown}}">
+                    <a href="{{id}}"{{#utility}} class="os-toggle" data-target="#{{id}}"{{/utility}}{{#dropdown}} class="dropdown-toggle" data-toggle="dropdown"{{/dropdown}}>{{#icon}}<i class="icon-{{icon}}"></i> {{/icon}}{{title}}</a>
                     
                     {{# dropdown}}<ul class="dropdown-menu">{{/ dropdown}}
                         {{# children}}
-                            <li><a href="{{ child-id }}">{{# icon }}<i class="icon-{{ icon }}"></i> {{/ icon }}{{ child-title }}</a></li>
+                            <li><a href="{{ child-id }}">{{ child-title }}</a></li>
                         {{/ children}}
                     {{# dropdown}}</ul>{{/ dropdown}}
                 </li>
