@@ -716,13 +716,18 @@ Modules
 	}
 
 	.tech-hero-img {
-		max-height: 100%;
-		width: auto;
+		width: 100%;
 	}
 	
 	.tech-stage .carousel {
 		border: solid rgba(0, 0, 0, 0.2);
 		border-width: 1px 0;
+	}
+	
+	.tech-wrapper {
+		margin: auto;
+		position: relative;
+		width: 50%;
 	}
 
 /* -- the "bullets" --- */
@@ -755,11 +760,11 @@ Modules
 	
 	/* undershirt positioning */
 	.tech-item a[href="#tailored-stretch"] {
-		left: 57%;
+		left: 70%;
 		top: 70%;
 	}
 	.tech-item a[href="#micro-modal"] {
-		left: 35%;
+		left: 15%;
 		top: 25%;
 	}
 	.tech-item a[href="#memory-collar"] {
@@ -773,16 +778,16 @@ Modules
 		top: 25%;
 	}
 	.tech-item a[href="#360-stretch"] {
-		left: 72%;
+		left: 90%;
 		top: 40%;
 	}
 	.tech-item a[href="#utility-pocket"] {
-		left: 22%;
+		left: 0;
 		top: 25%;
 	}
 	.tech-item a[href="#mesh-ventilation"] {
-		left: 48%;
-		top: 60%;
+		left: 52%;
+		top: 70%;
 	}
 	
 	
