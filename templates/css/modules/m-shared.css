@@ -176,7 +176,7 @@ label.m-custom { cursor: pointer; }
 
     label.m-custom:not(:checked) > input {
         position: absolute;
-        top: -9999px;
+        top: -2em;
         clip: rect(0,0,0,0);
     }
 

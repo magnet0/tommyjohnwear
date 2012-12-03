@@ -68,7 +68,7 @@ Review-Rating - fieldset.rating
 
     .rating:not(:checked) > input {
         position: absolute;
-        top: -9999px;
+        top: -2em;
         clip: rect(0,0,0,0);
     }
     

@@ -59,7 +59,7 @@
 
 		.product-form-size:not(:checked)  input {
 			position: absolute;
-			top: -9999px;
+			top: -2em;
 			clip: rect(0,0,0,0);
 		}
 
@@ -118,7 +118,7 @@
 
 		.product-form-color:not(:checked) input {
 	        position: absolute;
-	        top: -9999px;
+	        top: -2em;
 	        clip: rect(0,0,0,0);
 	    }
 
