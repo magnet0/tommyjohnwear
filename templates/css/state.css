@@ -137,6 +137,17 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 			padding-top: 0;
 		}
 	
+	/* -- @medium dropdown --- */
+	.dropdown.open a {
+		background-color: transparent;
+	}
+	.dropdown-menu {
+		position: absolute;
+		top: 100%;
+		z-index: 1000;
+		float: left;
+	}
+	
 	
 	/* --- @medium stage --- */
 	.is-home .m-stage:after {

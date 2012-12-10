@@ -7,11 +7,7 @@
 	}
 
 .dropdown-menu {
-	position: absolute;
-	top: 100%;
-	z-index: 1000;
 	display: none;
-	float: left;
 	left: auto;
 	min-width: 10em;
 	padding: 0;
@@ -34,4 +30,8 @@
 
 	.dropdown-menu a {
 		color: white;
+	}
+	
+	.dropdown.open a {
+		background-color: #2BA6CB;
 	}
