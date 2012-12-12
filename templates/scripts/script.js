@@ -195,6 +195,11 @@ $(document).ready(function() {
 		};
 	}
 
+	// Fire a modal window
+	function showmodal(el) {
+		var el = $(el);
+		el.modal('show');
+	}
 
 	/*
 	
@@ -219,5 +224,16 @@ $(document).ready(function() {
 		timer: false,
 		directionalNav: true
 	});
+	
+	// WELCOME MESSAGE MODAL
+	// If on the home page, fire the welcome modal
+	// this will also need some sort of cookie check/set for users actions
+	// to load or not.
+	if ($("body").hasClass("is-home")) {
+		setTimeout(function () {
+			console.log("fired");
+			showmodal("#welcome");
+		}, 2000);
+	};
 	
 });
