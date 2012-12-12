@@ -358,6 +358,7 @@ table.display tbody tr td { color: #333; padding: .75em; vertical-align: top; bo
   padding: 9px 15px;
   border-bottom: 1px solid #eee;
 position: relative;
+	text-align: center;
 }
 
 .modal-header .close {
