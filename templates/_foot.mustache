@@ -3,6 +3,26 @@
 
         {{> utility}}
 
+		<!-- if(home-page) { -->
+		<section id="welcome" class="modal hide fade" role="dialog" aria-labelledby="welcome" aria-hidden="true">
+			<div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h3>Welcome to Tommy John</h3>
+            </div>
+            <div class="modal-body text-center">
+				<h1>$10 could be waiting for you in your cart!</h1>
+				<p>It'll be there if a FaceBook friend of yours has shopped with us.</p>
+				<p><a href="#" class="btn facebook">Connect with us to find out</a></p>
+				<p>Did you know, you can get 20% off your Starter Kit by creating an account with FaceBook?</p>
+				<p><a href="#" class="btn facebook">Create an account via FaceBook</a></p>
+				<div class="fb-facepile" data-href="http://tommyjohnwear.com" data-max-rows="2" data-width="300"></div>
+            </div>
+			<div class="modal-footer">
+				<a href="#" class="btn secondary small" data-dismiss="modal" aria-hidden="true">Not right now</a>
+			</div>
+		</section>
+		<!-- } -->
+
         <!-- if (product-page) { -->
         <!-- Load modals -->
         <div id="zoom" class="modal hide fade full" role="dialog" aria-labelledby="image-zoom" aria-hidden="true">
@@ -151,6 +171,18 @@
                 nope: ['scripts/polyfill/jquery.details.min.js', 'scripts/details.js']
             });
         </script>
+
+		<script>
+			function welcomefire(el) {
+				var el = $(el);
+				el.modal('show');
+			}
+			setTimeout(function () {
+				console.log("fired");
+				welcomefire("#welcome");
+			}, 2000);
+		</script>
+		
         <div id="fb-root"></div>
         <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
 	</body>
