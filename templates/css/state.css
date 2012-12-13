@@ -474,9 +474,11 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 	-webkit-perspective: 1000;
 }
 
-.no-csstransforms .active-os-panel .os-panel {	
+.no-csstransforms3d .active-os-panel .os-panel {
 	right: 0;
 }
+
+
 
 /* --- Checkout --- */
 

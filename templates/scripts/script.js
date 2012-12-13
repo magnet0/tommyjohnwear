@@ -207,10 +207,21 @@ $(document).ready(function() {
 	
 	*/
 	
-	loadForNonIE();
+	// loadForNonIE();
+	offscreen(); // offscreen utility panel
+	
 	itmRemove($('.mci-delete'), $('.mc-item'));	// removing items from minicart
 	$('[rel=tooltip]').tooltip(); // tooltips, global
-	$('.tag-input').tagsInput(); // tags in input fields
+	
+	$('.tag-input').each(function(i) {// tags in input fields
+		if ($(this).hasClass("email-input")) {
+			$(this).tagsInput({
+				'defaultText':'add email'
+			})
+		} else {
+			$(this).tagsInput();
+		};
+	});
 	
 	// hide and show review and comment forms
 	showTarget($('a[href=#load-review-form]'), $('.add-review'));
@@ -235,5 +246,12 @@ $(document).ready(function() {
 			showmodal("#welcome");
 		}, 2000);
 	};
+
+	// Select Text - for URLs in promos etc
+	$(".select-all").click(function() {
+	  $(this).select();
+	});
+	
+	
 	
 });
