@@ -51,14 +51,9 @@ $(document).ready(function() {
 		swapimgs.each(function(){
 			var iswapimgssrc = $(this).attr('src'); // img src
 			var isrcsplit = iswapimgssrc.split('.'); // img src split into an array, at the file extension 
-
 			isrcsplit[1] = colorid;
-
 			var newimgsrc = isrcsplit.join('.');
-
 			$(this).attr('src',newimgsrc);
-
-			console.log(newimgsrc);
 		});
 		
 	});
@@ -242,7 +237,6 @@ $(document).ready(function() {
 	// to load or not.
 	if ($("body").hasClass("is-home")) {
 		setTimeout(function () {
-			console.log("fired");
 			showmodal("#welcome");
 		}, 2000);
 	};
