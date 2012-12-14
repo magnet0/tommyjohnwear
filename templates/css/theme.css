@@ -159,6 +159,7 @@ small { color: #999; }
 
 	.btn.block {
 		display: block;
+		width: 100%;
 	}
 
 .bkg-light { background-color: #F7F7F7; }
