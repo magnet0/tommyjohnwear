@@ -3,7 +3,7 @@
             <form action="" class="m-product-form">
                 <input type="hidden" name="title" value="{{ product.name }}">
                 <input type="hidden" name="price" value="{{ product.price }}">
-                <div class="row collapsed"><span class="category-label {{#dasherize}}{{#downcase}}{{product.category}}{{/downcase}}{{/dasherize}}">{{ product.category }}</span></div>
+                <div class="row collapsed"><span class="category-label">{{ product.category }}</span></div>
                 <h1 class="product-form-title">{{ product.name }} <small class="product-form-subtitle">{{ product.subtitle }}</small></h1>
                 <div class="product-form-meta">
                     <h2 class="product-form-price"><span class="currency-type">$</span>{{ product.price }}</h2>
