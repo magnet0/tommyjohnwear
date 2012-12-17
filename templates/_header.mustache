@@ -10,7 +10,12 @@
             <ul class="hlist nav-bar resp">
                 {{#primary-nav}}
                 <li class="hlist-item nav-item{{#dropdown}} dropdown{{/dropdown}}">
-                    <a href="{{id}}"{{#utility}} class="os-toggle" data-target="#{{id}}"{{/utility}}{{#dropdown}} class="dropdown-toggle" data-toggle="dropdown"{{/dropdown}}>{{#icon}}<i class="icon-{{icon}}"></i> {{/icon}}{{title}}</a>
+                    <a href="{{id}}"{{#utility}} class="os-toggle" data-target="#{{id}}"{{/utility}}{{#dropdown}} class="dropdown-toggle" data-toggle="dropdown"{{/dropdown}}>
+						{{#extra}}<div class="user-id">
+							Matt Kritzer
+						</div>{{/extra}}
+						{{title}}
+					</a> <!-- <i class="icon-{{icon}}"></i> -->
                     
                     {{# dropdown}}<ul class="dropdown-menu">{{/ dropdown}}
                         {{# children}}
