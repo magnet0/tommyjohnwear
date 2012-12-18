@@ -98,6 +98,9 @@ small { color: #999; }
 .standard-list li {
 	margin-bottom: .75em;
 }
+.non-bulleted {
+	list-style: none;
+}
 
 /* Buttons */
 .btn {
@@ -234,6 +237,10 @@ label { color: #555; }
 
 input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea,
 div.tagsinput { background-color: #F3F4F9; }
+.fg-trans,
+input.fg-trans {
+	background-color: #eef0f7;
+}
 
 
 /* --- Tags --- */
@@ -303,7 +310,7 @@ table.display tbody tr td { color: #333; padding: .75em; vertical-align: top; bo
   bottom: 0;
   left: 0;
   z-index: 1040;
-  background-color: #40190b;
+  background-color: #454545;
 }
 
 .modal-backdrop.fade {
@@ -312,8 +319,8 @@ table.display tbody tr td { color: #333; padding: .75em; vertical-align: top; bo
 
 .modal-backdrop,
 .modal-backdrop.fade.in {
-  opacity: 0.97;
-  filter: alpha(opacity=97);
+  opacity: 0.5;
+  filter: alpha(opacity=5);
 }
 
 .modal {
