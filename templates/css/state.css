@@ -200,7 +200,7 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 	
 	
 	/* --- @medium2 Stage --- */
-	.m-stage {
+	.is-home .m-stage {
 		padding-bottom: 4.5em;
 		padding-top: 4.5em;
 	}
@@ -281,7 +281,7 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 	}
 	
 	/* --- @large Stage --- */
-	.m-stage {
+	.is-home .m-stage {
 		padding-bottom: 6em;
 		padding-top: 6em;
 	}
@@ -336,6 +336,10 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 	}
 	
 	/* --- @large2 Stage --- */
+	.m-stage {
+		padding-bottom: 2em;
+		padding-top: 2em;
+	}
 	.is-home .m-stage-content {
 		padding-right: 0;
 		text-align: center;
@@ -484,7 +488,7 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 	-webkit-perspective: 1000;
 }
 
-.no-csstransforms3d .active-os-panel .os-panel {
+.no-csstransforms .active-os-panel .os-panel {
 	right: 0;
 }
 

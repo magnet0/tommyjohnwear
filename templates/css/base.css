@@ -407,6 +407,13 @@
 	}
 	
 	/* Interaction */
+	summary:hover {
+		cursor: pointer;
+	}
+	summary:focus {
+		outline: none;
+	}
+	
 	::selection {
 		background: rgb(255, 255, 158);
 	}
