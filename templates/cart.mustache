@@ -18,22 +18,20 @@
         <hr class="space">
 
         <div class="row">
-            <div class="two column">
+            <div class="two column offset-by-one">
                 <div class="margined">
-                    <!-- promo code -->
+					<h2>Discount Codes</h2>
                     <div class="row">
-                        <h2>Promotional Code</h2>
-                        <input type="text">
-                        <label for=""><a class="btn light small right" href=""><i class="icon-share-alt icon-large"></i> apply code</a></label>
+                        <label for="promo-code">Promo code</label>
+                        <input type="text" id="promo-code">
+                        <a class="btn light small right" href=""><i class="icon-share-alt icon-large"></i> apply code</a>
                     </div>
-                    <h2>Gift Certificate</h2>
-                    <input type="text">
-                    <label for=""><a class="btn light small right" href=""><i class="icon-share-alt icon-large"></i> apply code</a></label>
-                    <hr class="space">
-                    <!-- /promo code -->
+                    <label for="gift-certificates">Gift Certificate</label>
+                    <input type="text" id="gift-certificates">
+                    <a class="btn light small right" href=""><i class="icon-share-alt icon-large"></i> apply code</a>
                 </div>
             </div>
-            <div class="two column">
+            <div class="two column end">
                 <div class="margined">
                 <!-- shipping calculator -->
                     <h2>Estimate Tax &amp; Shipping</h2>
@@ -63,7 +61,10 @@
                 <!-- /shipping calculator -->
                 </div>
             </div>
-            <div class="two column">
+		</div>
+		<hr class="space">
+		<div class="row">
+            <div class="three column centered">
                 <div class="bordered margined padded">
                 <!-- cart total -->
                     <table class="text-right">
