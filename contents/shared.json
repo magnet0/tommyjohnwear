@@ -21,6 +21,7 @@
 			"title": "Account",
 			"id": "account",
 			"icon": "user",
+			"extra": true,
 			"dropdown": true,
 			"children":[
 				{

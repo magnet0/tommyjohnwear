@@ -29,6 +29,15 @@
 			vertical-align: middle;
 		}
 
+	.nav-item .user-id {
+		text-transform: none;
+		font-family: "Open Sans", sans-serif;
+		font-size: .875em;
+		color: #888;
+	}
+	.nav-item a:hover .user-id {
+		color: white;
+	}
 
 	/* Responsive extension */
 	.nav-bar.resp {

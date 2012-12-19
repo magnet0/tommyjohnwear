@@ -117,6 +117,16 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 	}
 		.nav-bar.resp .nav-item { display: inline-block; }
 	
+	
+	.nav-item .user-id {
+		margin-top: -1em;
+	}
+	.nav-item a:hover .user-id {
+		color: #888;
+	}
+	.open .user-id {
+		opacity: 0;
+	}
 		
 	.nav-bar.util {
 		position: static;
