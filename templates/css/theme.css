@@ -245,7 +245,8 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 div.tagsinput { background-color: #F3F4F9; }
 .fg-trans,
 input.fg-trans {
-	background-color: #eef0f7;
+	background-color: #e5e7ee;
+	background-color: rgba(0,0,0,0.03);
 }
 
 
