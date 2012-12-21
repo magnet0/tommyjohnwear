@@ -79,6 +79,12 @@ body {
 	margin-bottom: 1.285714286em;
 	line-height: 1.285714286;
 }
+.standard-type {
+	font-family: "Open Sans", sans-serif;
+}
+h1.standard-type {
+	letter-spacing: -1px;
+}
 
 /* Links */
 a {
