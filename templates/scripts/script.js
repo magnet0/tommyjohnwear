@@ -1,8 +1,43 @@
 $(document).ready(function() {
 	
-	// move to reponsive check
-	// Scroll past chrome on mobile
-	// setTimeout(function () {window.scrollTo(0, 1); }, 1000);
+
+	/*
+
+		Responsive Conditionals
+
+	*/
+	// Get the value of generated content on body
+	function mediaQuery() {
+		return window.getComputedStyle(document.body,':after').getPropertyValue('content');
+	}
+	console.log(mediaQuery());
+	// Conditionals
+	if (mediaQuery() !== "" || null) {
+		var mq = mediaQuery();
+		switch(mq) {
+			case 'small':
+				// Do something only if in the "small" breakpoint
+				break;
+			case 'medium':
+				// Do something only if in the "medium" breakpoint
+				break;
+			case 'large':
+				// Do something only if in the "large" breakpoint
+				break;
+			default:
+				// default
+		}
+
+		if (mq.indexOf("small") !== 0 && mq.indexOf("default") !== 0) {
+			// only on "tablets" and up
+			if ($("body").hasClass("is-home")) { // WELCOME MESSAGE MODAL
+				setTimeout(function () {
+					showmodal("#welcome");
+				}, 2000);
+			}
+		}
+	}
+
 		
 	// ?
 	$('.popover-trigger').popover({delay: { show: 500, hide: 100 }});
@@ -231,16 +266,6 @@ $(document).ready(function() {
 		directionalNav: true
 	});
 	
-	// WELCOME MESSAGE MODAL
-	// If on the home page, fire the welcome modal
-	// this will also need some sort of cookie check/set for users actions
-	// to load or not.
-	if ($("body").hasClass("is-home")) {
-		setTimeout(function () {
-			showmodal("#welcome");
-		}, 2000);
-	};
-
 	// Select Text - for URLs in promos etc
 	$(".select-all").click(function() {
 	  $(this).select();

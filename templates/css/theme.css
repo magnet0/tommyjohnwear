@@ -702,6 +702,16 @@ Modules
 	}
 
 
+/* 
+
+	Home page modal overlay
+
+ */
+#welcome .welcome-image {
+	display: none;
+}
+
+
 /*
 
 	Tech Interactive Diagram

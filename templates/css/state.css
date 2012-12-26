@@ -363,6 +363,11 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 	.product-attr {
 		width: 50%;
 	}
+
+	#welcome .welcome-image {
+		display: inline;
+	}
+
 }
 @media screen and (min-width: 90em) {	
 	body:after { content: 'wide'; } /* JS Hook for responsive variables */
