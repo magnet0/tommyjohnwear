@@ -485,17 +485,23 @@ body:after { content: 'default'; display: none; } /* JS Hook for responsive vari
 	   -moz-box-shadow: 0 0 .333333333em rgba(0, 0, 0, 0.4);
 	     -o-box-shadow: 0 0 .333333333em rgba(0, 0, 0, 0.4);
 	        box-shadow: 0 0 .333333333em rgba(0, 0, 0, 0.4);
+}
+
+
+.csstransforms3d .active-os-panel .os-panel {
 	-webkit-transform: translate3d(-100%,0,0);
 	   -moz-transform: translate3d(-100%,0,0);
+	    -ms-transform: translate3d(-100%,0,0);
 	     -o-transform: translate3d(-100%,0,0);
 	        transform: translate3d(-100%,0,0);
 	-webkit-backface-visibility: hidden;
 	-webkit-perspective: 1000;
 }
 
-.no-csstransforms .active-os-panel .os-panel {
+.no-csstransforms3d .active-os-panel .os-panel {
 	right: 0;
 }
+
 
 
 
